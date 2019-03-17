@@ -1,0 +1,6 @@
+.idea/
+cmake-build-debug/
+Coding
+src/cmake-build-debug/
+src/CMakeList.txt
+
