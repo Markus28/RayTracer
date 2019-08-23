@@ -10,7 +10,7 @@
 template<typename T>
 class SphereMap: public UVMap<Vector3D, T> {
 public:
-    SphereMap(std::vector<std::vector<Color>> m): UVMap<Vector3D, T>(m){}
+    SphereMap(std::vector<std::vector<T>> m): UVMap<Vector3D, T>(m){}
 private:
     std::pair<double, double> map(Vector3D coordinates) const override {
         assert(utility::equals_about(coordinates.norm(), 1, utility::EPSILON));

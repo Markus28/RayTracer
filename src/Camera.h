@@ -4,10 +4,9 @@
 #include <vector>
 #include <string>
 #include "Ray.h"
-#include "Color.h"
 
 
-using Image = std::vector<std::vector<Color>>;
+using Image = std::vector<std::vector<Vector3D>>;
 
 class Camera {
 public:
@@ -18,7 +17,7 @@ public:
 
     bool endRay() const;
 
-    void setRay(Color c);
+    void setRay(Vector3D c);
 
     void writeFile(std::string file_name) const;
 

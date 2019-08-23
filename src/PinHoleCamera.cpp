@@ -30,7 +30,7 @@ PinHoleCamera::PinHoleCamera(Vector3D position, Vector3D up, Vector3D right, uns
 
     forward/=forward.norm();
 
-    image = Image(width, std::vector<Color>(height));
+    image = Image(width, std::vector<Vector3D>(height));
 
     assert(width_angle>0);
     assert(utility::equals_about(up*right, 0, utility::EPSILON));

@@ -4,7 +4,6 @@
 
 #include "Vector3D.h"
 #include "Ray.h"
-#include "Color.h"
 
 class Light {
 public:
@@ -15,7 +14,7 @@ public:
     virtual double getDistance(Vector3D point) const = 0;
     virtual ~Light(){};
 private:
-    Color color;
+    Vector3D color;
 };
 
 

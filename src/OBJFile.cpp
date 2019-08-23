@@ -2,40 +2,71 @@
 
 #include <fstream>
 #include <sstream>
+#include <stdexcept>
 
 OBJFile::OBJFile(const char* f_name, Material mat) {
     std::ifstream f(f_name);
     std::string line;
-    char id;
+    std::string id;
+    std::string current_material;
     double x, y, z;
-    unsigned int a, b, c;
-    int i = 0;
+    char ignore;
+    long unsigned int a, b, c;
+    std::istringstream iss;
 
-    while(std::getline(f, line))
+
+    //Strip away comments and empty lines...
+    do {
+        if (!std::getline(f, line)) {
+            return;
+        }
+
+        iss = std::istringstream(line);
+        iss>>id;
+    } while(id.at(0) == '#' || line.size() == 1);
+
+
+    //Load the material library
+    if(id=="mtllib")
     {
-        std::istringstream iss(line);
+        iss>>id;
+        materials = MTLLib(id.c_str());
+    }
+
+    do {
+        iss = std::istringstream(line);
         iss>>id;
 
-        if(id=='v')
+        if(id=="v")
         {
             if(!(iss>>x>>y>>z))
             {
-                throw("File corrupted...");
+                throw std::runtime_error("OBJ-File corrupted at Vertex...");
             }
 
             vertices.emplace_back(x, y, z);
         }
 
-        else if(id=='f')
+        else if(id=="f")
         {
-            if(!(iss>>a>>b>>c))
+            FaceData data = FaceData(iss);
+            std::vector<Triangle> new_triangles = data.getTriangles(vertices, mat);
+            polygons.insert(polygons.end(), new_triangles.begin(), new_triangles.end());
+        }
+
+        else if(id=="usemtl")
+        {
+            if(!(iss>>current_material))
             {
-                throw("File corrupted...");
+                throw std::runtime_error("File corrupted...");
             }
 
-            polygons.emplace_back(vertices[c-1], vertices[b-1], vertices[a-1], mat);
+            if(materials.contains(current_material)) {
+                mat = materials[current_material];
+            }
         }
-    }
+
+    } while(std::getline(f, line));
 }
 
 std::vector<Triangle> OBJFile::getTriangles() const {
@@ -44,4 +75,61 @@ std::vector<Triangle> OBJFile::getTriangles() const {
 
 void OBJFile::dump(std::string file_name) const {
     return;     //TODO: Implement
+}
+
+
+BinaryVolumeHierarchy OBJFile::getBVH() {
+    std::vector<BoundedVolume*> triangle_ptrs;
+
+    for(Triangle& t: polygons)
+    {
+        triangle_ptrs.push_back(&t);
+    }
+
+    return {triangle_ptrs.begin(), triangle_ptrs.end()};
+}
+
+
+FaceData::FaceData(std::istringstream &iss) {
+    std::string s;
+    size_t pos = 0;
+    std::string token;
+    int i = 0;
+
+    while(iss>>s)
+    {
+        data.push_back({-1,-1,-1});
+        pos = 0;
+        i = 0;
+        while ((pos = s.find("/")) != std::string::npos) {
+            token = s.substr(0, pos);
+            if(i==0 && token=="" || i>=2)
+            {
+                throw std::runtime_error("File corrupted...");
+            }
+
+            else if(token==""){
+                data[data.size()-1][i] = -1;
+            }
+            else{
+                data[data.size()-1][i] = stoi(token);
+            }
+
+            s.erase(0, pos + 1);
+            ++i;
+        }
+
+        data[data.size()-1][i] = stoi(s);
+    }
+}
+
+std::vector<Triangle> FaceData::getTriangles(const std::vector<Vector3D> &vertices, Material mat) {
+    std::vector<Triangle> result;
+
+    for(int i = 1; i<data.size()-1; ++i)
+    {
+        result.emplace_back(vertices[data[i+1][0]-1], vertices[data[i][0]-1], vertices[data[0][0]-1], mat);
+    }
+
+    return result;
 }

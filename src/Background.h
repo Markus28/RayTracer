@@ -2,19 +2,18 @@
 #define RAYTRACER_BACKGROUND_H
 
 
-#include "Color.h"
 #include "SphereMap.h"
 #include <vector>
 
-using Image = std::vector<std::vector<Color>>;
+using Image = std::vector<std::vector<Vector3D>>;
 class Background {
 public:
-    explicit Background(Color c);
-    explicit Background(const SphereMap<Color>& im);
-    Color getColor(Vector3D coordinates);
+    explicit Background(Vector3D c);
+    explicit Background(const SphereMap<Vector3D>& im);
+    Vector3D getColor(Vector3D coordinates);
 
 private:
-    SphereMap<Color> map;
+    SphereMap<Vector3D> map;
 };
 
 

@@ -15,9 +15,31 @@ Intersection BinaryVolumeHierarchy::rayIntersect(const Ray& ray) const {
         return {};
     }
 
-    if(left.bv!=nullptr && right.bv!=nullptr)
+    if(left->bv!=nullptr && right->bv!=nullptr)
     {
-        return std::min(left.bv->rayIntersect(ray), right.bv->rayIntersect(ray));
+        return std::min(left->bv->rayIntersect(ray), right->bv->rayIntersect(ray));
+        /*
+        Interval A = (left->bv->getBounds()).intersectionInterval(ray);
+        Interval B = (right->bv->getBounds()).intersectionInterval(ray);
+        double a = A.getMin();
+        double b = B.getMin();
+
+        if(a<b){
+            Intersection first = left->bv->rayIntersect(ray);
+            if(first.getDistance()<b && first.doesIntersect()){
+                return first;
+            }
+
+            return std::min(first, right->bv->rayIntersect(ray));
+        }
+
+        Intersection first = right->bv->rayIntersect(ray);
+        if(first.getDistance()<a && first.doesIntersect()){
+            return first;
+        }
+
+        return std::min(first, left->bv->rayIntersect(ray));
+         */
     }
 
     /*
@@ -27,28 +49,27 @@ Intersection BinaryVolumeHierarchy::rayIntersect(const Ray& ray) const {
     */
 
 
-    if(left.bv!=nullptr)
+    if(left->bv!=nullptr)
     {
-        return left.bv->rayIntersect(ray);
+        return left->bv->rayIntersect(ray);
     }
 
     return {};
 }
 
 BinaryVolumeHierarchy::~BinaryVolumeHierarchy() {
-    if(!left.is_leaf)
-    {
-        delete left.bv;
-    }
-
-    if(!right.is_leaf)
-    {
-        delete right.bv;
-    }
+    delete left;
+    delete right;
 }
 
 std::ostream& BinaryVolumeHierarchy::print(std::ostream &sink) const {
-    return sink<< "Binary Volume Hierarchy";
+    if(left->bv!= nullptr) {
+        sink << left->bv->getBounds() << std::endl;
+    }
+    if(right->bv!=nullptr) {
+        sink << right->bv->getBounds() << std::endl << std::endl;
+    }
+    return sink;
 }
 
 unsigned int BinaryVolumeHierarchy::longestAxis() const{
@@ -83,32 +104,44 @@ BinaryVolumeHierarchy::BinaryVolumeHierarchy(std::vector<BoundedVolume*>::iterat
     switch(std::distance(b,e))
     {
         case 0:
-            left = BVHNode{nullptr, true};
-            right = BVHNode{nullptr, true};
+            left = new BVHNode{nullptr, true};
+            right = new BVHNode{nullptr, true};
             break;
 
         case 1:
-            left = BVHNode{*b, true};
-            right = BVHNode{nullptr, true};
+            left = new BVHNode{*b, true};
+            right = new BVHNode{nullptr, true};
             break;
 
         case 2:
-            left = BVHNode{*b, true};
-            right = BVHNode{*(b + 1), true};
+            left = new BVHNode{*b, true};
+            right = new BVHNode{*(b + 1), true};
             break;
 
         default:
             auto division = partition(b, e);
             assert(std::distance(b, division)>=0&&std::distance(division, e)>=0);
-            left = {new BinaryVolumeHierarchy(b, division), false};
-            right = {new BinaryVolumeHierarchy(division, e), false};
+            left = new BVHNode{new BinaryVolumeHierarchy(b, division), false};
+            right = new BVHNode{new BinaryVolumeHierarchy(division, e), false};
     }
 }
 
 
 IntersectionProperties BinaryVolumeHierarchy::intersectProperties(const Ray& ray) const
 {
-    assert(false);                                      //DO NOT CALL THIS METHOD! IT IS NOT EFFICIENT!
+    assert(false);                                      //DO NOT CALL THIS METHOD! NOT EFFICIENT!
     Intersection intersection = rayIntersect(ray);
     return intersection.getObject()->intersectProperties(ray);
 }
+
+
+BinaryVolumeHierarchy::BinaryVolumeHierarchy(const BinaryVolumeHierarchy& other) {
+    this->left = other.left->copy();
+    this->right = other.right->copy();
+}
+
+BinaryVolumeHierarchy& BinaryVolumeHierarchy::operator=(BinaryVolumeHierarchy other) {
+        std::swap(other.left, this->left);
+        std::swap(other.left, this->left);
+        return *this;
+}                           //other contains garbage and is destroyed here...

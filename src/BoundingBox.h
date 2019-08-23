@@ -9,6 +9,7 @@ public:
     BoundingBox(Interval x, Interval y, Interval z);
     BoundingBox();
     bool isIntersected(const Ray& ray) const;
+    Interval intersectionInterval(const Ray& ray) const;
     Vector3D getCenter() const;
     BoundingBox operator+(const BoundingBox& other) const;
     const Interval& operator[](unsigned int index) const;

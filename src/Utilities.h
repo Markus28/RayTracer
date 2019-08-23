@@ -7,7 +7,6 @@
 #include <vector>
 #include <cassert>
 #include <functional>
-#include "Color.h"
 #include "BoundedVolume.h"
 
 
@@ -107,13 +106,13 @@ namespace utility {
         double solution2;
     };
 
-    const double EPSILON = 10E-5;
+    const double EPSILON = 10E-9;
 
     bool equals_about(const double &test, const double &truth, const double &epsilon);
 
     QuadraticSolution solveQuadraticEquation(double a, double b, double c);
 
-    void writeImage(std::vector<std::vector<Color>>& im, std::string file_name);
+    void writeImage(std::vector<std::vector<Vector3D>>& im, std::string file_name);
 
     BoundingBox sumBoundingBoxes(const std::vector<BoundedVolume*>& v);
 

@@ -19,7 +19,7 @@ public:
 
     Vector3D reflectAround(const Vector3D& normal) const;
 
-    Vector3D refractAround(const Vector3D& normal, double refractive_index) const;
+    Vector3D refractAround(Vector3D normal, double refractive_index) const;
 
     Vector3D& operator+=(const Vector3D& other);
 

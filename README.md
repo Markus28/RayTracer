@@ -1,15 +1,17 @@
 # C++ Ray Tracer
-A simple Raytracer for educational purposes. 
+A simple CPU Raytracer. Built from scratch. 
 
-## Renders:
+## Renders
 ![Stanford Dragon](https://imgur.com/ZGqhSwN.png)
 
-## Features:
+## Features
+### Implemented
 * Primitives
   * Spheres
   * Infinite planes
   * Triangles
   * OBJ-Files
+  * MTL-Files
 * Lights
   * Point source in infinite distance
   * Point source
@@ -18,14 +20,13 @@ A simple Raytracer for educational purposes.
   * Pinhole Camera with supersampling
 * Bounding-Volume-Hierarchies
 
-### Coming soon:
-* MTL-Files
+### Coming soon
 * UV-Mapped Spheres
-* Spherical background image
-* Refraction
+* Spherical background images
+* Refractions
 * Fuzzy reflections
-* Real depth of field
+* Bokeh
 * Area lights
 * Orthographic camera
 * Implicit surfaces
-
+* Normal interpolation

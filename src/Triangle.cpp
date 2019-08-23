@@ -11,9 +11,9 @@ Triangle::Triangle(Vector3D p1, Vector3D p2, Vector3D p3, Material mat):material
     this->p2 = p2;
     this->p3 = p3;
     this->area2 = (p2-p1).cross(p3-p1).norm();
-    bounds = BoundingBox({utility::min(p1[0], p2[0], p3[0]), utility::max(p1[0], p2[0], p3[0])},
-                         {utility::min(p1[1], p2[1], p3[1]), utility::max(p1[1], p2[1], p3[1])},
-                         {utility::min(p1[2], p2[2], p3[2]), utility::max(p1[2], p2[2], p3[2])});
+    bounds = BoundingBox({utility::min(p1[0], p2[0], p3[0])-2*utility::EPSILON, utility::max(p1[0], p2[0], p3[0])+2*utility::EPSILON},
+                         {utility::min(p1[1], p2[1], p3[1])-2*utility::EPSILON, utility::max(p1[1], p2[1], p3[1])+2*utility::EPSILON},
+                         {utility::min(p1[2], p2[2], p3[2])-2*utility::EPSILON, utility::max(p1[2], p2[2], p3[2])+2*utility::EPSILON});
 }
 
 bool Triangle::inTriangle(Vector3D p) const {

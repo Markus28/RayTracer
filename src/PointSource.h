@@ -3,7 +3,7 @@
 
 #include "Light.h"
 
-class PointSource: Light {
+class PointSource: public Light {
 public:
     PointSource(Vector3D pt, Vector3D specular, Vector3D diffuse);
     Vector3D diffuseComponent(const Vector3D& point) const override;

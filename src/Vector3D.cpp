@@ -25,6 +25,27 @@ Vector3D Vector3D::reflectAround(const Vector3D &normal) const {
     return *this-normal*(*this*normal)*2;
 }
 
+Vector3D Vector3D::refractAround(Vector3D normal, double refractive_index) const {
+    assert(utility::equals_about(normal.norm(), 1, utility::EPSILON));
+    assert(utility::equals_about(norm(), 1, utility::EPSILON));
+
+    if(normal*(*this)>0)
+    {
+        refractive_index  = 1/refractive_index;
+        normal*=-1;
+    }
+
+    if(normal.cross(*this).norm()>(1.0/refractive_index))
+    {
+        return reflectAround(normal);
+    }
+
+    Vector3D result = (*this-normal*(normal*(*this)))*refractive_index - normal*sqrt(1-pow(refractive_index,2)*(1-pow(normal*(*this),2)));
+    result /= result.norm();
+    assert(utility::equals_about(result.norm(), 1, utility::EPSILON));
+    return result;
+}
+
 Vector3D Vector3D::cross(const Vector3D &other) const {
     return Vector3D(y*other.z-z*other.y, z*other.x-x*other.z, x*other.y-y*other.x);
 }

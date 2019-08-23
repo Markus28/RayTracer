@@ -10,10 +10,16 @@ BoundingBox::BoundingBox() {
 }
 
 bool BoundingBox::isIntersected(const Ray& ray) const {
+    Interval t_range = intersectionInterval(ray);
+    return t_range.containsPositive();
+}
+
+Interval BoundingBox::intersectionInterval(const Ray& ray) const
+{
     Interval t_range = tRange(x, ray.readBase()[0], ray.readDirection()[0]);
     t_range = t_range*tRange(y, ray.readBase()[1], ray.readDirection()[1]);
     t_range = t_range*tRange(z, ray.readBase()[2], ray.readDirection()[2]);
-    return t_range.containsPositive();
+    return t_range;
 }
 
 Interval BoundingBox::tRange(const Interval& i, double base, double direction) const {

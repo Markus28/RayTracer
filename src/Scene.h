@@ -3,7 +3,6 @@
 
 #include <vector>
 #include <cassert>
-#include "Color.h"
 #include "Camera.h"
 
 class RenderObject;
@@ -14,18 +13,19 @@ class Ray;
 
 class Scene {
 public:
-    Scene(const std::vector<RenderObject*>& objects, const std::vector<Light*>& lights, Camera* camera, Color background, Vector3D ambient);
+    Scene(const std::vector<RenderObject*>& objects, const std::vector<Light*>& lights, Camera* camera, Vector3D background, Vector3D ambient);
     void render(unsigned int recursion_depth);
 
 private:
+    Intersection firstHit(const Ray& ray, bool ignore_transparent);
     Intersection firstHit(const Ray& ray);
     std::vector<RenderObject*> objs;
     std::vector<Light*> lights;
     Camera* cam;
-    Color backgrnd;
+    Vector3D backgrnd;
     Vector3D ambient;
 
-    Color traceRay(const Ray& ray, unsigned int recursion_depth);
+    Vector3D traceRay(const Ray& ray, unsigned int recursion_depth);
 };
 
 

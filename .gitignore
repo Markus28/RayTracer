@@ -2,5 +2,6 @@
 cmake-build-debug/
 Coding
 src/cmake-build-debug/
-src/CMakeList.txt
+src/cmake-build-release/
+src/CMakeLists.txt
 

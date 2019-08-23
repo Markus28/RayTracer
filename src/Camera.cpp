@@ -11,7 +11,7 @@ void Camera::resetRay() {
     y=0;
 }
 
-void Camera::setRay(Color c){
+void Camera::setRay(Vector3D c){
     image[x][y] = c;
 }
 

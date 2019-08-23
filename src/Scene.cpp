@@ -5,7 +5,7 @@
 #include "Utilities.h"
 #include <iostream>
 
-Scene::Scene(const std::vector<RenderObject*>& objects, const std::vector<Light*>& lights, Camera* camera, Color background, Vector3D ambient)
+Scene::Scene(const std::vector<RenderObject*>& objects, const std::vector<Light*>& lights, Camera* camera, Vector3D background, Vector3D ambient)
 {
     assert(!objects.empty());
     this->cam = camera;
@@ -23,7 +23,7 @@ void Scene::render(unsigned int recursion_depth) {
 }
 
 
-Color Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
+Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
     Intersection hit = firstHit(ray);
 
     if(hit.doesIntersect())
@@ -37,8 +37,7 @@ Color Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
         {
             Ray shaddow = light->shaddowRay(intersectionPoint);
             shaddow.offset(properties.normal*utility::EPSILON);
-            //shaddow.walk(utility::EPSILON);     //TODO: change epsilon
-            Intersection shadowHit = firstHit(shaddow);
+            Intersection shadowHit = firstHit(shaddow, true);
             if(!shadowHit.doesIntersect() || shadowHit.getDistance() > light->getDistance(intersectionPoint))      //Check shaddow ray
             {
                 double dd = shaddow.readDirection()*properties.normal;
@@ -58,15 +57,23 @@ Color Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
 
         if(recursion_depth!=0)
         {
-            if(properties.material.isReflective())
+            if(properties.material.isReflective() && ray.readDirection()*properties.normal<0)
             {
                 Ray reflection = Ray(intersectionPoint, ray.readDirection().reflectAround(properties.normal));
                 reflection.offset(properties.normal*utility::EPSILON);
                 refractionAndReflection += traceRay(reflection, recursion_depth-1)*properties.material.getReflectivity();
             }
+
+            if(properties.material.isTransparent())
+            {
+                Ray refraction = Ray(intersectionPoint, ray.readDirection().refractAround(properties.normal, properties.material.getIndex()));
+                refraction.walk(utility::EPSILON);
+                refractionAndReflection += traceRay(refraction, recursion_depth-1)*properties.material.getTransparency();
+            }
         }
 
-        return Color(properties.material.getColor().elementWiseMultiplication(illumination) + refractionAndReflection);
+
+        return illumination + refractionAndReflection;
     }
 
     else
@@ -78,9 +85,23 @@ Color Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
 
 Intersection Scene::firstHit(const Ray &ray) {
     Intersection firstHit = objs[0]->rayIntersect(ray);
-    for(unsigned int i = 1; i<objs.size(); ++i)
+    for(unsigned int i = 0; i<objs.size(); ++i)
     {
         firstHit = std::min(firstHit, objs[i]->rayIntersect(ray));
+    }
+    return firstHit;
+}
+
+
+Intersection Scene::firstHit(const Ray &ray, bool ignore_transparent) {
+    Intersection firstHit;
+    Intersection newHit;
+    for(unsigned int i = 0; i<objs.size(); ++i)
+    {
+        newHit = objs[i]->rayIntersect(ray);
+        if(!ignore_transparent || (newHit.doesIntersect() && !newHit.getObject()->intersectProperties(ray).material.isTransparent())) {
+            firstHit = std::min(firstHit, newHit);
+        }
     }
     return firstHit;
 }

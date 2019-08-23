@@ -24,7 +24,7 @@ utility::QuadraticSolution utility::solveQuadraticEquation(double a, double b, d
         return QuadraticSolution{true, (-b + d)/(2*a), (-b - d)/(2*a)};
 }
 
-void utility::writeImage(std::vector<std::vector<Color>>& im, std::string file_name) { //FROM STACKOVERFLOW: https://stackoverflow.com/questions/2654480/writing-bmp-image-in-pure-c-c-without-other-libraries
+void utility::writeImage(std::vector<std::vector<Vector3D>>& im, std::string file_name) { //FROM STACKOVERFLOW: https://stackoverflow.com/questions/2654480/writing-bmp-image-in-pure-c-c-without-other-libraries
     int x, y, r, g, b;
     int w = im.size();
     int h = im[0].size();
@@ -40,7 +40,10 @@ void utility::writeImage(std::vector<std::vector<Color>>& im, std::string file_n
         for(int j=0; j<h; j++)
         {
             x=i; y=(h-1)-j;
-            im[i][j].clip();
+            im[i][j][0] = std::min(im[i][j][0], 255.0);
+            im[i][j][1] = std::min(im[i][j][1], 255.0);
+            im[i][j][2] = std::min(im[i][j][2], 255.0);
+
             r = int(im[i][h-j-1][0]);
             g = int(im[i][h-j-1][1]);
             b = int(im[i][h-j-1][2]);
