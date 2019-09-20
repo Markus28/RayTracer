@@ -85,7 +85,7 @@ Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
 
 Intersection Scene::firstHit(const Ray &ray) {
     Intersection firstHit = objs[0]->rayIntersect(ray);
-    for(unsigned int i = 0; i<objs.size(); ++i)
+    for(unsigned int i = 1; i<objs.size(); ++i)
     {
         firstHit = std::min(firstHit, objs[i]->rayIntersect(ray));
     }

@@ -14,6 +14,12 @@
 #include "RandomLight.h"
 #include "PointSource.h"
 #include "MTLLib.h"
+#include "symcpp/SymbolicGraph.h"
+#include "symcpp/Exponential.h"
+#include "symcpp/Logarithm.h"
+#include "symcpp/Power.h"
+#include "symcpp/Sine.h"
+#include "ImplicitSurface.h"
 
 void geo(){
     std::vector<RenderObject*> objs;
@@ -125,11 +131,50 @@ void car()
     cam.writeFile("./car.bmp");
 }
 
+void implicit(){
+    SymbolicGraph my_graph = (Variable("x")^2) + (Variable("y")^2) + (Variable("z")^2) - Constant(1);
+    ImplicitSurface surface(my_graph, Material(Vector3D(1,0.2,0.2), Vector3D(4,0.1,0.2), Vector3D(4,0.1,0.2), Vector3D(4,4,4), 0, 0, 1.0), BoundingBox({-1,1}, {-1,1}, {-1,1}));
+    PinHoleCamera cam = PinHoleCamera(Vector3D(10,0,0), Vector3D(0,0,1), Vector3D(0,1,0), 1200, 900, 0.8);
+    std::vector<RenderObject*> objs;
+    std::vector<Light*> lights;
+    objs.push_back(&surface);
+    DistantPointSource light = DistantPointSource(Vector3D(1,1,1), Vector3D(20,20,20), Vector3D(40,40,40));
+    lights.push_back(&light);
+
+    Scene my_scene = Scene(objs, lights, &cam, Vector3D(0,0,250), Vector3D(0.2,0.2,0.2));
+
+    auto start = std::chrono::high_resolution_clock::now();
+
+    my_scene.render(4);
+
+    auto stop = std::chrono::high_resolution_clock::now();
+
+    std::cout<<std::endl<<"It took "<<std::chrono::duration_cast<std::chrono::seconds>(stop - start).count()<<" seconds."<<std::endl;
+    cam.writeFile("./sym.bmp");
+}
+
+void sym(){
+    SymbolicGraph my_graph = Variable("y");
+    my_graph = my_graph^Sine(Variable("y"));
+    my_graph += Variable("y");
+    std::cin>>my_graph;
+    std::cout<<my_graph<<std::endl;
+    SymbolicGraph deriv = my_graph.diff("y");
+    std::unordered_map<std::string, double> env;
+    env["x"] = 1;
+    env["y"] = 0;
+    env["z"] = 7;
+    std::cout<< deriv<<std::endl;
+    std::cout<<my_graph.subs(env)<<std::endl<<deriv.subs(env);
+}
+
 
 int main() {
-    //car();
-    dragon();
+    car();
+    //implicit();
+    //dragon();
     //geo();
+    //sym();
     //cornell();
     return 0;
 

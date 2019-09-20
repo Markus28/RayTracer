@@ -51,7 +51,7 @@ Vector3D Vector3D::cross(const Vector3D &other) const {
 }
 
 double Vector3D::norm() const {
-    return sqrt(x * x + y * y + z * z);
+    return sqrt(pow(x,2) + pow(y, 2) + pow(z, 2));
 }
 
 
