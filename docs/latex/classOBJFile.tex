@@ -1,0 +1,96 @@
+\hypertarget{classOBJFile}{}\section{O\+B\+J\+File Class Reference}
+\label{classOBJFile}\index{O\+B\+J\+File@{O\+B\+J\+File}}
+
+
+Class for loading wavefront .obj files.  
+
+
+
+
+{\ttfamily \#include $<$O\+B\+J\+File.\+h$>$}
+
+
+
+Collaboration diagram for O\+B\+J\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOBJFile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOBJFile_ac6c14cded889593868aaab4e7d3e4bfb}{O\+B\+J\+File} (const char $\ast$file\+\_\+name, \hyperlink{classMaterial}{Material} mat)
+\item 
+std\+::vector$<$ \hyperlink{classTriangle}{Triangle} $>$ \hyperlink{classOBJFile_ad3d4291c00693d8cfcca416ac4ad7e03}{get\+Triangles} () const 
+\item 
+void \hyperlink{classOBJFile_afb445848916f5a138b262d7fcb0e136f}{dump} (std\+::string file\+\_\+name) const 
+\item 
+\hyperlink{classBinaryVolumeHierarchy}{Binary\+Volume\+Hierarchy} \hyperlink{classOBJFile_ae3128b473a8b7b837364cc9688cb89dc}{get\+B\+VH} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classTriangle}{Triangle} $>$ \hyperlink{classOBJFile_a7d568b98c43fd96142d9f0f0e57b296e}{polygons}
+\item 
+std\+::vector$<$ \hyperlink{classVector3D}{Vector3D} $>$ \hyperlink{classOBJFile_a9b07010eef35e7d44250f5f4f8fa3428}{vertices}
+\item 
+\hyperlink{classMTLLib}{M\+T\+L\+Lib} \hyperlink{classOBJFile_a5b08a58ba3f59a931eea6067e29f3e40}{materials}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for loading wavefront .obj files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{O\+B\+J\+File@{O\+B\+J\+File}!O\+B\+J\+File@{O\+B\+J\+File}}
+\index{O\+B\+J\+File@{O\+B\+J\+File}!O\+B\+J\+File@{O\+B\+J\+File}}
+\subsubsection[{\texorpdfstring{O\+B\+J\+File(const char $\ast$file\+\_\+name, Material mat)}{OBJFile(const char *file_name, Material mat)}}]{\setlength{\rightskip}{0pt plus 5cm}O\+B\+J\+File\+::\+O\+B\+J\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\+\_\+name, }
+\item[{{\bf Material}}]{mat}
+\end{DoxyParamCaption}
+)}\hypertarget{classOBJFile_ac6c14cded889593868aaab4e7d3e4bfb}{}\label{classOBJFile_ac6c14cded889593868aaab4e7d3e4bfb}
+
+
+\subsection{Member Function Documentation}
+\index{O\+B\+J\+File@{O\+B\+J\+File}!dump@{dump}}
+\index{dump@{dump}!O\+B\+J\+File@{O\+B\+J\+File}}
+\subsubsection[{\texorpdfstring{dump(std\+::string file\+\_\+name) const }{dump(std::string file_name) const }}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+J\+File\+::dump (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{file\+\_\+name}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOBJFile_afb445848916f5a138b262d7fcb0e136f}{}\label{classOBJFile_afb445848916f5a138b262d7fcb0e136f}
+\index{O\+B\+J\+File@{O\+B\+J\+File}!get\+B\+VH@{get\+B\+VH}}
+\index{get\+B\+VH@{get\+B\+VH}!O\+B\+J\+File@{O\+B\+J\+File}}
+\subsubsection[{\texorpdfstring{get\+B\+V\+H()}{getBVH()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Volume\+Hierarchy} O\+B\+J\+File\+::get\+B\+VH (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOBJFile_ae3128b473a8b7b837364cc9688cb89dc}{}\label{classOBJFile_ae3128b473a8b7b837364cc9688cb89dc}
+\index{O\+B\+J\+File@{O\+B\+J\+File}!get\+Triangles@{get\+Triangles}}
+\index{get\+Triangles@{get\+Triangles}!O\+B\+J\+File@{O\+B\+J\+File}}
+\subsubsection[{\texorpdfstring{get\+Triangles() const }{getTriangles() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Triangle} $>$ O\+B\+J\+File\+::get\+Triangles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOBJFile_ad3d4291c00693d8cfcca416ac4ad7e03}{}\label{classOBJFile_ad3d4291c00693d8cfcca416ac4ad7e03}
+
+
+\subsection{Member Data Documentation}
+\index{O\+B\+J\+File@{O\+B\+J\+File}!materials@{materials}}
+\index{materials@{materials}!O\+B\+J\+File@{O\+B\+J\+File}}
+\subsubsection[{\texorpdfstring{materials}{materials}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+T\+L\+Lib} O\+B\+J\+File\+::materials\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classOBJFile_a5b08a58ba3f59a931eea6067e29f3e40}{}\label{classOBJFile_a5b08a58ba3f59a931eea6067e29f3e40}
+\index{O\+B\+J\+File@{O\+B\+J\+File}!polygons@{polygons}}
+\index{polygons@{polygons}!O\+B\+J\+File@{O\+B\+J\+File}}
+\subsubsection[{\texorpdfstring{polygons}{polygons}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Triangle}$>$ O\+B\+J\+File\+::polygons\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classOBJFile_a7d568b98c43fd96142d9f0f0e57b296e}{}\label{classOBJFile_a7d568b98c43fd96142d9f0f0e57b296e}
+\index{O\+B\+J\+File@{O\+B\+J\+File}!vertices@{vertices}}
+\index{vertices@{vertices}!O\+B\+J\+File@{O\+B\+J\+File}}
+\subsubsection[{\texorpdfstring{vertices}{vertices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Vector3D}$>$ O\+B\+J\+File\+::vertices\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classOBJFile_a9b07010eef35e7d44250f5f4f8fa3428}{}\label{classOBJFile_a9b07010eef35e7d44250f5f4f8fa3428}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{OBJFile_8h}{O\+B\+J\+File.\+h}\item 
+src/\hyperlink{OBJFile_8cpp}{O\+B\+J\+File.\+cpp}\end{DoxyCompactItemize}

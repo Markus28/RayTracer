@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classLight.html" title="Abstract class for lights used in Scene. " alt="" coords="5,81,56,108"/>
+<area shape="rect" id="node2" href="$classDistantPointSource.html" title="DistantPointSource" alt="" coords="104,5,239,32"/>
+<area shape="rect" id="node3" href="$classPointSource.html" title="A very simple light source consisting of only one point in 3D Space. " alt="" coords="125,56,218,83"/>
+<area shape="rect" id="node4" href="$classRandomLight.html" title="RandomLight" alt="" coords="122,107,221,133"/>
+<area shape="rect" id="node5" href="$classSpotLight.html" title="SpotLight" alt="" coords="133,157,210,184"/>
+</map>

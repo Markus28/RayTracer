@@ -8,6 +8,9 @@
 #include "SimplePlane.h"
 #include "BoundedVolume.h"
 
+/**
+ * @brief A Triangle implementing BoundedVolume, RenderObject
+ */
 class Triangle: public BoundedVolume {
 public:
     Triangle(Vector3D p1, Vector3D p2, Vector3D p3, Material mat);

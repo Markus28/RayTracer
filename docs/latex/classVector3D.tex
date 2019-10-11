@@ -1,0 +1,261 @@
+\hypertarget{classVector3D}{}\section{Vector3D Class Reference}
+\label{classVector3D}\index{Vector3D@{Vector3D}}
+
+
+Vector in 3D space with usual arithmetics.  
+
+
+
+
+{\ttfamily \#include $<$Vector3\+D.\+h$>$}
+
+
+
+Collaboration diagram for Vector3D\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classVector3D__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3D_abd851542da40b1168edcad11fa83b7c2}{Vector3D} (double \hyperlink{classVector3D_a3c086dfccfc57dd996e9b8600098a430}{x}, double \hyperlink{classVector3D_adcec384756103d26d1181e45d5a0fd78}{y}, double \hyperlink{classVector3D_a7321f3ff785f275c4d83f7d1b951752a}{z})
+\item 
+\hyperlink{classVector3D_a0b11a8d75da427b27443d8a94d0d296c}{Vector3D} ()
+\item 
+double \hyperlink{classVector3D_ae07836fc4e7a4d9de5729caa3d8acc2c}{norm} () const 
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classVector3D_a09c6373726d31a7263d2f62184758f11}{element\+Wise\+Multiplication} (const \hyperlink{classVector3D}{Vector3D} \&other) const 
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classVector3D_ac893b27cda588514e65f2693eb72467c}{element\+Wise\+Power} (double p) const 
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classVector3D_a81310eb5d5bd8d28feff3daf6abae149}{cross} (const \hyperlink{classVector3D}{Vector3D} \&other) const 
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classVector3D_aa29c8639f4cf9515821a1fc12fb74648}{reflect\+Around} (const \hyperlink{classVector3D}{Vector3D} \&normal) const 
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classVector3D_a7fabd6f9459f6a6dda863777d81bd525}{refract\+Around} (\hyperlink{classVector3D}{Vector3D} normal, double refractive\+\_\+index) const 
+\item 
+\hyperlink{classVector3D}{Vector3D} \& \hyperlink{classVector3D_a546241ecc51e49e05e7672ffde26bbf8}{operator+=} (const \hyperlink{classVector3D}{Vector3D} \&other)
+\item 
+\hyperlink{classVector3D}{Vector3D} \& \hyperlink{classVector3D_a799f712590c47cc435b929718586555c}{operator-\/=} (const \hyperlink{classVector3D}{Vector3D} \&other)
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classVector3D_a4f42a873d7f7bea9d2436bedb44baa94}{operator+} (const \hyperlink{classVector3D}{Vector3D} \&other) const 
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classVector3D_a0b5ffc2ccb4c4e514a77e80d407b6d59}{operator-\/} (const \hyperlink{classVector3D}{Vector3D} \&other) const 
+\item 
+\hyperlink{classVector3D}{Vector3D} \& \hyperlink{classVector3D_ac916f188b52f903688d475d8aa6c17fa}{operator/=} (const double \&scalar)
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classVector3D_a1e2eebf652124da9f50013848c64821b}{operator/} (const double \&scalar) const 
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classVector3D_ac592a2b896e4ae2f99d9653bee46b9d5}{operator$\ast$} (const double \&scalar) const 
+\item 
+\hyperlink{classVector3D}{Vector3D} \& \hyperlink{classVector3D_a30e301e07305ca5eb90d33296d53dc04}{operator$\ast$=} (const double \&scalar)
+\item 
+double \hyperlink{classVector3D_abdac4cf105b87dc57fa74a6956bd0da5}{operator$\ast$} (const \hyperlink{classVector3D}{Vector3D} \&other) const 
+\item 
+double \& \hyperlink{classVector3D_a4dcadc12bb40086b075c9559b78ed8d2}{operator\mbox{[}$\,$\mbox{]}} (unsigned int index)
+\item 
+const double \& \hyperlink{classVector3D_a653358f2fe88720a55f3285103da2b9c}{operator\mbox{[}$\,$\mbox{]}} (unsigned int index) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classVector3D_a3c086dfccfc57dd996e9b8600098a430}{x}
+\item 
+double \hyperlink{classVector3D_adcec384756103d26d1181e45d5a0fd78}{y}
+\item 
+double \hyperlink{classVector3D_a7321f3ff785f275c4d83f7d1b951752a}{z}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classVector3D_adbaa018adf859ca3cfa224a5f10c688a}{print} (std\+::ostream \&sink) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classVector3D_a63f31894e510c707624cd63bafd31487}{operator$<$$<$} (std\+::ostream \&sink, const \hyperlink{classVector3D}{Vector3D} \&v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vector in 3D space with usual arithmetics. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Vector3D@{Vector3D}!Vector3D@{Vector3D}}
+\index{Vector3D@{Vector3D}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{Vector3\+D(double x, double y, double z)}{Vector3D(double x, double y, double z)}}]{\setlength{\rightskip}{0pt plus 5cm}Vector3\+D\+::\+Vector3D (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{z}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector3D_abd851542da40b1168edcad11fa83b7c2}{}\label{classVector3D_abd851542da40b1168edcad11fa83b7c2}
+\index{Vector3D@{Vector3D}!Vector3D@{Vector3D}}
+\index{Vector3D@{Vector3D}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{Vector3\+D()}{Vector3D()}}]{\setlength{\rightskip}{0pt plus 5cm}Vector3\+D\+::\+Vector3D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector3D_a0b11a8d75da427b27443d8a94d0d296c}{}\label{classVector3D_a0b11a8d75da427b27443d8a94d0d296c}
+
+
+\subsection{Member Function Documentation}
+\index{Vector3D@{Vector3D}!cross@{cross}}
+\index{cross@{cross}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{cross(const Vector3\+D \&other) const }{cross(const Vector3D &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Vector3\+D\+::cross (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_a81310eb5d5bd8d28feff3daf6abae149}{}\label{classVector3D_a81310eb5d5bd8d28feff3daf6abae149}
+\index{Vector3D@{Vector3D}!element\+Wise\+Multiplication@{element\+Wise\+Multiplication}}
+\index{element\+Wise\+Multiplication@{element\+Wise\+Multiplication}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{element\+Wise\+Multiplication(const Vector3\+D \&other) const }{elementWiseMultiplication(const Vector3D &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Vector3\+D\+::element\+Wise\+Multiplication (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_a09c6373726d31a7263d2f62184758f11}{}\label{classVector3D_a09c6373726d31a7263d2f62184758f11}
+\index{Vector3D@{Vector3D}!element\+Wise\+Power@{element\+Wise\+Power}}
+\index{element\+Wise\+Power@{element\+Wise\+Power}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{element\+Wise\+Power(double p) const }{elementWisePower(double p) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Vector3\+D\+::element\+Wise\+Power (
+\begin{DoxyParamCaption}
+\item[{double}]{p}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_ac893b27cda588514e65f2693eb72467c}{}\label{classVector3D_ac893b27cda588514e65f2693eb72467c}
+\index{Vector3D@{Vector3D}!norm@{norm}}
+\index{norm@{norm}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{norm() const }{norm() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Vector3\+D\+::norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_ae07836fc4e7a4d9de5729caa3d8acc2c}{}\label{classVector3D_ae07836fc4e7a4d9de5729caa3d8acc2c}
+\index{Vector3D@{Vector3D}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const double \&scalar) const }{operator*(const double &scalar) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Vector3\+D\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{scalar}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_ac592a2b896e4ae2f99d9653bee46b9d5}{}\label{classVector3D_ac592a2b896e4ae2f99d9653bee46b9d5}
+\index{Vector3D@{Vector3D}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const Vector3\+D \&other) const }{operator*(const Vector3D &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}double Vector3\+D\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_abdac4cf105b87dc57fa74a6956bd0da5}{}\label{classVector3D_abdac4cf105b87dc57fa74a6956bd0da5}
+\index{Vector3D@{Vector3D}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator$\ast$=(const double \&scalar)}{operator*=(const double &scalar)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} \& Vector3\+D\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{scalar}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector3D_a30e301e07305ca5eb90d33296d53dc04}{}\label{classVector3D_a30e301e07305ca5eb90d33296d53dc04}
+\index{Vector3D@{Vector3D}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator+(const Vector3\+D \&other) const }{operator+(const Vector3D &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Vector3\+D\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_a4f42a873d7f7bea9d2436bedb44baa94}{}\label{classVector3D_a4f42a873d7f7bea9d2436bedb44baa94}
+\index{Vector3D@{Vector3D}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator+=(const Vector3\+D \&other)}{operator+=(const Vector3D &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} \& Vector3\+D\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector3D_a546241ecc51e49e05e7672ffde26bbf8}{}\label{classVector3D_a546241ecc51e49e05e7672ffde26bbf8}
+\index{Vector3D@{Vector3D}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator-\/(const Vector3\+D \&other) const }{operator-(const Vector3D &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Vector3\+D\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_a0b5ffc2ccb4c4e514a77e80d407b6d59}{}\label{classVector3D_a0b5ffc2ccb4c4e514a77e80d407b6d59}
+\index{Vector3D@{Vector3D}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator-\/=(const Vector3\+D \&other)}{operator-=(const Vector3D &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} \& Vector3\+D\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector3D_a799f712590c47cc435b929718586555c}{}\label{classVector3D_a799f712590c47cc435b929718586555c}
+\index{Vector3D@{Vector3D}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator/(const double \&scalar) const }{operator/(const double &scalar) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Vector3\+D\+::operator/ (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{scalar}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_a1e2eebf652124da9f50013848c64821b}{}\label{classVector3D_a1e2eebf652124da9f50013848c64821b}
+\index{Vector3D@{Vector3D}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator/=(const double \&scalar)}{operator/=(const double &scalar)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} \& Vector3\+D\+::operator/= (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{scalar}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector3D_ac916f188b52f903688d475d8aa6c17fa}{}\label{classVector3D_ac916f188b52f903688d475d8aa6c17fa}
+\index{Vector3D@{Vector3D}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator[](unsigned int index)}{operator[](unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}double \& Vector3\+D\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector3D_a4dcadc12bb40086b075c9559b78ed8d2}{}\label{classVector3D_a4dcadc12bb40086b075c9559b78ed8d2}
+\index{Vector3D@{Vector3D}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator[](unsigned int index) const }{operator[](unsigned int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}const double \& Vector3\+D\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_a653358f2fe88720a55f3285103da2b9c}{}\label{classVector3D_a653358f2fe88720a55f3285103da2b9c}
+\index{Vector3D@{Vector3D}!print@{print}}
+\index{print@{print}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const }{print(std::ostream &sink) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& Vector3\+D\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classVector3D_adbaa018adf859ca3cfa224a5f10c688a}{}\label{classVector3D_adbaa018adf859ca3cfa224a5f10c688a}
+\index{Vector3D@{Vector3D}!reflect\+Around@{reflect\+Around}}
+\index{reflect\+Around@{reflect\+Around}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{reflect\+Around(const Vector3\+D \&normal) const }{reflectAround(const Vector3D &normal) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Vector3\+D\+::reflect\+Around (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{normal}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_aa29c8639f4cf9515821a1fc12fb74648}{}\label{classVector3D_aa29c8639f4cf9515821a1fc12fb74648}
+\index{Vector3D@{Vector3D}!refract\+Around@{refract\+Around}}
+\index{refract\+Around@{refract\+Around}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{refract\+Around(\+Vector3\+D normal, double refractive\+\_\+index) const }{refractAround(Vector3D normal, double refractive_index) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Vector3\+D\+::refract\+Around (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{normal, }
+\item[{double}]{refractive\+\_\+index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector3D_a7fabd6f9459f6a6dda863777d81bd525}{}\label{classVector3D_a7fabd6f9459f6a6dda863777d81bd525}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Vector3D@{Vector3D}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink, }
+\item[{const {\bf Vector3D} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classVector3D_a63f31894e510c707624cd63bafd31487}{}\label{classVector3D_a63f31894e510c707624cd63bafd31487}
+
+
+\subsection{Member Data Documentation}
+\index{Vector3D@{Vector3D}!x@{x}}
+\index{x@{x}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}double Vector3\+D\+::x\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classVector3D_a3c086dfccfc57dd996e9b8600098a430}{}\label{classVector3D_a3c086dfccfc57dd996e9b8600098a430}
+\index{Vector3D@{Vector3D}!y@{y}}
+\index{y@{y}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}double Vector3\+D\+::y\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classVector3D_adcec384756103d26d1181e45d5a0fd78}{}\label{classVector3D_adcec384756103d26d1181e45d5a0fd78}
+\index{Vector3D@{Vector3D}!z@{z}}
+\index{z@{z}!Vector3D@{Vector3D}}
+\subsubsection[{\texorpdfstring{z}{z}}]{\setlength{\rightskip}{0pt plus 5cm}double Vector3\+D\+::z\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classVector3D_a7321f3ff785f275c4d83f7d1b951752a}{}\label{classVector3D_a7321f3ff785f275c4d83f7d1b951752a}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Vector3D_8h}{Vector3\+D.\+h}\item 
+src/\hyperlink{Vector3D_8cpp}{Vector3\+D.\+cpp}\end{DoxyCompactItemize}

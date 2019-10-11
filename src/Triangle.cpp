@@ -16,6 +16,12 @@ Triangle::Triangle(Vector3D p1, Vector3D p2, Vector3D p3, Material mat):material
                          {utility::min(p1[2], p2[2], p3[2])-2*utility::EPSILON, utility::max(p1[2], p2[2], p3[2])+2*utility::EPSILON});
 }
 
+/**
+ * @brief Checks whether the point p lies in this triangle
+ * @see https://en.wikipedia.org/wiki/Barycentric_coordinate_system
+ * @param p Point in 3D-Space
+ * @return Whether p lies in this triangle
+ */
 bool Triangle::inTriangle(Vector3D p) const {
     //assert(onPlane(p, utility::EPSILON));           //TODO: Why is this assert being triggered?
 
@@ -24,12 +30,7 @@ bool Triangle::inTriangle(Vector3D p) const {
     beta = (p3-p).cross(p1-p).norm();
     gamma = (p2-p).cross(p1-p).norm();
 
-    if(utility::equals_about(alpha+beta+gamma, area2, utility::EPSILON))
-    {
-        return true;
-    }
-
-    return false;
+    return utility::equals_about(alpha+beta+gamma, area2, utility::EPSILON);
 }
 
 Intersection Triangle::rayIntersect(const Ray &ray) const {

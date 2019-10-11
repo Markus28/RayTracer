@@ -1,0 +1,105 @@
+\hypertarget{classsymcpp_1_1Exponential}{}\section{symcpp\+:\+:Exponential Class Reference}
+\label{classsymcpp_1_1Exponential}\index{symcpp\+::\+Exponential@{symcpp\+::\+Exponential}}
+
+
+{\ttfamily \#include $<$Exponential.\+h$>$}
+
+
+
+Inheritance diagram for symcpp\+:\+:Exponential\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classsymcpp_1_1Exponential__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for symcpp\+:\+:Exponential\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classsymcpp_1_1Exponential__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Exponential_ad6ea3a357a471f75e28761c9a9f0d54d}{copy} () const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Exponential_a099298ffa8721a8bb646d98518542d24}{simplify} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classsymcpp_1_1Exponential_aa36daedb8bf7bfe74f7f5ef85e448a7f}{op} (double x) const override
+\item 
+std\+::ostream \& \hyperlink{classsymcpp_1_1Exponential_a2af4d6f507139799516d960293f74343}{print} (std\+::ostream \&sink) const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Exponential_a73f9208294626b48e2385a08e761b846}{partial\+\_\+derivative} () const override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{symcpp\+::\+Exponential@{symcpp\+::\+Exponential}!copy@{copy}}
+\index{copy@{copy}!symcpp\+::\+Exponential@{symcpp\+::\+Exponential}}
+\subsubsection[{\texorpdfstring{copy() const override}{copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Exponential\+::copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Exponential_ad6ea3a357a471f75e28761c9a9f0d54d}{}\label{classsymcpp_1_1Exponential_ad6ea3a357a471f75e28761c9a9f0d54d}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a2e7de5a295ccf0efdc9b34cea7ba3d0b}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Exponential@{symcpp\+::\+Exponential}!op@{op}}
+\index{op@{op}!symcpp\+::\+Exponential@{symcpp\+::\+Exponential}}
+\subsubsection[{\texorpdfstring{op(double x) const override}{op(double x) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Exponential\+::op (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Exponential_aa36daedb8bf7bfe74f7f5ef85e448a7f}{}\label{classsymcpp_1_1Exponential_aa36daedb8bf7bfe74f7f5ef85e448a7f}
+
+
+Implements \hyperlink{classsymcpp_1_1UnaryOperator_a679c3c46cad3a62bdd776ff836c7891e}{symcpp\+::\+Unary\+Operator}.
+
+\index{symcpp\+::\+Exponential@{symcpp\+::\+Exponential}!partial\+\_\+derivative@{partial\+\_\+derivative}}
+\index{partial\+\_\+derivative@{partial\+\_\+derivative}!symcpp\+::\+Exponential@{symcpp\+::\+Exponential}}
+\subsubsection[{\texorpdfstring{partial\+\_\+derivative() const override}{partial_derivative() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Exponential\+::partial\+\_\+derivative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Exponential_a73f9208294626b48e2385a08e761b846}{}\label{classsymcpp_1_1Exponential_a73f9208294626b48e2385a08e761b846}
+
+
+Implements \hyperlink{classsymcpp_1_1UnaryOperator_a85de3214870cd72edc63ac1c221ddeee}{symcpp\+::\+Unary\+Operator}.
+
+\index{symcpp\+::\+Exponential@{symcpp\+::\+Exponential}!print@{print}}
+\index{print@{print}!symcpp\+::\+Exponential@{symcpp\+::\+Exponential}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& symcpp\+::\+Exponential\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Exponential_a2af4d6f507139799516d960293f74343}{}\label{classsymcpp_1_1Exponential_a2af4d6f507139799516d960293f74343}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_af37e13032a40f2da4d2866eaa8658049}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Exponential@{symcpp\+::\+Exponential}!simplify@{simplify}}
+\index{simplify@{simplify}!symcpp\+::\+Exponential@{symcpp\+::\+Exponential}}
+\subsubsection[{\texorpdfstring{simplify() override}{simplify() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Exponential\+::simplify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Exponential_a099298ffa8721a8bb646d98518542d24}{}\label{classsymcpp_1_1Exponential_a099298ffa8721a8bb646d98518542d24}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_ab1fa6e55eea0682250d013f28db26cd2}{symcpp\+::\+Expression}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/symcpp/\hyperlink{Exponential_8h}{Exponential.\+h}\item 
+src/symcpp/\hyperlink{Exponential_8cpp}{Exponential.\+cpp}\end{DoxyCompactItemize}

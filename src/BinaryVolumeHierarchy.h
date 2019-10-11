@@ -7,6 +7,9 @@
 
 struct BVHNode;
 
+/**
+ * @brief Accelerationstructure for ensemble of bounded volumes
+ */
 class BinaryVolumeHierarchy: public BoundedVolume {
 public:
     BinaryVolumeHierarchy(std::vector<BoundedVolume*>::iterator b, std::vector<BoundedVolume*>::iterator e);

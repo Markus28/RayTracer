@@ -1,0 +1,53 @@
+\hypertarget{classVariable}{}\section{Variable Class Reference}
+\label{classVariable}\index{Variable@{Variable}}
+
+
+Inheritance diagram for Variable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classVariable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Variable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classVariable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Variable} (std\+::string name)\hypertarget{classVariable_aa577850f5c43638f1042bb4fc1356c25}{}\label{classVariable_aa577850f5c43638f1042bb4fc1356c25}
+
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classExpression}{Expression} $>$ {\bfseries copy} () const override\hypertarget{classVariable_a55ddb36d00d75c3c9d260209aeefef4a}{}\label{classVariable_a55ddb36d00d75c3c9d260209aeefef4a}
+
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classExpression}{Expression} $>$ {\bfseries diff} (std\+::string v) const override\hypertarget{classVariable_a15f232f8e34914a3ca99721eb2c3e54c}{}\label{classVariable_a15f232f8e34914a3ca99721eb2c3e54c}
+
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classExpression}{Expression} $>$ {\bfseries simplify} () override\hypertarget{classVariable_ae60be91921542c1e771dcf411bb2657d}{}\label{classVariable_ae60be91921542c1e771dcf411bb2657d}
+
+\item 
+double {\bfseries subs} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override\hypertarget{classVariable_aa31e75d7ede4cf20a48274d72489a048}{}\label{classVariable_aa31e75d7ede4cf20a48274d72489a048}
+
+\item 
+unsigned int {\bfseries precedence} () const override\hypertarget{classVariable_a6f1627d843f6376e29cf6b69bd67ede9}{}\label{classVariable_a6f1627d843f6376e29cf6b69bd67ede9}
+
+\item 
+bool {\bfseries is\+\_\+constant} () const override\hypertarget{classVariable_a160e7890ce510ab9d37c74ccbd0d56db}{}\label{classVariable_a160e7890ce510ab9d37c74ccbd0d56db}
+
+\item 
+double {\bfseries const\+\_\+eval} () const override\hypertarget{classVariable_a600a12f30dce7f130828c1e58af44c04}{}\label{classVariable_a600a12f30dce7f130828c1e58af44c04}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/symcpp/Variable.\+h\item 
+src/symcpp/Variable.\+cpp\end{DoxyCompactItemize}

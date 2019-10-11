@@ -1,0 +1,193 @@
+\hypertarget{classSimpleSphere}{}\section{Simple\+Sphere Class Reference}
+\label{classSimpleSphere}\index{Simple\+Sphere@{Simple\+Sphere}}
+
+
+A simple, uniformly textured sphere, implements \hyperlink{classRenderObject}{Render\+Object}.  
+
+
+
+
+{\ttfamily \#include $<$Simple\+Sphere.\+h$>$}
+
+
+
+Inheritance diagram for Simple\+Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classSimpleSphere__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simple\+Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSimpleSphere__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSimpleSphere_ae893a4b886a92fe81e1b46766faaf6cd}{Simple\+Sphere} (\hyperlink{classVector3D}{Vector3D} \hyperlink{classSimpleSphere_af432089b8146295c77f52f22835bf1ab}{center}, double \hyperlink{classSimpleSphere_ad69dbac136ee99110f41b7b84656b144}{radius}, \hyperlink{classMaterial}{Material} \hyperlink{classSimpleSphere_abfb049ac4dabb0c7fbb78d7791e33e42}{material})
+\item 
+bool \hyperlink{classSimpleSphere_aa86dd85d74a4fda533a7dda26ff2ed85}{on\+Sphere} (\hyperlink{classVector3D}{Vector3D} pt, double epsilon) const 
+\item 
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classSimpleSphere_aa16a61ff59fe30d968b8f2284219b64f}{intersect\+Properties} (const \hyperlink{classRay}{Ray} \&ray) const override
+\begin{DoxyCompactList}\small\item\em If ray intersects this object, this method will provide additional Information. \end{DoxyCompactList}\item 
+\hyperlink{classIntersection}{Intersection} \hyperlink{classSimpleSphere_a657a5c5ba7a2e0621a49923de9f7ea45}{ray\+Intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
+\begin{DoxyCompactList}\small\item\em Method to detect intersection of ray and object. \end{DoxyCompactList}\item 
+std\+::ostream \& \hyperlink{classSimpleSphere_a2da3c9e41a8d8e6ec4012343ea0fa793}{print} (std\+::ostream \&sink) const override
+\item 
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classSimpleSphere_a95670bb33ef32e61dc4c2750ac9cf5a3}{get\+Bounds} () const override
+\item 
+\hyperlink{classSimpleSphere_a7ffaeb08624ecd5c91ed88c10f2fbff7}{$\sim$\+Simple\+Sphere} () override=default
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classSimpleSphere_a3661d89a607462f612c1e751b76e4556}{get\+Normal} (\hyperlink{classVector3D}{Vector3D} pt) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classSimpleSphere_af432089b8146295c77f52f22835bf1ab}{center}
+\item 
+double \hyperlink{classSimpleSphere_ad69dbac136ee99110f41b7b84656b144}{radius}
+\item 
+\hyperlink{classMaterial}{Material} \hyperlink{classSimpleSphere_abfb049ac4dabb0c7fbb78d7791e33e42}{material}
+\item 
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classSimpleSphere_a9e528c29b08c4b70c8b707343576ec57}{bounds}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple, uniformly textured sphere, implements \hyperlink{classRenderObject}{Render\+Object}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Simple\+Sphere@{Simple\+Sphere}!Simple\+Sphere@{Simple\+Sphere}}
+\index{Simple\+Sphere@{Simple\+Sphere}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{Simple\+Sphere(\+Vector3\+D center, double radius, Material material)}{SimpleSphere(Vector3D center, double radius, Material material)}}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Sphere\+::\+Simple\+Sphere (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{center, }
+\item[{double}]{radius, }
+\item[{{\bf Material}}]{material}
+\end{DoxyParamCaption}
+)}\hypertarget{classSimpleSphere_ae893a4b886a92fe81e1b46766faaf6cd}{}\label{classSimpleSphere_ae893a4b886a92fe81e1b46766faaf6cd}
+\index{Simple\+Sphere@{Simple\+Sphere}!````~Simple\+Sphere@{$\sim$\+Simple\+Sphere}}
+\index{````~Simple\+Sphere@{$\sim$\+Simple\+Sphere}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{$\sim$\+Simple\+Sphere() override=default}{~SimpleSphere() override=default}}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Sphere\+::$\sim$\+Simple\+Sphere (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}\hypertarget{classSimpleSphere_a7ffaeb08624ecd5c91ed88c10f2fbff7}{}\label{classSimpleSphere_a7ffaeb08624ecd5c91ed88c10f2fbff7}
+
+
+\subsection{Member Function Documentation}
+\index{Simple\+Sphere@{Simple\+Sphere}!get\+Bounds@{get\+Bounds}}
+\index{get\+Bounds@{get\+Bounds}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{get\+Bounds() const override}{getBounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Simple\+Sphere\+::get\+Bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimpleSphere_a95670bb33ef32e61dc4c2750ac9cf5a3}{}\label{classSimpleSphere_a95670bb33ef32e61dc4c2750ac9cf5a3}
+
+
+Implements \hyperlink{classBoundedVolume_a3d912b7028f7046fe18c4edf3a400e3b}{Bounded\+Volume}.
+
+\index{Simple\+Sphere@{Simple\+Sphere}!get\+Normal@{get\+Normal}}
+\index{get\+Normal@{get\+Normal}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{get\+Normal(\+Vector3\+D pt) const }{getNormal(Vector3D pt) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Simple\+Sphere\+::get\+Normal (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classSimpleSphere_a3661d89a607462f612c1e751b76e4556}{}\label{classSimpleSphere_a3661d89a607462f612c1e751b76e4556}
+\index{Simple\+Sphere@{Simple\+Sphere}!intersect\+Properties@{intersect\+Properties}}
+\index{intersect\+Properties@{intersect\+Properties}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{intersect\+Properties(const Ray \&ray) const override}{intersectProperties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Simple\+Sphere\+::intersect\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ray} \&}]{ray}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimpleSphere_aa16a61ff59fe30d968b8f2284219b64f}{}\label{classSimpleSphere_aa16a61ff59fe30d968b8f2284219b64f}
+
+
+If ray intersects this object, this method will provide additional Information. 
+
+Note, that even if ray\+Intersect detected an intersection, this method might not be called. It is called iff the Intersection-\/\+Object returned by ray\+Intersect contains a pointer to this object and no other object in the rendered scene returned an intersection that was closer to the camera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & the ray in question \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} object containing the surface normal and material information 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRenderObject_ae2c6d699741385dcd9ea6a1b09f9b7f0}{Render\+Object}.
+
+\index{Simple\+Sphere@{Simple\+Sphere}!on\+Sphere@{on\+Sphere}}
+\index{on\+Sphere@{on\+Sphere}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{on\+Sphere(\+Vector3\+D pt, double epsilon) const }{onSphere(Vector3D pt, double epsilon) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\+Sphere\+::on\+Sphere (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{pt, }
+\item[{double}]{epsilon}
+\end{DoxyParamCaption}
+) const}\hypertarget{classSimpleSphere_aa86dd85d74a4fda533a7dda26ff2ed85}{}\label{classSimpleSphere_aa86dd85d74a4fda533a7dda26ff2ed85}
+\index{Simple\+Sphere@{Simple\+Sphere}!print@{print}}
+\index{print@{print}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& Simple\+Sphere\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimpleSphere_a2da3c9e41a8d8e6ec4012343ea0fa793}{}\label{classSimpleSphere_a2da3c9e41a8d8e6ec4012343ea0fa793}
+
+
+Implements \hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}.
+
+\index{Simple\+Sphere@{Simple\+Sphere}!ray\+Intersect@{ray\+Intersect}}
+\index{ray\+Intersect@{ray\+Intersect}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{ray\+Intersect(const Ray \&ray) const override}{rayIntersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Simple\+Sphere\+::ray\+Intersect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ray} \&}]{ray}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimpleSphere_a657a5c5ba7a2e0621a49923de9f7ea45}{}\label{classSimpleSphere_a657a5c5ba7a2e0621a49923de9f7ea45}
+
+
+Method to detect intersection of ray and object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & The ray in question \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classIntersection}{Intersection} object containing distance to intersection and pointer to intersected object 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRenderObject_a681f6674d94f16c4df69605d5e42d05c}{Render\+Object}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Simple\+Sphere@{Simple\+Sphere}!bounds@{bounds}}
+\index{bounds@{bounds}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{bounds}{bounds}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Simple\+Sphere\+::bounds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSimpleSphere_a9e528c29b08c4b70c8b707343576ec57}{}\label{classSimpleSphere_a9e528c29b08c4b70c8b707343576ec57}
+\index{Simple\+Sphere@{Simple\+Sphere}!center@{center}}
+\index{center@{center}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{center}{center}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Simple\+Sphere\+::center\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSimpleSphere_af432089b8146295c77f52f22835bf1ab}{}\label{classSimpleSphere_af432089b8146295c77f52f22835bf1ab}
+\index{Simple\+Sphere@{Simple\+Sphere}!material@{material}}
+\index{material@{material}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{material}{material}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material} Simple\+Sphere\+::material\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSimpleSphere_abfb049ac4dabb0c7fbb78d7791e33e42}{}\label{classSimpleSphere_abfb049ac4dabb0c7fbb78d7791e33e42}
+\index{Simple\+Sphere@{Simple\+Sphere}!radius@{radius}}
+\index{radius@{radius}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{radius}{radius}}]{\setlength{\rightskip}{0pt plus 5cm}double Simple\+Sphere\+::radius\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSimpleSphere_ad69dbac136ee99110f41b7b84656b144}{}\label{classSimpleSphere_ad69dbac136ee99110f41b7b84656b144}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{SimpleSphere_8h}{Simple\+Sphere.\+h}\item 
+src/\hyperlink{SimpleSphere_8cpp}{Simple\+Sphere.\+cpp}\end{DoxyCompactItemize}

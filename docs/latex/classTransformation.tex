@@ -1,0 +1,157 @@
+\hypertarget{classTransformation}{}\section{Transformation Class Reference}
+\label{classTransformation}\index{Transformation@{Transformation}}
+
+
+\hyperlink{classTransformation}{Transformation} objects represent angle-\/preserving transformations.  
+
+
+
+
+{\ttfamily \#include $<$Transformation.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTransformation_ae3e048a4a35f5f0acf55d8bf5fe8e3e5}{Transformation} (\hyperlink{classMatrix3D}{Matrix3D} A, \hyperlink{classVector3D}{Vector3D} v, double s)
+\begin{DoxyCompactList}\small\item\em Construct \hyperlink{classTransformation}{Transformation} from Orthogonal Matrix A, translation and scaling-\/factor. \end{DoxyCompactList}\item 
+\hyperlink{classTransformation_a2dec7609284e83c0e9c95775d980e2e9}{Transformation} (\hyperlink{classVector3D}{Vector3D} v, double psi, double theta, double phi, double s)
+\begin{DoxyCompactList}\small\item\em Construct the \hyperlink{classTransformation}{Transformation} from euler angles, translation and scaling-\/factor. \end{DoxyCompactList}\item 
+void \hyperlink{classTransformation_aca9cdb9c2382334ee62b53903b1b5738}{compose\+\_\+back} (const \hyperlink{classTransformation}{Transformation} \&b)
+\begin{DoxyCompactList}\small\item\em Compose this transformation with b. \end{DoxyCompactList}\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classTransformation_aff15bea6054cd51532839fe8c92b39b9}{transform} (const \hyperlink{classVector3D}{Vector3D} \&v) const 
+\begin{DoxyCompactList}\small\item\em Apply this transformation to v in 3D space. \end{DoxyCompactList}\item 
+\hyperlink{classRay}{Ray} {\bfseries transform} (const \hyperlink{classRay}{Ray} \&ray) const \hypertarget{classTransformation_a6ecf5c3802accfe965fb5989a5be80b7}{}\label{classTransformation_a6ecf5c3802accfe965fb5989a5be80b7}
+
+\item 
+\hyperlink{classRay}{Ray} {\bfseries inverse\+\_\+transform} (const \hyperlink{classRay}{Ray} \&ray) const \hypertarget{classTransformation_a8217c2fb0be988e5a028b085340e6536}{}\label{classTransformation_a8217c2fb0be988e5a028b085340e6536}
+
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classTransformation_a958e65a5318fba3e3504e8f0fcc84916}{inverse\+\_\+transform} (const \hyperlink{classVector3D}{Vector3D} \&v) const 
+\begin{DoxyCompactList}\small\item\em The inverse to \hyperlink{classTransformation_aff15bea6054cd51532839fe8c92b39b9}{Transformation\+::transform}. \end{DoxyCompactList}\item 
+\hyperlink{classVector3D}{Vector3D} {\bfseries rotate} (const \hyperlink{classVector3D}{Vector3D} \&v) const \hypertarget{classTransformation_a04d3668e4bdaf28b67dbf59bc100b4bf}{}\label{classTransformation_a04d3668e4bdaf28b67dbf59bc100b4bf}
+
+\item 
+\hyperlink{classVector3D}{Vector3D} {\bfseries inverse\+\_\+rotate} (const \hyperlink{classVector3D}{Vector3D} \&v) const \hypertarget{classTransformation_aec723b4314e791d93693b3c8bfcdffad}{}\label{classTransformation_aec723b4314e791d93693b3c8bfcdffad}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classTransformation}{Transformation} objects represent angle-\/preserving transformations. 
+
+These transformations are modelled as a composition of a transition, a rotation (i.\+e. orthogonal linear transform) and a scaling step. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Transformation@{Transformation}!Transformation@{Transformation}}
+\index{Transformation@{Transformation}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{Transformation(\+Matrix3\+D A, Vector3\+D v, double s)}{Transformation(Matrix3D A, Vector3D v, double s)}}]{\setlength{\rightskip}{0pt plus 5cm}Transformation\+::\+Transformation (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix3D}}]{A, }
+\item[{{\bf Vector3D}}]{v, }
+\item[{double}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{classTransformation_ae3e048a4a35f5f0acf55d8bf5fe8e3e5}{}\label{classTransformation_ae3e048a4a35f5f0acf55d8bf5fe8e3e5}
+
+
+Construct \hyperlink{classTransformation}{Transformation} from Orthogonal Matrix A, translation and scaling-\/factor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & Orthogonal Matrix describing rotation \\
+\hline
+{\em v} & Translation \\
+\hline
+{\em s} & Scaling Factor \\
+\hline
+\end{DoxyParams}
+\index{Transformation@{Transformation}!Transformation@{Transformation}}
+\index{Transformation@{Transformation}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{Transformation(\+Vector3\+D v, double psi, double theta, double phi, double s)}{Transformation(Vector3D v, double psi, double theta, double phi, double s)}}]{\setlength{\rightskip}{0pt plus 5cm}Transformation\+::\+Transformation (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{v, }
+\item[{double}]{psi, }
+\item[{double}]{theta, }
+\item[{double}]{phi, }
+\item[{double}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{classTransformation_a2dec7609284e83c0e9c95775d980e2e9}{}\label{classTransformation_a2dec7609284e83c0e9c95775d980e2e9}
+
+
+Construct the \hyperlink{classTransformation}{Transformation} from euler angles, translation and scaling-\/factor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The translation \\
+\hline
+{\em psi} & Euler angle 1 \\
+\hline
+{\em theta} & Euler angle 2 \\
+\hline
+{\em phi} & Euler angle 3 \\
+\hline
+{\em s} & Scaling Factor \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Transformation@{Transformation}!compose\+\_\+back@{compose\+\_\+back}}
+\index{compose\+\_\+back@{compose\+\_\+back}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{compose\+\_\+back(const Transformation \&b)}{compose_back(const Transformation &b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Transformation\+::compose\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transformation} \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classTransformation_aca9cdb9c2382334ee62b53903b1b5738}{}\label{classTransformation_aca9cdb9c2382334ee62b53903b1b5738}
+
+
+Compose this transformation with b. 
+
+From now on b will be applied first, the the original transformation. 
+\begin{DoxyParams}{Parameters}
+{\em b} & Other transformation \\
+\hline
+\end{DoxyParams}
+\index{Transformation@{Transformation}!inverse\+\_\+transform@{inverse\+\_\+transform}}
+\index{inverse\+\_\+transform@{inverse\+\_\+transform}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{inverse\+\_\+transform(const Vector3\+D \&v) const }{inverse_transform(const Vector3D &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Transformation\+::inverse\+\_\+transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classTransformation_a958e65a5318fba3e3504e8f0fcc84916}{}\label{classTransformation_a958e65a5318fba3e3504e8f0fcc84916}
+
+
+The inverse to \hyperlink{classTransformation_aff15bea6054cd51532839fe8c92b39b9}{Transformation\+::transform}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector that is supposed to be transformed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector 
+\end{DoxyReturn}
+\index{Transformation@{Transformation}!transform@{transform}}
+\index{transform@{transform}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{transform(const Vector3\+D \&v) const }{transform(const Vector3D &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Transformation\+::transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classTransformation_aff15bea6054cd51532839fe8c92b39b9}{}\label{classTransformation_aff15bea6054cd51532839fe8c92b39b9}
+
+
+Apply this transformation to v in 3D space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector that is supposed to be transformed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/linalg/Transformation.\+h\item 
+src/linalg/Transformation.\+cpp\end{DoxyCompactItemize}

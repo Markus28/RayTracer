@@ -7,6 +7,9 @@
 #include "BinaryVolumeHierarchy.h"
 #include "MTLLib.h"
 
+/**
+ * @brief Class for loading wavefront .obj files
+ */
 class OBJFile {
 public:
     OBJFile(const char* file_name, Material mat);

@@ -23,7 +23,7 @@ public:
 
     void advanceRay();
 
-    virtual ~Camera(){};
+    virtual ~Camera()=default;
 
 protected:
     Image image;

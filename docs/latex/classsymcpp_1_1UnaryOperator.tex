@@ -1,0 +1,162 @@
+\hypertarget{classsymcpp_1_1UnaryOperator}{}\section{symcpp\+:\+:Unary\+Operator Class Reference}
+\label{classsymcpp_1_1UnaryOperator}\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+
+
+{\ttfamily \#include $<$Unary\+Operator.\+h$>$}
+
+
+
+Inheritance diagram for symcpp\+:\+:Unary\+Operator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsymcpp_1_1UnaryOperator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for symcpp\+:\+:Unary\+Operator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classsymcpp_1_1UnaryOperator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsymcpp_1_1UnaryOperator_a23a8172db96675ebf1114f4f3f41b6f1}{Unary\+Operator} (const \hyperlink{classsymcpp_1_1Expression}{Expression} \&\hyperlink{classsymcpp_1_1UnaryOperator_a1558842963261562d2ef68e324822cba}{a})
+\item 
+\hyperlink{classsymcpp_1_1UnaryOperator_ad3aa899567a080eeb41cb850de310178}{Unary\+Operator} (std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \&\&\hyperlink{classsymcpp_1_1UnaryOperator_a1558842963261562d2ef68e324822cba}{a})
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1UnaryOperator_a73f6af837c67e65504e4bb82111d9557}{diff} (std\+::string v) const override
+\item 
+double \hyperlink{classsymcpp_1_1UnaryOperator_aa2296c73f9ca24a739fb8c3ff246fe0e}{subs} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override
+\item 
+unsigned int \hyperlink{classsymcpp_1_1UnaryOperator_a129a9c47390abceff31da35d7b847329}{precedence} () const override
+\item 
+bool \hyperlink{classsymcpp_1_1UnaryOperator_abb499ba635a63dfa605fc3639509ac1c}{is\+\_\+constant} () const override
+\item 
+double \hyperlink{classsymcpp_1_1UnaryOperator_ae44aa26276abde61e16be12814075d0a}{const\+\_\+eval} () const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1UnaryOperator_a1558842963261562d2ef68e324822cba}{a}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classsymcpp_1_1UnaryOperator_a679c3c46cad3a62bdd776ff836c7891e}{op} (double x) const =0
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1UnaryOperator_a85de3214870cd72edc63ac1c221ddeee}{partial\+\_\+derivative} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}!Unary\+Operator@{Unary\+Operator}}
+\index{Unary\+Operator@{Unary\+Operator}!symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+\subsubsection[{\texorpdfstring{Unary\+Operator(const Expression \&a)}{UnaryOperator(const Expression &a)}}]{\setlength{\rightskip}{0pt plus 5cm}symcpp\+::\+Unary\+Operator\+::\+Unary\+Operator (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expression} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsymcpp_1_1UnaryOperator_a23a8172db96675ebf1114f4f3f41b6f1}{}\label{classsymcpp_1_1UnaryOperator_a23a8172db96675ebf1114f4f3f41b6f1}
+\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}!Unary\+Operator@{Unary\+Operator}}
+\index{Unary\+Operator@{Unary\+Operator}!symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+\subsubsection[{\texorpdfstring{Unary\+Operator(std\+::unique\+\_\+ptr$<$ Expression $>$ \&\&a)}{UnaryOperator(std::unique_ptr< Expression > &&a)}}]{\setlength{\rightskip}{0pt plus 5cm}symcpp\+::\+Unary\+Operator\+::\+Unary\+Operator (
+\begin{DoxyParamCaption}
+\item[{std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ \&\&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsymcpp_1_1UnaryOperator_ad3aa899567a080eeb41cb850de310178}{}\label{classsymcpp_1_1UnaryOperator_ad3aa899567a080eeb41cb850de310178}
+
+
+\subsection{Member Function Documentation}
+\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}!const\+\_\+eval@{const\+\_\+eval}}
+\index{const\+\_\+eval@{const\+\_\+eval}!symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+\subsubsection[{\texorpdfstring{const\+\_\+eval() const override}{const_eval() const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Unary\+Operator\+::const\+\_\+eval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1UnaryOperator_ae44aa26276abde61e16be12814075d0a}{}\label{classsymcpp_1_1UnaryOperator_ae44aa26276abde61e16be12814075d0a}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a81c8069347f586cb5632338d97c278ad}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}!diff@{diff}}
+\index{diff@{diff}!symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+\subsubsection[{\texorpdfstring{diff(std\+::string v) const override}{diff(std::string v) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Unary\+Operator\+::diff (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1UnaryOperator_a73f6af837c67e65504e4bb82111d9557}{}\label{classsymcpp_1_1UnaryOperator_a73f6af837c67e65504e4bb82111d9557}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a032fe8da79d5e231ca2d21a201c8f32d}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}!is\+\_\+constant@{is\+\_\+constant}}
+\index{is\+\_\+constant@{is\+\_\+constant}!symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+\subsubsection[{\texorpdfstring{is\+\_\+constant() const override}{is_constant() const override}}]{\setlength{\rightskip}{0pt plus 5cm}bool symcpp\+::\+Unary\+Operator\+::is\+\_\+constant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1UnaryOperator_abb499ba635a63dfa605fc3639509ac1c}{}\label{classsymcpp_1_1UnaryOperator_abb499ba635a63dfa605fc3639509ac1c}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a30db7917c8948e22330cbe8259caeae2}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}!op@{op}}
+\index{op@{op}!symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+\subsubsection[{\texorpdfstring{op(double x) const =0}{op(double x) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double symcpp\+::\+Unary\+Operator\+::op (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}\hypertarget{classsymcpp_1_1UnaryOperator_a679c3c46cad3a62bdd776ff836c7891e}{}\label{classsymcpp_1_1UnaryOperator_a679c3c46cad3a62bdd776ff836c7891e}
+
+
+Implemented in \hyperlink{classsymcpp_1_1Cosine_a0b476eebbffe0a2914a02bf6d14b05cd}{symcpp\+::\+Cosine}, \hyperlink{classsymcpp_1_1Sine_afb302fcff7d0a5e528f8fe5a2d111666}{symcpp\+::\+Sine}, \hyperlink{classsymcpp_1_1Exponential_aa36daedb8bf7bfe74f7f5ef85e448a7f}{symcpp\+::\+Exponential}, and \hyperlink{classsymcpp_1_1Logarithm_a349cbd26700ea28d18a42f6f8d7e722c}{symcpp\+::\+Logarithm}.
+
+\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}!partial\+\_\+derivative@{partial\+\_\+derivative}}
+\index{partial\+\_\+derivative@{partial\+\_\+derivative}!symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+\subsubsection[{\texorpdfstring{partial\+\_\+derivative() const =0}{partial_derivative() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::unique\+\_\+ptr$<${\bf Expression}$>$ symcpp\+::\+Unary\+Operator\+::partial\+\_\+derivative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}\hypertarget{classsymcpp_1_1UnaryOperator_a85de3214870cd72edc63ac1c221ddeee}{}\label{classsymcpp_1_1UnaryOperator_a85de3214870cd72edc63ac1c221ddeee}
+
+
+Implemented in \hyperlink{classsymcpp_1_1Exponential_a73f9208294626b48e2385a08e761b846}{symcpp\+::\+Exponential}, \hyperlink{classsymcpp_1_1Cosine_a92a24c87300b0e400f286b6ecc4eb1dd}{symcpp\+::\+Cosine}, \hyperlink{classsymcpp_1_1Logarithm_ab5cb1daed6613731d15ee13d17c48f7b}{symcpp\+::\+Logarithm}, and \hyperlink{classsymcpp_1_1Sine_ac7978c7094ce614049521c4d9cfd0827}{symcpp\+::\+Sine}.
+
+\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}!precedence@{precedence}}
+\index{precedence@{precedence}!symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+\subsubsection[{\texorpdfstring{precedence() const override}{precedence() const override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int symcpp\+::\+Unary\+Operator\+::precedence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1UnaryOperator_a129a9c47390abceff31da35d7b847329}{}\label{classsymcpp_1_1UnaryOperator_a129a9c47390abceff31da35d7b847329}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a181c162d5740faac392ffdca26bfca0c}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}!subs@{subs}}
+\index{subs@{subs}!symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+\subsubsection[{\texorpdfstring{subs(const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override}{subs(const std::unordered_map< std::string, double > &env) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Unary\+Operator\+::subs (
+\begin{DoxyParamCaption}
+\item[{const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&}]{env}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1UnaryOperator_aa2296c73f9ca24a739fb8c3ff246fe0e}{}\label{classsymcpp_1_1UnaryOperator_aa2296c73f9ca24a739fb8c3ff246fe0e}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_aaef29b0afa2d6c21fe35f47a1be76134}{symcpp\+::\+Expression}.
+
+
+
+\subsection{Member Data Documentation}
+\index{symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}!a@{a}}
+\index{a@{a}!symcpp\+::\+Unary\+Operator@{symcpp\+::\+Unary\+Operator}}
+\subsubsection[{\texorpdfstring{a}{a}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Expression}$>$ symcpp\+::\+Unary\+Operator\+::a\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsymcpp_1_1UnaryOperator_a1558842963261562d2ef68e324822cba}{}\label{classsymcpp_1_1UnaryOperator_a1558842963261562d2ef68e324822cba}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/symcpp/\hyperlink{UnaryOperator_8h}{Unary\+Operator.\+h}\item 
+src/symcpp/\hyperlink{UnaryOperator_8cpp}{Unary\+Operator.\+cpp}\end{DoxyCompactItemize}

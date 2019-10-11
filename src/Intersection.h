@@ -5,6 +5,9 @@
 class RenderObject;
 
 
+/**
+ * @brief Class for storing information about intersection of a Ray and a RenderObject
+ */
 class Intersection {
 public:
     Intersection(const RenderObject* intersect, const double& d);

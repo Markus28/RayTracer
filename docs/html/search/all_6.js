@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['geo',['geo',['../main_8cpp.html#a80dad71f5da1a6ece62e02afb9c4ae88',1,'main.cpp']]],
+  ['get',['get',['../classUVMap.html#a26f2022608cfa0682c4c5f46b476d57a',1,'UVMap']]],
+  ['get_5ftype',['get_type',['../structsymcpp_1_1ComplexToken.html#a86c40584c46720a630fa840b5d330f63',1,'symcpp::ComplexToken']]],
+  ['getbounds',['getBounds',['../classBinaryVolumeHierarchy.html#af4875ad00fe5c6430067e00647918b5a',1,'BinaryVolumeHierarchy::getBounds()'],['../classBoundedVolume.html#a3d912b7028f7046fe18c4edf3a400e3b',1,'BoundedVolume::getBounds()'],['../classImplicitSurface.html#a8fd17a82a612fc8d15c5973cb497c48b',1,'ImplicitSurface::getBounds()'],['../classSimpleSphere.html#a95670bb33ef32e61dc4c2750ac9cf5a3',1,'SimpleSphere::getBounds()'],['../classTriangle.html#a90617660c39cf8b56621b5964c74a555',1,'Triangle::getBounds()']]],
+  ['getbvh',['getBVH',['../classOBJFile.html#ae3128b473a8b7b837364cc9688cb89dc',1,'OBJFile']]],
+  ['getcenter',['getCenter',['../classBoundingBox.html#ac53a80a384d0b7521d23cffdde09c8a7',1,'BoundingBox::getCenter()'],['../classInterval.html#ad502b7f22eb07d9ebba23cc9af869487',1,'Interval::getCenter()']]],
+  ['getcolor',['getColor',['../classBackground.html#a901242466450821f487a1967d94c6506',1,'Background']]],
+  ['getdistance',['getDistance',['../classDistantPointSource.html#a5d08b5655fc7fc09e5c0d2a0f3046e16',1,'DistantPointSource::getDistance()'],['../classIntersection.html#a18ecb6b6746d20976e3c53b92d1faaf3',1,'Intersection::getDistance()'],['../classLight.html#a4a7a5a9d4fc67da122c3ce75f6075093',1,'Light::getDistance()'],['../classPointSource.html#a5f1af9abccf0657b9398555c935bb8bc',1,'PointSource::getDistance()'],['../classSpotLight.html#a117f7918773e193f67714765c5370418',1,'SpotLight::getDistance()']]],
+  ['getindex',['getIndex',['../classMaterial.html#a428130c7697062cddb3e1b6d78f99c81',1,'Material']]],
+  ['getlightdirection',['getLightDirection',['../classDistantPointSource.html#a740ee32c41e2ef6deec1137c86f5b73a',1,'DistantPointSource::getLightDirection()'],['../classLight.html#ac075908cf22e9ca9f289c1226d133664',1,'Light::getLightDirection()'],['../classPointSource.html#a02a13a7b955088e32324bfb3d49b1ace',1,'PointSource::getLightDirection()'],['../classRandomLight.html#a70c038d63e66f520a296dccddcf9035f',1,'RandomLight::getLightDirection()'],['../classSpotLight.html#a051e210b637edf37bf2b8d49149a13a4',1,'SpotLight::getLightDirection()']]],
+  ['getmax',['getMax',['../classInterval.html#ab2fb3df4bc312013c19d54466d9d6470',1,'Interval']]],
+  ['getmin',['getMin',['../classInterval.html#aa90ef0b9050beabffcc789c3877cddd0',1,'Interval']]],
+  ['getnormal',['getNormal',['../classSimpleSphere.html#a3661d89a607462f612c1e751b76e4556',1,'SimpleSphere']]],
+  ['getobject',['getObject',['../classIntersection.html#a9d037e2c954f57dfa718a5cb3d96d58d',1,'Intersection']]],
+  ['getreflectivity',['getReflectivity',['../classMaterial.html#ae16a99e32e2c7cf394b68aa5d2ad207a',1,'Material']]],
+  ['gettransparency',['getTransparency',['../classMaterial.html#adf2e9e4aedf7a4474fd27c195aaa5fc9',1,'Material']]],
+  ['gettriangles',['getTriangles',['../classOBJFile.html#ad3d4291c00693d8cfcca416ac4ad7e03',1,'OBJFile::getTriangles()'],['../structFaceData.html#a44baad04081f79b94235c4faa92d9398',1,'FaceData::getTriangles()']]]
+];

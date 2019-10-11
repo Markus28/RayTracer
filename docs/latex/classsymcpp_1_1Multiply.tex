@@ -1,0 +1,182 @@
+\hypertarget{classsymcpp_1_1Multiply}{}\section{symcpp\+:\+:Multiply Class Reference}
+\label{classsymcpp_1_1Multiply}\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+
+
+{\ttfamily \#include $<$Multiply.\+h$>$}
+
+
+
+Inheritance diagram for symcpp\+:\+:Multiply\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classsymcpp_1_1Multiply__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for symcpp\+:\+:Multiply\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classsymcpp_1_1Multiply__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsymcpp_1_1Multiply_abe8b88c2ac3ecd7deb275b1cb1f5dd9d}{Multiply} (const \hyperlink{classsymcpp_1_1Expression}{Expression} \&\hyperlink{classsymcpp_1_1Multiply_a8ed32ccb235cea51161dd0fd25ea130d}{a}, const \hyperlink{classsymcpp_1_1Expression}{Expression} \&\hyperlink{classsymcpp_1_1Multiply_a3d7a1b6e6e35585098b25f8b3a59e6ae}{b})
+\item 
+\hyperlink{classsymcpp_1_1Multiply_abefbdc2703e4c56207fe9aa987097fe6}{Multiply} (std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \&\&\hyperlink{classsymcpp_1_1Multiply_a8ed32ccb235cea51161dd0fd25ea130d}{a}, std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \&\&\hyperlink{classsymcpp_1_1Multiply_a3d7a1b6e6e35585098b25f8b3a59e6ae}{b})
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Multiply_adcd57ab1c1a27eb10aeeb572cdd14e5e}{copy} () const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Multiply_a835e55ada54a6c1eeb6d02ceeef83198}{diff} (std\+::string v) const override
+\item 
+double \hyperlink{classsymcpp_1_1Multiply_a83a9396b931cd5010630f48ecd1bc2a1}{subs} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override
+\item 
+unsigned int \hyperlink{classsymcpp_1_1Multiply_afd9f779b82aa2d7a3be63e7b8b0e8eb1}{precedence} () const override
+\item 
+bool \hyperlink{classsymcpp_1_1Multiply_a771fc25f8bafd49600c31db11dd72256}{is\+\_\+constant} () const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Multiply_aff728e2edaa447f154918079b4e35a7e}{simplify} () override
+\item 
+double \hyperlink{classsymcpp_1_1Multiply_a1d9b8023ab0bf35c011eb7f3ee8d4c32}{const\+\_\+eval} () const override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classsymcpp_1_1Multiply_a8d6dbfc85d0609f40d52c0fc853a06b5}{print} (std\+::ostream \&sink) const override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Multiply_a8ed32ccb235cea51161dd0fd25ea130d}{a}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Multiply_a3d7a1b6e6e35585098b25f8b3a59e6ae}{b}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{Multiply(const Expression \&a, const Expression \&b)}{Multiply(const Expression &a, const Expression &b)}}]{\setlength{\rightskip}{0pt plus 5cm}symcpp\+::\+Multiply\+::\+Multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expression} \&}]{a, }
+\item[{const {\bf Expression} \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classsymcpp_1_1Multiply_abe8b88c2ac3ecd7deb275b1cb1f5dd9d}{}\label{classsymcpp_1_1Multiply_abe8b88c2ac3ecd7deb275b1cb1f5dd9d}
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{Multiply(std\+::unique\+\_\+ptr$<$ Expression $>$ \&\&a, std\+::unique\+\_\+ptr$<$ Expression $>$ \&\&b)}{Multiply(std::unique_ptr< Expression > &&a, std::unique_ptr< Expression > &&b)}}]{\setlength{\rightskip}{0pt plus 5cm}symcpp\+::\+Multiply\+::\+Multiply (
+\begin{DoxyParamCaption}
+\item[{std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ \&\&}]{a, }
+\item[{std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ \&\&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classsymcpp_1_1Multiply_abefbdc2703e4c56207fe9aa987097fe6}{}\label{classsymcpp_1_1Multiply_abefbdc2703e4c56207fe9aa987097fe6}
+
+
+\subsection{Member Function Documentation}
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!const\+\_\+eval@{const\+\_\+eval}}
+\index{const\+\_\+eval@{const\+\_\+eval}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{const\+\_\+eval() const override}{const_eval() const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Multiply\+::const\+\_\+eval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Multiply_a1d9b8023ab0bf35c011eb7f3ee8d4c32}{}\label{classsymcpp_1_1Multiply_a1d9b8023ab0bf35c011eb7f3ee8d4c32}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a81c8069347f586cb5632338d97c278ad}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!copy@{copy}}
+\index{copy@{copy}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{copy() const override}{copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Multiply\+::copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Multiply_adcd57ab1c1a27eb10aeeb572cdd14e5e}{}\label{classsymcpp_1_1Multiply_adcd57ab1c1a27eb10aeeb572cdd14e5e}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a2e7de5a295ccf0efdc9b34cea7ba3d0b}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!diff@{diff}}
+\index{diff@{diff}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{diff(std\+::string v) const override}{diff(std::string v) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Multiply\+::diff (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Multiply_a835e55ada54a6c1eeb6d02ceeef83198}{}\label{classsymcpp_1_1Multiply_a835e55ada54a6c1eeb6d02ceeef83198}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a032fe8da79d5e231ca2d21a201c8f32d}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!is\+\_\+constant@{is\+\_\+constant}}
+\index{is\+\_\+constant@{is\+\_\+constant}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{is\+\_\+constant() const override}{is_constant() const override}}]{\setlength{\rightskip}{0pt plus 5cm}bool symcpp\+::\+Multiply\+::is\+\_\+constant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Multiply_a771fc25f8bafd49600c31db11dd72256}{}\label{classsymcpp_1_1Multiply_a771fc25f8bafd49600c31db11dd72256}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a30db7917c8948e22330cbe8259caeae2}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!precedence@{precedence}}
+\index{precedence@{precedence}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{precedence() const override}{precedence() const override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int symcpp\+::\+Multiply\+::precedence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Multiply_afd9f779b82aa2d7a3be63e7b8b0e8eb1}{}\label{classsymcpp_1_1Multiply_afd9f779b82aa2d7a3be63e7b8b0e8eb1}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a181c162d5740faac392ffdca26bfca0c}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!print@{print}}
+\index{print@{print}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& symcpp\+::\+Multiply\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Multiply_a8d6dbfc85d0609f40d52c0fc853a06b5}{}\label{classsymcpp_1_1Multiply_a8d6dbfc85d0609f40d52c0fc853a06b5}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_af37e13032a40f2da4d2866eaa8658049}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!simplify@{simplify}}
+\index{simplify@{simplify}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{simplify() override}{simplify() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Multiply\+::simplify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Multiply_aff728e2edaa447f154918079b4e35a7e}{}\label{classsymcpp_1_1Multiply_aff728e2edaa447f154918079b4e35a7e}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_ab1fa6e55eea0682250d013f28db26cd2}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!subs@{subs}}
+\index{subs@{subs}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{subs(const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override}{subs(const std::unordered_map< std::string, double > &env) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Multiply\+::subs (
+\begin{DoxyParamCaption}
+\item[{const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&}]{env}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Multiply_a83a9396b931cd5010630f48ecd1bc2a1}{}\label{classsymcpp_1_1Multiply_a83a9396b931cd5010630f48ecd1bc2a1}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_aaef29b0afa2d6c21fe35f47a1be76134}{symcpp\+::\+Expression}.
+
+
+
+\subsection{Member Data Documentation}
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!a@{a}}
+\index{a@{a}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{a}{a}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Expression}$>$ symcpp\+::\+Multiply\+::a\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsymcpp_1_1Multiply_a8ed32ccb235cea51161dd0fd25ea130d}{}\label{classsymcpp_1_1Multiply_a8ed32ccb235cea51161dd0fd25ea130d}
+\index{symcpp\+::\+Multiply@{symcpp\+::\+Multiply}!b@{b}}
+\index{b@{b}!symcpp\+::\+Multiply@{symcpp\+::\+Multiply}}
+\subsubsection[{\texorpdfstring{b}{b}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Expression}$>$ symcpp\+::\+Multiply\+::b\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsymcpp_1_1Multiply_a3d7a1b6e6e35585098b25f8b3a59e6ae}{}\label{classsymcpp_1_1Multiply_a3d7a1b6e6e35585098b25f8b3a59e6ae}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/symcpp/\hyperlink{Multiply_8h}{Multiply.\+h}\item 
+src/symcpp/\hyperlink{Multiply_8cpp}{Multiply.\+cpp}\end{DoxyCompactItemize}

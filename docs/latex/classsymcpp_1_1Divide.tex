@@ -1,0 +1,182 @@
+\hypertarget{classsymcpp_1_1Divide}{}\section{symcpp\+:\+:Divide Class Reference}
+\label{classsymcpp_1_1Divide}\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+
+
+{\ttfamily \#include $<$Divide.\+h$>$}
+
+
+
+Inheritance diagram for symcpp\+:\+:Divide\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classsymcpp_1_1Divide__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for symcpp\+:\+:Divide\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classsymcpp_1_1Divide__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsymcpp_1_1Divide_a1399cc15ca3af6ed217c20cadb2694ad}{Divide} (const \hyperlink{classsymcpp_1_1Expression}{Expression} \&\hyperlink{classsymcpp_1_1Divide_a52eaf8a705da4ef10b1fa2b87e76d0d8}{a}, const \hyperlink{classsymcpp_1_1Expression}{Expression} \&\hyperlink{classsymcpp_1_1Divide_a122c034c19635c036d39fbf18b1b8348}{b})
+\item 
+\hyperlink{classsymcpp_1_1Divide_a010b104132d0341805ca34277422d867}{Divide} (const std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \&\hyperlink{classsymcpp_1_1Divide_a52eaf8a705da4ef10b1fa2b87e76d0d8}{a}, const std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \&\hyperlink{classsymcpp_1_1Divide_a122c034c19635c036d39fbf18b1b8348}{b})
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Divide_a6e4eeef806e8bded246e87d0036effee}{copy} () const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Divide_aeecc60e1759b81ea65b0b95a62ff38df}{diff} (std\+::string v) const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Divide_ab0e372a337f207a3e4c78fd1db9351a7}{simplify} () override
+\item 
+double \hyperlink{classsymcpp_1_1Divide_a85dcd571e1d2a188dcdc8090b7e90074}{subs} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override
+\item 
+unsigned int \hyperlink{classsymcpp_1_1Divide_a016fec0e409cff8d0cd2b53eea1fa6c3}{precedence} () const override
+\item 
+bool \hyperlink{classsymcpp_1_1Divide_a342ddc6fb6f80a37797bda030b4c7580}{is\+\_\+constant} () const override
+\item 
+double \hyperlink{classsymcpp_1_1Divide_a18ab0e9eddd473ee5400607b9e6ea2b0}{const\+\_\+eval} () const override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classsymcpp_1_1Divide_a113a96148c27f2d50a596c782f9a4005}{print} (std\+::ostream \&sink) const override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Divide_a52eaf8a705da4ef10b1fa2b87e76d0d8}{a}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Divide_a122c034c19635c036d39fbf18b1b8348}{b}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!Divide@{Divide}}
+\index{Divide@{Divide}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{Divide(const Expression \&a, const Expression \&b)}{Divide(const Expression &a, const Expression &b)}}]{\setlength{\rightskip}{0pt plus 5cm}symcpp\+::\+Divide\+::\+Divide (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expression} \&}]{a, }
+\item[{const {\bf Expression} \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classsymcpp_1_1Divide_a1399cc15ca3af6ed217c20cadb2694ad}{}\label{classsymcpp_1_1Divide_a1399cc15ca3af6ed217c20cadb2694ad}
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!Divide@{Divide}}
+\index{Divide@{Divide}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{Divide(const std\+::unique\+\_\+ptr$<$ Expression $>$ \&a, const std\+::unique\+\_\+ptr$<$ Expression $>$ \&b)}{Divide(const std::unique_ptr< Expression > &a, const std::unique_ptr< Expression > &b)}}]{\setlength{\rightskip}{0pt plus 5cm}symcpp\+::\+Divide\+::\+Divide (
+\begin{DoxyParamCaption}
+\item[{const std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ \&}]{a, }
+\item[{const std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classsymcpp_1_1Divide_a010b104132d0341805ca34277422d867}{}\label{classsymcpp_1_1Divide_a010b104132d0341805ca34277422d867}
+
+
+\subsection{Member Function Documentation}
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!const\+\_\+eval@{const\+\_\+eval}}
+\index{const\+\_\+eval@{const\+\_\+eval}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{const\+\_\+eval() const override}{const_eval() const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Divide\+::const\+\_\+eval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Divide_a18ab0e9eddd473ee5400607b9e6ea2b0}{}\label{classsymcpp_1_1Divide_a18ab0e9eddd473ee5400607b9e6ea2b0}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a81c8069347f586cb5632338d97c278ad}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!copy@{copy}}
+\index{copy@{copy}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{copy() const override}{copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Divide\+::copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Divide_a6e4eeef806e8bded246e87d0036effee}{}\label{classsymcpp_1_1Divide_a6e4eeef806e8bded246e87d0036effee}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a2e7de5a295ccf0efdc9b34cea7ba3d0b}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!diff@{diff}}
+\index{diff@{diff}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{diff(std\+::string v) const override}{diff(std::string v) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Divide\+::diff (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Divide_aeecc60e1759b81ea65b0b95a62ff38df}{}\label{classsymcpp_1_1Divide_aeecc60e1759b81ea65b0b95a62ff38df}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a032fe8da79d5e231ca2d21a201c8f32d}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!is\+\_\+constant@{is\+\_\+constant}}
+\index{is\+\_\+constant@{is\+\_\+constant}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{is\+\_\+constant() const override}{is_constant() const override}}]{\setlength{\rightskip}{0pt plus 5cm}bool symcpp\+::\+Divide\+::is\+\_\+constant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Divide_a342ddc6fb6f80a37797bda030b4c7580}{}\label{classsymcpp_1_1Divide_a342ddc6fb6f80a37797bda030b4c7580}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a30db7917c8948e22330cbe8259caeae2}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!precedence@{precedence}}
+\index{precedence@{precedence}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{precedence() const override}{precedence() const override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int symcpp\+::\+Divide\+::precedence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Divide_a016fec0e409cff8d0cd2b53eea1fa6c3}{}\label{classsymcpp_1_1Divide_a016fec0e409cff8d0cd2b53eea1fa6c3}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a181c162d5740faac392ffdca26bfca0c}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!print@{print}}
+\index{print@{print}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& symcpp\+::\+Divide\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Divide_a113a96148c27f2d50a596c782f9a4005}{}\label{classsymcpp_1_1Divide_a113a96148c27f2d50a596c782f9a4005}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_af37e13032a40f2da4d2866eaa8658049}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!simplify@{simplify}}
+\index{simplify@{simplify}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{simplify() override}{simplify() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Divide\+::simplify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Divide_ab0e372a337f207a3e4c78fd1db9351a7}{}\label{classsymcpp_1_1Divide_ab0e372a337f207a3e4c78fd1db9351a7}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_ab1fa6e55eea0682250d013f28db26cd2}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!subs@{subs}}
+\index{subs@{subs}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{subs(const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override}{subs(const std::unordered_map< std::string, double > &env) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Divide\+::subs (
+\begin{DoxyParamCaption}
+\item[{const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&}]{env}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Divide_a85dcd571e1d2a188dcdc8090b7e90074}{}\label{classsymcpp_1_1Divide_a85dcd571e1d2a188dcdc8090b7e90074}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_aaef29b0afa2d6c21fe35f47a1be76134}{symcpp\+::\+Expression}.
+
+
+
+\subsection{Member Data Documentation}
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!a@{a}}
+\index{a@{a}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{a}{a}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Expression}$>$ symcpp\+::\+Divide\+::a\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsymcpp_1_1Divide_a52eaf8a705da4ef10b1fa2b87e76d0d8}{}\label{classsymcpp_1_1Divide_a52eaf8a705da4ef10b1fa2b87e76d0d8}
+\index{symcpp\+::\+Divide@{symcpp\+::\+Divide}!b@{b}}
+\index{b@{b}!symcpp\+::\+Divide@{symcpp\+::\+Divide}}
+\subsubsection[{\texorpdfstring{b}{b}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Expression}$>$ symcpp\+::\+Divide\+::b\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsymcpp_1_1Divide_a122c034c19635c036d39fbf18b1b8348}{}\label{classsymcpp_1_1Divide_a122c034c19635c036d39fbf18b1b8348}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/symcpp/\hyperlink{Divide_8h}{Divide.\+h}\item 
+src/symcpp/\hyperlink{Divide_8cpp}{Divide.\+cpp}\end{DoxyCompactItemize}

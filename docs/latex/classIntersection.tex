@@ -1,0 +1,116 @@
+\hypertarget{classIntersection}{}\section{Intersection Class Reference}
+\label{classIntersection}\index{Intersection@{Intersection}}
+
+
+Class for storing information about intersection of a \hyperlink{classRay}{Ray} and a \hyperlink{classRenderObject}{Render\+Object}.  
+
+
+
+
+{\ttfamily \#include $<$Intersection.\+h$>$}
+
+
+
+Collaboration diagram for Intersection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classIntersection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIntersection_accfff54844dea1b64fce8ddb1c72f84d}{Intersection} (const \hyperlink{classRenderObject}{Render\+Object} $\ast$\hyperlink{classIntersection_a8241676dd0f240769dc189132dc3c5bb}{intersect}, const double \&d)
+\item 
+\hyperlink{classIntersection_a67497e3efe2793b23909052eeb82c4f3}{Intersection} ()
+\item 
+bool \hyperlink{classIntersection_a16a2464ecdda1f0c151436d27580241b}{does\+Intersect} ()
+\item 
+double \hyperlink{classIntersection_a18ecb6b6746d20976e3c53b92d1faaf3}{get\+Distance} () const 
+\item 
+const \hyperlink{classRenderObject}{Render\+Object} $\ast$ \hyperlink{classIntersection_a9d037e2c954f57dfa718a5cb3d96d58d}{get\+Object} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classRenderObject}{Render\+Object} $\ast$ \hyperlink{classIntersection_a8241676dd0f240769dc189132dc3c5bb}{intersect}
+\item 
+double \hyperlink{classIntersection_a65da854f067b6f08175a97d262a17f1e}{distance}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classIntersection_a955ab59fdb5154881d491eebc653250f}{operator$<$} (const \hyperlink{classIntersection}{Intersection} \&first, const \hyperlink{classIntersection}{Intersection} \&second)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for storing information about intersection of a \hyperlink{classRay}{Ray} and a \hyperlink{classRenderObject}{Render\+Object}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Intersection@{Intersection}!Intersection@{Intersection}}
+\index{Intersection@{Intersection}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{Intersection(const Render\+Object $\ast$intersect, const double \&d)}{Intersection(const RenderObject *intersect, const double &d)}}]{\setlength{\rightskip}{0pt plus 5cm}Intersection\+::\+Intersection (
+\begin{DoxyParamCaption}
+\item[{const {\bf Render\+Object} $\ast$}]{intersect, }
+\item[{const double \&}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{classIntersection_accfff54844dea1b64fce8ddb1c72f84d}{}\label{classIntersection_accfff54844dea1b64fce8ddb1c72f84d}
+\index{Intersection@{Intersection}!Intersection@{Intersection}}
+\index{Intersection@{Intersection}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{Intersection()}{Intersection()}}]{\setlength{\rightskip}{0pt plus 5cm}Intersection\+::\+Intersection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIntersection_a67497e3efe2793b23909052eeb82c4f3}{}\label{classIntersection_a67497e3efe2793b23909052eeb82c4f3}
+
+
+\subsection{Member Function Documentation}
+\index{Intersection@{Intersection}!does\+Intersect@{does\+Intersect}}
+\index{does\+Intersect@{does\+Intersect}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{does\+Intersect()}{doesIntersect()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Intersection\+::does\+Intersect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIntersection_a16a2464ecdda1f0c151436d27580241b}{}\label{classIntersection_a16a2464ecdda1f0c151436d27580241b}
+\index{Intersection@{Intersection}!get\+Distance@{get\+Distance}}
+\index{get\+Distance@{get\+Distance}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{get\+Distance() const }{getDistance() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Intersection\+::get\+Distance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classIntersection_a18ecb6b6746d20976e3c53b92d1faaf3}{}\label{classIntersection_a18ecb6b6746d20976e3c53b92d1faaf3}
+\index{Intersection@{Intersection}!get\+Object@{get\+Object}}
+\index{get\+Object@{get\+Object}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{get\+Object() const }{getObject() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Render\+Object} $\ast$ Intersection\+::get\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classIntersection_a9d037e2c954f57dfa718a5cb3d96d58d}{}\label{classIntersection_a9d037e2c954f57dfa718a5cb3d96d58d}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Intersection@{Intersection}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{operator$<$}{operator<}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Intersection} \&}]{first, }
+\item[{const {\bf Intersection} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classIntersection_a955ab59fdb5154881d491eebc653250f}{}\label{classIntersection_a955ab59fdb5154881d491eebc653250f}
+
+
+\subsection{Member Data Documentation}
+\index{Intersection@{Intersection}!distance@{distance}}
+\index{distance@{distance}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{distance}{distance}}]{\setlength{\rightskip}{0pt plus 5cm}double Intersection\+::distance\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIntersection_a65da854f067b6f08175a97d262a17f1e}{}\label{classIntersection_a65da854f067b6f08175a97d262a17f1e}
+\index{Intersection@{Intersection}!intersect@{intersect}}
+\index{intersect@{intersect}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{intersect}{intersect}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Render\+Object}$\ast$ Intersection\+::intersect\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIntersection_a8241676dd0f240769dc189132dc3c5bb}{}\label{classIntersection_a8241676dd0f240769dc189132dc3c5bb}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Intersection_8h}{Intersection.\+h}\item 
+src/\hyperlink{Intersection_8cpp}{Intersection.\+cpp}\end{DoxyCompactItemize}

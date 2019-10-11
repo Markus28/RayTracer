@@ -11,6 +11,9 @@ class Intersection;
 class Ray;
 
 
+/**
+ * @brief The Scene-Object is used to compose RenderObjects, Lights, the Background and render them
+ */
 class Scene {
 public:
     Scene(const std::vector<RenderObject*>& objects, const std::vector<Light*>& lights, Camera* camera, Vector3D background, Vector3D ambient);

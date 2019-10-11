@@ -1,0 +1,13 @@
+<map id="src/Light.h" name="src/Light.h">
+<area shape="rect" id="node2" href="$DistantPointSource_8h.html" title="src/DistantPointSource.h" alt="" coords="95,80,263,107"/>
+<area shape="rect" id="node5" href="$Light_8cpp.html" title="src/Light.cpp" alt="" coords="595,80,692,107"/>
+<area shape="rect" id="node6" href="$RandomLight_8h.html" title="src/RandomLight.h" alt="" coords="288,80,420,107"/>
+<area shape="rect" id="node8" href="$PointSource_8h.html" title="src/PointSource.h" alt="" coords="444,80,571,107"/>
+<area shape="rect" id="node10" href="$Scene_8cpp.html" title="src/Scene.cpp" alt="" coords="717,80,823,107"/>
+<area shape="rect" id="node11" href="$SpotLight_8h.html" title="src/SpotLight.h" alt="" coords="848,80,959,107"/>
+<area shape="rect" id="node3" href="$DistantPointSource_8cpp.html" title="src/DistantPointSource.cpp" alt="" coords="5,155,188,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="384,155,481,181"/>
+<area shape="rect" id="node7" href="$RandomLight_8cpp.html" title="src/RandomLight.cpp" alt="" coords="213,155,359,181"/>
+<area shape="rect" id="node9" href="$PointSource_8cpp.html" title="src/PointSource.cpp" alt="" coords="505,155,645,181"/>
+<area shape="rect" id="node12" href="$SpotLight_8cpp.html" title="src/SpotLight.cpp" alt="" coords="841,155,965,181"/>
+</map>

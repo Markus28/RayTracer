@@ -1,0 +1,4 @@
+<map id="PinHoleCamera" name="PinHoleCamera">
+<area shape="rect" id="node2" href="$classCamera.html" title="Camera" alt="" coords="187,139,255,165"/>
+<area shape="rect" id="node5" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="281,139,358,165"/>
+</map>

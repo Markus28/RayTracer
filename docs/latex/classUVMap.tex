@@ -1,0 +1,83 @@
+\hypertarget{classUVMap}{}\section{U\+V\+Map$<$ S, T $>$ Class Template Reference}
+\label{classUVMap}\index{U\+V\+Map$<$ S, T $>$@{U\+V\+Map$<$ S, T $>$}}
+
+
+{\ttfamily \#include $<$U\+V\+Map.\+h$>$}
+
+
+
+Collaboration diagram for U\+V\+Map$<$ S, T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classUVMap__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUVMap_adc63ebfe75c0e4e3a1dfe47a4c0679f4}{U\+V\+Map} (const std\+::vector$<$ std\+::vector$<$ T $>$$>$ \&\hyperlink{classUVMap_a6804b05501ac1221dd2e20eb43c83637}{texture})
+\item 
+\hyperlink{classUVMap_a0787e9239f59e850e4c3825d1985d8f3}{U\+V\+Map} (const \hyperlink{classUVMap}{U\+V\+Map}$<$ S, T $>$ \&other)
+\item 
+T \hyperlink{classUVMap_a26f2022608cfa0682c4c5f46b476d57a}{get} (S coordinates) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::pair$<$ double, double $>$ \hyperlink{classUVMap_a7e69b96af78122ae897b52f48c13f23e}{map} (S coordinates) const =0
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ T $>$ $>$ \hyperlink{classUVMap_a6804b05501ac1221dd2e20eb43c83637}{texture}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{U\+V\+Map@{U\+V\+Map}!U\+V\+Map@{U\+V\+Map}}
+\index{U\+V\+Map@{U\+V\+Map}!U\+V\+Map@{U\+V\+Map}}
+\subsubsection[{\texorpdfstring{U\+V\+Map(const std\+::vector$<$ std\+::vector$<$ T $>$$>$ \&texture)}{UVMap(const std::vector< std::vector< T >> &texture)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename S, typename T$>$ {\bf U\+V\+Map}$<$ S, T $>$\+::{\bf U\+V\+Map} (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::vector$<$ T $>$$>$ \&}]{texture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classUVMap_adc63ebfe75c0e4e3a1dfe47a4c0679f4}{}\label{classUVMap_adc63ebfe75c0e4e3a1dfe47a4c0679f4}
+\index{U\+V\+Map@{U\+V\+Map}!U\+V\+Map@{U\+V\+Map}}
+\index{U\+V\+Map@{U\+V\+Map}!U\+V\+Map@{U\+V\+Map}}
+\subsubsection[{\texorpdfstring{U\+V\+Map(const U\+V\+Map$<$ S, T $>$ \&other)}{UVMap(const UVMap< S, T > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename S, typename T$>$ {\bf U\+V\+Map}$<$ S, T $>$\+::{\bf U\+V\+Map} (
+\begin{DoxyParamCaption}
+\item[{const {\bf U\+V\+Map}$<$ S, T $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classUVMap_a0787e9239f59e850e4c3825d1985d8f3}{}\label{classUVMap_a0787e9239f59e850e4c3825d1985d8f3}
+
+
+\subsection{Member Function Documentation}
+\index{U\+V\+Map@{U\+V\+Map}!get@{get}}
+\index{get@{get}!U\+V\+Map@{U\+V\+Map}}
+\subsubsection[{\texorpdfstring{get(\+S coordinates) const }{get(S coordinates) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename S, typename T$>$ T {\bf U\+V\+Map}$<$ S, T $>$\+::get (
+\begin{DoxyParamCaption}
+\item[{S}]{coordinates}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classUVMap_a26f2022608cfa0682c4c5f46b476d57a}{}\label{classUVMap_a26f2022608cfa0682c4c5f46b476d57a}
+\index{U\+V\+Map@{U\+V\+Map}!map@{map}}
+\index{map@{map}!U\+V\+Map@{U\+V\+Map}}
+\subsubsection[{\texorpdfstring{map(\+S coordinates) const =0}{map(S coordinates) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename S, typename T$>$ virtual std\+::pair$<$double, double$>$ {\bf U\+V\+Map}$<$ S, T $>$\+::map (
+\begin{DoxyParamCaption}
+\item[{S}]{coordinates}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}\hypertarget{classUVMap_a7e69b96af78122ae897b52f48c13f23e}{}\label{classUVMap_a7e69b96af78122ae897b52f48c13f23e}
+
+
+Implemented in \hyperlink{classSphereMap_a9c9ea2a3c2b07b926cb3d48681629572}{Sphere\+Map$<$ T $>$}, and \hyperlink{classSphereMap_a9c9ea2a3c2b07b926cb3d48681629572}{Sphere\+Map$<$ Vector3\+D $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\index{U\+V\+Map@{U\+V\+Map}!texture@{texture}}
+\index{texture@{texture}!U\+V\+Map@{U\+V\+Map}}
+\subsubsection[{\texorpdfstring{texture}{texture}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename S, typename T$>$ std\+::vector$<$std\+::vector$<$T$>$ $>$ {\bf U\+V\+Map}$<$ S, T $>$\+::texture\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classUVMap_a6804b05501ac1221dd2e20eb43c83637}{}\label{classUVMap_a6804b05501ac1221dd2e20eb43c83637}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{UVMap_8h}{U\+V\+Map.\+h}\end{DoxyCompactItemize}

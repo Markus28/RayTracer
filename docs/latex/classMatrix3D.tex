@@ -1,0 +1,114 @@
+\hypertarget{classMatrix3D}{}\section{Matrix3D Class Reference}
+\label{classMatrix3D}\index{Matrix3D@{Matrix3D}}
+
+
+Square 3x3 Matrix.  
+
+
+
+
+{\ttfamily \#include $<$Matrix3\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix3D_afe9c6b7abe858fe9f6aea8f0607a00a7}{Matrix3D} ()\hypertarget{classMatrix3D_afe9c6b7abe858fe9f6aea8f0607a00a7}{}\label{classMatrix3D_afe9c6b7abe858fe9f6aea8f0607a00a7}
+
+\begin{DoxyCompactList}\small\item\em Constructs the identity matrix. \end{DoxyCompactList}\item 
+{\bfseries Matrix3D} (const \hyperlink{classVector3D}{Vector3D} \&a, const \hyperlink{classVector3D}{Vector3D} \&b, const \hyperlink{classVector3D}{Vector3D} \&c)\hypertarget{classMatrix3D_a1e319e164a50a609d623b210a6526162}{}\label{classMatrix3D_a1e319e164a50a609d623b210a6526162}
+
+\item 
+double \& \hyperlink{classMatrix3D_aeda900804791fb0ea809a38c5579c43f}{at} (unsigned int i, unsigned int j)
+\begin{DoxyCompactList}\small\item\em Returns a reference to the entry A\mbox{[}i, j\mbox{]} if the i and j are valid (i.\+e. 0$<$=i,j$<$3) \end{DoxyCompactList}\item 
+const double \& \hyperlink{classMatrix3D_ae920d5255a9b19f17a8872d7a67c6ab9}{at} (unsigned int i, unsigned int j) const 
+\begin{DoxyCompactList}\small\item\em Returns a const reference to the entry A\mbox{[}i, j\mbox{]} if the i and j are valid (i.\+e. 0$<$=i,j$<$3) \end{DoxyCompactList}\item 
+\hyperlink{classMatrix3D}{Matrix3D} \hyperlink{classMatrix3D_a9f731ed614a6b7bf722f50e355829a40}{transpose} () const 
+\begin{DoxyCompactList}\small\item\em Returns the transpose of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix3D}{Matrix3D} \& {\bfseries operator$\ast$=} (const \hyperlink{classMatrix3D}{Matrix3D} \&B)\hypertarget{classMatrix3D_a804d764f3d7b0465964a4123bd638da7}{}\label{classMatrix3D_a804d764f3d7b0465964a4123bd638da7}
+
+\item 
+\hyperlink{classMatrix3D}{Matrix3D} \& {\bfseries operator+=} (const \hyperlink{classMatrix3D}{Matrix3D} \&B)\hypertarget{classMatrix3D_a116c07ea18a99469d4dfb5dcdf301e4b}{}\label{classMatrix3D_a116c07ea18a99469d4dfb5dcdf301e4b}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3D}{Vector3D} {\bfseries operator$\ast$} (const \hyperlink{classMatrix3D}{Matrix3D} \&A, const \hyperlink{classVector3D}{Vector3D} \&v)\hypertarget{classMatrix3D_a7ae064396881469e4d815cfba5804a2e}{}\label{classMatrix3D_a7ae064396881469e4d815cfba5804a2e}
+
+\item 
+\hyperlink{classMatrix3D}{Matrix3D} {\bfseries operator$\ast$} (\hyperlink{classMatrix3D}{Matrix3D} A, const \hyperlink{classMatrix3D}{Matrix3D} \&B)\hypertarget{classMatrix3D_a701c3381ba551de2652b9f021a8454ec}{}\label{classMatrix3D_a701c3381ba551de2652b9f021a8454ec}
+
+\item 
+\hyperlink{classMatrix3D}{Matrix3D} {\bfseries operator+} (\hyperlink{classMatrix3D}{Matrix3D} A, const \hyperlink{classMatrix3D}{Matrix3D} \&B)\hypertarget{classMatrix3D_a54929d88410f4beedd5ef7ef3ba8cffc}{}\label{classMatrix3D_a54929d88410f4beedd5ef7ef3ba8cffc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Square 3x3 Matrix. 
+
+\subsection{Member Function Documentation}
+\index{Matrix3D@{Matrix3D}!at@{at}}
+\index{at@{at}!Matrix3D@{Matrix3D}}
+\subsubsection[{\texorpdfstring{at(unsigned int i, unsigned int j)}{at(unsigned int i, unsigned int j)}}]{\setlength{\rightskip}{0pt plus 5cm}double \& Matrix3\+D\+::at (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i, }
+\item[{unsigned int}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrix3D_aeda900804791fb0ea809a38c5579c43f}{}\label{classMatrix3D_aeda900804791fb0ea809a38c5579c43f}
+
+
+Returns a reference to the entry A\mbox{[}i, j\mbox{]} if the i and j are valid (i.\+e. 0$<$=i,j$<$3) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The row \\
+\hline
+{\em j} & The column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the entry in row i, column j 
+\end{DoxyReturn}
+\index{Matrix3D@{Matrix3D}!at@{at}}
+\index{at@{at}!Matrix3D@{Matrix3D}}
+\subsubsection[{\texorpdfstring{at(unsigned int i, unsigned int j) const }{at(unsigned int i, unsigned int j) const }}]{\setlength{\rightskip}{0pt plus 5cm}const double \& Matrix3\+D\+::at (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i, }
+\item[{unsigned int}]{j}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix3D_ae920d5255a9b19f17a8872d7a67c6ab9}{}\label{classMatrix3D_ae920d5255a9b19f17a8872d7a67c6ab9}
+
+
+Returns a const reference to the entry A\mbox{[}i, j\mbox{]} if the i and j are valid (i.\+e. 0$<$=i,j$<$3) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The row \\
+\hline
+{\em j} & The column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A const reference to the entry in row i, column j 
+\end{DoxyReturn}
+\index{Matrix3D@{Matrix3D}!transpose@{transpose}}
+\index{transpose@{transpose}!Matrix3D@{Matrix3D}}
+\subsubsection[{\texorpdfstring{transpose() const }{transpose() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix3D} Matrix3\+D\+::transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix3D_a9f731ed614a6b7bf722f50e355829a40}{}\label{classMatrix3D_a9f731ed614a6b7bf722f50e355829a40}
+
+
+Returns the transpose of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A.\+T if A is this matrix 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/linalg/Matrix3\+D.\+h\item 
+src/linalg/Matrix3\+D.\+cpp\end{DoxyCompactItemize}

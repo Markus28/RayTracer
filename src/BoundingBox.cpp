@@ -14,6 +14,15 @@ bool BoundingBox::isIntersected(const Ray& ray) const {
     return t_range.containsPositive();
 }
 
+/**
+ * @brief Returns which part of ray lies inside the box
+ *
+ * @details If the ray is given as gamma(t)=b+t*v where b is the base vector and v is the direction,
+ * this function will return the interval that contains all t such that gamma(t) lies in the cuboid.
+ *
+ * @param ray The ray intersecting the box
+ * @return The interval of arguments t for which ray.readBase()+ray.readDirection()*t is inside the box.
+ */
 Interval BoundingBox::intersectionInterval(const Ray& ray) const
 {
     Interval t_range = tRange(x, ray.readBase()[0], ray.readDirection()[0]);

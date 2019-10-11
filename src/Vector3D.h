@@ -3,6 +3,9 @@
 
 #include <iostream>
 
+/**
+ * @brief Vector in 3D space with usual arithmetics
+ */
 class Vector3D {
 public:
     Vector3D(double x, double y, double z);

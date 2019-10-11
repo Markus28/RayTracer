@@ -1,0 +1,105 @@
+\hypertarget{classsymcpp_1_1Logarithm}{}\section{symcpp\+:\+:Logarithm Class Reference}
+\label{classsymcpp_1_1Logarithm}\index{symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}}
+
+
+{\ttfamily \#include $<$Logarithm.\+h$>$}
+
+
+
+Inheritance diagram for symcpp\+:\+:Logarithm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classsymcpp_1_1Logarithm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for symcpp\+:\+:Logarithm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classsymcpp_1_1Logarithm__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Logarithm_ac7315464088f7ef34cfce74e518b939a}{copy} () const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Logarithm_af771894e90cbe561e3eb2e9a9b32954b}{simplify} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classsymcpp_1_1Logarithm_a349cbd26700ea28d18a42f6f8d7e722c}{op} (double x) const override
+\item 
+std\+::ostream \& \hyperlink{classsymcpp_1_1Logarithm_a336bed1a474b338eabd6a258d527b65b}{print} (std\+::ostream \&sink) const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Logarithm_ab5cb1daed6613731d15ee13d17c48f7b}{partial\+\_\+derivative} () const override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}!copy@{copy}}
+\index{copy@{copy}!symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}}
+\subsubsection[{\texorpdfstring{copy() const override}{copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Logarithm\+::copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Logarithm_ac7315464088f7ef34cfce74e518b939a}{}\label{classsymcpp_1_1Logarithm_ac7315464088f7ef34cfce74e518b939a}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a2e7de5a295ccf0efdc9b34cea7ba3d0b}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}!op@{op}}
+\index{op@{op}!symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}}
+\subsubsection[{\texorpdfstring{op(double x) const override}{op(double x) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Logarithm\+::op (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Logarithm_a349cbd26700ea28d18a42f6f8d7e722c}{}\label{classsymcpp_1_1Logarithm_a349cbd26700ea28d18a42f6f8d7e722c}
+
+
+Implements \hyperlink{classsymcpp_1_1UnaryOperator_a679c3c46cad3a62bdd776ff836c7891e}{symcpp\+::\+Unary\+Operator}.
+
+\index{symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}!partial\+\_\+derivative@{partial\+\_\+derivative}}
+\index{partial\+\_\+derivative@{partial\+\_\+derivative}!symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}}
+\subsubsection[{\texorpdfstring{partial\+\_\+derivative() const override}{partial_derivative() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Logarithm\+::partial\+\_\+derivative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Logarithm_ab5cb1daed6613731d15ee13d17c48f7b}{}\label{classsymcpp_1_1Logarithm_ab5cb1daed6613731d15ee13d17c48f7b}
+
+
+Implements \hyperlink{classsymcpp_1_1UnaryOperator_a85de3214870cd72edc63ac1c221ddeee}{symcpp\+::\+Unary\+Operator}.
+
+\index{symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}!print@{print}}
+\index{print@{print}!symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& symcpp\+::\+Logarithm\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Logarithm_a336bed1a474b338eabd6a258d527b65b}{}\label{classsymcpp_1_1Logarithm_a336bed1a474b338eabd6a258d527b65b}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_af37e13032a40f2da4d2866eaa8658049}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}!simplify@{simplify}}
+\index{simplify@{simplify}!symcpp\+::\+Logarithm@{symcpp\+::\+Logarithm}}
+\subsubsection[{\texorpdfstring{simplify() override}{simplify() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Logarithm\+::simplify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Logarithm_af771894e90cbe561e3eb2e9a9b32954b}{}\label{classsymcpp_1_1Logarithm_af771894e90cbe561e3eb2e9a9b32954b}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_ab1fa6e55eea0682250d013f28db26cd2}{symcpp\+::\+Expression}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/symcpp/\hyperlink{Logarithm_8h}{Logarithm.\+h}\item 
+src/symcpp/\hyperlink{Logarithm_8cpp}{Logarithm.\+cpp}\end{DoxyCompactItemize}

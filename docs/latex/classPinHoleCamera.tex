@@ -1,0 +1,122 @@
+\hypertarget{classPinHoleCamera}{}\section{Pin\+Hole\+Camera Class Reference}
+\label{classPinHoleCamera}\index{Pin\+Hole\+Camera@{Pin\+Hole\+Camera}}
+
+
+Implementation of \hyperlink{classCamera}{Camera} class.  
+
+
+
+
+{\ttfamily \#include $<$Pin\+Hole\+Camera.\+h$>$}
+
+
+
+Inheritance diagram for Pin\+Hole\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classPinHoleCamera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pin\+Hole\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classPinHoleCamera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPinHoleCamera_a367c84edf7d49c7ed4e27fc94b44521e}{Pin\+Hole\+Camera} (\hyperlink{classVector3D}{Vector3D} \hyperlink{classPinHoleCamera_ad70cef45e6269877a9fe6b6724fcdb2f}{position}, \hyperlink{classVector3D}{Vector3D} \hyperlink{classPinHoleCamera_a25b1d519b4b7e74942f120aac1f067a9}{up}, \hyperlink{classVector3D}{Vector3D} \hyperlink{classPinHoleCamera_a0e235a4cb8cc58ecfa7a2483ea11398e}{right}, unsigned int \hyperlink{classCamera_aa18f0bf8b6e8cb661643d980a4484ac0}{width}, unsigned int \hyperlink{classCamera_ae9ed166dbbc8876027ecbec9af8761c4}{height}, double width\+\_\+angle)
+\item 
+\hyperlink{classRay}{Ray} \hyperlink{classPinHoleCamera_ac379cbcc7d75e5d651beb1bd043e39a4}{current\+Ray} () const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Background_8h_a10624870db6b3fba52ad9c5d430308e1}{Image} \hyperlink{classPinHoleCamera_a654639989b4afdd364eb506f0b0597cb}{post\+Process} () const override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classPinHoleCamera_ad70cef45e6269877a9fe6b6724fcdb2f}{position}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classPinHoleCamera_a25b1d519b4b7e74942f120aac1f067a9}{up}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classPinHoleCamera_a0e235a4cb8cc58ecfa7a2483ea11398e}{right}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classPinHoleCamera_a2166982d9f41154d76889ff6b9759218}{forward}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implementation of \hyperlink{classCamera}{Camera} class. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Camera_obscura}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Camera\+\_\+obscura} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Pin\+Hole\+Camera@{Pin\+Hole\+Camera}!Pin\+Hole\+Camera@{Pin\+Hole\+Camera}}
+\index{Pin\+Hole\+Camera@{Pin\+Hole\+Camera}!Pin\+Hole\+Camera@{Pin\+Hole\+Camera}}
+\subsubsection[{\texorpdfstring{Pin\+Hole\+Camera(\+Vector3\+D position, Vector3\+D up, Vector3\+D right, unsigned int width, unsigned int height, double width\+\_\+angle)}{PinHoleCamera(Vector3D position, Vector3D up, Vector3D right, unsigned int width, unsigned int height, double width_angle)}}]{\setlength{\rightskip}{0pt plus 5cm}Pin\+Hole\+Camera\+::\+Pin\+Hole\+Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{position, }
+\item[{{\bf Vector3D}}]{up, }
+\item[{{\bf Vector3D}}]{right, }
+\item[{unsigned int}]{width, }
+\item[{unsigned int}]{height, }
+\item[{double}]{width\+\_\+angle}
+\end{DoxyParamCaption}
+)}\hypertarget{classPinHoleCamera_a367c84edf7d49c7ed4e27fc94b44521e}{}\label{classPinHoleCamera_a367c84edf7d49c7ed4e27fc94b44521e}
+
+
+\subsection{Member Function Documentation}
+\index{Pin\+Hole\+Camera@{Pin\+Hole\+Camera}!current\+Ray@{current\+Ray}}
+\index{current\+Ray@{current\+Ray}!Pin\+Hole\+Camera@{Pin\+Hole\+Camera}}
+\subsubsection[{\texorpdfstring{current\+Ray() const override}{currentRay() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ray} Pin\+Hole\+Camera\+::current\+Ray (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classPinHoleCamera_ac379cbcc7d75e5d651beb1bd043e39a4}{}\label{classPinHoleCamera_ac379cbcc7d75e5d651beb1bd043e39a4}
+
+
+Implements \hyperlink{classCamera_a73f9e795bc8d667e7e6fce64608fb3cc}{Camera}.
+
+\index{Pin\+Hole\+Camera@{Pin\+Hole\+Camera}!post\+Process@{post\+Process}}
+\index{post\+Process@{post\+Process}!Pin\+Hole\+Camera@{Pin\+Hole\+Camera}}
+\subsubsection[{\texorpdfstring{post\+Process() const override}{postProcess() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} Pin\+Hole\+Camera\+::post\+Process (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classPinHoleCamera_a654639989b4afdd364eb506f0b0597cb}{}\label{classPinHoleCamera_a654639989b4afdd364eb506f0b0597cb}
+
+
+Implements \hyperlink{classCamera_a2bba2307abf8fe4614badcf6706286dd}{Camera}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Pin\+Hole\+Camera@{Pin\+Hole\+Camera}!forward@{forward}}
+\index{forward@{forward}!Pin\+Hole\+Camera@{Pin\+Hole\+Camera}}
+\subsubsection[{\texorpdfstring{forward}{forward}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Pin\+Hole\+Camera\+::forward\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classPinHoleCamera_a2166982d9f41154d76889ff6b9759218}{}\label{classPinHoleCamera_a2166982d9f41154d76889ff6b9759218}
+\index{Pin\+Hole\+Camera@{Pin\+Hole\+Camera}!position@{position}}
+\index{position@{position}!Pin\+Hole\+Camera@{Pin\+Hole\+Camera}}
+\subsubsection[{\texorpdfstring{position}{position}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Pin\+Hole\+Camera\+::position\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classPinHoleCamera_ad70cef45e6269877a9fe6b6724fcdb2f}{}\label{classPinHoleCamera_ad70cef45e6269877a9fe6b6724fcdb2f}
+\index{Pin\+Hole\+Camera@{Pin\+Hole\+Camera}!right@{right}}
+\index{right@{right}!Pin\+Hole\+Camera@{Pin\+Hole\+Camera}}
+\subsubsection[{\texorpdfstring{right}{right}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Pin\+Hole\+Camera\+::right\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classPinHoleCamera_a0e235a4cb8cc58ecfa7a2483ea11398e}{}\label{classPinHoleCamera_a0e235a4cb8cc58ecfa7a2483ea11398e}
+\index{Pin\+Hole\+Camera@{Pin\+Hole\+Camera}!up@{up}}
+\index{up@{up}!Pin\+Hole\+Camera@{Pin\+Hole\+Camera}}
+\subsubsection[{\texorpdfstring{up}{up}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Pin\+Hole\+Camera\+::up\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classPinHoleCamera_a25b1d519b4b7e74942f120aac1f067a9}{}\label{classPinHoleCamera_a25b1d519b4b7e74942f120aac1f067a9}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{PinHoleCamera_8h}{Pin\+Hole\+Camera.\+h}\item 
+src/\hyperlink{PinHoleCamera_8cpp}{Pin\+Hole\+Camera.\+cpp}\end{DoxyCompactItemize}

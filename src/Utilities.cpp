@@ -10,7 +10,13 @@ bool utility::equals_about(const double& test, const double& truth, const double
         return (test-epsilon<truth && test+epsilon>truth);
 }
 
-
+/**
+ * @brief Solves quadratic equation a*x^2+bx+c
+ * @param a Quadratic term
+ * @param b Linear term
+ * @param c Constant term
+ * @return Solutions to Equation
+ */
 utility::QuadraticSolution utility::solveQuadraticEquation(double a, double b, double c) {
         double d = b*b-4*a*c;
 

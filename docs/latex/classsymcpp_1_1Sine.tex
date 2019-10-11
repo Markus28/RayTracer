@@ -1,0 +1,105 @@
+\hypertarget{classsymcpp_1_1Sine}{}\section{symcpp\+:\+:Sine Class Reference}
+\label{classsymcpp_1_1Sine}\index{symcpp\+::\+Sine@{symcpp\+::\+Sine}}
+
+
+{\ttfamily \#include $<$Sine.\+h$>$}
+
+
+
+Inheritance diagram for symcpp\+:\+:Sine\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classsymcpp_1_1Sine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for symcpp\+:\+:Sine\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classsymcpp_1_1Sine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Sine_a3cac7091905da6765a019a0ece9e45d5}{simplify} () override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Sine_aab90ccee3ae1fd2d832bdf041e8352c6}{copy} () const override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classsymcpp_1_1Sine_ad3680056460c4990115a23427ea723fe}{print} (std\+::ostream \&sink) const override
+\item 
+double \hyperlink{classsymcpp_1_1Sine_afb302fcff7d0a5e528f8fe5a2d111666}{op} (double x) const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Sine_ac7978c7094ce614049521c4d9cfd0827}{partial\+\_\+derivative} () const override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{symcpp\+::\+Sine@{symcpp\+::\+Sine}!copy@{copy}}
+\index{copy@{copy}!symcpp\+::\+Sine@{symcpp\+::\+Sine}}
+\subsubsection[{\texorpdfstring{copy() const override}{copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Sine\+::copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Sine_aab90ccee3ae1fd2d832bdf041e8352c6}{}\label{classsymcpp_1_1Sine_aab90ccee3ae1fd2d832bdf041e8352c6}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a2e7de5a295ccf0efdc9b34cea7ba3d0b}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Sine@{symcpp\+::\+Sine}!op@{op}}
+\index{op@{op}!symcpp\+::\+Sine@{symcpp\+::\+Sine}}
+\subsubsection[{\texorpdfstring{op(double x) const override}{op(double x) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Sine\+::op (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Sine_afb302fcff7d0a5e528f8fe5a2d111666}{}\label{classsymcpp_1_1Sine_afb302fcff7d0a5e528f8fe5a2d111666}
+
+
+Implements \hyperlink{classsymcpp_1_1UnaryOperator_a679c3c46cad3a62bdd776ff836c7891e}{symcpp\+::\+Unary\+Operator}.
+
+\index{symcpp\+::\+Sine@{symcpp\+::\+Sine}!partial\+\_\+derivative@{partial\+\_\+derivative}}
+\index{partial\+\_\+derivative@{partial\+\_\+derivative}!symcpp\+::\+Sine@{symcpp\+::\+Sine}}
+\subsubsection[{\texorpdfstring{partial\+\_\+derivative() const override}{partial_derivative() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Sine\+::partial\+\_\+derivative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Sine_ac7978c7094ce614049521c4d9cfd0827}{}\label{classsymcpp_1_1Sine_ac7978c7094ce614049521c4d9cfd0827}
+
+
+Implements \hyperlink{classsymcpp_1_1UnaryOperator_a85de3214870cd72edc63ac1c221ddeee}{symcpp\+::\+Unary\+Operator}.
+
+\index{symcpp\+::\+Sine@{symcpp\+::\+Sine}!print@{print}}
+\index{print@{print}!symcpp\+::\+Sine@{symcpp\+::\+Sine}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& symcpp\+::\+Sine\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Sine_ad3680056460c4990115a23427ea723fe}{}\label{classsymcpp_1_1Sine_ad3680056460c4990115a23427ea723fe}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_af37e13032a40f2da4d2866eaa8658049}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Sine@{symcpp\+::\+Sine}!simplify@{simplify}}
+\index{simplify@{simplify}!symcpp\+::\+Sine@{symcpp\+::\+Sine}}
+\subsubsection[{\texorpdfstring{simplify() override}{simplify() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Sine\+::simplify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Sine_a3cac7091905da6765a019a0ece9e45d5}{}\label{classsymcpp_1_1Sine_a3cac7091905da6765a019a0ece9e45d5}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_ab1fa6e55eea0682250d013f28db26cd2}{symcpp\+::\+Expression}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/symcpp/\hyperlink{Sine_8h}{Sine.\+h}\item 
+src/symcpp/\hyperlink{Sine_8cpp}{Sine.\+cpp}\end{DoxyCompactItemize}

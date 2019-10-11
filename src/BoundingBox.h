@@ -4,6 +4,12 @@
 #include "Interval.h"
 #include "Ray.h"
 
+/**
+ * @brief A cuboid in 3D space for estimating the position of objects
+ *
+ * BoundedVolume objects have to be contained in a bounding box.
+ * @note Note, that a bounding box cannot be rendered
+ */
 class BoundingBox {
 public:
     BoundingBox(Interval x, Interval y, Interval z);

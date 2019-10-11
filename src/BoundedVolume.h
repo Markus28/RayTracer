@@ -5,6 +5,9 @@
 #include "BoundingBox.h"
 #include "RenderObject.h"
 
+/**
+ * @brief Abstract class implemented by objects that can be contained in a volume
+ */
 class BoundedVolume: public RenderObject{
 public:
     virtual BoundingBox getBounds() const = 0;

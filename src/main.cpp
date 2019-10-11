@@ -21,6 +21,8 @@
 #include "symcpp/Sine.h"
 #include "ImplicitSurface.h"
 
+using namespace symcpp;
+
 void geo(){
     std::vector<RenderObject*> objs;
     std::vector<Light*> lights;
@@ -132,13 +134,18 @@ void car()
 }
 
 void implicit(){
-    SymbolicGraph my_graph = (Variable("x")^2) + (Variable("y")^2) + (Variable("z")^2) - Constant(1);
-    ImplicitSurface surface(my_graph, Material(Vector3D(1,0.2,0.2), Vector3D(4,0.1,0.2), Vector3D(4,0.1,0.2), Vector3D(4,4,4), 0, 0, 1.0), BoundingBox({-1,1}, {-1,1}, {-1,1}));
-    PinHoleCamera cam = PinHoleCamera(Vector3D(10,0,0), Vector3D(0,0,1), Vector3D(0,1,0), 1200, 900, 0.8);
+    //SymbolicGraph my_graph = (Variable("x")^4) + (Variable("y")^4) + (Variable("z")^4) - Constant(1);
+    Variable x = Variable("x");
+    Variable y = Variable("y");
+    Variable z = Variable("z");
+
+    SymbolicGraph my_graph = Power((Power(x, 2)+9*Power(y, 2)/4 + Power(z, 2) - 1), 3) - Power(x, 2)*Power(z, 3) - 9*Power(y,2)*Power(z,3)/80;
+    ImplicitSurface surface(my_graph, Material(Vector3D(1,0.2,0.2), Vector3D(4,0.1,0.2), Vector3D(4,0.1,0.2), Vector3D(4,4,4), 0, 0, 1.0), BoundingBox({-1.2, 1.2}, {-0.8,0.8}, {-1.2,1.2}));
+    PinHoleCamera cam = PinHoleCamera(Vector3D(0,-10,0), Vector3D(0,0,1), Vector3D(1,0,0), 1200, 900, 0.8);
     std::vector<RenderObject*> objs;
     std::vector<Light*> lights;
     objs.push_back(&surface);
-    DistantPointSource light = DistantPointSource(Vector3D(1,1,1), Vector3D(20,20,20), Vector3D(40,40,40));
+    DistantPointSource light = DistantPointSource(Vector3D(0.5,-1,1), Vector3D(20,20,20), Vector3D(40,40,40));
     lights.push_back(&light);
 
     Scene my_scene = Scene(objs, lights, &cam, Vector3D(0,0,250), Vector3D(0.2,0.2,0.2));
@@ -153,28 +160,12 @@ void implicit(){
     cam.writeFile("./sym.bmp");
 }
 
-void sym(){
-    SymbolicGraph my_graph = Variable("y");
-    my_graph = my_graph^Sine(Variable("y"));
-    my_graph += Variable("y");
-    std::cin>>my_graph;
-    std::cout<<my_graph<<std::endl;
-    SymbolicGraph deriv = my_graph.diff("y");
-    std::unordered_map<std::string, double> env;
-    env["x"] = 1;
-    env["y"] = 0;
-    env["z"] = 7;
-    std::cout<< deriv<<std::endl;
-    std::cout<<my_graph.subs(env)<<std::endl<<deriv.subs(env);
-}
-
 
 int main() {
-    car();
-    //implicit();
+    //car();
+    implicit();
     //dragon();
     //geo();
-    //sym();
     //cornell();
     return 0;
 

@@ -6,6 +6,9 @@
 #include "Material.h"
 #include "BoundedVolume.h"
 
+/**
+ * @brief A simple, uniformly textured sphere, implements RenderObject
+ */
 class SimpleSphere: public BoundedVolume {
 public:
     SimpleSphere(Vector3D center, double radius, Material material);

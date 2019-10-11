@@ -12,6 +12,7 @@ A simple CPU Raytracer. Built from scratch.
   * Triangles
   * OBJ-Files
   * MTL-Files
+  * Implicit Surfaces
 * Lights
   * Point source in infinite distance
   * Point source
@@ -19,14 +20,13 @@ A simple CPU Raytracer. Built from scratch.
   * Pinhole Camera
   * Pinhole Camera with supersampling
 * Bounding-Volume-Hierarchies
+* Symbolic Computation System
 
 ### Coming soon
 * UV-Mapped Spheres
 * Spherical background images
-* Refractions
 * Fuzzy reflections
 * Bokeh
 * Area lights
 * Orthographic camera
-* Implicit surfaces
 * Normal interpolation

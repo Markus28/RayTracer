@@ -2,21 +2,28 @@
 #include <cmath>
 #include <cassert>
 
-ImplicitSurface::ImplicitSurface(SymbolicGraph f, Material m, BoundingBox b):F(f), mat(m), bounds(b) {
+
+ImplicitSurface::ImplicitSurface(symcpp::SymbolicGraph f, Material m, BoundingBox b):F(f), mat(m), bounds(b) {
     dxF = F.diff("x");
     dyF = F.diff("y");
     dzF = F.diff("z");
 
     std::cout<< f << std::endl << dxF <<std::endl <<dyF<<std::endl<<dzF<<std::endl;
 
-    max_iter = 50;
-    epsilon = 0.00001;
+    max_iter = 70;
+    epsilon = 0.00000000000001;
 }
 
 BoundingBox ImplicitSurface::getBounds() const {
     return bounds;
 }
 
+/**
+ * @brief Uses the symbolic derivative and the Newton method to detect the earliest intersection
+ * @see https://en.wikipedia.org/wiki/Newton%27s_method
+ * @param ray The ray intersecting the surface
+ * @return Intersection object containing distance of intersection and pointer to this
+ */
 Intersection ImplicitSurface::rayIntersect(const Ray &ray) const {
     Interval range = bounds.intersectionInterval(ray);
 

@@ -4,6 +4,7 @@
 
 #include "Light.h"
 
+
 class DistantPointSource: public Light {
 public:
     DistantPointSource(Vector3D dir,  Vector3D specular, Vector3D diffuse);

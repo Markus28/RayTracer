@@ -8,25 +8,41 @@
 #include "BoundingBox.h"
 #include "BoundedVolume.h"
 
+/**
+ * @brief RenderObject for the surface implicitly given by F(x,y,z) = 0
+ *
+ * @details Objects of this type can be used to render meshless surfaces, eg manifolds. This is, however fairly
+ * slow. You might consider meshifying the object by applying the marching-cubes algorithm.
+ */
 class ImplicitSurface: public BoundedVolume {
 public:
-    ImplicitSurface(SymbolicGraph f, Material m, BoundingBox b);
+    ImplicitSurface(symcpp::SymbolicGraph f, Material m, BoundingBox b);
     Intersection rayIntersect(const Ray& ray) const override;
     IntersectionProperties intersectProperties(const Ray& ray) const override;
     std::ostream& print(std::ostream& sink) const override;
     BoundingBox getBounds() const override;
 
 private:
-    SymbolicGraph F;
-    SymbolicGraph dxF;
-    SymbolicGraph dyF;
-    SymbolicGraph dzF;
+    /// The function defining the surface by F(x, y, z) = 0
+    symcpp::SymbolicGraph F;
+
+    /// The partial derivative by x
+    symcpp::SymbolicGraph dxF;
+
+    /// The partial derivative by y
+    symcpp::SymbolicGraph dyF;
+
+    ///The partial derivative by z
+   symcpp:: SymbolicGraph dzF;
 
     Material mat;
 
     BoundingBox bounds;
 
-    double max_iter, epsilon;
+    /// The maximum number of iterations in Newton method
+    double max_iter;
+
+    double epsilon;
 };
 
 

@@ -1,0 +1,140 @@
+\hypertarget{classLight}{}\section{Light Class Reference}
+\label{classLight}\index{Light@{Light}}
+
+
+Abstract class for lights used in \hyperlink{classScene}{Scene}.  
+
+
+
+
+{\ttfamily \#include $<$Light.\+h$>$}
+
+
+
+Inheritance diagram for Light\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLight__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Light\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classLight__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classRay}{Ray} \hyperlink{classLight_a840602e294c62366a0699e8a38c447bd}{shaddow\+Ray} (const \hyperlink{classVector3D}{Vector3D} \&pt) const 
+\begin{DoxyCompactList}\small\item\em This method is called to construct shaddow rays for this light-\/source. \end{DoxyCompactList}\item 
+virtual \hyperlink{classVector3D}{Vector3D} \hyperlink{classLight_a2a4cdf8081c2cab02757c2464610a32f}{specular\+Component} (const \hyperlink{classVector3D}{Vector3D} \&pt) const =0
+\item 
+virtual \hyperlink{classVector3D}{Vector3D} \hyperlink{classLight_af5dc859ada149ca54ec5088e1c33deb4}{diffuse\+Component} (const \hyperlink{classVector3D}{Vector3D} \&pt) const =0
+\item 
+virtual \hyperlink{classVector3D}{Vector3D} \hyperlink{classLight_ac075908cf22e9ca9f289c1226d133664}{get\+Light\+Direction} (const \hyperlink{classVector3D}{Vector3D} \&pt) const =0
+\item 
+virtual double \hyperlink{classLight_a4a7a5a9d4fc67da122c3ce75f6075093}{get\+Distance} (\hyperlink{classVector3D}{Vector3D} point) const =0
+\item 
+virtual \hyperlink{classLight_abe675054027c4b4a4f3e9a31d330931f}{$\sim$\+Light} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classLight_aea5f05e83e7f64b0a9360a52bcef2250}{color}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class for lights used in \hyperlink{classScene}{Scene}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Light@{Light}!````~Light@{$\sim$\+Light}}
+\index{````~Light@{$\sim$\+Light}!Light@{Light}}
+\subsubsection[{\texorpdfstring{$\sim$\+Light()}{~Light()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Light\+::$\sim$\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classLight_abe675054027c4b4a4f3e9a31d330931f}{}\label{classLight_abe675054027c4b4a4f3e9a31d330931f}
+
+
+\subsection{Member Function Documentation}
+\index{Light@{Light}!diffuse\+Component@{diffuse\+Component}}
+\index{diffuse\+Component@{diffuse\+Component}!Light@{Light}}
+\subsubsection[{\texorpdfstring{diffuse\+Component(const Vector3\+D \&pt) const =0}{diffuseComponent(const Vector3D &pt) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Vector3D} Light\+::diffuse\+Component (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classLight_af5dc859ada149ca54ec5088e1c33deb4}{}\label{classLight_af5dc859ada149ca54ec5088e1c33deb4}
+
+
+Implemented in \hyperlink{classRandomLight_a371cbc5df30db46ac53cd0a9be91ac52}{Random\+Light}, \hyperlink{classPointSource_a445e9566d2226d1b8afd76274fb006fb}{Point\+Source}, \hyperlink{classDistantPointSource_ae3682ba2e553f38d6c9e4ee1bed9504f}{Distant\+Point\+Source}, and \hyperlink{classSpotLight_a0810e4bd136caddea0c65b819f2bd400}{Spot\+Light}.
+
+\index{Light@{Light}!get\+Distance@{get\+Distance}}
+\index{get\+Distance@{get\+Distance}!Light@{Light}}
+\subsubsection[{\texorpdfstring{get\+Distance(\+Vector3\+D point) const =0}{getDistance(Vector3D point) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Light\+::get\+Distance (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{point}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classLight_a4a7a5a9d4fc67da122c3ce75f6075093}{}\label{classLight_a4a7a5a9d4fc67da122c3ce75f6075093}
+
+
+Implemented in \hyperlink{classPointSource_a5f1af9abccf0657b9398555c935bb8bc}{Point\+Source}, \hyperlink{classDistantPointSource_a5d08b5655fc7fc09e5c0d2a0f3046e16}{Distant\+Point\+Source}, and \hyperlink{classSpotLight_a117f7918773e193f67714765c5370418}{Spot\+Light}.
+
+\index{Light@{Light}!get\+Light\+Direction@{get\+Light\+Direction}}
+\index{get\+Light\+Direction@{get\+Light\+Direction}!Light@{Light}}
+\subsubsection[{\texorpdfstring{get\+Light\+Direction(const Vector3\+D \&pt) const =0}{getLightDirection(const Vector3D &pt) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Vector3D} Light\+::get\+Light\+Direction (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classLight_ac075908cf22e9ca9f289c1226d133664}{}\label{classLight_ac075908cf22e9ca9f289c1226d133664}
+
+
+Implemented in \hyperlink{classPointSource_a02a13a7b955088e32324bfb3d49b1ace}{Point\+Source}, \hyperlink{classDistantPointSource_a740ee32c41e2ef6deec1137c86f5b73a}{Distant\+Point\+Source}, \hyperlink{classSpotLight_a051e210b637edf37bf2b8d49149a13a4}{Spot\+Light}, and \hyperlink{classRandomLight_a70c038d63e66f520a296dccddcf9035f}{Random\+Light}.
+
+\index{Light@{Light}!shaddow\+Ray@{shaddow\+Ray}}
+\index{shaddow\+Ray@{shaddow\+Ray}!Light@{Light}}
+\subsubsection[{\texorpdfstring{shaddow\+Ray(const Vector3\+D \&pt) const }{shaddowRay(const Vector3D &pt) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ray} Light\+::shaddow\+Ray (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classLight_a840602e294c62366a0699e8a38c447bd}{}\label{classLight_a840602e294c62366a0699e8a38c447bd}
+
+
+This method is called to construct shaddow rays for this light-\/source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & A point in 3\+D-\/\+Space at which the shaddow-\/ray originates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A ray originating in pt, pointing at this light 
+\end{DoxyReturn}
+\index{Light@{Light}!specular\+Component@{specular\+Component}}
+\index{specular\+Component@{specular\+Component}!Light@{Light}}
+\subsubsection[{\texorpdfstring{specular\+Component(const Vector3\+D \&pt) const =0}{specularComponent(const Vector3D &pt) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Vector3D} Light\+::specular\+Component (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classLight_a2a4cdf8081c2cab02757c2464610a32f}{}\label{classLight_a2a4cdf8081c2cab02757c2464610a32f}
+
+
+Implemented in \hyperlink{classPointSource_a421e0e8d3d1f69aeb095f1f9c39de7e0}{Point\+Source}, \hyperlink{classDistantPointSource_a14f9c55d090d7d3f7999db70f5174a8c}{Distant\+Point\+Source}, \hyperlink{classRandomLight_af9922ba2ce0c9dc16026db945d8f1506}{Random\+Light}, and \hyperlink{classSpotLight_a6a1cc6970bbb3308b5214f85641331cd}{Spot\+Light}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Light@{Light}!color@{color}}
+\index{color@{color}!Light@{Light}}
+\subsubsection[{\texorpdfstring{color}{color}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Light\+::color\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLight_aea5f05e83e7f64b0a9360a52bcef2250}{}\label{classLight_aea5f05e83e7f64b0a9360a52bcef2250}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Light_8h}{Light.\+h}\item 
+src/\hyperlink{Light_8cpp}{Light.\+cpp}\end{DoxyCompactItemize}

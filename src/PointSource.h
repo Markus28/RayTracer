@@ -3,6 +3,9 @@
 
 #include "Light.h"
 
+/**
+ * @brief A very simple light source consisting of only one point in 3D Space
+ */
 class PointSource: public Light {
 public:
     PointSource(Vector3D pt, Vector3D specular, Vector3D diffuse);

@@ -3,6 +3,9 @@
 
 #include <iostream>
 
+/**
+ * @brief The closed interval [mini, maxi]
+ */
 class Interval {
 public:
     Interval(double min, double max);

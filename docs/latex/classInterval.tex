@@ -1,0 +1,184 @@
+\hypertarget{classInterval}{}\section{Interval Class Reference}
+\label{classInterval}\index{Interval@{Interval}}
+
+
+The closed interval \mbox{[}mini, maxi\mbox{]}.  
+
+
+
+
+{\ttfamily \#include $<$Interval.\+h$>$}
+
+
+
+Collaboration diagram for Interval\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classInterval__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInterval_ab0a8f191fb00803d529902f85524e4e2}{Interval} (double min, double max)
+\item 
+\hyperlink{classInterval_ae48b9a9e9f672f81977627b609e32429}{Interval} ()
+\item 
+\hyperlink{classInterval}{Interval} \hyperlink{classInterval_a0c42da82e278c84a85a356b5ada6d4f4}{operator+} (const \hyperlink{classInterval}{Interval} \&other) const 
+\item 
+double \hyperlink{classInterval_a5b6e9f412603b80fd1ca427f6943d993}{mid\+Point} () const 
+\item 
+\hyperlink{classInterval}{Interval} \hyperlink{classInterval_a7098e87f0ffd13735a06060b0bd6b193}{operator$\ast$} (const \hyperlink{classInterval}{Interval} \&other) const 
+\item 
+bool \hyperlink{classInterval_a35d360b096b1551e328a25450cde5f72}{is\+Empty} () const 
+\item 
+bool \hyperlink{classInterval_a34d1acaf0a9b8d273dcbe48280f76894}{contains\+Positive} () const 
+\item 
+bool \hyperlink{classInterval_a8f1381466a2ed75a6487a92835cf20a8}{contains} (double x) const 
+\item 
+double \hyperlink{classInterval_aa90ef0b9050beabffcc789c3877cddd0}{get\+Min} () const 
+\item 
+double \hyperlink{classInterval_ab2fb3df4bc312013c19d54466d9d6470}{get\+Max} () const 
+\item 
+double \hyperlink{classInterval_ad502b7f22eb07d9ebba23cc9af869487}{get\+Center} () const 
+\item 
+double \hyperlink{classInterval_ad8cc11adfccd0e30ff3d93ad6a8b5a47}{length} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classInterval_aeb6ee750751e32a0f92d23f0a44ab122}{mini}
+\item 
+double \hyperlink{classInterval_ac086c91ab2c6f75ce8b3ff3818b38798}{maxi}
+\item 
+bool \hyperlink{classInterval_a9d9385e1ce6637e5760d26bf80aeada6}{empty}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classInterval_a7057e2823f722cd67f45b53382173b9f}{operator$<$$<$} (std\+::ostream \&sink, const \hyperlink{classInterval}{Interval} \&i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The closed interval \mbox{[}mini, maxi\mbox{]}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Interval@{Interval}!Interval@{Interval}}
+\index{Interval@{Interval}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{Interval(double min, double max)}{Interval(double min, double max)}}]{\setlength{\rightskip}{0pt plus 5cm}Interval\+::\+Interval (
+\begin{DoxyParamCaption}
+\item[{double}]{min, }
+\item[{double}]{max}
+\end{DoxyParamCaption}
+)}\hypertarget{classInterval_ab0a8f191fb00803d529902f85524e4e2}{}\label{classInterval_ab0a8f191fb00803d529902f85524e4e2}
+\index{Interval@{Interval}!Interval@{Interval}}
+\index{Interval@{Interval}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{Interval()}{Interval()}}]{\setlength{\rightskip}{0pt plus 5cm}Interval\+::\+Interval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classInterval_ae48b9a9e9f672f81977627b609e32429}{}\label{classInterval_ae48b9a9e9f672f81977627b609e32429}
+
+
+\subsection{Member Function Documentation}
+\index{Interval@{Interval}!contains@{contains}}
+\index{contains@{contains}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{contains(double x) const }{contains(double x) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Interval\+::contains (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+) const}\hypertarget{classInterval_a8f1381466a2ed75a6487a92835cf20a8}{}\label{classInterval_a8f1381466a2ed75a6487a92835cf20a8}
+\index{Interval@{Interval}!contains\+Positive@{contains\+Positive}}
+\index{contains\+Positive@{contains\+Positive}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{contains\+Positive() const }{containsPositive() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Interval\+::contains\+Positive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classInterval_a34d1acaf0a9b8d273dcbe48280f76894}{}\label{classInterval_a34d1acaf0a9b8d273dcbe48280f76894}
+\index{Interval@{Interval}!get\+Center@{get\+Center}}
+\index{get\+Center@{get\+Center}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{get\+Center() const }{getCenter() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Interval\+::get\+Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classInterval_ad502b7f22eb07d9ebba23cc9af869487}{}\label{classInterval_ad502b7f22eb07d9ebba23cc9af869487}
+\index{Interval@{Interval}!get\+Max@{get\+Max}}
+\index{get\+Max@{get\+Max}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{get\+Max() const }{getMax() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Interval\+::get\+Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classInterval_ab2fb3df4bc312013c19d54466d9d6470}{}\label{classInterval_ab2fb3df4bc312013c19d54466d9d6470}
+\index{Interval@{Interval}!get\+Min@{get\+Min}}
+\index{get\+Min@{get\+Min}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{get\+Min() const }{getMin() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Interval\+::get\+Min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classInterval_aa90ef0b9050beabffcc789c3877cddd0}{}\label{classInterval_aa90ef0b9050beabffcc789c3877cddd0}
+\index{Interval@{Interval}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{is\+Empty() const }{isEmpty() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Interval\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classInterval_a35d360b096b1551e328a25450cde5f72}{}\label{classInterval_a35d360b096b1551e328a25450cde5f72}
+\index{Interval@{Interval}!length@{length}}
+\index{length@{length}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{length() const }{length() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Interval\+::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classInterval_ad8cc11adfccd0e30ff3d93ad6a8b5a47}{}\label{classInterval_ad8cc11adfccd0e30ff3d93ad6a8b5a47}
+\index{Interval@{Interval}!mid\+Point@{mid\+Point}}
+\index{mid\+Point@{mid\+Point}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{mid\+Point() const }{midPoint() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Interval\+::mid\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classInterval_a5b6e9f412603b80fd1ca427f6943d993}{}\label{classInterval_a5b6e9f412603b80fd1ca427f6943d993}
+\index{Interval@{Interval}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const Interval \&other) const }{operator*(const Interval &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interval} Interval\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Interval} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classInterval_a7098e87f0ffd13735a06060b0bd6b193}{}\label{classInterval_a7098e87f0ffd13735a06060b0bd6b193}
+\index{Interval@{Interval}!operator+@{operator+}}
+\index{operator+@{operator+}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{operator+(const Interval \&other) const }{operator+(const Interval &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interval} Interval\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Interval} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classInterval_a0c42da82e278c84a85a356b5ada6d4f4}{}\label{classInterval_a0c42da82e278c84a85a356b5ada6d4f4}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Interval@{Interval}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink, }
+\item[{const {\bf Interval} \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classInterval_a7057e2823f722cd67f45b53382173b9f}{}\label{classInterval_a7057e2823f722cd67f45b53382173b9f}
+
+
+\subsection{Member Data Documentation}
+\index{Interval@{Interval}!empty@{empty}}
+\index{empty@{empty}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{empty}{empty}}]{\setlength{\rightskip}{0pt plus 5cm}bool Interval\+::empty\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInterval_a9d9385e1ce6637e5760d26bf80aeada6}{}\label{classInterval_a9d9385e1ce6637e5760d26bf80aeada6}
+\index{Interval@{Interval}!maxi@{maxi}}
+\index{maxi@{maxi}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{maxi}{maxi}}]{\setlength{\rightskip}{0pt plus 5cm}double Interval\+::maxi\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInterval_ac086c91ab2c6f75ce8b3ff3818b38798}{}\label{classInterval_ac086c91ab2c6f75ce8b3ff3818b38798}
+\index{Interval@{Interval}!mini@{mini}}
+\index{mini@{mini}!Interval@{Interval}}
+\subsubsection[{\texorpdfstring{mini}{mini}}]{\setlength{\rightskip}{0pt plus 5cm}double Interval\+::mini\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInterval_aeb6ee750751e32a0f92d23f0a44ab122}{}\label{classInterval_aeb6ee750751e32a0f92d23f0a44ab122}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Interval_8h}{Interval.\+h}\item 
+src/\hyperlink{Interval_8cpp}{Interval.\+cpp}\end{DoxyCompactItemize}

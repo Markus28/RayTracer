@@ -6,6 +6,9 @@
 
 class MTLLib;
 
+/**
+ * @brief Typically stores information about material of RenderObjects
+ */
 class Material {
 public:
     Material(const Vector3D& spec_refl, const Vector3D& diff_refl, const Vector3D& ambient_refl,

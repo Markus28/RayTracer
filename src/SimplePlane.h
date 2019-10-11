@@ -7,6 +7,9 @@
 #include "Material.h"
 #include "RenderObject.h"
 
+/**
+ * @brief An infinite plane
+ */
 class SimplePlane: public RenderObject {
 public:
     SimplePlane(const Vector3D& pt, const Vector3D& norm, const Material& mat);

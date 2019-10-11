@@ -1,0 +1,139 @@
+\hypertarget{classRandomLight}{}\section{Random\+Light Class Reference}
+\label{classRandomLight}\index{Random\+Light@{Random\+Light}}
+
+
+{\ttfamily \#include $<$Random\+Light.\+h$>$}
+
+
+
+Inheritance diagram for Random\+Light\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classRandomLight__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Random\+Light\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classRandomLight__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRandomLight_aaa458e28a15e5ac83b393dc689def3a3}{Random\+Light} (\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_ac54b3aa2ddb79d7f7363f64ed0f96989}{corner}, \hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_a5582baaa81ff0117f66ef8f3636859ed}{x}, \hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_a9d9e2fcde9c0d83b655f9a259d54a6d8}{y}, \hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_ac8014c223873c92490dfb697cc4663d4}{specular}, \hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_a26ffb2886dbb56b24d77fd8c760c8b28}{diffuse})
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_a70c038d63e66f520a296dccddcf9035f}{get\+Light\+Direction} (const \hyperlink{classVector3D}{Vector3D} \&pt) const override
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_af9922ba2ce0c9dc16026db945d8f1506}{specular\+Component} (const \hyperlink{classVector3D}{Vector3D} \&pt) const override
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_a371cbc5df30db46ac53cd0a9be91ac52}{diffuse\+Component} (const \hyperlink{classVector3D}{Vector3D} \&pt) const override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_a44143563da1eab27ea905fc58b82df46}{random\+Point} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_a13f0aa6e386b4eb09b786a81d2d9e9ff}{middle}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_a5582baaa81ff0117f66ef8f3636859ed}{x}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_a9d9e2fcde9c0d83b655f9a259d54a6d8}{y}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_ac54b3aa2ddb79d7f7363f64ed0f96989}{corner}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_ac8014c223873c92490dfb697cc4663d4}{specular}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRandomLight_a26ffb2886dbb56b24d77fd8c760c8b28}{diffuse}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Random\+Light@{Random\+Light}!Random\+Light@{Random\+Light}}
+\index{Random\+Light@{Random\+Light}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{Random\+Light(\+Vector3\+D corner, Vector3\+D x, Vector3\+D y, Vector3\+D specular, Vector3\+D diffuse)}{RandomLight(Vector3D corner, Vector3D x, Vector3D y, Vector3D specular, Vector3D diffuse)}}]{\setlength{\rightskip}{0pt plus 5cm}Random\+Light\+::\+Random\+Light (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{corner, }
+\item[{{\bf Vector3D}}]{x, }
+\item[{{\bf Vector3D}}]{y, }
+\item[{{\bf Vector3D}}]{specular, }
+\item[{{\bf Vector3D}}]{diffuse}
+\end{DoxyParamCaption}
+)}\hypertarget{classRandomLight_aaa458e28a15e5ac83b393dc689def3a3}{}\label{classRandomLight_aaa458e28a15e5ac83b393dc689def3a3}
+
+
+\subsection{Member Function Documentation}
+\index{Random\+Light@{Random\+Light}!diffuse\+Component@{diffuse\+Component}}
+\index{diffuse\+Component@{diffuse\+Component}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{diffuse\+Component(const Vector3\+D \&pt) const override}{diffuseComponent(const Vector3D &pt) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Random\+Light\+::diffuse\+Component (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classRandomLight_a371cbc5df30db46ac53cd0a9be91ac52}{}\label{classRandomLight_a371cbc5df30db46ac53cd0a9be91ac52}
+
+
+Implements \hyperlink{classLight_af5dc859ada149ca54ec5088e1c33deb4}{Light}.
+
+\index{Random\+Light@{Random\+Light}!get\+Light\+Direction@{get\+Light\+Direction}}
+\index{get\+Light\+Direction@{get\+Light\+Direction}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{get\+Light\+Direction(const Vector3\+D \&pt) const override}{getLightDirection(const Vector3D &pt) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Random\+Light\+::get\+Light\+Direction (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classRandomLight_a70c038d63e66f520a296dccddcf9035f}{}\label{classRandomLight_a70c038d63e66f520a296dccddcf9035f}
+
+
+Implements \hyperlink{classLight_ac075908cf22e9ca9f289c1226d133664}{Light}.
+
+\index{Random\+Light@{Random\+Light}!random\+Point@{random\+Point}}
+\index{random\+Point@{random\+Point}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{random\+Point() const }{randomPoint() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Random\+Light\+::random\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRandomLight_a44143563da1eab27ea905fc58b82df46}{}\label{classRandomLight_a44143563da1eab27ea905fc58b82df46}
+\index{Random\+Light@{Random\+Light}!specular\+Component@{specular\+Component}}
+\index{specular\+Component@{specular\+Component}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{specular\+Component(const Vector3\+D \&pt) const override}{specularComponent(const Vector3D &pt) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Random\+Light\+::specular\+Component (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classRandomLight_af9922ba2ce0c9dc16026db945d8f1506}{}\label{classRandomLight_af9922ba2ce0c9dc16026db945d8f1506}
+
+
+Implements \hyperlink{classLight_a2a4cdf8081c2cab02757c2464610a32f}{Light}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Random\+Light@{Random\+Light}!corner@{corner}}
+\index{corner@{corner}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{corner}{corner}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Random\+Light\+::corner\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRandomLight_ac54b3aa2ddb79d7f7363f64ed0f96989}{}\label{classRandomLight_ac54b3aa2ddb79d7f7363f64ed0f96989}
+\index{Random\+Light@{Random\+Light}!diffuse@{diffuse}}
+\index{diffuse@{diffuse}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{diffuse}{diffuse}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Random\+Light\+::diffuse\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRandomLight_a26ffb2886dbb56b24d77fd8c760c8b28}{}\label{classRandomLight_a26ffb2886dbb56b24d77fd8c760c8b28}
+\index{Random\+Light@{Random\+Light}!middle@{middle}}
+\index{middle@{middle}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{middle}{middle}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Random\+Light\+::middle\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRandomLight_a13f0aa6e386b4eb09b786a81d2d9e9ff}{}\label{classRandomLight_a13f0aa6e386b4eb09b786a81d2d9e9ff}
+\index{Random\+Light@{Random\+Light}!specular@{specular}}
+\index{specular@{specular}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{specular}{specular}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Random\+Light\+::specular\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRandomLight_ac8014c223873c92490dfb697cc4663d4}{}\label{classRandomLight_ac8014c223873c92490dfb697cc4663d4}
+\index{Random\+Light@{Random\+Light}!x@{x}}
+\index{x@{x}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Random\+Light\+::x\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRandomLight_a5582baaa81ff0117f66ef8f3636859ed}{}\label{classRandomLight_a5582baaa81ff0117f66ef8f3636859ed}
+\index{Random\+Light@{Random\+Light}!y@{y}}
+\index{y@{y}!Random\+Light@{Random\+Light}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Random\+Light\+::y\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRandomLight_a9d9e2fcde9c0d83b655f9a259d54a6d8}{}\label{classRandomLight_a9d9e2fcde9c0d83b655f9a259d54a6d8}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{RandomLight_8h}{Random\+Light.\+h}\item 
+src/\hyperlink{RandomLight_8cpp}{Random\+Light.\+cpp}\end{DoxyCompactItemize}

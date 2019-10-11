@@ -1,0 +1,182 @@
+\hypertarget{classsymcpp_1_1Subtract}{}\section{symcpp\+:\+:Subtract Class Reference}
+\label{classsymcpp_1_1Subtract}\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+
+
+{\ttfamily \#include $<$Subtract.\+h$>$}
+
+
+
+Inheritance diagram for symcpp\+:\+:Subtract\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classsymcpp_1_1Subtract__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for symcpp\+:\+:Subtract\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classsymcpp_1_1Subtract__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsymcpp_1_1Subtract_ab77cda12501d9e57a2346eea44e578e2}{Subtract} (const \hyperlink{classsymcpp_1_1Expression}{Expression} \&\hyperlink{classsymcpp_1_1Subtract_a3ef44b38ab098faab493079d994d35ba}{a}, const \hyperlink{classsymcpp_1_1Expression}{Expression} \&\hyperlink{classsymcpp_1_1Subtract_ac5c9bd87c3554a20d9bf12f5a53a9613}{b})
+\item 
+\hyperlink{classsymcpp_1_1Subtract_a30ad18aceec0bdc15756d2618a8ed6e4}{Subtract} (const std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \&\hyperlink{classsymcpp_1_1Subtract_a3ef44b38ab098faab493079d994d35ba}{a}, const std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \&\hyperlink{classsymcpp_1_1Subtract_ac5c9bd87c3554a20d9bf12f5a53a9613}{b})
+\item 
+double \hyperlink{classsymcpp_1_1Subtract_a35a24632dfacadb23e4177a539e7c1df}{subs} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Subtract_a4f9040e23694efcf093bf4b5c59b386b}{diff} (std\+::string var) const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Subtract_a97b707b4c72caa44342fe7952d616a4d}{copy} () const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Subtract_a3d3b5586c41dbbee1071a08db5725ecc}{simplify} () override
+\item 
+unsigned int \hyperlink{classsymcpp_1_1Subtract_ac0b20c29aac75772aeb226eec86ffc22}{precedence} () const override
+\item 
+double \hyperlink{classsymcpp_1_1Subtract_a619e8733e2b9c07f9bcdb1c82781fad9}{const\+\_\+eval} () const override
+\item 
+bool \hyperlink{classsymcpp_1_1Subtract_a651ca7fc5e804970141b65813e738463}{is\+\_\+constant} () const override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classsymcpp_1_1Subtract_a7f0af9519d3a4978abf85e88da7d682d}{print} (std\+::ostream \&sink) const override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Subtract_a3ef44b38ab098faab493079d994d35ba}{a}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Subtract_ac5c9bd87c3554a20d9bf12f5a53a9613}{b}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{Subtract(const Expression \&a, const Expression \&b)}{Subtract(const Expression &a, const Expression &b)}}]{\setlength{\rightskip}{0pt plus 5cm}symcpp\+::\+Subtract\+::\+Subtract (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expression} \&}]{a, }
+\item[{const {\bf Expression} \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classsymcpp_1_1Subtract_ab77cda12501d9e57a2346eea44e578e2}{}\label{classsymcpp_1_1Subtract_ab77cda12501d9e57a2346eea44e578e2}
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{Subtract(const std\+::unique\+\_\+ptr$<$ Expression $>$ \&a, const std\+::unique\+\_\+ptr$<$ Expression $>$ \&b)}{Subtract(const std::unique_ptr< Expression > &a, const std::unique_ptr< Expression > &b)}}]{\setlength{\rightskip}{0pt plus 5cm}symcpp\+::\+Subtract\+::\+Subtract (
+\begin{DoxyParamCaption}
+\item[{const std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ \&}]{a, }
+\item[{const std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classsymcpp_1_1Subtract_a30ad18aceec0bdc15756d2618a8ed6e4}{}\label{classsymcpp_1_1Subtract_a30ad18aceec0bdc15756d2618a8ed6e4}
+
+
+\subsection{Member Function Documentation}
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!const\+\_\+eval@{const\+\_\+eval}}
+\index{const\+\_\+eval@{const\+\_\+eval}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{const\+\_\+eval() const override}{const_eval() const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Subtract\+::const\+\_\+eval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Subtract_a619e8733e2b9c07f9bcdb1c82781fad9}{}\label{classsymcpp_1_1Subtract_a619e8733e2b9c07f9bcdb1c82781fad9}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a81c8069347f586cb5632338d97c278ad}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!copy@{copy}}
+\index{copy@{copy}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{copy() const override}{copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Subtract\+::copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Subtract_a97b707b4c72caa44342fe7952d616a4d}{}\label{classsymcpp_1_1Subtract_a97b707b4c72caa44342fe7952d616a4d}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a2e7de5a295ccf0efdc9b34cea7ba3d0b}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!diff@{diff}}
+\index{diff@{diff}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{diff(std\+::string var) const override}{diff(std::string var) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Subtract\+::diff (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{var}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Subtract_a4f9040e23694efcf093bf4b5c59b386b}{}\label{classsymcpp_1_1Subtract_a4f9040e23694efcf093bf4b5c59b386b}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a032fe8da79d5e231ca2d21a201c8f32d}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!is\+\_\+constant@{is\+\_\+constant}}
+\index{is\+\_\+constant@{is\+\_\+constant}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{is\+\_\+constant() const override}{is_constant() const override}}]{\setlength{\rightskip}{0pt plus 5cm}bool symcpp\+::\+Subtract\+::is\+\_\+constant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Subtract_a651ca7fc5e804970141b65813e738463}{}\label{classsymcpp_1_1Subtract_a651ca7fc5e804970141b65813e738463}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a30db7917c8948e22330cbe8259caeae2}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!precedence@{precedence}}
+\index{precedence@{precedence}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{precedence() const override}{precedence() const override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int symcpp\+::\+Subtract\+::precedence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Subtract_ac0b20c29aac75772aeb226eec86ffc22}{}\label{classsymcpp_1_1Subtract_ac0b20c29aac75772aeb226eec86ffc22}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a181c162d5740faac392ffdca26bfca0c}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!print@{print}}
+\index{print@{print}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& symcpp\+::\+Subtract\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Subtract_a7f0af9519d3a4978abf85e88da7d682d}{}\label{classsymcpp_1_1Subtract_a7f0af9519d3a4978abf85e88da7d682d}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_af37e13032a40f2da4d2866eaa8658049}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!simplify@{simplify}}
+\index{simplify@{simplify}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{simplify() override}{simplify() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Subtract\+::simplify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Subtract_a3d3b5586c41dbbee1071a08db5725ecc}{}\label{classsymcpp_1_1Subtract_a3d3b5586c41dbbee1071a08db5725ecc}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_ab1fa6e55eea0682250d013f28db26cd2}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!subs@{subs}}
+\index{subs@{subs}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{subs(const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override}{subs(const std::unordered_map< std::string, double > &env) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Subtract\+::subs (
+\begin{DoxyParamCaption}
+\item[{const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&}]{env}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Subtract_a35a24632dfacadb23e4177a539e7c1df}{}\label{classsymcpp_1_1Subtract_a35a24632dfacadb23e4177a539e7c1df}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_aaef29b0afa2d6c21fe35f47a1be76134}{symcpp\+::\+Expression}.
+
+
+
+\subsection{Member Data Documentation}
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!a@{a}}
+\index{a@{a}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{a}{a}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Expression}$>$ symcpp\+::\+Subtract\+::a\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsymcpp_1_1Subtract_a3ef44b38ab098faab493079d994d35ba}{}\label{classsymcpp_1_1Subtract_a3ef44b38ab098faab493079d994d35ba}
+\index{symcpp\+::\+Subtract@{symcpp\+::\+Subtract}!b@{b}}
+\index{b@{b}!symcpp\+::\+Subtract@{symcpp\+::\+Subtract}}
+\subsubsection[{\texorpdfstring{b}{b}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Expression}$>$ symcpp\+::\+Subtract\+::b\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsymcpp_1_1Subtract_ac5c9bd87c3554a20d9bf12f5a53a9613}{}\label{classsymcpp_1_1Subtract_ac5c9bd87c3554a20d9bf12f5a53a9613}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/symcpp/\hyperlink{Subtract_8h}{Subtract.\+h}\item 
+src/symcpp/\hyperlink{Subtract_8cpp}{Subtract.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,219 @@
+\hypertarget{classTriangle}{}\section{Triangle Class Reference}
+\label{classTriangle}\index{Triangle@{Triangle}}
+
+
+A \hyperlink{classTriangle}{Triangle} implementing \hyperlink{classBoundedVolume}{Bounded\+Volume}, \hyperlink{classRenderObject}{Render\+Object}.  
+
+
+
+
+{\ttfamily \#include $<$Triangle.\+h$>$}
+
+
+
+Inheritance diagram for Triangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classTriangle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Triangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTriangle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTriangle_a4a1cc7d9d62014eb2453d18bbd05608f}{Triangle} (\hyperlink{classVector3D}{Vector3D} \hyperlink{classTriangle_a0461ba6ca1a0e1aa84062f93eacbe8b8}{p1}, \hyperlink{classVector3D}{Vector3D} \hyperlink{classTriangle_aa15acbc4f123f3e9e75e574566c2679a}{p2}, \hyperlink{classVector3D}{Vector3D} \hyperlink{classTriangle_a600c7366c1dad8996026742eb12434c6}{p3}, \hyperlink{classMaterial}{Material} mat)
+\item 
+\hyperlink{classIntersection}{Intersection} \hyperlink{classTriangle_a4265ad6580a511c2beb08ab4dc752285}{ray\+Intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
+\begin{DoxyCompactList}\small\item\em Method to detect intersection of ray and object. \end{DoxyCompactList}\item 
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classTriangle_a90617660c39cf8b56621b5964c74a555}{get\+Bounds} () const override
+\item 
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classTriangle_a01471035c072fa83560975a29024bb30}{intersect\+Properties} (const \hyperlink{classRay}{Ray} \&ray) const override
+\begin{DoxyCompactList}\small\item\em If ray intersects this object, this method will provide additional Information. \end{DoxyCompactList}\item 
+std\+::ostream \& \hyperlink{classTriangle_af5089786289dbeb3a5f41affb4edb569}{print} (std\+::ostream \&sink) const override
+\item 
+\hyperlink{classTriangle_a2b4c058428898080754e39009819ca38}{$\sim$\+Triangle} ()=default
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classTriangle_a1b3d921c1ed274eb5c30504826cf75a9}{in\+Triangle} (\hyperlink{classVector3D}{Vector3D} p) const 
+\begin{DoxyCompactList}\small\item\em Checks whether the point p lies in this triangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classTriangle_a0461ba6ca1a0e1aa84062f93eacbe8b8}{p1}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classTriangle_aa15acbc4f123f3e9e75e574566c2679a}{p2}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classTriangle_a600c7366c1dad8996026742eb12434c6}{p3}
+\item 
+double \hyperlink{classTriangle_a0cb5b18a8ce2cf896712cd3f9e6c80ea}{d}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classTriangle_ac6e29ae9d1f7abc16cfb25357c74806f}{normal}
+\item 
+\hyperlink{classMaterial}{Material} \hyperlink{classTriangle_ae170999b9b35d778d9a0d084d256547b}{material}
+\item 
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classTriangle_ac5b18fe5f9ea12fb717e3306c300527d}{bounds}
+\item 
+double \hyperlink{classTriangle_a43322fb75910877dd63b17d391e3022b}{area2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classTriangle}{Triangle} implementing \hyperlink{classBoundedVolume}{Bounded\+Volume}, \hyperlink{classRenderObject}{Render\+Object}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{Triangle(\+Vector3\+D p1, Vector3\+D p2, Vector3\+D p3, Material mat)}{Triangle(Vector3D p1, Vector3D p2, Vector3D p3, Material mat)}}]{\setlength{\rightskip}{0pt plus 5cm}Triangle\+::\+Triangle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{p1, }
+\item[{{\bf Vector3D}}]{p2, }
+\item[{{\bf Vector3D}}]{p3, }
+\item[{{\bf Material}}]{mat}
+\end{DoxyParamCaption}
+)}\hypertarget{classTriangle_a4a1cc7d9d62014eb2453d18bbd05608f}{}\label{classTriangle_a4a1cc7d9d62014eb2453d18bbd05608f}
+\index{Triangle@{Triangle}!````~Triangle@{$\sim$\+Triangle}}
+\index{````~Triangle@{$\sim$\+Triangle}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{$\sim$\+Triangle()=default}{~Triangle()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Triangle\+::$\sim$\+Triangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classTriangle_a2b4c058428898080754e39009819ca38}{}\label{classTriangle_a2b4c058428898080754e39009819ca38}
+
+
+\subsection{Member Function Documentation}
+\index{Triangle@{Triangle}!get\+Bounds@{get\+Bounds}}
+\index{get\+Bounds@{get\+Bounds}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{get\+Bounds() const override}{getBounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Triangle\+::get\+Bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classTriangle_a90617660c39cf8b56621b5964c74a555}{}\label{classTriangle_a90617660c39cf8b56621b5964c74a555}
+
+
+Implements \hyperlink{classBoundedVolume_a3d912b7028f7046fe18c4edf3a400e3b}{Bounded\+Volume}.
+
+\index{Triangle@{Triangle}!intersect\+Properties@{intersect\+Properties}}
+\index{intersect\+Properties@{intersect\+Properties}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{intersect\+Properties(const Ray \&ray) const override}{intersectProperties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Triangle\+::intersect\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ray} \&}]{ray}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classTriangle_a01471035c072fa83560975a29024bb30}{}\label{classTriangle_a01471035c072fa83560975a29024bb30}
+
+
+If ray intersects this object, this method will provide additional Information. 
+
+Note, that even if ray\+Intersect detected an intersection, this method might not be called. It is called iff the Intersection-\/\+Object returned by ray\+Intersect contains a pointer to this object and no other object in the rendered scene returned an intersection that was closer to the camera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & the ray in question \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} object containing the surface normal and material information 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRenderObject_ae2c6d699741385dcd9ea6a1b09f9b7f0}{Render\+Object}.
+
+\index{Triangle@{Triangle}!in\+Triangle@{in\+Triangle}}
+\index{in\+Triangle@{in\+Triangle}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{in\+Triangle(\+Vector3\+D p) const }{inTriangle(Vector3D p) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Triangle\+::in\+Triangle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classTriangle_a1b3d921c1ed274eb5c30504826cf75a9}{}\label{classTriangle_a1b3d921c1ed274eb5c30504826cf75a9}
+
+
+Checks whether the point p lies in this triangle. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Barycentric_coordinate_system}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Barycentric\+\_\+coordinate\+\_\+system} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Point in 3\+D-\/\+Space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether p lies in this triangle 
+\end{DoxyReturn}
+\index{Triangle@{Triangle}!print@{print}}
+\index{print@{print}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& Triangle\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classTriangle_af5089786289dbeb3a5f41affb4edb569}{}\label{classTriangle_af5089786289dbeb3a5f41affb4edb569}
+
+
+Implements \hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}.
+
+\index{Triangle@{Triangle}!ray\+Intersect@{ray\+Intersect}}
+\index{ray\+Intersect@{ray\+Intersect}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{ray\+Intersect(const Ray \&ray) const override}{rayIntersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Triangle\+::ray\+Intersect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ray} \&}]{ray}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classTriangle_a4265ad6580a511c2beb08ab4dc752285}{}\label{classTriangle_a4265ad6580a511c2beb08ab4dc752285}
+
+
+Method to detect intersection of ray and object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & The ray in question \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classIntersection}{Intersection} object containing distance to intersection and pointer to intersected object 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRenderObject_a681f6674d94f16c4df69605d5e42d05c}{Render\+Object}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Triangle@{Triangle}!area2@{area2}}
+\index{area2@{area2}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{area2}{area2}}]{\setlength{\rightskip}{0pt plus 5cm}double Triangle\+::area2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classTriangle_a43322fb75910877dd63b17d391e3022b}{}\label{classTriangle_a43322fb75910877dd63b17d391e3022b}
+\index{Triangle@{Triangle}!bounds@{bounds}}
+\index{bounds@{bounds}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{bounds}{bounds}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Triangle\+::bounds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classTriangle_ac5b18fe5f9ea12fb717e3306c300527d}{}\label{classTriangle_ac5b18fe5f9ea12fb717e3306c300527d}
+\index{Triangle@{Triangle}!d@{d}}
+\index{d@{d}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{d}{d}}]{\setlength{\rightskip}{0pt plus 5cm}double Triangle\+::d\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classTriangle_a0cb5b18a8ce2cf896712cd3f9e6c80ea}{}\label{classTriangle_a0cb5b18a8ce2cf896712cd3f9e6c80ea}
+\index{Triangle@{Triangle}!material@{material}}
+\index{material@{material}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{material}{material}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material} Triangle\+::material\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classTriangle_ae170999b9b35d778d9a0d084d256547b}{}\label{classTriangle_ae170999b9b35d778d9a0d084d256547b}
+\index{Triangle@{Triangle}!normal@{normal}}
+\index{normal@{normal}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{normal}{normal}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Triangle\+::normal\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classTriangle_ac6e29ae9d1f7abc16cfb25357c74806f}{}\label{classTriangle_ac6e29ae9d1f7abc16cfb25357c74806f}
+\index{Triangle@{Triangle}!p1@{p1}}
+\index{p1@{p1}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{p1}{p1}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Triangle\+::p1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classTriangle_a0461ba6ca1a0e1aa84062f93eacbe8b8}{}\label{classTriangle_a0461ba6ca1a0e1aa84062f93eacbe8b8}
+\index{Triangle@{Triangle}!p2@{p2}}
+\index{p2@{p2}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{p2}{p2}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Triangle\+::p2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classTriangle_aa15acbc4f123f3e9e75e574566c2679a}{}\label{classTriangle_aa15acbc4f123f3e9e75e574566c2679a}
+\index{Triangle@{Triangle}!p3@{p3}}
+\index{p3@{p3}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{p3}{p3}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Triangle\+::p3\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classTriangle_a600c7366c1dad8996026742eb12434c6}{}\label{classTriangle_a600c7366c1dad8996026742eb12434c6}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Triangle_8h}{Triangle.\+h}\item 
+src/\hyperlink{Triangle_8cpp}{Triangle.\+cpp}\end{DoxyCompactItemize}

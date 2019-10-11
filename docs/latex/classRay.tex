@@ -1,0 +1,138 @@
+\hypertarget{classRay}{}\section{Ray Class Reference}
+\label{classRay}\index{Ray@{Ray}}
+
+
+{\ttfamily \#include $<$Ray.\+h$>$}
+
+
+
+Collaboration diagram for Ray\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{classRay__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRay_a9fad894cf932e40e035eb93ed880577b}{Ray} (const \hyperlink{classVector3D}{Vector3D} \&pt, const \hyperlink{classVector3D}{Vector3D} \&dir)
+\item 
+const \hyperlink{classVector3D}{Vector3D} \& \hyperlink{classRay_a00200e8c1064e7ecfd29ce6ee7f8197a}{read\+Direction} () const 
+\item 
+const \hyperlink{classVector3D}{Vector3D} \& \hyperlink{classRay_ae6d85ff4bc0a04d36f53204cb2bcdc16}{read\+Base} () const 
+\item 
+void \hyperlink{classRay_af986618fceed92c3c189f8950deb6d21}{walk} (double d)
+\begin{DoxyCompactList}\small\item\em Offset the base by direction$\ast$d. \end{DoxyCompactList}\item 
+void \hyperlink{classRay_ab5669d08ac75473d52cb4e0ade79b6c1}{offset} (const \hyperlink{classVector3D}{Vector3D} \&v)
+\begin{DoxyCompactList}\small\item\em Offset the base by v. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classRay_a6b11813671e6296448ff9abafaa82b31}{print} (std\+::ostream \&sink) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRay_a35cd5ddd116f79b927e5ce1dfaca64c7}{point}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRay_afe8cae110601e8ece9edd45ba500c2d0}{direction}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classRay_a419823895c7cde830e4b34018dec9c2f}{operator$<$$<$} (std\+::ostream \&sink, const \hyperlink{classRay}{Ray} \&ray)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Ray@{Ray}!Ray@{Ray}}
+\index{Ray@{Ray}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{Ray(const Vector3\+D \&pt, const Vector3\+D \&dir)}{Ray(const Vector3D &pt, const Vector3D &dir)}}]{\setlength{\rightskip}{0pt plus 5cm}Ray\+::\+Ray (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pt, }
+\item[{const {\bf Vector3D} \&}]{dir}
+\end{DoxyParamCaption}
+)}\hypertarget{classRay_a9fad894cf932e40e035eb93ed880577b}{}\label{classRay_a9fad894cf932e40e035eb93ed880577b}
+
+
+\subsection{Member Function Documentation}
+\index{Ray@{Ray}!offset@{offset}}
+\index{offset@{offset}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{offset(const Vector3\+D \&v)}{offset(const Vector3D &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+::offset (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classRay_ab5669d08ac75473d52cb4e0ade79b6c1}{}\label{classRay_ab5669d08ac75473d52cb4e0ade79b6c1}
+
+
+Offset the base by v. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to add to the base \\
+\hline
+\end{DoxyParams}
+\index{Ray@{Ray}!print@{print}}
+\index{print@{print}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const }{print(std::ostream &sink) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& Ray\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRay_a6b11813671e6296448ff9abafaa82b31}{}\label{classRay_a6b11813671e6296448ff9abafaa82b31}
+\index{Ray@{Ray}!read\+Base@{read\+Base}}
+\index{read\+Base@{read\+Base}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{read\+Base() const }{readBase() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3D} \& Ray\+::read\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classRay_ae6d85ff4bc0a04d36f53204cb2bcdc16}{}\label{classRay_ae6d85ff4bc0a04d36f53204cb2bcdc16}
+\index{Ray@{Ray}!read\+Direction@{read\+Direction}}
+\index{read\+Direction@{read\+Direction}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{read\+Direction() const }{readDirection() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3D} \& Ray\+::read\+Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classRay_a00200e8c1064e7ecfd29ce6ee7f8197a}{}\label{classRay_a00200e8c1064e7ecfd29ce6ee7f8197a}
+\index{Ray@{Ray}!walk@{walk}}
+\index{walk@{walk}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{walk(double d)}{walk(double d)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+::walk (
+\begin{DoxyParamCaption}
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{classRay_af986618fceed92c3c189f8950deb6d21}{}\label{classRay_af986618fceed92c3c189f8950deb6d21}
+
+
+Offset the base by direction$\ast$d. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The number of directions to walk \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Ray@{Ray}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink, }
+\item[{const {\bf Ray} \&}]{ray}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classRay_a419823895c7cde830e4b34018dec9c2f}{}\label{classRay_a419823895c7cde830e4b34018dec9c2f}
+
+
+\subsection{Member Data Documentation}
+\index{Ray@{Ray}!direction@{direction}}
+\index{direction@{direction}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{direction}{direction}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Ray\+::direction\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRay_afe8cae110601e8ece9edd45ba500c2d0}{}\label{classRay_afe8cae110601e8ece9edd45ba500c2d0}
+\index{Ray@{Ray}!point@{point}}
+\index{point@{point}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{point}{point}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Ray\+::point\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRay_a35cd5ddd116f79b927e5ce1dfaca64c7}{}\label{classRay_a35cd5ddd116f79b927e5ce1dfaca64c7}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Ray_8h}{Ray.\+h}\item 
+src/\hyperlink{Ray_8cpp}{Ray.\+cpp}\end{DoxyCompactItemize}

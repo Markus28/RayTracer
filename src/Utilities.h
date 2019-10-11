@@ -99,8 +99,12 @@ namespace utility {
         }
     }
 
+    /**
+     * @brief Class containing solution to quadratic equation
+     */
     struct QuadraticSolution
     {
+        /// Indicates wether the equation has any solutions
         bool exists;
         double solution1;
         double solution2;

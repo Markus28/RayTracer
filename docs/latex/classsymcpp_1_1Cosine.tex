@@ -1,0 +1,105 @@
+\hypertarget{classsymcpp_1_1Cosine}{}\section{symcpp\+:\+:Cosine Class Reference}
+\label{classsymcpp_1_1Cosine}\index{symcpp\+::\+Cosine@{symcpp\+::\+Cosine}}
+
+
+{\ttfamily \#include $<$Cosine.\+h$>$}
+
+
+
+Inheritance diagram for symcpp\+:\+:Cosine\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classsymcpp_1_1Cosine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for symcpp\+:\+:Cosine\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classsymcpp_1_1Cosine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Cosine_a8bedd5e4ad3245d5ee6e6e7da3b5e8dc}{simplify} () override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Cosine_a63c4510666729dfcf5727299945c60f5}{copy} () const override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classsymcpp_1_1Cosine_a2d8d4dc8d5119d59365f212b7d855a53}{print} (std\+::ostream \&sink) const override
+\item 
+double \hyperlink{classsymcpp_1_1Cosine_a0b476eebbffe0a2914a02bf6d14b05cd}{op} (double x) const override
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Cosine_a92a24c87300b0e400f286b6ecc4eb1dd}{partial\+\_\+derivative} () const override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{symcpp\+::\+Cosine@{symcpp\+::\+Cosine}!copy@{copy}}
+\index{copy@{copy}!symcpp\+::\+Cosine@{symcpp\+::\+Cosine}}
+\subsubsection[{\texorpdfstring{copy() const override}{copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Cosine\+::copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Cosine_a63c4510666729dfcf5727299945c60f5}{}\label{classsymcpp_1_1Cosine_a63c4510666729dfcf5727299945c60f5}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_a2e7de5a295ccf0efdc9b34cea7ba3d0b}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Cosine@{symcpp\+::\+Cosine}!op@{op}}
+\index{op@{op}!symcpp\+::\+Cosine@{symcpp\+::\+Cosine}}
+\subsubsection[{\texorpdfstring{op(double x) const override}{op(double x) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Cosine\+::op (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Cosine_a0b476eebbffe0a2914a02bf6d14b05cd}{}\label{classsymcpp_1_1Cosine_a0b476eebbffe0a2914a02bf6d14b05cd}
+
+
+Implements \hyperlink{classsymcpp_1_1UnaryOperator_a679c3c46cad3a62bdd776ff836c7891e}{symcpp\+::\+Unary\+Operator}.
+
+\index{symcpp\+::\+Cosine@{symcpp\+::\+Cosine}!partial\+\_\+derivative@{partial\+\_\+derivative}}
+\index{partial\+\_\+derivative@{partial\+\_\+derivative}!symcpp\+::\+Cosine@{symcpp\+::\+Cosine}}
+\subsubsection[{\texorpdfstring{partial\+\_\+derivative() const override}{partial_derivative() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Cosine\+::partial\+\_\+derivative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Cosine_a92a24c87300b0e400f286b6ecc4eb1dd}{}\label{classsymcpp_1_1Cosine_a92a24c87300b0e400f286b6ecc4eb1dd}
+
+
+Implements \hyperlink{classsymcpp_1_1UnaryOperator_a85de3214870cd72edc63ac1c221ddeee}{symcpp\+::\+Unary\+Operator}.
+
+\index{symcpp\+::\+Cosine@{symcpp\+::\+Cosine}!print@{print}}
+\index{print@{print}!symcpp\+::\+Cosine@{symcpp\+::\+Cosine}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& symcpp\+::\+Cosine\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Cosine_a2d8d4dc8d5119d59365f212b7d855a53}{}\label{classsymcpp_1_1Cosine_a2d8d4dc8d5119d59365f212b7d855a53}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_af37e13032a40f2da4d2866eaa8658049}{symcpp\+::\+Expression}.
+
+\index{symcpp\+::\+Cosine@{symcpp\+::\+Cosine}!simplify@{simplify}}
+\index{simplify@{simplify}!symcpp\+::\+Cosine@{symcpp\+::\+Cosine}}
+\subsubsection[{\texorpdfstring{simplify() override}{simplify() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Cosine\+::simplify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Cosine_a8bedd5e4ad3245d5ee6e6e7da3b5e8dc}{}\label{classsymcpp_1_1Cosine_a8bedd5e4ad3245d5ee6e6e7da3b5e8dc}
+
+
+Implements \hyperlink{classsymcpp_1_1Expression_ab1fa6e55eea0682250d013f28db26cd2}{symcpp\+::\+Expression}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/symcpp/\hyperlink{Cosine_8h}{Cosine.\+h}\item 
+src/symcpp/\hyperlink{Cosine_8cpp}{Cosine.\+cpp}\end{DoxyCompactItemize}

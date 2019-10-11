@@ -7,6 +7,9 @@
 #include <unordered_map>
 #include "Material.h"
 
+/**
+ * @brief Class for loading wavefront .mtl files
+ */
 class MTLLib {
 public:
     explicit MTLLib(const char* filename);

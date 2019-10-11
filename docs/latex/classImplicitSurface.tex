@@ -1,0 +1,207 @@
+\hypertarget{classImplicitSurface}{}\section{Implicit\+Surface Class Reference}
+\label{classImplicitSurface}\index{Implicit\+Surface@{Implicit\+Surface}}
+
+
+\hyperlink{classRenderObject}{Render\+Object} for the surface implicitly given by F(x,y,z) = 0.  
+
+
+
+
+{\ttfamily \#include $<$Implicit\+Surface.\+h$>$}
+
+
+
+Inheritance diagram for Implicit\+Surface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classImplicitSurface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Implicit\+Surface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classImplicitSurface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImplicitSurface_ab0cfa235e8f935a416c395cfecd2f32b}{Implicit\+Surface} (\hyperlink{classsymcpp_1_1SymbolicGraph}{symcpp\+::\+Symbolic\+Graph} f, \hyperlink{classMaterial}{Material} m, \hyperlink{classBoundingBox}{Bounding\+Box} b)
+\item 
+\hyperlink{classIntersection}{Intersection} \hyperlink{classImplicitSurface_a09b05170e1ff9d443c0c0ff9c33824f8}{ray\+Intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
+\begin{DoxyCompactList}\small\item\em Uses the symbolic derivative and the Newton method to detect the earliest intersection. \end{DoxyCompactList}\item 
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classImplicitSurface_a8ce29f3d491a01f1992a2ae534ee6bea}{intersect\+Properties} (const \hyperlink{classRay}{Ray} \&ray) const override
+\begin{DoxyCompactList}\small\item\em If ray intersects this object, this method will provide additional Information. \end{DoxyCompactList}\item 
+std\+::ostream \& \hyperlink{classImplicitSurface_a2267c88829c97c12ff8f7d250ce94802}{print} (std\+::ostream \&sink) const override
+\item 
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classImplicitSurface_a8fd17a82a612fc8d15c5973cb497c48b}{get\+Bounds} () const override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsymcpp_1_1SymbolicGraph}{symcpp\+::\+Symbolic\+Graph} \hyperlink{classImplicitSurface_aeeafee33bf827627323373167ce841eb}{F}
+\begin{DoxyCompactList}\small\item\em The function defining the surface by F(x, y, z) = 0. \end{DoxyCompactList}\item 
+\hyperlink{classsymcpp_1_1SymbolicGraph}{symcpp\+::\+Symbolic\+Graph} \hyperlink{classImplicitSurface_a9861b92609a363bf78d73347a9272b5d}{dxF}
+\begin{DoxyCompactList}\small\item\em The partial derivative by x. \end{DoxyCompactList}\item 
+\hyperlink{classsymcpp_1_1SymbolicGraph}{symcpp\+::\+Symbolic\+Graph} \hyperlink{classImplicitSurface_a49145c0375f0adc02157b9368e733aa2}{dyF}
+\begin{DoxyCompactList}\small\item\em The partial derivative by y. \end{DoxyCompactList}\item 
+\hyperlink{classsymcpp_1_1SymbolicGraph}{symcpp\+::\+Symbolic\+Graph} \hyperlink{classImplicitSurface_aab31834ea321e276bb85348d7a7464f2}{dzF}
+\begin{DoxyCompactList}\small\item\em The partial derivative by z. \end{DoxyCompactList}\item 
+\hyperlink{classMaterial}{Material} \hyperlink{classImplicitSurface_adbb94dbb4d3271d5ed18752dde4aac32}{mat}
+\item 
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classImplicitSurface_a1332a4975d57ce5f91450221541df82a}{bounds}
+\item 
+double \hyperlink{classImplicitSurface_ad92c06925b2496b7fe3a1d2659a87075}{max\+\_\+iter}
+\begin{DoxyCompactList}\small\item\em The maximum number of iterations in Newton method. \end{DoxyCompactList}\item 
+double \hyperlink{classImplicitSurface_aa870a11380d4bc4c019d9d250e7ccc9c}{epsilon}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classRenderObject}{Render\+Object} for the surface implicitly given by F(x,y,z) = 0. 
+
+Objects of this type can be used to render meshless surfaces, eg manifolds. This is, however fairly slow. You might consider meshifying the object by applying the marching-\/cubes algorithm. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Implicit\+Surface@{Implicit\+Surface}!Implicit\+Surface@{Implicit\+Surface}}
+\index{Implicit\+Surface@{Implicit\+Surface}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{Implicit\+Surface(symcpp\+::\+Symbolic\+Graph f, Material m, Bounding\+Box b)}{ImplicitSurface(symcpp::SymbolicGraph f, Material m, BoundingBox b)}}]{\setlength{\rightskip}{0pt plus 5cm}Implicit\+Surface\+::\+Implicit\+Surface (
+\begin{DoxyParamCaption}
+\item[{{\bf symcpp\+::\+Symbolic\+Graph}}]{f, }
+\item[{{\bf Material}}]{m, }
+\item[{{\bf Bounding\+Box}}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classImplicitSurface_ab0cfa235e8f935a416c395cfecd2f32b}{}\label{classImplicitSurface_ab0cfa235e8f935a416c395cfecd2f32b}
+
+
+\subsection{Member Function Documentation}
+\index{Implicit\+Surface@{Implicit\+Surface}!get\+Bounds@{get\+Bounds}}
+\index{get\+Bounds@{get\+Bounds}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{get\+Bounds() const override}{getBounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Implicit\+Surface\+::get\+Bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classImplicitSurface_a8fd17a82a612fc8d15c5973cb497c48b}{}\label{classImplicitSurface_a8fd17a82a612fc8d15c5973cb497c48b}
+
+
+Implements \hyperlink{classBoundedVolume_a3d912b7028f7046fe18c4edf3a400e3b}{Bounded\+Volume}.
+
+\index{Implicit\+Surface@{Implicit\+Surface}!intersect\+Properties@{intersect\+Properties}}
+\index{intersect\+Properties@{intersect\+Properties}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{intersect\+Properties(const Ray \&ray) const override}{intersectProperties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Implicit\+Surface\+::intersect\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ray} \&}]{ray}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classImplicitSurface_a8ce29f3d491a01f1992a2ae534ee6bea}{}\label{classImplicitSurface_a8ce29f3d491a01f1992a2ae534ee6bea}
+
+
+If ray intersects this object, this method will provide additional Information. 
+
+Note, that even if ray\+Intersect detected an intersection, this method might not be called. It is called iff the Intersection-\/\+Object returned by ray\+Intersect contains a pointer to this object and no other object in the rendered scene returned an intersection that was closer to the camera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & the ray in question \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} object containing the surface normal and material information 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRenderObject_ae2c6d699741385dcd9ea6a1b09f9b7f0}{Render\+Object}.
+
+\index{Implicit\+Surface@{Implicit\+Surface}!print@{print}}
+\index{print@{print}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& Implicit\+Surface\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sink}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classImplicitSurface_a2267c88829c97c12ff8f7d250ce94802}{}\label{classImplicitSurface_a2267c88829c97c12ff8f7d250ce94802}
+
+
+Implements \hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}.
+
+\index{Implicit\+Surface@{Implicit\+Surface}!ray\+Intersect@{ray\+Intersect}}
+\index{ray\+Intersect@{ray\+Intersect}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{ray\+Intersect(const Ray \&ray) const override}{rayIntersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Implicit\+Surface\+::ray\+Intersect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ray} \&}]{ray}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classImplicitSurface_a09b05170e1ff9d443c0c0ff9c33824f8}{}\label{classImplicitSurface_a09b05170e1ff9d443c0c0ff9c33824f8}
+
+
+Uses the symbolic derivative and the Newton method to detect the earliest intersection. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Newton%27s_method}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Newton\%27s\+\_\+method} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & The ray intersecting the surface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classIntersection}{Intersection} object containing distance of intersection and pointer to this 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRenderObject_a681f6674d94f16c4df69605d5e42d05c}{Render\+Object}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Implicit\+Surface@{Implicit\+Surface}!bounds@{bounds}}
+\index{bounds@{bounds}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{bounds}{bounds}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Implicit\+Surface\+::bounds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImplicitSurface_a1332a4975d57ce5f91450221541df82a}{}\label{classImplicitSurface_a1332a4975d57ce5f91450221541df82a}
+\index{Implicit\+Surface@{Implicit\+Surface}!dxF@{dxF}}
+\index{dxF@{dxF}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{dxF}{dxF}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf symcpp\+::\+Symbolic\+Graph} Implicit\+Surface\+::dxF\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImplicitSurface_a9861b92609a363bf78d73347a9272b5d}{}\label{classImplicitSurface_a9861b92609a363bf78d73347a9272b5d}
+
+
+The partial derivative by x. 
+
+\index{Implicit\+Surface@{Implicit\+Surface}!dyF@{dyF}}
+\index{dyF@{dyF}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{dyF}{dyF}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf symcpp\+::\+Symbolic\+Graph} Implicit\+Surface\+::dyF\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImplicitSurface_a49145c0375f0adc02157b9368e733aa2}{}\label{classImplicitSurface_a49145c0375f0adc02157b9368e733aa2}
+
+
+The partial derivative by y. 
+
+\index{Implicit\+Surface@{Implicit\+Surface}!dzF@{dzF}}
+\index{dzF@{dzF}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{dzF}{dzF}}]{\setlength{\rightskip}{0pt plus 5cm}symcpp\+:: Symbolic\+Graph Implicit\+Surface\+::dzF\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImplicitSurface_aab31834ea321e276bb85348d7a7464f2}{}\label{classImplicitSurface_aab31834ea321e276bb85348d7a7464f2}
+
+
+The partial derivative by z. 
+
+\index{Implicit\+Surface@{Implicit\+Surface}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{epsilon}{epsilon}}]{\setlength{\rightskip}{0pt plus 5cm}double Implicit\+Surface\+::epsilon\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImplicitSurface_aa870a11380d4bc4c019d9d250e7ccc9c}{}\label{classImplicitSurface_aa870a11380d4bc4c019d9d250e7ccc9c}
+\index{Implicit\+Surface@{Implicit\+Surface}!F@{F}}
+\index{F@{F}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{F}{F}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf symcpp\+::\+Symbolic\+Graph} Implicit\+Surface\+::F\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImplicitSurface_aeeafee33bf827627323373167ce841eb}{}\label{classImplicitSurface_aeeafee33bf827627323373167ce841eb}
+
+
+The function defining the surface by F(x, y, z) = 0. 
+
+\index{Implicit\+Surface@{Implicit\+Surface}!mat@{mat}}
+\index{mat@{mat}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{mat}{mat}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material} Implicit\+Surface\+::mat\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImplicitSurface_adbb94dbb4d3271d5ed18752dde4aac32}{}\label{classImplicitSurface_adbb94dbb4d3271d5ed18752dde4aac32}
+\index{Implicit\+Surface@{Implicit\+Surface}!max\+\_\+iter@{max\+\_\+iter}}
+\index{max\+\_\+iter@{max\+\_\+iter}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{max\+\_\+iter}{max_iter}}]{\setlength{\rightskip}{0pt plus 5cm}double Implicit\+Surface\+::max\+\_\+iter\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImplicitSurface_ad92c06925b2496b7fe3a1d2659a87075}{}\label{classImplicitSurface_ad92c06925b2496b7fe3a1d2659a87075}
+
+
+The maximum number of iterations in Newton method. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{ImplicitSurface_8h}{Implicit\+Surface.\+h}\item 
+src/\hyperlink{ImplicitSurface_8cpp}{Implicit\+Surface.\+cpp}\end{DoxyCompactItemize}

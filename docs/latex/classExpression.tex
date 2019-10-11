@@ -1,0 +1,46 @@
+\hypertarget{classExpression}{}\section{Expression Class Reference}
+\label{classExpression}\index{Expression@{Expression}}
+
+
+Inheritance diagram for Expression\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classExpression__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double {\bfseries subs} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const =0\hypertarget{classExpression_af2a58b06105dbc3a0491c80202329c02}{}\label{classExpression_af2a58b06105dbc3a0491c80202329c02}
+
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classExpression}{Expression} $>$ {\bfseries diff} (std\+::string var) const =0\hypertarget{classExpression_a1521f6dc4d61772933588469c3c478cb}{}\label{classExpression_a1521f6dc4d61772933588469c3c478cb}
+
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classExpression}{Expression} $>$ {\bfseries copy} () const =0\hypertarget{classExpression_a23c613634060557cc281ba0d495ab80b}{}\label{classExpression_a23c613634060557cc281ba0d495ab80b}
+
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classExpression}{Expression} $>$ {\bfseries simplify} ()=0\hypertarget{classExpression_af4eabd874109a8fb84e0a846cd14ae29}{}\label{classExpression_af4eabd874109a8fb84e0a846cd14ae29}
+
+\item 
+virtual bool {\bfseries is\+\_\+constant} () const =0\hypertarget{classExpression_a8ffe9a0950dbde78a5bd025a9f348359}{}\label{classExpression_a8ffe9a0950dbde78a5bd025a9f348359}
+
+\item 
+virtual unsigned int {\bfseries precedence} () const =0\hypertarget{classExpression_a10f8d5fc41cdeee605eb09d62423782f}{}\label{classExpression_a10f8d5fc41cdeee605eb09d62423782f}
+
+\item 
+virtual double {\bfseries const\+\_\+eval} () const =0\hypertarget{classExpression_af94b781d93a85b3012d9e64f19c0dc8a}{}\label{classExpression_af94b781d93a85b3012d9e64f19c0dc8a}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&sink, const \hyperlink{classExpression}{Expression} \&expr)\hypertarget{classExpression_ade0d81d94acc2274ae8657f14d5636fe}{}\label{classExpression_ade0d81d94acc2274ae8657f14d5636fe}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/symcpp/Expression.\+h\end{DoxyCompactItemize}

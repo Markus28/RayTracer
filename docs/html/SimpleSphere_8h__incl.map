@@ -1,0 +1,10 @@
+<map id="src/SimpleSphere.h" name="src/SimpleSphere.h">
+<area shape="rect" id="node2" href="$Vector3D_8h.html" title="Vector3D.h" alt="" coords="165,379,253,405"/>
+<area shape="rect" id="node4" href="$Material_8h.html" title="Material.h" alt="" coords="151,304,230,331"/>
+<area shape="rect" id="node5" href="$BoundedVolume_8h.html" title="BoundedVolume.h" alt="" coords="156,80,284,107"/>
+<area shape="rect" id="node6" href="$BoundingBox_8h.html" title="BoundingBox.h" alt="" coords="346,229,457,256"/>
+<area shape="rect" id="node9" href="$RenderObject_8h.html" title="RenderObject.h" alt="" coords="163,155,277,181"/>
+<area shape="rect" id="node7" href="$Interval_8h.html" title="Interval.h" alt="" coords="374,379,450,405"/>
+<area shape="rect" id="node8" href="$Ray_8h.html" title="Ray.h" alt="" coords="346,304,403,331"/>
+<area shape="rect" id="node10" href="$IntersectionProperties_8h.html" title="IntersectionProperties.h" alt="" coords="111,229,271,256"/>
+</map>
