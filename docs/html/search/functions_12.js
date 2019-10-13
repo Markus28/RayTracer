@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['variable',['Variable',['../classsymcpp_1_1Variable.html#abe52e6589e8189c46011530bed23f5cc',1,'symcpp::Variable']]],
-  ['vector3d',['Vector3D',['../classVector3D.html#abd851542da40b1168edcad11fa83b7c2',1,'Vector3D::Vector3D(double x, double y, double z)'],['../classVector3D.html#a0b11a8d75da427b27443d8a94d0d296c',1,'Vector3D::Vector3D()']]]
+  ['unaryoperator',['UnaryOperator',['../classsymcpp_1_1UnaryOperator.html#a23a8172db96675ebf1114f4f3f41b6f1',1,'symcpp::UnaryOperator::UnaryOperator(const Expression &amp;a)'],['../classsymcpp_1_1UnaryOperator.html#ad3aa899567a080eeb41cb850de310178',1,'symcpp::UnaryOperator::UnaryOperator(std::unique_ptr&lt; Expression &gt; &amp;&amp;a)']]],
+  ['uvmap',['UVMap',['../classUVMap.html#adc63ebfe75c0e4e3a1dfe47a4c0679f4',1,'UVMap::UVMap(const std::vector&lt; std::vector&lt; T &gt;&gt; &amp;texture)'],['../classUVMap.html#a0787e9239f59e850e4c3825d1985d8f3',1,'UVMap::UVMap(const UVMap&lt; S, T &gt; &amp;other)']]]
 ];

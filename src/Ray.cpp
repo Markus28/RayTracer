@@ -18,11 +18,11 @@ void Ray::offset(const Vector3D &v) {
     point += v;
 }
 
-const Vector3D& Ray::readDirection() const {
+const Vector3D& Ray::read_direction() const {
     return direction;
 }
 
-const Vector3D& Ray::readBase() const {
+const Vector3D& Ray::read_base() const {
     return point;
 }
 

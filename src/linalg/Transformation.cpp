@@ -75,11 +75,11 @@ namespace linalg {
     }
 
     Ray Transformation::transform(const Ray &ray) const {
-        return {transform(ray.readBase()), A * ray.readBase()};
+        return {transform(ray.read_base()), A * ray.read_base()};
     }
 
     Ray Transformation::inverse_transform(const Ray &ray) const {
-        return {inverse_transform(ray.readBase()), A_transpose * ray.readDirection()};
+        return {inverse_transform(ray.read_base()), A_transpose * ray.read_direction()};
     }
 
     Vector3D Transformation::rotate(const Vector3D &v) const {

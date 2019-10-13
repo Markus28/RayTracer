@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['unaryoperator',['UnaryOperator',['../classsymcpp_1_1UnaryOperator.html#a23a8172db96675ebf1114f4f3f41b6f1',1,'symcpp::UnaryOperator::UnaryOperator(const Expression &amp;a)'],['../classsymcpp_1_1UnaryOperator.html#ad3aa899567a080eeb41cb850de310178',1,'symcpp::UnaryOperator::UnaryOperator(std::unique_ptr&lt; Expression &gt; &amp;&amp;a)']]],
-  ['uvmap',['UVMap',['../classUVMap.html#adc63ebfe75c0e4e3a1dfe47a4c0679f4',1,'UVMap::UVMap(const std::vector&lt; std::vector&lt; T &gt;&gt; &amp;texture)'],['../classUVMap.html#a0787e9239f59e850e4c3825d1985d8f3',1,'UVMap::UVMap(const UVMap&lt; S, T &gt; &amp;other)']]]
+  ['t_5frange',['t_range',['../classBoundingBox.html#a708734f01854529bbdb0c3b2a33461d5',1,'BoundingBox']]],
+  ['traceray',['traceRay',['../classScene.html#a1d230edebbee2bd667875fbdc76077d5',1,'Scene']]],
+  ['transform',['transform',['../classlinalg_1_1Transformation.html#a5b31c95da6547d580236566266c840a6',1,'linalg::Transformation::transform(const Vector3D &amp;v) const '],['../classlinalg_1_1Transformation.html#a4c2d3618ae14a0e8ebe55ae65b43381c',1,'linalg::Transformation::transform(const Ray &amp;ray) const ']]],
+  ['transformation',['Transformation',['../classlinalg_1_1Transformation.html#a92fd6d6de1cf518d6316219339e42eff',1,'linalg::Transformation::Transformation(Matrix3D A, Vector3D v, double s)'],['../classlinalg_1_1Transformation.html#ac6339d874eca2be8ae458a10e43f644e',1,'linalg::Transformation::Transformation(Vector3D v, double psi, double theta, double phi, double s)']]],
+  ['transpose',['transpose',['../classlinalg_1_1Matrix3D.html#a45c2dfdae0a9a857e43429ac0fefa206',1,'linalg::Matrix3D']]],
+  ['triangle',['Triangle',['../classTriangle.html#a4a1cc7d9d62014eb2453d18bbd05608f',1,'Triangle']]]
 ];

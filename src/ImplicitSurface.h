@@ -17,10 +17,10 @@
 class ImplicitSurface: public BoundedVolume {
 public:
     ImplicitSurface(symcpp::SymbolicGraph f, Material m, BoundingBox b);
-    Intersection rayIntersect(const Ray& ray) const override;
-    IntersectionProperties intersectProperties(const Ray& ray) const override;
+    Intersection ray_intersect(const Ray &ray) const override;
+    IntersectionProperties intersect_properties(const Ray &ray) const override;
     std::ostream& print(std::ostream& sink) const override;
-    BoundingBox getBounds() const override;
+    BoundingBox get_bounds() const override;
 
 private:
     /// The function defining the surface by F(x, y, z) = 0

@@ -13,10 +13,10 @@ class SimpleSphere: public BoundedVolume {
 public:
     SimpleSphere(Vector3D center, double radius, Material material);
     bool onSphere(Vector3D pt, double epsilon) const;
-    IntersectionProperties intersectProperties(const Ray& ray) const override;
-    Intersection rayIntersect(const Ray& ray) const override;
+    IntersectionProperties intersect_properties(const Ray &ray) const override;
+    Intersection ray_intersect(const Ray &ray) const override;
     std::ostream& print(std::ostream& sink) const override;
-    BoundingBox getBounds() const override;
+    BoundingBox get_bounds() const override;
     ~SimpleSphere() override = default;
 
 protected:

@@ -102,7 +102,7 @@ BoundingBox utility::sumBoundingBoxes(std::vector<BoundedVolume*>::const_iterato
 
     for(auto it = b; it!=e; ++it)
     {
-        result = result+(*it)->getBounds();
+        result = result+ (*it)->get_bounds();
     }
 
     return result;

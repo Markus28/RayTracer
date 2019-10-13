@@ -1,3 +1,6 @@
 <map id="Intersection" name="Intersection">
-<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="89,5,192,32"/>
+<area shape="rect" id="node2" href="$classIntersectionProperties.html" title="Class for storing information about the local properties of a RenderObject at a specific point in spa..." alt="" coords="43,364,192,391"/>
+<area shape="rect" id="node3" href="$classMaterial.html" title="Typically stores information about material of RenderObjects. " alt="" coords="83,275,151,301"/>
+<area shape="rect" id="node5" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="171,133,248,159"/>
+<area shape="rect" id="node6" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="217,364,319,391"/>
 </map>

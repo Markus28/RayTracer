@@ -32,9 +32,9 @@ Collaboration diagram for Simple\+Plane\+:\nopagebreak
 \item 
 \hyperlink{classSimplePlane_a4536573a977f9d4c30334f9c4aab6a1d}{Simple\+Plane} (const \hyperlink{classVector3D}{Vector3D} \&pt, const \hyperlink{classVector3D}{Vector3D} \&norm, const \hyperlink{classMaterial}{Material} \&mat)
 \item 
-\hyperlink{classIntersection}{Intersection} \hyperlink{classSimplePlane_aef2f898a5a5a630a0e63cad969eb3101}{ray\+Intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
+\hyperlink{classIntersection}{Intersection} \hyperlink{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}{ray\+\_\+intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
 \begin{DoxyCompactList}\small\item\em Method to detect intersection of ray and object. \end{DoxyCompactList}\item 
-\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classSimplePlane_a4dd699513026ac0d28586ac552fd1ed2}{intersect\+Properties} (const \hyperlink{classRay}{Ray} \&ray) const override
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classSimplePlane_a29180f657d6932226dc91ebe92143608}{intersect\+\_\+properties} (const \hyperlink{classRay}{Ray} \&ray) const override
 \begin{DoxyCompactList}\small\item\em If ray intersects this object, this method will provide additional Information. \end{DoxyCompactList}\item 
 std\+::ostream \& \hyperlink{classSimplePlane_afc8014126bb264e11e7b2b470a8a90a1}{print} (std\+::ostream \&sink) const override
 \item 
@@ -76,13 +76,13 @@ An infinite plane.
 
 
 \subsection{Member Function Documentation}
-\index{Simple\+Plane@{Simple\+Plane}!intersect\+Properties@{intersect\+Properties}}
-\index{intersect\+Properties@{intersect\+Properties}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{intersect\+Properties(const Ray \&ray) const override}{intersectProperties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Simple\+Plane\+::intersect\+Properties (
+\index{Simple\+Plane@{Simple\+Plane}!intersect\+\_\+properties@{intersect\+\_\+properties}}
+\index{intersect\+\_\+properties@{intersect\+\_\+properties}!Simple\+Plane@{Simple\+Plane}}
+\subsubsection[{\texorpdfstring{intersect\+\_\+properties(const Ray \&ray) const override}{intersect_properties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Simple\+Plane\+::intersect\+\_\+properties (
 \begin{DoxyParamCaption}
 \item[{const {\bf Ray} \&}]{ray}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimplePlane_a4dd699513026ac0d28586ac552fd1ed2}{}\label{classSimplePlane_a4dd699513026ac0d28586ac552fd1ed2}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimplePlane_a29180f657d6932226dc91ebe92143608}{}\label{classSimplePlane_a29180f657d6932226dc91ebe92143608}
 
 
 If ray intersects this object, this method will provide additional Information. 
@@ -99,7 +99,7 @@ Note, that even if ray\+Intersect detected an intersection, this method might no
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_ae2c6d699741385dcd9ea6a1b09f9b7f0}{Render\+Object}.
+Implements \hyperlink{classRenderObject_a792d36570e3264530872187ca1b0baca}{Render\+Object}.
 
 \index{Simple\+Plane@{Simple\+Plane}!on\+Plane@{on\+Plane}}
 \index{on\+Plane@{on\+Plane}!Simple\+Plane@{Simple\+Plane}}
@@ -137,13 +137,13 @@ Returns true iff pt is reasonably (epsilon) close to the plane
 
 Implements \hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}.
 
-\index{Simple\+Plane@{Simple\+Plane}!ray\+Intersect@{ray\+Intersect}}
-\index{ray\+Intersect@{ray\+Intersect}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{ray\+Intersect(const Ray \&ray) const override}{rayIntersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Simple\+Plane\+::ray\+Intersect (
+\index{Simple\+Plane@{Simple\+Plane}!ray\+\_\+intersect@{ray\+\_\+intersect}}
+\index{ray\+\_\+intersect@{ray\+\_\+intersect}!Simple\+Plane@{Simple\+Plane}}
+\subsubsection[{\texorpdfstring{ray\+\_\+intersect(const Ray \&ray) const override}{ray_intersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Simple\+Plane\+::ray\+\_\+intersect (
 \begin{DoxyParamCaption}
 \item[{const {\bf Ray} \&}]{ray}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimplePlane_aef2f898a5a5a630a0e63cad969eb3101}{}\label{classSimplePlane_aef2f898a5a5a630a0e63cad969eb3101}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}{}\label{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}
 
 
 Method to detect intersection of ray and object. 
@@ -158,7 +158,7 @@ Method to detect intersection of ray and object.
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_a681f6674d94f16c4df69605d5e42d05c}{Render\+Object}.
+Implements \hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{Render\+Object}.
 
 
 

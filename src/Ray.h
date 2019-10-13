@@ -8,9 +8,9 @@ class Ray {
 public:
     Ray(const Vector3D& pt, const Vector3D& dir);
 
-    const Vector3D& readDirection() const;
+    const Vector3D& read_direction() const;
 
-    const Vector3D& readBase() const;
+    const Vector3D& read_base() const;
 
     void walk(double d);
 

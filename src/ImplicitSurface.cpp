@@ -14,7 +14,7 @@ ImplicitSurface::ImplicitSurface(symcpp::SymbolicGraph f, Material m, BoundingBo
     epsilon = 0.00000000000001;
 }
 
-BoundingBox ImplicitSurface::getBounds() const {
+BoundingBox ImplicitSurface::get_bounds() const {
     return bounds;
 }
 
@@ -24,8 +24,8 @@ BoundingBox ImplicitSurface::getBounds() const {
  * @param ray The ray intersecting the surface
  * @return Intersection object containing distance of intersection and pointer to this
  */
-Intersection ImplicitSurface::rayIntersect(const Ray &ray) const {
-    Interval range = bounds.intersectionInterval(ray);
+Intersection ImplicitSurface::ray_intersect(const Ray &ray) const {
+    Interval range = bounds.intersection_interval(ray);
 
     if(range.isEmpty() || range.getMax()<0){
         return {};
@@ -33,7 +33,7 @@ Intersection ImplicitSurface::rayIntersect(const Ray &ray) const {
 
 
     double guess_l = std::max(range.getMin(), 0.);
-    Vector3D guess_v = ray.readDirection()+ray.readDirection()*guess_l;
+    Vector3D guess_v = ray.read_direction()+ ray.read_direction()*guess_l;
     std::unordered_map<std::string, double> env;
     env["x"] = guess_v[0];
     env["y"] = guess_v[1];
@@ -44,9 +44,10 @@ Intersection ImplicitSurface::rayIntersect(const Ray &ray) const {
     double deriv;
 
     while(i<max_iter && std::abs(F_value)>epsilon){
-        deriv = dxF.subs(env)*ray.readDirection()[0] + dyF.subs(env)*ray.readDirection()[1] + dzF.subs(env)*ray.readDirection()[2];
+        deriv = dxF.subs(env)* ray.read_direction()[0] + dyF.subs(env)* ray.read_direction()[1] + dzF.subs(env)*
+                                                                                              ray.read_direction()[2];
         guess_l -= F_value/deriv;
-        guess_v = ray.readBase()+ray.readDirection()*guess_l;
+        guess_v = ray.read_base()+ ray.read_direction()*guess_l;
         env["x"] = guess_v[0];
         env["y"] = guess_v[1];
         env["z"] = guess_v[2];
@@ -55,16 +56,18 @@ Intersection ImplicitSurface::rayIntersect(const Ray &ray) const {
     }
 
     if(std::abs(F_value)<epsilon && guess_l>0){
-        return {this, guess_l};
+        Vector3D normal(dxF.subs(env), dyF.subs(env), dzF.subs(env));
+        normal /= normal.norm();
+        return {this, guess_l, {normal, mat}};
     }
 
     return {};
 }
 
-IntersectionProperties ImplicitSurface::intersectProperties(const Ray &ray) const {
-    Intersection is = this->rayIntersect(ray);            //TODO: add intersection information to call!!! This is inefficient!
-    assert(is.doesIntersect());
-    Vector3D posn = ray.readBase()+ray.readDirection()*is.getDistance();
+IntersectionProperties ImplicitSurface::intersect_properties(const Ray &ray) const {
+    Intersection is = this->ray_intersect(ray);            //TODO: add intersection information to call!!! This is inefficient!
+    assert(is.does_intersect());
+    Vector3D posn = ray.read_base()+ ray.read_direction()* is.get_distance();
     std::unordered_map<std::string, double> env;
     env["x"] = posn[0];
     env["y"] = posn[1];

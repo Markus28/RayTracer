@@ -9,8 +9,8 @@ BoundingBox::BoundingBox() {
     z = {};
 }
 
-bool BoundingBox::isIntersected(const Ray& ray) const {
-    Interval t_range = intersectionInterval(ray);
+bool BoundingBox::is_intersected(const Ray &ray) const {
+    Interval t_range = intersection_interval(ray);
     return t_range.containsPositive();
 }
 
@@ -23,15 +23,15 @@ bool BoundingBox::isIntersected(const Ray& ray) const {
  * @param ray The ray intersecting the box
  * @return The interval of arguments t for which ray.readBase()+ray.readDirection()*t is inside the box.
  */
-Interval BoundingBox::intersectionInterval(const Ray& ray) const
+Interval BoundingBox::intersection_interval(const Ray &ray) const
 {
-    Interval t_range = tRange(x, ray.readBase()[0], ray.readDirection()[0]);
-    t_range = t_range*tRange(y, ray.readBase()[1], ray.readDirection()[1]);
-    t_range = t_range*tRange(z, ray.readBase()[2], ray.readDirection()[2]);
-    return t_range;
+    Interval range = t_range(x, ray.read_base()[0], ray.read_direction()[0]);
+    range = range* t_range(y, ray.read_base()[1], ray.read_direction()[1]);
+    range = range* t_range(z, ray.read_base()[2], ray.read_direction()[2]);
+    return range;
 }
 
-Interval BoundingBox::tRange(const Interval& i, double base, double direction) const {
+Interval BoundingBox::t_range(const Interval &i, double base, double direction) const {
     if(i.isEmpty() || (direction==0 && !i.contains(base)))
     {
         return {};
@@ -51,7 +51,7 @@ BoundingBox BoundingBox::operator+(const BoundingBox &other) const {
     return {x+other.x, y+other.y, z+other.z};
 }
 
-Vector3D BoundingBox::getCenter() const{
+Vector3D BoundingBox::get_center() const{
     return {x.getCenter(), y.getCenter(), z.getCenter()};
 }
 

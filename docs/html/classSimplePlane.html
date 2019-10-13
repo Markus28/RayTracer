@@ -119,12 +119,12 @@ Collaboration diagram for SimplePlane:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4536573a977f9d4c30334f9c4aab6a1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimplePlane.html#a4536573a977f9d4c30334f9c4aab6a1d">SimplePlane</a> (const <a class="el" href="classVector3D.html">Vector3D</a> &amp;pt, const <a class="el" href="classVector3D.html">Vector3D</a> &amp;norm, const <a class="el" href="classMaterial.html">Material</a> &amp;mat)</td></tr>
 <tr class="separator:a4536573a977f9d4c30334f9c4aab6a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2f898a5a5a630a0e63cad969eb3101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIntersection.html">Intersection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimplePlane.html#aef2f898a5a5a630a0e63cad969eb3101">rayIntersect</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray) const override</td></tr>
-<tr class="memdesc:aef2f898a5a5a630a0e63cad969eb3101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to detect intersection of ray and object.  <a href="#aef2f898a5a5a630a0e63cad969eb3101">More...</a><br /></td></tr>
-<tr class="separator:aef2f898a5a5a630a0e63cad969eb3101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dd699513026ac0d28586ac552fd1ed2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIntersectionProperties.html">IntersectionProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimplePlane.html#a4dd699513026ac0d28586ac552fd1ed2">intersectProperties</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray) const override</td></tr>
-<tr class="memdesc:a4dd699513026ac0d28586ac552fd1ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If ray intersects this object, this method will provide additional Information.  <a href="#a4dd699513026ac0d28586ac552fd1ed2">More...</a><br /></td></tr>
-<tr class="separator:a4dd699513026ac0d28586ac552fd1ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffd7f102bed30d44cd527cb34a3a312"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIntersection.html">Intersection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimplePlane.html#adffd7f102bed30d44cd527cb34a3a312">ray_intersect</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray) const override</td></tr>
+<tr class="memdesc:adffd7f102bed30d44cd527cb34a3a312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to detect intersection of ray and object.  <a href="#adffd7f102bed30d44cd527cb34a3a312">More...</a><br /></td></tr>
+<tr class="separator:adffd7f102bed30d44cd527cb34a3a312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29180f657d6932226dc91ebe92143608"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIntersectionProperties.html">IntersectionProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimplePlane.html#a29180f657d6932226dc91ebe92143608">intersect_properties</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray) const override</td></tr>
+<tr class="memdesc:a29180f657d6932226dc91ebe92143608"><td class="mdescLeft">&#160;</td><td class="mdescRight">If ray intersects this object, this method will provide additional Information.  <a href="#a29180f657d6932226dc91ebe92143608">More...</a><br /></td></tr>
+<tr class="separator:a29180f657d6932226dc91ebe92143608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8014126bb264e11e7b2b470a8a90a1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimplePlane.html#afc8014126bb264e11e7b2b470a8a90a1">print</a> (std::ostream &amp;sink) const override</td></tr>
 <tr class="separator:afc8014126bb264e11e7b2b470a8a90a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74bbd8b10263fe1df821d8479f1ab5ef"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimplePlane.html#a74bbd8b10263fe1df821d8479f1ab5ef">onPlane</a> (const <a class="el" href="classVector3D.html">Vector3D</a> &amp;point, const double &amp;epsilon) const </td></tr>
@@ -204,7 +204,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4dd699513026ac0d28586ac552fd1ed2"></a>
+<a class="anchor" id="a29180f657d6932226dc91ebe92143608"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -212,7 +212,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIntersectionProperties.html">IntersectionProperties</a> SimplePlane::intersectProperties </td>
+          <td class="memname"><a class="el" href="classIntersectionProperties.html">IntersectionProperties</a> SimplePlane::intersect_properties </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
           <td class="paramname"><em>ray</em></td><td>)</td>
@@ -236,7 +236,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classIntersectionProperties.html" title="Class for storing information about the local properties of a RenderObject at a specific point in spa...">IntersectionProperties</a> object containing the surface normal and material information </dd></dl>
 
-<p>Implements <a class="el" href="classRenderObject.html#ae2c6d699741385dcd9ea6a1b09f9b7f0">RenderObject</a>.</p>
+<p>Implements <a class="el" href="classRenderObject.html#a792d36570e3264530872187ca1b0baca">RenderObject</a>.</p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aef2f898a5a5a630a0e63cad969eb3101"></a>
+<a class="anchor" id="adffd7f102bed30d44cd527cb34a3a312"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -319,7 +319,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIntersection.html">Intersection</a> SimplePlane::rayIntersect </td>
+          <td class="memname"><a class="el" href="classIntersection.html">Intersection</a> SimplePlane::ray_intersect </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
           <td class="paramname"><em>ray</em></td><td>)</td>
@@ -342,7 +342,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classIntersection.html" title="Class for storing information about intersection of a Ray and a RenderObject. ">Intersection</a> object containing distance to intersection and pointer to intersected object </dd></dl>
 
-<p>Implements <a class="el" href="classRenderObject.html#a681f6674d94f16c4df69605d5e42d05c">RenderObject</a>.</p>
+<p>Implements <a class="el" href="classRenderObject.html#aa844ad2c5ef0c2b79faef2ed0af553bb">RenderObject</a>.</p>
 
 </div>
 </div>

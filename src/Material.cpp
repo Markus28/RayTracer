@@ -12,15 +12,15 @@ Material::Material(const Vector3D& spec_refl, const Vector3D& diff_refl, const V
     this->eta = eta;
 }
 
-Vector3D& Material::ambientReflectivity() {
+Vector3D& Material::ambient_reflectivity() {
     return ambient_refl;
 }
 
-Vector3D& Material::diffuseReflectivity() {
+Vector3D& Material::diffuse_reflectivity() {
     return diff_refl;
 }
 
-Vector3D& Material::specularReflectivity() {
+Vector3D& Material::specular_reflectivity() {
     return spec_refl;
 }
 
@@ -28,24 +28,24 @@ Vector3D& Material::shininess() {
     return sh;
 }
 
-bool Material::isReflective() const {
+bool Material::is_reflective() const {
     return reflectivity!=0;
 }
 
-bool Material::isTransparent() const {
+bool Material::is_transparent() const {
     return transparency!=0;
 }
 
-double Material::getIndex()const {
+double Material::get_index()const {
     return eta;
 }
 
-double Material::getReflectivity() const
+double Material::get_reflectivity() const
 {
     return reflectivity;
 }
 
-double Material::getTransparency() const {
+double Material::get_transparency() const {
     return transparency;
 }
 

@@ -15,15 +15,15 @@ public:
             const Vector3D& shininess, double transparency, double reflectivity, double eta);
 
     Material() = default;
-    Vector3D& specularReflectivity();
-    Vector3D& diffuseReflectivity();
-    Vector3D& ambientReflectivity();
+    Vector3D& specular_reflectivity();
+    Vector3D& diffuse_reflectivity();
+    Vector3D& ambient_reflectivity();
     Vector3D& shininess();
-    bool isReflective() const;
-    double getReflectivity() const;
-    double getTransparency() const;
-    bool isTransparent() const;
-    double getIndex() const;
+    bool is_reflective() const;
+    double get_reflectivity() const;
+    double get_transparency() const;
+    bool is_transparent() const;
+    double get_index() const;
     std::ostream& print(std::ostream& sink) const;
     friend std::ostream& operator<<(std::ostream& sink, const Material& mat);
     friend class MTLLib;

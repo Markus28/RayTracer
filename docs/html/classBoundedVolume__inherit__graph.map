@@ -1,5 +1,5 @@
 <map id="BoundedVolume" name="BoundedVolume">
-<area shape="rect" id="node3" href="$classBinaryVolumeHierarchy.html" title="Accelerationstructure for ensemble of bounded volumes. " alt="" coords="5,155,164,181"/>
+<area shape="rect" id="node3" href="$classBinaryVolumeHierarchy.html" title="Acceleration structure for ensemble of bounded volumes. " alt="" coords="5,155,164,181"/>
 <area shape="rect" id="node4" href="$classImplicitSurface.html" title="RenderObject for the surface implicitly given by F(x,y,z) = 0. " alt="" coords="189,155,298,181"/>
 <area shape="rect" id="node5" href="$classSimpleSphere.html" title="A simple, uniformly textured sphere, implements RenderObject. " alt="" coords="323,155,425,181"/>
 <area shape="rect" id="node6" href="$classTriangle.html" title="A Triangle implementing BoundedVolume, RenderObject. " alt="" coords="449,155,517,181"/>

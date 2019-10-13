@@ -5,6 +5,7 @@
 #include <algorithm>
 
 Triangle::Triangle(Vector3D p1, Vector3D p2, Vector3D p3, Material mat):material(mat){
+    interpolate_normal = false;
     this->normal = (p2-p1).cross(p2-p3)/(p2-p1).cross(p2-p3).norm();
     d = normal*p1;
     this->p1 = p1;
@@ -33,15 +34,15 @@ bool Triangle::inTriangle(Vector3D p) const {
     return utility::equals_about(alpha+beta+gamma, area2, utility::EPSILON);
 }
 
-Intersection Triangle::rayIntersect(const Ray &ray) const {
-    Intersection hit = {this, (d-ray.readBase()*normal)/(normal*ray.readDirection())};
+Intersection Triangle::ray_intersect(const Ray &ray) const {
+    Intersection hit = {this, (d- ray.read_base()*normal)/(normal* ray.read_direction())};
 
-    if(!hit.doesIntersect())
+    if(!hit.does_intersect())
     {
         return hit;
     }
 
-    Vector3D p = ray.readBase()+ray.readDirection()*hit.getDistance();
+    Vector3D p = ray.read_base()+ ray.read_direction()* hit.get_distance();
 
     if(inTriangle(p))
     {
@@ -51,7 +52,7 @@ Intersection Triangle::rayIntersect(const Ray &ray) const {
     return {};
 }
 
-BoundingBox Triangle::getBounds() const {
+BoundingBox Triangle::get_bounds() const {
     return bounds;
 }
 
@@ -59,7 +60,15 @@ std::ostream& Triangle::print(std::ostream& sink) const{
     return sink<< "Simple Plane...";
 }
 
-IntersectionProperties Triangle::intersectProperties(const Ray& ray) const
+IntersectionProperties Triangle::intersect_properties(const Ray &ray) const
 {
     return {normal, material};
+}
+
+void Triangle::enable_interpolation() {
+    interpolate_normal = true;
+}
+
+void Triangle::disable_interpolation() {
+    interpolate_normal = false;
 }

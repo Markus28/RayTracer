@@ -32,13 +32,13 @@ Collaboration diagram for Implicit\+Surface\+:\nopagebreak
 \item 
 \hyperlink{classImplicitSurface_ab0cfa235e8f935a416c395cfecd2f32b}{Implicit\+Surface} (\hyperlink{classsymcpp_1_1SymbolicGraph}{symcpp\+::\+Symbolic\+Graph} f, \hyperlink{classMaterial}{Material} m, \hyperlink{classBoundingBox}{Bounding\+Box} b)
 \item 
-\hyperlink{classIntersection}{Intersection} \hyperlink{classImplicitSurface_a09b05170e1ff9d443c0c0ff9c33824f8}{ray\+Intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
+\hyperlink{classIntersection}{Intersection} \hyperlink{classImplicitSurface_ad9443ffe39f5c3d65e009aa2dbda81f0}{ray\+\_\+intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
 \begin{DoxyCompactList}\small\item\em Uses the symbolic derivative and the Newton method to detect the earliest intersection. \end{DoxyCompactList}\item 
-\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classImplicitSurface_a8ce29f3d491a01f1992a2ae534ee6bea}{intersect\+Properties} (const \hyperlink{classRay}{Ray} \&ray) const override
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classImplicitSurface_a13aa500c7dbcd75e77b43fba741b1ec8}{intersect\+\_\+properties} (const \hyperlink{classRay}{Ray} \&ray) const override
 \begin{DoxyCompactList}\small\item\em If ray intersects this object, this method will provide additional Information. \end{DoxyCompactList}\item 
 std\+::ostream \& \hyperlink{classImplicitSurface_a2267c88829c97c12ff8f7d250ce94802}{print} (std\+::ostream \&sink) const override
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classImplicitSurface_a8fd17a82a612fc8d15c5973cb497c48b}{get\+Bounds} () const override
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classImplicitSurface_a30f0b97eb9976f8e40be7b990d6352d6}{get\+\_\+bounds} () const override
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -79,24 +79,24 @@ Objects of this type can be used to render meshless surfaces, eg manifolds. This
 
 
 \subsection{Member Function Documentation}
-\index{Implicit\+Surface@{Implicit\+Surface}!get\+Bounds@{get\+Bounds}}
-\index{get\+Bounds@{get\+Bounds}!Implicit\+Surface@{Implicit\+Surface}}
-\subsubsection[{\texorpdfstring{get\+Bounds() const override}{getBounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Implicit\+Surface\+::get\+Bounds (
+\index{Implicit\+Surface@{Implicit\+Surface}!get\+\_\+bounds@{get\+\_\+bounds}}
+\index{get\+\_\+bounds@{get\+\_\+bounds}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Implicit\+Surface\+::get\+\_\+bounds (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classImplicitSurface_a8fd17a82a612fc8d15c5973cb497c48b}{}\label{classImplicitSurface_a8fd17a82a612fc8d15c5973cb497c48b}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classImplicitSurface_a30f0b97eb9976f8e40be7b990d6352d6}{}\label{classImplicitSurface_a30f0b97eb9976f8e40be7b990d6352d6}
 
 
-Implements \hyperlink{classBoundedVolume_a3d912b7028f7046fe18c4edf3a400e3b}{Bounded\+Volume}.
+Implements \hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}.
 
-\index{Implicit\+Surface@{Implicit\+Surface}!intersect\+Properties@{intersect\+Properties}}
-\index{intersect\+Properties@{intersect\+Properties}!Implicit\+Surface@{Implicit\+Surface}}
-\subsubsection[{\texorpdfstring{intersect\+Properties(const Ray \&ray) const override}{intersectProperties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Implicit\+Surface\+::intersect\+Properties (
+\index{Implicit\+Surface@{Implicit\+Surface}!intersect\+\_\+properties@{intersect\+\_\+properties}}
+\index{intersect\+\_\+properties@{intersect\+\_\+properties}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{intersect\+\_\+properties(const Ray \&ray) const override}{intersect_properties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Implicit\+Surface\+::intersect\+\_\+properties (
 \begin{DoxyParamCaption}
 \item[{const {\bf Ray} \&}]{ray}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classImplicitSurface_a8ce29f3d491a01f1992a2ae534ee6bea}{}\label{classImplicitSurface_a8ce29f3d491a01f1992a2ae534ee6bea}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classImplicitSurface_a13aa500c7dbcd75e77b43fba741b1ec8}{}\label{classImplicitSurface_a13aa500c7dbcd75e77b43fba741b1ec8}
 
 
 If ray intersects this object, this method will provide additional Information. 
@@ -113,7 +113,7 @@ Note, that even if ray\+Intersect detected an intersection, this method might no
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_ae2c6d699741385dcd9ea6a1b09f9b7f0}{Render\+Object}.
+Implements \hyperlink{classRenderObject_a792d36570e3264530872187ca1b0baca}{Render\+Object}.
 
 \index{Implicit\+Surface@{Implicit\+Surface}!print@{print}}
 \index{print@{print}!Implicit\+Surface@{Implicit\+Surface}}
@@ -126,13 +126,13 @@ Implements \hyperlink{classRenderObject_ae2c6d699741385dcd9ea6a1b09f9b7f0}{Rende
 
 Implements \hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}.
 
-\index{Implicit\+Surface@{Implicit\+Surface}!ray\+Intersect@{ray\+Intersect}}
-\index{ray\+Intersect@{ray\+Intersect}!Implicit\+Surface@{Implicit\+Surface}}
-\subsubsection[{\texorpdfstring{ray\+Intersect(const Ray \&ray) const override}{rayIntersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Implicit\+Surface\+::ray\+Intersect (
+\index{Implicit\+Surface@{Implicit\+Surface}!ray\+\_\+intersect@{ray\+\_\+intersect}}
+\index{ray\+\_\+intersect@{ray\+\_\+intersect}!Implicit\+Surface@{Implicit\+Surface}}
+\subsubsection[{\texorpdfstring{ray\+\_\+intersect(const Ray \&ray) const override}{ray_intersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Implicit\+Surface\+::ray\+\_\+intersect (
 \begin{DoxyParamCaption}
 \item[{const {\bf Ray} \&}]{ray}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classImplicitSurface_a09b05170e1ff9d443c0c0ff9c33824f8}{}\label{classImplicitSurface_a09b05170e1ff9d443c0c0ff9c33824f8}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classImplicitSurface_ad9443ffe39f5c3d65e009aa2dbda81f0}{}\label{classImplicitSurface_ad9443ffe39f5c3d65e009aa2dbda81f0}
 
 
 Uses the symbolic derivative and the Newton method to detect the earliest intersection. 
@@ -150,7 +150,7 @@ Uses the symbolic derivative and the Newton method to detect the earliest inters
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_a681f6674d94f16c4df69605d5e42d05c}{Render\+Object}.
+Implements \hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{Render\+Object}.
 
 
 

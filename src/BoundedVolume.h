@@ -10,7 +10,7 @@
  */
 class BoundedVolume: public RenderObject{
 public:
-    virtual BoundingBox getBounds() const = 0;
+    virtual BoundingBox get_bounds() const = 0;
 };
 
 

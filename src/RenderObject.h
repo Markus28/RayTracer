@@ -21,7 +21,7 @@ public:
      * @param ray The ray in question
      * @return Intersection object containing distance to intersection and pointer to intersected object
      */
-    virtual Intersection rayIntersect(const Ray& ray) const = 0;
+    virtual Intersection ray_intersect(const Ray &ray) const = 0;
 
     /**
      * @brief If ray intersects this object, this method will provide additional Information
@@ -33,7 +33,7 @@ public:
      * @param ray the ray in question
      * @return IntersectionProperties object containing the surface normal and material information
      */
-    virtual IntersectionProperties intersectProperties(const Ray& ray) const = 0;
+    virtual IntersectionProperties intersect_properties(const Ray &ray) const = 0;
     virtual std::ostream& print(std::ostream& sink) const = 0;
     virtual ~RenderObject(){};
 };

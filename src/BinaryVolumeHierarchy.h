@@ -8,17 +8,17 @@
 struct BVHNode;
 
 /**
- * @brief Accelerationstructure for ensemble of bounded volumes
+ * @brief Acceleration structure for ensemble of bounded volumes
  */
 class BinaryVolumeHierarchy: public BoundedVolume {
 public:
     BinaryVolumeHierarchy(std::vector<BoundedVolume*>::iterator b, std::vector<BoundedVolume*>::iterator e);
     BinaryVolumeHierarchy(const BinaryVolumeHierarchy& other);
     BinaryVolumeHierarchy& operator=(BinaryVolumeHierarchy other);
-    Intersection rayIntersect(const Ray& ray) const override;
-    BoundingBox getBounds() const override;
+    Intersection ray_intersect(const Ray &ray) const override;
+    BoundingBox get_bounds() const override;
     std::ostream& print(std::ostream& sink) const override;
-    IntersectionProperties intersectProperties(const Ray& ray) const override;
+    IntersectionProperties intersect_properties(const Ray &ray) const override;
     ~BinaryVolumeHierarchy() override;
 
 private:

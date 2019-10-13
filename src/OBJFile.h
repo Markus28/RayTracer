@@ -13,7 +13,7 @@
 class OBJFile {
 public:
     OBJFile(const char* file_name, Material mat);
-    std::vector<Triangle> getTriangles() const;
+    std::vector<Triangle> get_triangles() const;
     void dump(std::string file_name) const;
     BinaryVolumeHierarchy getBVH();
 
@@ -26,7 +26,7 @@ private:
 
 struct FaceData{
     FaceData(std::istringstream& iss);
-    std::vector<Triangle> getTriangles(const std::vector<Vector3D>& vertices, Material mat);
+    std::vector<Triangle> get_triangles(const std::vector<Vector3D> &vertices, Material mat);
 
     std::vector<std::vector<int>> data;
 };

@@ -50,7 +50,7 @@ OBJFile::OBJFile(const char* f_name, Material mat) {
         else if(id=="f")
         {
             FaceData data = FaceData(iss);
-            std::vector<Triangle> new_triangles = data.getTriangles(vertices, mat);
+            std::vector<Triangle> new_triangles = data.get_triangles(vertices, mat);
             polygons.insert(polygons.end(), new_triangles.begin(), new_triangles.end());
         }
 
@@ -69,7 +69,7 @@ OBJFile::OBJFile(const char* f_name, Material mat) {
     } while(std::getline(f, line));
 }
 
-std::vector<Triangle> OBJFile::getTriangles() const {
+std::vector<Triangle> OBJFile::get_triangles() const {
     return polygons;
 }
 
@@ -123,7 +123,7 @@ FaceData::FaceData(std::istringstream &iss) {
     }
 }
 
-std::vector<Triangle> FaceData::getTriangles(const std::vector<Vector3D> &vertices, Material mat) {
+std::vector<Triangle> FaceData::get_triangles(const std::vector<Vector3D> &vertices, Material mat) {
     std::vector<Triangle> result;
 
     for(int i = 1; i<data.size()-1; ++i)

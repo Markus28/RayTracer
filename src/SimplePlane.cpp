@@ -23,11 +23,11 @@ bool SimplePlane::onPlane(const Vector3D& pt, const double& epsilon) const {
     return utility::equals_about(normal*pt - d, 0, epsilon);
 }
 
-Intersection SimplePlane::rayIntersect(const Ray& ray) const {
-    return {this, (d-ray.readBase()*normal)/(normal*ray.readDirection())};
+Intersection SimplePlane::ray_intersect(const Ray &ray) const {
+    return {this, (d- ray.read_base()*normal)/(normal* ray.read_direction())};
 }
 
-IntersectionProperties SimplePlane::intersectProperties(const Ray& ray) const
+IntersectionProperties SimplePlane::intersect_properties(const Ray &ray) const
 {
     return {normal, material};
 }

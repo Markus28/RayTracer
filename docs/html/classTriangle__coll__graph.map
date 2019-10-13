@@ -1,8 +1,8 @@
 <map id="Triangle" name="Triangle">
-<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="5,291,123,317"/>
+<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="5,313,123,339"/>
 <area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="13,133,115,159"/>
-<area shape="rect" id="node5" href="$classMaterial.html" title="Typically stores information about material of RenderObjects. " alt="" coords="214,291,282,317"/>
+<area shape="rect" id="node5" href="$classMaterial.html" title="Typically stores information about material of RenderObjects. " alt="" coords="231,313,299,339"/>
 <area shape="rect" id="node6" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="325,133,403,159"/>
-<area shape="rect" id="node8" href="$classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="430,133,495,159"/>
-<area shape="rect" id="node7" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="421,291,520,317"/>
+<area shape="rect" id="node8" href="$classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="433,133,498,159"/>
+<area shape="rect" id="node7" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="416,313,515,339"/>
 </map>

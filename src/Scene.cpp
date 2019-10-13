@@ -26,28 +26,36 @@ void Scene::render(unsigned int recursion_depth) {
 Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
     Intersection hit = firstHit(ray);
 
-    if(hit.doesIntersect())
+    if(hit.does_intersect())
     {
-        assert(hit.getObject()!=nullptr);
-        IntersectionProperties properties = hit.getObject()->intersectProperties(ray);
-        Vector3D illumination = ambient.elementWiseMultiplication(properties.material.ambientReflectivity());
-        Vector3D intersectionPoint = ray.readBase()+ray.readDirection()*hit.getDistance();
+        assert(hit.get_object()!=nullptr);
+        IntersectionProperties properties;
+        if(hit.has_properties()){
+            properties = hit.get_properties();
+        }
+        else {
+            properties = hit.get_object()->intersect_properties(ray);
+        }
+        Vector3D illumination = ambient.elementWiseMultiplication(properties.material.ambient_reflectivity());
+        Vector3D intersectionPoint = ray.read_base()+ ray.read_direction()* hit.get_distance();
 
         for(Light* light: lights)
         {
             Ray shaddow = light->shaddowRay(intersectionPoint);
             shaddow.offset(properties.normal*utility::EPSILON);
             Intersection shadowHit = firstHit(shaddow, true);
-            if(!shadowHit.doesIntersect() || shadowHit.getDistance() > light->getDistance(intersectionPoint))      //Check shaddow ray
+            if(!shadowHit.does_intersect() || shadowHit.get_distance() > light->getDistance(intersectionPoint))      //Check shaddow ray
             {
-                double dd = shaddow.readDirection()*properties.normal;
-                double ds = (shaddow.readDirection()*-1).reflectAround(properties.normal)*(ray.readDirection()*-1);
+                double dd = shaddow.read_direction()*properties.normal;
+                double ds = (shaddow.read_direction()*-1).reflectAround(properties.normal)*(ray.read_direction()*-1);
                 if(dd>0)
                 {
-                    illumination += properties.material.diffuseReflectivity().elementWiseMultiplication(light->diffuseComponent(shaddow.readBase()))*dd;
+                    illumination += properties.material.diffuse_reflectivity().elementWiseMultiplication(light->diffuseComponent(
+                            shaddow.read_base()))*dd;
                     if(ds>0)
                     {
-                        illumination += properties.material.specularReflectivity().elementWiseMultiplication(light->specularComponent(shaddow.readBase())).elementWiseMultiplication(properties.material.shininess().elementWisePower(ds));
+                        illumination += properties.material.specular_reflectivity().elementWiseMultiplication(light->specularComponent(
+                                shaddow.read_base())).elementWiseMultiplication(properties.material.shininess().elementWisePower(ds));
                     }
                 }
             }
@@ -57,18 +65,21 @@ Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
 
         if(recursion_depth!=0)
         {
-            if(properties.material.isReflective() && ray.readDirection()*properties.normal<0)
+            if(properties.material.is_reflective() && ray.read_direction()*properties.normal<0)
             {
-                Ray reflection = Ray(intersectionPoint, ray.readDirection().reflectAround(properties.normal));
+                Ray reflection = Ray(intersectionPoint, ray.read_direction().reflectAround(properties.normal));
                 reflection.offset(properties.normal*utility::EPSILON);
-                refractionAndReflection += traceRay(reflection, recursion_depth-1)*properties.material.getReflectivity();
+                refractionAndReflection += traceRay(reflection, recursion_depth-1)*
+                                           properties.material.get_reflectivity();
             }
 
-            if(properties.material.isTransparent())
+            if(properties.material.is_transparent())
             {
-                Ray refraction = Ray(intersectionPoint, ray.readDirection().refractAround(properties.normal, properties.material.getIndex()));
+                Ray refraction = Ray(intersectionPoint, ray.read_direction().refractAround(properties.normal,
+                                                                                           properties.material.get_index()));
                 refraction.walk(utility::EPSILON);
-                refractionAndReflection += traceRay(refraction, recursion_depth-1)*properties.material.getTransparency();
+                refractionAndReflection += traceRay(refraction, recursion_depth-1)*
+                                           properties.material.get_transparency();
             }
         }
 
@@ -84,10 +95,10 @@ Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
 
 
 Intersection Scene::firstHit(const Ray &ray) {
-    Intersection firstHit = objs[0]->rayIntersect(ray);
+    Intersection firstHit = objs[0]->ray_intersect(ray);
     for(unsigned int i = 1; i<objs.size(); ++i)
     {
-        firstHit = std::min(firstHit, objs[i]->rayIntersect(ray));
+        firstHit = std::min(firstHit, objs[i]->ray_intersect(ray));
     }
     return firstHit;
 }
@@ -98,8 +109,9 @@ Intersection Scene::firstHit(const Ray &ray, bool ignore_transparent) {
     Intersection newHit;
     for(unsigned int i = 0; i<objs.size(); ++i)
     {
-        newHit = objs[i]->rayIntersect(ray);
-        if(!ignore_transparent || (newHit.doesIntersect() && !newHit.getObject()->intersectProperties(ray).material.isTransparent())) {
+        newHit = objs[i]->ray_intersect(ray);
+        if(!ignore_transparent || (newHit.does_intersect() && !newHit.get_object()->intersect_properties(
+                ray).material.is_transparent())) {                      //TODO: USE newHit.has_properties
             firstHit = std::min(firstHit, newHit);
         }
     }

@@ -34,13 +34,13 @@ Collaboration diagram for Simple\+Sphere\+:\nopagebreak
 \item 
 bool \hyperlink{classSimpleSphere_aa86dd85d74a4fda533a7dda26ff2ed85}{on\+Sphere} (\hyperlink{classVector3D}{Vector3D} pt, double epsilon) const 
 \item 
-\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classSimpleSphere_aa16a61ff59fe30d968b8f2284219b64f}{intersect\+Properties} (const \hyperlink{classRay}{Ray} \&ray) const override
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classSimpleSphere_a4c71f3e8197f40c18cee7508f2fd3e9c}{intersect\+\_\+properties} (const \hyperlink{classRay}{Ray} \&ray) const override
 \begin{DoxyCompactList}\small\item\em If ray intersects this object, this method will provide additional Information. \end{DoxyCompactList}\item 
-\hyperlink{classIntersection}{Intersection} \hyperlink{classSimpleSphere_a657a5c5ba7a2e0621a49923de9f7ea45}{ray\+Intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
+\hyperlink{classIntersection}{Intersection} \hyperlink{classSimpleSphere_abb50f169da7cb2acab05c8f9d56cd1e8}{ray\+\_\+intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
 \begin{DoxyCompactList}\small\item\em Method to detect intersection of ray and object. \end{DoxyCompactList}\item 
 std\+::ostream \& \hyperlink{classSimpleSphere_a2da3c9e41a8d8e6ec4012343ea0fa793}{print} (std\+::ostream \&sink) const override
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classSimpleSphere_a95670bb33ef32e61dc4c2750ac9cf5a3}{get\+Bounds} () const override
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classSimpleSphere_aa5b6b2ebbe3de4490cdaa0f5c08b961c}{get\+\_\+bounds} () const override
 \item 
 \hyperlink{classSimpleSphere_a7ffaeb08624ecd5c91ed88c10f2fbff7}{$\sim$\+Simple\+Sphere} () override=default
 \end{DoxyCompactItemize}
@@ -85,16 +85,16 @@ A simple, uniformly textured sphere, implements \hyperlink{classRenderObject}{Re
 
 
 \subsection{Member Function Documentation}
-\index{Simple\+Sphere@{Simple\+Sphere}!get\+Bounds@{get\+Bounds}}
-\index{get\+Bounds@{get\+Bounds}!Simple\+Sphere@{Simple\+Sphere}}
-\subsubsection[{\texorpdfstring{get\+Bounds() const override}{getBounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Simple\+Sphere\+::get\+Bounds (
+\index{Simple\+Sphere@{Simple\+Sphere}!get\+\_\+bounds@{get\+\_\+bounds}}
+\index{get\+\_\+bounds@{get\+\_\+bounds}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Simple\+Sphere\+::get\+\_\+bounds (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimpleSphere_a95670bb33ef32e61dc4c2750ac9cf5a3}{}\label{classSimpleSphere_a95670bb33ef32e61dc4c2750ac9cf5a3}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimpleSphere_aa5b6b2ebbe3de4490cdaa0f5c08b961c}{}\label{classSimpleSphere_aa5b6b2ebbe3de4490cdaa0f5c08b961c}
 
 
-Implements \hyperlink{classBoundedVolume_a3d912b7028f7046fe18c4edf3a400e3b}{Bounded\+Volume}.
+Implements \hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}.
 
 \index{Simple\+Sphere@{Simple\+Sphere}!get\+Normal@{get\+Normal}}
 \index{get\+Normal@{get\+Normal}!Simple\+Sphere@{Simple\+Sphere}}
@@ -103,13 +103,13 @@ Implements \hyperlink{classBoundedVolume_a3d912b7028f7046fe18c4edf3a400e3b}{Boun
 \item[{{\bf Vector3D}}]{pt}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classSimpleSphere_a3661d89a607462f612c1e751b76e4556}{}\label{classSimpleSphere_a3661d89a607462f612c1e751b76e4556}
-\index{Simple\+Sphere@{Simple\+Sphere}!intersect\+Properties@{intersect\+Properties}}
-\index{intersect\+Properties@{intersect\+Properties}!Simple\+Sphere@{Simple\+Sphere}}
-\subsubsection[{\texorpdfstring{intersect\+Properties(const Ray \&ray) const override}{intersectProperties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Simple\+Sphere\+::intersect\+Properties (
+\index{Simple\+Sphere@{Simple\+Sphere}!intersect\+\_\+properties@{intersect\+\_\+properties}}
+\index{intersect\+\_\+properties@{intersect\+\_\+properties}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{intersect\+\_\+properties(const Ray \&ray) const override}{intersect_properties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Simple\+Sphere\+::intersect\+\_\+properties (
 \begin{DoxyParamCaption}
 \item[{const {\bf Ray} \&}]{ray}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimpleSphere_aa16a61ff59fe30d968b8f2284219b64f}{}\label{classSimpleSphere_aa16a61ff59fe30d968b8f2284219b64f}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimpleSphere_a4c71f3e8197f40c18cee7508f2fd3e9c}{}\label{classSimpleSphere_a4c71f3e8197f40c18cee7508f2fd3e9c}
 
 
 If ray intersects this object, this method will provide additional Information. 
@@ -126,7 +126,7 @@ Note, that even if ray\+Intersect detected an intersection, this method might no
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_ae2c6d699741385dcd9ea6a1b09f9b7f0}{Render\+Object}.
+Implements \hyperlink{classRenderObject_a792d36570e3264530872187ca1b0baca}{Render\+Object}.
 
 \index{Simple\+Sphere@{Simple\+Sphere}!on\+Sphere@{on\+Sphere}}
 \index{on\+Sphere@{on\+Sphere}!Simple\+Sphere@{Simple\+Sphere}}
@@ -147,13 +147,13 @@ Implements \hyperlink{classRenderObject_ae2c6d699741385dcd9ea6a1b09f9b7f0}{Rende
 
 Implements \hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}.
 
-\index{Simple\+Sphere@{Simple\+Sphere}!ray\+Intersect@{ray\+Intersect}}
-\index{ray\+Intersect@{ray\+Intersect}!Simple\+Sphere@{Simple\+Sphere}}
-\subsubsection[{\texorpdfstring{ray\+Intersect(const Ray \&ray) const override}{rayIntersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Simple\+Sphere\+::ray\+Intersect (
+\index{Simple\+Sphere@{Simple\+Sphere}!ray\+\_\+intersect@{ray\+\_\+intersect}}
+\index{ray\+\_\+intersect@{ray\+\_\+intersect}!Simple\+Sphere@{Simple\+Sphere}}
+\subsubsection[{\texorpdfstring{ray\+\_\+intersect(const Ray \&ray) const override}{ray_intersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Simple\+Sphere\+::ray\+\_\+intersect (
 \begin{DoxyParamCaption}
 \item[{const {\bf Ray} \&}]{ray}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimpleSphere_a657a5c5ba7a2e0621a49923de9f7ea45}{}\label{classSimpleSphere_a657a5c5ba7a2e0621a49923de9f7ea45}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimpleSphere_abb50f169da7cb2acab05c8f9d56cd1e8}{}\label{classSimpleSphere_abb50f169da7cb2acab05c8f9d56cd1e8}
 
 
 Method to detect intersection of ray and object. 
@@ -168,7 +168,7 @@ Method to detect intersection of ray and object.
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_a681f6674d94f16c4df69605d5e42d05c}{Render\+Object}.
+Implements \hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{Render\+Object}.
 
 
 

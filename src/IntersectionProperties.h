@@ -10,6 +10,7 @@ class Vector3D;
  */
 class IntersectionProperties {
 public:
+    IntersectionProperties() = default;
     IntersectionProperties(const Vector3D& n, const Material& mat);
     Vector3D normal;
     Material material;

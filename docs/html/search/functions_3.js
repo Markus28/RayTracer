@@ -1,11 +1,12 @@
 var searchData=
 [
   ['diff',['diff',['../classsymcpp_1_1Add.html#ac885da5635431d264c643618729f6cec',1,'symcpp::Add::diff()'],['../classsymcpp_1_1Constant.html#a19dd15712ce8630b758766e6478dec58',1,'symcpp::Constant::diff()'],['../classsymcpp_1_1Divide.html#aeecc60e1759b81ea65b0b95a62ff38df',1,'symcpp::Divide::diff()'],['../classsymcpp_1_1Expression.html#a032fe8da79d5e231ca2d21a201c8f32d',1,'symcpp::Expression::diff()'],['../classsymcpp_1_1Multiply.html#a835e55ada54a6c1eeb6d02ceeef83198',1,'symcpp::Multiply::diff()'],['../classsymcpp_1_1Power.html#ac8fdf5b0ddfa04647ba93a6c383d4a7b',1,'symcpp::Power::diff()'],['../classsymcpp_1_1Subtract.html#a4f9040e23694efcf093bf4b5c59b386b',1,'symcpp::Subtract::diff()'],['../classsymcpp_1_1SymbolicGraph.html#a7d7ee5ab35426cf96588edd8ece936a7',1,'symcpp::SymbolicGraph::diff()'],['../classsymcpp_1_1UnaryOperator.html#a73f6af837c67e65504e4bb82111d9557',1,'symcpp::UnaryOperator::diff()'],['../classsymcpp_1_1Variable.html#ae17a02824954066f4e8b1ed6ba799ff0',1,'symcpp::Variable::diff()']]],
+  ['diffuse_5freflectivity',['diffuse_reflectivity',['../classMaterial.html#a3f4ff9c259e67dcffa2d607f788fd2a1',1,'Material']]],
   ['diffusecomponent',['diffuseComponent',['../classDistantPointSource.html#ae3682ba2e553f38d6c9e4ee1bed9504f',1,'DistantPointSource::diffuseComponent()'],['../classLight.html#af5dc859ada149ca54ec5088e1c33deb4',1,'Light::diffuseComponent()'],['../classPointSource.html#a445e9566d2226d1b8afd76274fb006fb',1,'PointSource::diffuseComponent()'],['../classRandomLight.html#a371cbc5df30db46ac53cd0a9be91ac52',1,'RandomLight::diffuseComponent()'],['../classSpotLight.html#a0810e4bd136caddea0c65b819f2bd400',1,'SpotLight::diffuseComponent()']]],
-  ['diffusereflectivity',['diffuseReflectivity',['../classMaterial.html#a9186602866ab630c193bf69dfbf9ca2b',1,'Material']]],
+  ['disable_5finterpolation',['disable_interpolation',['../classTriangle.html#a4465d15c66b5a61bfe3441b4e0676686',1,'Triangle']]],
   ['distantpointsource',['DistantPointSource',['../classDistantPointSource.html#abb36a1b1376c1d895e11ba5a01466a0b',1,'DistantPointSource']]],
   ['divide',['Divide',['../classsymcpp_1_1Divide.html#a1399cc15ca3af6ed217c20cadb2694ad',1,'symcpp::Divide::Divide(const Expression &amp;a, const Expression &amp;b)'],['../classsymcpp_1_1Divide.html#a010b104132d0341805ca34277422d867',1,'symcpp::Divide::Divide(const std::unique_ptr&lt; Expression &gt; &amp;a, const std::unique_ptr&lt; Expression &gt; &amp;b)']]],
-  ['doesintersect',['doesIntersect',['../classIntersection.html#a16a2464ecdda1f0c151436d27580241b',1,'Intersection']]],
+  ['does_5fintersect',['does_intersect',['../classIntersection.html#ae2d6edc03a6a048258724c2ca7ca2dc8',1,'Intersection']]],
   ['dragon',['dragon',['../main_8cpp.html#aee57ad5faf9321f5382cb4ce3859acfb',1,'main.cpp']]],
   ['dump',['dump',['../classOBJFile.html#afb445848916f5a138b262d7fcb0e136f',1,'OBJFile']]]
 ];

@@ -11,30 +11,49 @@ Class for storing information about intersection of a \hyperlink{classRay}{Ray} 
 
 
 
-Collaboration diagram for Intersection\+:\nopagebreak
+Collaboration diagram for Intersection\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=220pt]{classIntersection__coll__graph}
+\includegraphics[width=316pt]{classIntersection__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{classIntersection_a6d6042fc104b258908c3c55d7cc23aa3}{Intersection} (const \hyperlink{classIntersection}{Intersection} \&other)
+\item 
 \hyperlink{classIntersection_accfff54844dea1b64fce8ddb1c72f84d}{Intersection} (const \hyperlink{classRenderObject}{Render\+Object} $\ast$\hyperlink{classIntersection_a8241676dd0f240769dc189132dc3c5bb}{intersect}, const double \&d)
+\item 
+\hyperlink{classIntersection_a8c9336839207202dbd7cc8eef633272e}{Intersection} (const \hyperlink{classRenderObject}{Render\+Object} $\ast$\hyperlink{classIntersection_a8241676dd0f240769dc189132dc3c5bb}{intersect}, const double \&d, const \hyperlink{classIntersectionProperties}{Intersection\+Properties} \&p)
 \item 
 \hyperlink{classIntersection_a67497e3efe2793b23909052eeb82c4f3}{Intersection} ()
 \item 
-bool \hyperlink{classIntersection_a16a2464ecdda1f0c151436d27580241b}{does\+Intersect} ()
+bool \hyperlink{classIntersection_ae2d6edc03a6a048258724c2ca7ca2dc8}{does\+\_\+intersect} ()
 \item 
-double \hyperlink{classIntersection_a18ecb6b6746d20976e3c53b92d1faaf3}{get\+Distance} () const 
+double \hyperlink{classIntersection_a3ebb19b50063f6034a36a1d59ae2f483}{get\+\_\+distance} () const 
 \item 
-const \hyperlink{classRenderObject}{Render\+Object} $\ast$ \hyperlink{classIntersection_a9d037e2c954f57dfa718a5cb3d96d58d}{get\+Object} () const 
-\end{DoxyCompactItemize}
+void \hyperlink{classIntersection_afeb53190b4cae138c2ab89b8b7198481}{set\+\_\+properties} (const \hyperlink{classIntersectionProperties}{Intersection\+Properties} \&p)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classRenderObject}{Render\+Object} might choose to store information about the intersection here. \end{DoxyCompactList}\item 
+void \hyperlink{classIntersection_aa5b98f38c76a5b3fb869b89ddc77f2da}{set\+\_\+properties} (const \hyperlink{classMaterial}{Material} \&mat, const \hyperlink{classVector3D}{Vector3D} \&normal)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classRenderObject}{Render\+Object} might choose to store information about the intersection here. \end{DoxyCompactList}\item 
+bool \hyperlink{classIntersection_a5315f78b43c5ec261497bf87003d0613}{has\+\_\+properties} () const 
+\item 
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classIntersection_ada64d34f2099bd8436978c7dacf05f32}{get\+\_\+properties} () const 
+\begin{DoxyCompactList}\small\item\em Returns \hyperlink{classIntersectionProperties}{Intersection\+Properties} if they are stored here. Otherwise this method throws an exception. \end{DoxyCompactList}\item 
+const \hyperlink{classRenderObject}{Render\+Object} $\ast$ \hyperlink{classIntersection_ae2047415852535497e951e8a98deaffb}{get\+\_\+object} () const 
+\item 
+\hyperlink{classIntersection}{Intersection} \& \hyperlink{classIntersection_add5b6d995062799bd840c6486790c604}{operator=} (const \hyperlink{classIntersection}{Intersection} \&other)
+\item 
+\hyperlink{classIntersection_a064951a970ed8dd11081b2903ab62122}{$\sim$\+Intersection} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{classIntersection}{Intersection}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 const \hyperlink{classRenderObject}{Render\+Object} $\ast$ \hyperlink{classIntersection_a8241676dd0f240769dc189132dc3c5bb}{intersect}
+\item 
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} $\ast$ \hyperlink{classIntersection_ad9d38892c2e47f51ae2497904050c00e}{properties}
 \item 
 double \hyperlink{classIntersection_a65da854f067b6f08175a97d262a17f1e}{distance}
 \end{DoxyCompactItemize}
@@ -42,13 +61,20 @@ double \hyperlink{classIntersection_a65da854f067b6f08175a97d262a17f1e}{distance}
 \begin{DoxyCompactItemize}
 \item 
 bool \hyperlink{classIntersection_a955ab59fdb5154881d491eebc653250f}{operator$<$} (const \hyperlink{classIntersection}{Intersection} \&first, const \hyperlink{classIntersection}{Intersection} \&second)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Decides which intersection is closer to the camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Class for storing information about intersection of a \hyperlink{classRay}{Ray} and a \hyperlink{classRenderObject}{Render\+Object}. 
 
 \subsection{Constructor \& Destructor Documentation}
+\index{Intersection@{Intersection}!Intersection@{Intersection}}
+\index{Intersection@{Intersection}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{Intersection(const Intersection \&other)}{Intersection(const Intersection &other)}}]{\setlength{\rightskip}{0pt plus 5cm}Intersection\+::\+Intersection (
+\begin{DoxyParamCaption}
+\item[{const {\bf Intersection} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{classIntersection_a6d6042fc104b258908c3c55d7cc23aa3}{}\label{classIntersection_a6d6042fc104b258908c3c55d7cc23aa3}
 \index{Intersection@{Intersection}!Intersection@{Intersection}}
 \index{Intersection@{Intersection}!Intersection@{Intersection}}
 \subsubsection[{\texorpdfstring{Intersection(const Render\+Object $\ast$intersect, const double \&d)}{Intersection(const RenderObject *intersect, const double &d)}}]{\setlength{\rightskip}{0pt plus 5cm}Intersection\+::\+Intersection (
@@ -59,35 +85,121 @@ Class for storing information about intersection of a \hyperlink{classRay}{Ray} 
 )}\hypertarget{classIntersection_accfff54844dea1b64fce8ddb1c72f84d}{}\label{classIntersection_accfff54844dea1b64fce8ddb1c72f84d}
 \index{Intersection@{Intersection}!Intersection@{Intersection}}
 \index{Intersection@{Intersection}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{Intersection(const Render\+Object $\ast$intersect, const double \&d, const Intersection\+Properties \&p)}{Intersection(const RenderObject *intersect, const double &d, const IntersectionProperties &p)}}]{\setlength{\rightskip}{0pt plus 5cm}Intersection\+::\+Intersection (
+\begin{DoxyParamCaption}
+\item[{const {\bf Render\+Object} $\ast$}]{intersect, }
+\item[{const double \&}]{d, }
+\item[{const {\bf Intersection\+Properties} \&}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{classIntersection_a8c9336839207202dbd7cc8eef633272e}{}\label{classIntersection_a8c9336839207202dbd7cc8eef633272e}
+\index{Intersection@{Intersection}!Intersection@{Intersection}}
+\index{Intersection@{Intersection}!Intersection@{Intersection}}
 \subsubsection[{\texorpdfstring{Intersection()}{Intersection()}}]{\setlength{\rightskip}{0pt plus 5cm}Intersection\+::\+Intersection (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}\hypertarget{classIntersection_a67497e3efe2793b23909052eeb82c4f3}{}\label{classIntersection_a67497e3efe2793b23909052eeb82c4f3}
+\index{Intersection@{Intersection}!````~Intersection@{$\sim$\+Intersection}}
+\index{````~Intersection@{$\sim$\+Intersection}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{$\sim$\+Intersection()}{~Intersection()}}]{\setlength{\rightskip}{0pt plus 5cm}Intersection\+::$\sim$\+Intersection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIntersection_a064951a970ed8dd11081b2903ab62122}{}\label{classIntersection_a064951a970ed8dd11081b2903ab62122}
 
+
+Destructor of \hyperlink{classIntersection}{Intersection}. 
+
+Note, that we only have to delete properties. It is not \hyperlink{classIntersection}{Intersection}\textquotesingle{}s responsibility to clean up intersect. In fact, chances are intersect is not even on the heap. 
 
 \subsection{Member Function Documentation}
-\index{Intersection@{Intersection}!does\+Intersect@{does\+Intersect}}
-\index{does\+Intersect@{does\+Intersect}!Intersection@{Intersection}}
-\subsubsection[{\texorpdfstring{does\+Intersect()}{doesIntersect()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Intersection\+::does\+Intersect (
+\index{Intersection@{Intersection}!does\+\_\+intersect@{does\+\_\+intersect}}
+\index{does\+\_\+intersect@{does\+\_\+intersect}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{does\+\_\+intersect()}{does_intersect()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Intersection\+::does\+\_\+intersect (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\hypertarget{classIntersection_a16a2464ecdda1f0c151436d27580241b}{}\label{classIntersection_a16a2464ecdda1f0c151436d27580241b}
-\index{Intersection@{Intersection}!get\+Distance@{get\+Distance}}
-\index{get\+Distance@{get\+Distance}!Intersection@{Intersection}}
-\subsubsection[{\texorpdfstring{get\+Distance() const }{getDistance() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Intersection\+::get\+Distance (
+)}\hypertarget{classIntersection_ae2d6edc03a6a048258724c2ca7ca2dc8}{}\label{classIntersection_ae2d6edc03a6a048258724c2ca7ca2dc8}
+\index{Intersection@{Intersection}!get\+\_\+distance@{get\+\_\+distance}}
+\index{get\+\_\+distance@{get\+\_\+distance}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{get\+\_\+distance() const }{get_distance() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Intersection\+::get\+\_\+distance (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\hypertarget{classIntersection_a18ecb6b6746d20976e3c53b92d1faaf3}{}\label{classIntersection_a18ecb6b6746d20976e3c53b92d1faaf3}
-\index{Intersection@{Intersection}!get\+Object@{get\+Object}}
-\index{get\+Object@{get\+Object}!Intersection@{Intersection}}
-\subsubsection[{\texorpdfstring{get\+Object() const }{getObject() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Render\+Object} $\ast$ Intersection\+::get\+Object (
+) const}\hypertarget{classIntersection_a3ebb19b50063f6034a36a1d59ae2f483}{}\label{classIntersection_a3ebb19b50063f6034a36a1d59ae2f483}
+\index{Intersection@{Intersection}!get\+\_\+object@{get\+\_\+object}}
+\index{get\+\_\+object@{get\+\_\+object}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{get\+\_\+object() const }{get_object() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Render\+Object} $\ast$ Intersection\+::get\+\_\+object (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\hypertarget{classIntersection_a9d037e2c954f57dfa718a5cb3d96d58d}{}\label{classIntersection_a9d037e2c954f57dfa718a5cb3d96d58d}
+) const}\hypertarget{classIntersection_ae2047415852535497e951e8a98deaffb}{}\label{classIntersection_ae2047415852535497e951e8a98deaffb}
+\index{Intersection@{Intersection}!get\+\_\+properties@{get\+\_\+properties}}
+\index{get\+\_\+properties@{get\+\_\+properties}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{get\+\_\+properties() const }{get_properties() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Intersection\+::get\+\_\+properties (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classIntersection_ada64d34f2099bd8436978c7dacf05f32}{}\label{classIntersection_ada64d34f2099bd8436978c7dacf05f32}
+
+
+Returns \hyperlink{classIntersectionProperties}{Intersection\+Properties} if they are stored here. Otherwise this method throws an exception. 
+
+Before calling this method you might want to call has\+\_\+properties \begin{DoxyReturn}{Returns}
+Information about the intersection if these properties were stored here 
+\end{DoxyReturn}
+\index{Intersection@{Intersection}!has\+\_\+properties@{has\+\_\+properties}}
+\index{has\+\_\+properties@{has\+\_\+properties}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{has\+\_\+properties() const }{has_properties() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Intersection\+::has\+\_\+properties (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classIntersection_a5315f78b43c5ec261497bf87003d0613}{}\label{classIntersection_a5315f78b43c5ec261497bf87003d0613}
+\begin{DoxyReturn}{Returns}
+True if information about intersection properties are stored in this object 
+\end{DoxyReturn}
+\index{Intersection@{Intersection}!operator=@{operator=}}
+\index{operator=@{operator=}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{operator=(const Intersection \&other)}{operator=(const Intersection &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} \& Intersection\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Intersection} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{classIntersection_add5b6d995062799bd840c6486790c604}{}\label{classIntersection_add5b6d995062799bd840c6486790c604}
+\index{Intersection@{Intersection}!set\+\_\+properties@{set\+\_\+properties}}
+\index{set\+\_\+properties@{set\+\_\+properties}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{set\+\_\+properties(const Intersection\+Properties \&p)}{set_properties(const IntersectionProperties &p)}}]{\setlength{\rightskip}{0pt plus 5cm}void Intersection\+::set\+\_\+properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Intersection\+Properties} \&}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{classIntersection_afeb53190b4cae138c2ab89b8b7198481}{}\label{classIntersection_afeb53190b4cae138c2ab89b8b7198481}
+
+
+\hyperlink{classRenderObject}{Render\+Object} might choose to store information about the intersection here. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Properties of the intersection \\
+\hline
+\end{DoxyParams}
+\index{Intersection@{Intersection}!set\+\_\+properties@{set\+\_\+properties}}
+\index{set\+\_\+properties@{set\+\_\+properties}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{set\+\_\+properties(const Material \&mat, const Vector3\+D \&normal)}{set_properties(const Material &mat, const Vector3D &normal)}}]{\setlength{\rightskip}{0pt plus 5cm}void Intersection\+::set\+\_\+properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Material} \&}]{mat, }
+\item[{const {\bf Vector3D} \&}]{normal}
+\end{DoxyParamCaption}
+)}\hypertarget{classIntersection_aa5b98f38c76a5b3fb869b89ddc77f2da}{}\label{classIntersection_aa5b98f38c76a5b3fb869b89ddc77f2da}
+
+
+\hyperlink{classRenderObject}{Render\+Object} might choose to store information about the intersection here. 
+
+Setting the properties using this method will allow \hyperlink{classScene}{Scene} to avoid calling intersect\+\_\+properties of Renderobject. This might be desired if the surface normal/materials are calculated by Render\+Objects ray\+\_\+intersect already. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & The material properties at the intersection point \\
+\hline
+{\em normal} & The surface normal at the intersection point \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Friends And Related Function Documentation}
@@ -101,6 +213,20 @@ Class for storing information about intersection of a \hyperlink{classRay}{Ray} 
 )\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classIntersection_a955ab59fdb5154881d491eebc653250f}{}\label{classIntersection_a955ab59fdb5154881d491eebc653250f}
 
 
+Decides which intersection is closer to the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first intersection \\
+\hline
+{\em second} & The second intersection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if first is closer to the camera than second 
+\end{DoxyReturn}
+
+
 \subsection{Member Data Documentation}
 \index{Intersection@{Intersection}!distance@{distance}}
 \index{distance@{distance}!Intersection@{Intersection}}
@@ -108,6 +234,9 @@ Class for storing information about intersection of a \hyperlink{classRay}{Ray} 
 \index{Intersection@{Intersection}!intersect@{intersect}}
 \index{intersect@{intersect}!Intersection@{Intersection}}
 \subsubsection[{\texorpdfstring{intersect}{intersect}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Render\+Object}$\ast$ Intersection\+::intersect\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIntersection_a8241676dd0f240769dc189132dc3c5bb}{}\label{classIntersection_a8241676dd0f240769dc189132dc3c5bb}
+\index{Intersection@{Intersection}!properties@{properties}}
+\index{properties@{properties}!Intersection@{Intersection}}
+\subsubsection[{\texorpdfstring{properties}{properties}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties}$\ast$ Intersection\+::properties\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIntersection_ad9d38892c2e47f51ae2497904050c00e}{}\label{classIntersection_ad9d38892c2e47f51ae2497904050c00e}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

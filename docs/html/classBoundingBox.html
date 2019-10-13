@@ -113,13 +113,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4120184a9340ea9a0c43285c9d0f18bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e401c4da5839950f1f30c8b8c4d1208"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a6e401c4da5839950f1f30c8b8c4d1208">BoundingBox</a> ()</td></tr>
 <tr class="separator:a6e401c4da5839950f1f30c8b8c4d1208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84a53ba896c6f97607133c29f1bfd437"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a84a53ba896c6f97607133c29f1bfd437">isIntersected</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray) const </td></tr>
-<tr class="separator:a84a53ba896c6f97607133c29f1bfd437"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d02545bace7ee780252095caa65b8ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a0d02545bace7ee780252095caa65b8ec">intersectionInterval</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray) const </td></tr>
-<tr class="memdesc:a0d02545bace7ee780252095caa65b8ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns which part of ray lies inside the box.  <a href="#a0d02545bace7ee780252095caa65b8ec">More...</a><br /></td></tr>
-<tr class="separator:a0d02545bace7ee780252095caa65b8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac53a80a384d0b7521d23cffdde09c8a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#ac53a80a384d0b7521d23cffdde09c8a7">getCenter</a> () const </td></tr>
-<tr class="separator:ac53a80a384d0b7521d23cffdde09c8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8eca09001b89f0c80566731fb3ef99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a8f8eca09001b89f0c80566731fb3ef99">is_intersected</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray) const </td></tr>
+<tr class="separator:a8f8eca09001b89f0c80566731fb3ef99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a907bb7dfdcd0bd60a9e1cd59bda35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a23a907bb7dfdcd0bd60a9e1cd59bda35">intersection_interval</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray) const </td></tr>
+<tr class="memdesc:a23a907bb7dfdcd0bd60a9e1cd59bda35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns which part of ray lies inside the box.  <a href="#a23a907bb7dfdcd0bd60a9e1cd59bda35">More...</a><br /></td></tr>
+<tr class="separator:a23a907bb7dfdcd0bd60a9e1cd59bda35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee02002578e3f3a0d1046f1c6da86d7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#aee02002578e3f3a0d1046f1c6da86d7b">get_center</a> () const </td></tr>
+<tr class="separator:aee02002578e3f3a0d1046f1c6da86d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ea4f5a93b79953b5f971a7e1cb2e9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBoundingBox.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a58ea4f5a93b79953b5f971a7e1cb2e9c">operator+</a> (const <a class="el" href="classBoundingBox.html">BoundingBox</a> &amp;other) const </td></tr>
 <tr class="separator:a58ea4f5a93b79953b5f971a7e1cb2e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3db32eae066cb2af88dbe9394b58db9f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classInterval.html">Interval</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a3db32eae066cb2af88dbe9394b58db9f">operator[]</a> (unsigned int index) const </td></tr>
@@ -127,8 +127,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:abde1102add193570558c7a8f15c12403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#abde1102add193570558c7a8f15c12403">tRange</a> (const <a class="el" href="classInterval.html">Interval</a> &amp;i, double base, double direction) const </td></tr>
-<tr class="separator:abde1102add193570558c7a8f15c12403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708734f01854529bbdb0c3b2a33461d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a708734f01854529bbdb0c3b2a33461d5">t_range</a> (const <a class="el" href="classInterval.html">Interval</a> &amp;i, double base, double direction) const </td></tr>
+<tr class="separator:a708734f01854529bbdb0c3b2a33461d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -196,12 +196,12 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac53a80a384d0b7521d23cffdde09c8a7"></a>
+<a class="anchor" id="aee02002578e3f3a0d1046f1c6da86d7b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVector3D.html">Vector3D</a> BoundingBox::getCenter </td>
+          <td class="memname"><a class="el" href="classVector3D.html">Vector3D</a> BoundingBox::get_center </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -211,12 +211,12 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0d02545bace7ee780252095caa65b8ec"></a>
+<a class="anchor" id="a23a907bb7dfdcd0bd60a9e1cd59bda35"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classInterval.html">Interval</a> BoundingBox::intersectionInterval </td>
+          <td class="memname"><a class="el" href="classInterval.html">Interval</a> BoundingBox::intersection_interval </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
           <td class="paramname"><em>ray</em></td><td>)</td>
@@ -237,12 +237,12 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a84a53ba896c6f97607133c29f1bfd437"></a>
+<a class="anchor" id="a8f8eca09001b89f0c80566731fb3ef99"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool BoundingBox::isIntersected </td>
+          <td class="memname">bool BoundingBox::is_intersected </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
           <td class="paramname"><em>ray</em></td><td>)</td>
@@ -285,7 +285,7 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abde1102add193570558c7a8f15c12403"></a>
+<a class="anchor" id="a708734f01854529bbdb0c3b2a33461d5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -293,7 +293,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classInterval.html">Interval</a> BoundingBox::tRange </td>
+          <td class="memname"><a class="el" href="classInterval.html">Interval</a> BoundingBox::t_range </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classInterval.html">Interval</a> &amp;&#160;</td>
           <td class="paramname"><em>i</em>, </td>

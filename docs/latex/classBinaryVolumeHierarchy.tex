@@ -2,7 +2,7 @@
 \label{classBinaryVolumeHierarchy}\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
 
 
-Accelerationstructure for ensemble of bounded volumes.  
+Acceleration structure for ensemble of bounded volumes.  
 
 
 
@@ -36,13 +36,13 @@ Collaboration diagram for Binary\+Volume\+Hierarchy\+:\nopagebreak
 \item 
 \hyperlink{classBinaryVolumeHierarchy}{Binary\+Volume\+Hierarchy} \& \hyperlink{classBinaryVolumeHierarchy_af15afa9493fbc0d3cfffbbc3c2bfbe99}{operator=} (\hyperlink{classBinaryVolumeHierarchy}{Binary\+Volume\+Hierarchy} other)
 \item 
-\hyperlink{classIntersection}{Intersection} \hyperlink{classBinaryVolumeHierarchy_a1eda3a8f9a52d44cd483d9bc2807b38a}{ray\+Intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
+\hyperlink{classIntersection}{Intersection} \hyperlink{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}{ray\+\_\+intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
 \begin{DoxyCompactList}\small\item\em Method to detect intersection of ray and object. \end{DoxyCompactList}\item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classBinaryVolumeHierarchy_af4875ad00fe5c6430067e00647918b5a}{get\+Bounds} () const override
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classBinaryVolumeHierarchy_aaec23515bc9d81ccc9115489aed8808f}{get\+\_\+bounds} () const override
 \item 
 std\+::ostream \& \hyperlink{classBinaryVolumeHierarchy_ad92d27372aef59591ddc239685ca770d}{print} (std\+::ostream \&sink) const override
 \item 
-\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classBinaryVolumeHierarchy_af3c2277401a26961295a2b0ac18b1dd4}{intersect\+Properties} (const \hyperlink{classRay}{Ray} \&ray) const override
+\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}{intersect\+\_\+properties} (const \hyperlink{classRay}{Ray} \&ray) const override
 \begin{DoxyCompactList}\small\item\em If ray intersects this object, this method will provide additional Information. \end{DoxyCompactList}\item 
 \hyperlink{classBinaryVolumeHierarchy_a760800685de78279be3619c4ee4170cf}{$\sim$\+Binary\+Volume\+Hierarchy} () override
 \end{DoxyCompactItemize}
@@ -65,7 +65,7 @@ unsigned int \hyperlink{classBinaryVolumeHierarchy_a93e3d7fd0b06a83675e36594d3fc
 
 
 \subsection{Detailed Description}
-Accelerationstructure for ensemble of bounded volumes. 
+Acceleration structure for ensemble of bounded volumes. 
 
 \subsection{Constructor \& Destructor Documentation}
 \index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
@@ -93,24 +93,24 @@ Accelerationstructure for ensemble of bounded volumes.
 
 
 \subsection{Member Function Documentation}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!get\+Bounds@{get\+Bounds}}
-\index{get\+Bounds@{get\+Bounds}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{get\+Bounds() const override}{getBounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Binary\+Volume\+Hierarchy\+::get\+Bounds (
+\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!get\+\_\+bounds@{get\+\_\+bounds}}
+\index{get\+\_\+bounds@{get\+\_\+bounds}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
+\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Binary\+Volume\+Hierarchy\+::get\+\_\+bounds (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBinaryVolumeHierarchy_af4875ad00fe5c6430067e00647918b5a}{}\label{classBinaryVolumeHierarchy_af4875ad00fe5c6430067e00647918b5a}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBinaryVolumeHierarchy_aaec23515bc9d81ccc9115489aed8808f}{}\label{classBinaryVolumeHierarchy_aaec23515bc9d81ccc9115489aed8808f}
 
 
-Implements \hyperlink{classBoundedVolume_a3d912b7028f7046fe18c4edf3a400e3b}{Bounded\+Volume}.
+Implements \hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}.
 
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!intersect\+Properties@{intersect\+Properties}}
-\index{intersect\+Properties@{intersect\+Properties}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{intersect\+Properties(const Ray \&ray) const override}{intersectProperties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Binary\+Volume\+Hierarchy\+::intersect\+Properties (
+\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!intersect\+\_\+properties@{intersect\+\_\+properties}}
+\index{intersect\+\_\+properties@{intersect\+\_\+properties}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
+\subsubsection[{\texorpdfstring{intersect\+\_\+properties(const Ray \&ray) const override}{intersect_properties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Binary\+Volume\+Hierarchy\+::intersect\+\_\+properties (
 \begin{DoxyParamCaption}
 \item[{const {\bf Ray} \&}]{ray}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBinaryVolumeHierarchy_af3c2277401a26961295a2b0ac18b1dd4}{}\label{classBinaryVolumeHierarchy_af3c2277401a26961295a2b0ac18b1dd4}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}{}\label{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}
 
 
 If ray intersects this object, this method will provide additional Information. 
@@ -127,7 +127,7 @@ Note, that even if ray\+Intersect detected an intersection, this method might no
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_ae2c6d699741385dcd9ea6a1b09f9b7f0}{Render\+Object}.
+Implements \hyperlink{classRenderObject_a792d36570e3264530872187ca1b0baca}{Render\+Object}.
 
 \index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!longest\+Axis@{longest\+Axis}}
 \index{longest\+Axis@{longest\+Axis}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
@@ -162,13 +162,13 @@ Implements \hyperlink{classRenderObject_ae2c6d699741385dcd9ea6a1b09f9b7f0}{Rende
 
 Implements \hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}.
 
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!ray\+Intersect@{ray\+Intersect}}
-\index{ray\+Intersect@{ray\+Intersect}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{ray\+Intersect(const Ray \&ray) const override}{rayIntersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Binary\+Volume\+Hierarchy\+::ray\+Intersect (
+\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!ray\+\_\+intersect@{ray\+\_\+intersect}}
+\index{ray\+\_\+intersect@{ray\+\_\+intersect}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
+\subsubsection[{\texorpdfstring{ray\+\_\+intersect(const Ray \&ray) const override}{ray_intersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Binary\+Volume\+Hierarchy\+::ray\+\_\+intersect (
 \begin{DoxyParamCaption}
 \item[{const {\bf Ray} \&}]{ray}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBinaryVolumeHierarchy_a1eda3a8f9a52d44cd483d9bc2807b38a}{}\label{classBinaryVolumeHierarchy_a1eda3a8f9a52d44cd483d9bc2807b38a}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}{}\label{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}
 
 
 Method to detect intersection of ray and object. 
@@ -183,7 +183,7 @@ Method to detect intersection of ray and object.
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_a681f6674d94f16c4df69605d5e42d05c}{Render\+Object}.
+Implements \hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{Render\+Object}.
 
 
 

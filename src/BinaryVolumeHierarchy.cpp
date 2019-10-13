@@ -5,40 +5,40 @@
 #include <cassert>
 
 
-BoundingBox BinaryVolumeHierarchy::getBounds() const {
+BoundingBox BinaryVolumeHierarchy::get_bounds() const {
     return bounds;
 }
 
-Intersection BinaryVolumeHierarchy::rayIntersect(const Ray& ray) const {
-    if(!bounds.isIntersected(ray))
+Intersection BinaryVolumeHierarchy::ray_intersect(const Ray &ray) const {
+    if(!bounds.is_intersected(ray))
     {
         return {};
     }
 
     if(left->bv!=nullptr && right->bv!=nullptr)
     {
-        return std::min(left->bv->rayIntersect(ray), right->bv->rayIntersect(ray));
+        return std::min(left->bv->ray_intersect(ray), right->bv->ray_intersect(ray));
         /*
         Interval A = (left->bv->getBounds()).intersectionInterval(ray);
-        Interval B = (right->bv->getBounds()).intersectionInterval(ray);
+        Interval B = (right->bv->get_bounds()).intersection_interval(ray);
         double a = A.getMin();
         double b = B.getMin();
 
         if(a<b){
-            Intersection first = left->bv->rayIntersect(ray);
+            Intersection first = left->bv->ray_intersect(ray);
             if(first.getDistance()<b && first.doesIntersect()){
                 return first;
             }
 
-            return std::min(first, right->bv->rayIntersect(ray));
+            return std::min(first, right->bv->ray_intersect(ray));
         }
 
-        Intersection first = right->bv->rayIntersect(ray);
-        if(first.getDistance()<a && first.doesIntersect()){
+        Intersection first = right->bv->ray_intersect(ray);
+        if(first.get_distance()<a && first.does_intersect()){
             return first;
         }
 
-        return std::min(first, left->bv->rayIntersect(ray));
+        return std::min(first, left->bv->ray_intersect(ray));
          */
     }
 
@@ -51,7 +51,7 @@ Intersection BinaryVolumeHierarchy::rayIntersect(const Ray& ray) const {
 
     if(left->bv!=nullptr)
     {
-        return left->bv->rayIntersect(ray);
+        return left->bv->ray_intersect(ray);
     }
 
     return {};
@@ -64,10 +64,10 @@ BinaryVolumeHierarchy::~BinaryVolumeHierarchy() {
 
 std::ostream& BinaryVolumeHierarchy::print(std::ostream &sink) const {
     if(left->bv!= nullptr) {
-        sink << left->bv->getBounds() << std::endl;
+        sink << left->bv->get_bounds() << std::endl;
     }
     if(right->bv!=nullptr) {
-        sink << right->bv->getBounds() << std::endl << std::endl;
+        sink << right->bv->get_bounds() << std::endl << std::endl;
     }
     return sink;
 }
@@ -91,7 +91,7 @@ std::vector<BoundedVolume*>::iterator BinaryVolumeHierarchy::partition(std::vect
 
     std::function<bool(BoundedVolume*, BoundedVolume*)> lambda = [longest_index](BoundedVolume* a, BoundedVolume* b)->bool
     {
-        return (*a).getBounds().getCenter()[longest_index]<(*b).getBounds().getCenter()[longest_index];
+        return (*a).get_bounds().get_center()[longest_index]< (*b).get_bounds().get_center()[longest_index];
     };
 
     return utility::split_middle(b, e, lambda);
@@ -127,11 +127,11 @@ BinaryVolumeHierarchy::BinaryVolumeHierarchy(std::vector<BoundedVolume*>::iterat
 }
 
 
-IntersectionProperties BinaryVolumeHierarchy::intersectProperties(const Ray& ray) const
+IntersectionProperties BinaryVolumeHierarchy::intersect_properties(const Ray &ray) const
 {
     assert(false);                                      //DO NOT CALL THIS METHOD! NOT EFFICIENT!
-    Intersection intersection = rayIntersect(ray);
-    return intersection.getObject()->intersectProperties(ray);
+    Intersection intersection = ray_intersect(ray);
+    return intersection.get_object()->intersect_properties(ray);
 }
 
 

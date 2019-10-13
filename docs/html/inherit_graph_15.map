@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="5,107,108,133"/>
 <area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="156,81,273,108"/>
 <area shape="rect" id="node7" href="$classSimplePlane.html" title="An infinite plane. " alt="" coords="167,132,262,159"/>
-<area shape="rect" id="node3" href="$classBinaryVolumeHierarchy.html" title="Accelerationstructure for ensemble of bounded volumes. " alt="" coords="321,5,480,32"/>
+<area shape="rect" id="node3" href="$classBinaryVolumeHierarchy.html" title="Acceleration structure for ensemble of bounded volumes. " alt="" coords="321,5,480,32"/>
 <area shape="rect" id="node4" href="$classImplicitSurface.html" title="RenderObject for the surface implicitly given by F(x,y,z) = 0. " alt="" coords="346,56,455,83"/>
 <area shape="rect" id="node5" href="$classSimpleSphere.html" title="A simple, uniformly textured sphere, implements RenderObject. " alt="" coords="349,107,452,133"/>
 <area shape="rect" id="node6" href="$classTriangle.html" title="A Triangle implementing BoundedVolume, RenderObject. " alt="" coords="367,157,435,184"/>
