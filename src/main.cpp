@@ -162,8 +162,8 @@ void implicit(){
 
 
 int main() {
-    //car();
-    implicit();
+    car();
+    //implicit();
     //dragon();
     //geo();
     //cornell();

@@ -24,7 +24,7 @@ void Scene::render(unsigned int recursion_depth) {
 
 
 Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
-    Intersection hit = firstHit(ray);
+    Intersection hit = first_hit(ray);
 
     if(hit.does_intersect())
     {
@@ -43,7 +43,7 @@ Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
         {
             Ray shaddow = light->shaddowRay(intersectionPoint);
             shaddow.offset(properties.normal*utility::EPSILON);
-            Intersection shadowHit = firstHit(shaddow, true);
+            Intersection shadowHit = first_hit(shaddow, true);
             if(!shadowHit.does_intersect() || shadowHit.get_distance() > light->getDistance(intersectionPoint))      //Check shaddow ray
             {
                 double dd = shaddow.read_direction()*properties.normal;
@@ -94,7 +94,7 @@ Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
 }
 
 
-Intersection Scene::firstHit(const Ray &ray) {
+Intersection Scene::first_hit(const Ray &ray) {
     Intersection firstHit = objs[0]->ray_intersect(ray);
     for(unsigned int i = 1; i<objs.size(); ++i)
     {
@@ -104,7 +104,7 @@ Intersection Scene::firstHit(const Ray &ray) {
 }
 
 
-Intersection Scene::firstHit(const Ray &ray, bool ignore_transparent) {
+Intersection Scene::first_hit(const Ray &ray, bool ignore_transparent) {
     Intersection firstHit;
     Intersection newHit;
     for(unsigned int i = 0; i<objs.size(); ++i)

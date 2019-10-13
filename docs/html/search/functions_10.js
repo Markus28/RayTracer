@@ -1,6 +1,7 @@
 var searchData=
 [
   ['scene',['Scene',['../classScene.html#a051f10cca42dcc9c5fe5297ef06583f8',1,'Scene']]],
+  ['set_5fnormals',['set_normals',['../classTriangle.html#a884c08e85751ea6204351718d3411034',1,'Triangle']]],
   ['set_5fproperties',['set_properties',['../classIntersection.html#afeb53190b4cae138c2ab89b8b7198481',1,'Intersection::set_properties(const IntersectionProperties &amp;p)'],['../classIntersection.html#aa5b98f38c76a5b3fb869b89ddc77f2da',1,'Intersection::set_properties(const Material &amp;mat, const Vector3D &amp;normal)']]],
   ['setray',['setRay',['../classCamera.html#a1277ae7e1fd3449359f30b6f70b7f5ce',1,'Camera']]],
   ['shaddowray',['shaddowRay',['../classLight.html#a840602e294c62366a0699e8a38c447bd',1,'Light']]],

@@ -8,7 +8,7 @@
 namespace linalg {
 /**
  * @brief Transformation objects represent angle-preserving transformations
- * @details These transformations are modelled as a composition of a transition, a rotation (i.e. orthogonal linear transform)
+ * @details These transformations are modelled as the composition of a translation, a rotation (i.e. orthogonal linear transform)
  * and a scaling step.
  */
     class Transformation {
