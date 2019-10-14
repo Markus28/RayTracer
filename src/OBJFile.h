@@ -20,13 +20,14 @@ public:
 private:
     std::vector<Triangle> polygons;
     std::vector<Vector3D> vertices;
+    std::vector<Vector3D> normals;
     MTLLib materials;
 
 };
 
 struct FaceData{
     FaceData(std::istringstream& iss);
-    std::vector<Triangle> get_triangles(const std::vector<Vector3D> &vertices, Material mat);
+    std::vector<Triangle> get_triangles(const std::vector<Vector3D> &vertices, const std::vector<Vector3D>& normals, Material mat);
 
     std::vector<std::vector<int>> data;
 };

@@ -21,6 +21,7 @@ A simple CPU Raytracer. Built from scratch.
   * Pinhole Camera with supersampling
 * Bounding-Volume-Hierarchies
 * Symbolic Computation System
+* Normal interpolation
 
 ### Coming soon
 * UV-Mapped Spheres
@@ -29,4 +30,3 @@ A simple CPU Raytracer. Built from scratch.
 * Bokeh
 * Area lights
 * Orthographic camera
-* Normal interpolation
