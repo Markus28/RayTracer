@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['linalg',['linalg',['../namespacelinalg.html',1,'']]]
+  ['image',['image',['../namespaceimage.html',1,'']]]
 ];

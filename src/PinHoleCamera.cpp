@@ -2,6 +2,7 @@
 #include <math.h>
 #include "PinHoleCamera.h"
 #include "Utilities.h"
+#include "image/post_process.h"
 
 
 Ray PinHoleCamera::currentRay() const {
@@ -37,5 +38,5 @@ PinHoleCamera::PinHoleCamera(Vector3D position, Vector3D up, Vector3D right, uns
 }
 
 Image PinHoleCamera::postProcess() const {
-    return image;
+    return image::max_tone_mapping(image::gamma_correct(image::anti_alias(image, 2), 0.5));
 }

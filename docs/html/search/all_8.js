@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['image',['image',['../classCamera.html#a0f3ba7059e4c02622c6d98515e8d9df1',1,'Camera::image()'],['../Background_8h.html#a10624870db6b3fba52ad9c5d430308e1',1,'Image():&#160;Background.h'],['../Camera_8h.html#a10624870db6b3fba52ad9c5d430308e1',1,'Image():&#160;Camera.h']]],
+  ['image',['image',['../namespaceimage.html',1,'image'],['../classCamera.html#a0f3ba7059e4c02622c6d98515e8d9df1',1,'Camera::image()'],['../Background_8h.html#a10624870db6b3fba52ad9c5d430308e1',1,'Image():&#160;Background.h'],['../Camera_8h.html#a10624870db6b3fba52ad9c5d430308e1',1,'Image():&#160;Camera.h'],['../namespaceimage.html#a83002366a99c023ab0256f2c16122bef',1,'image::Image()']]],
   ['implicit',['implicit',['../main_8cpp.html#a663f8e9fd8cb8885ca203d9f5d2a4008',1,'main.cpp']]],
   ['implicitsurface',['ImplicitSurface',['../classImplicitSurface.html',1,'ImplicitSurface'],['../classImplicitSurface.html#ab0cfa235e8f935a416c395cfecd2f32b',1,'ImplicitSurface::ImplicitSurface()']]],
   ['implicitsurface_2ecpp',['ImplicitSurface.cpp',['../ImplicitSurface_8cpp.html',1,'']]],

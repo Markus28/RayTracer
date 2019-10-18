@@ -1,0 +1,83 @@
+\hypertarget{namespaceimage}{}\section{image Namespace Reference}
+\label{namespaceimage}\index{image@{image}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} = std\+::vector$<$ std\+::vector$<$ \hyperlink{classVector3D}{Vector3D} $>$$>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} \hyperlink{namespaceimage_a350994eafb0492e40cb74c116873a7ae}{gamma\+\_\+correct} (const \hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} \&original, double gamma, double A)
+\begin{DoxyCompactList}\small\item\em Apply gamma correction to original. \end{DoxyCompactList}\item 
+\hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} \hyperlink{namespaceimage_a0d356b98f4bd21ca658d5c83e191cbe2}{gamma\+\_\+correct} (const \hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} \&original, double gamma)
+\item 
+\hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} \hyperlink{namespaceimage_a3646524ebdcbde53e3d2f4bfa47a024a}{max\+\_\+tone\+\_\+mapping} (const \hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} \&original, double max)
+\item 
+\hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} \hyperlink{namespaceimage_acad5a9459043f5ce5b565e771b0867f8}{max\+\_\+tone\+\_\+mapping} (const \hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} \&original)
+\item 
+\hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} \hyperlink{namespaceimage_ae465266083a6ee29947db193e0881ff2}{anti\+\_\+alias} (const \hyperlink{namespaceimage_a83002366a99c023ab0256f2c16122bef}{Image} \&original, unsigned int window\+\_\+size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{image@{image}!Image@{Image}}
+\index{Image@{Image}!image@{image}}
+\subsubsection[{\texorpdfstring{Image}{Image}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf image\+::\+Image} = typedef std\+::vector$<$std\+::vector$<${\bf Vector3D}$>$$>$}\hypertarget{namespaceimage_a83002366a99c023ab0256f2c16122bef}{}\label{namespaceimage_a83002366a99c023ab0256f2c16122bef}
+
+
+\subsection{Function Documentation}
+\index{image@{image}!anti\+\_\+alias@{anti\+\_\+alias}}
+\index{anti\+\_\+alias@{anti\+\_\+alias}!image@{image}}
+\subsubsection[{\texorpdfstring{anti\+\_\+alias(const Image \&original, unsigned int window\+\_\+size)}{anti_alias(const Image &original, unsigned int window_size)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} image\+::anti\+\_\+alias (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image} \&}]{original, }
+\item[{unsigned int}]{window\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceimage_ae465266083a6ee29947db193e0881ff2}{}\label{namespaceimage_ae465266083a6ee29947db193e0881ff2}
+\index{image@{image}!gamma\+\_\+correct@{gamma\+\_\+correct}}
+\index{gamma\+\_\+correct@{gamma\+\_\+correct}!image@{image}}
+\subsubsection[{\texorpdfstring{gamma\+\_\+correct(const Image \&original, double gamma, double A)}{gamma_correct(const Image &original, double gamma, double A)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} image\+::gamma\+\_\+correct (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image} \&}]{original, }
+\item[{double}]{gamma, }
+\item[{double}]{A}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceimage_a350994eafb0492e40cb74c116873a7ae}{}\label{namespaceimage_a350994eafb0492e40cb74c116873a7ae}
+
+
+Apply gamma correction to original. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em original} & The origina image \\
+\hline
+{\em gamma} & The gamma value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gamma corrected image 
+\end{DoxyReturn}
+\index{image@{image}!gamma\+\_\+correct@{gamma\+\_\+correct}}
+\index{gamma\+\_\+correct@{gamma\+\_\+correct}!image@{image}}
+\subsubsection[{\texorpdfstring{gamma\+\_\+correct(const Image \&original, double gamma)}{gamma_correct(const Image &original, double gamma)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} image\+::gamma\+\_\+correct (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image} \&}]{original, }
+\item[{double}]{gamma}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceimage_a0d356b98f4bd21ca658d5c83e191cbe2}{}\label{namespaceimage_a0d356b98f4bd21ca658d5c83e191cbe2}
+\index{image@{image}!max\+\_\+tone\+\_\+mapping@{max\+\_\+tone\+\_\+mapping}}
+\index{max\+\_\+tone\+\_\+mapping@{max\+\_\+tone\+\_\+mapping}!image@{image}}
+\subsubsection[{\texorpdfstring{max\+\_\+tone\+\_\+mapping(const Image \&original, double max)}{max_tone_mapping(const Image &original, double max)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} image\+::max\+\_\+tone\+\_\+mapping (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image} \&}]{original, }
+\item[{double}]{max}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceimage_a3646524ebdcbde53e3d2f4bfa47a024a}{}\label{namespaceimage_a3646524ebdcbde53e3d2f4bfa47a024a}
+\index{image@{image}!max\+\_\+tone\+\_\+mapping@{max\+\_\+tone\+\_\+mapping}}
+\index{max\+\_\+tone\+\_\+mapping@{max\+\_\+tone\+\_\+mapping}!image@{image}}
+\subsubsection[{\texorpdfstring{max\+\_\+tone\+\_\+mapping(const Image \&original)}{max_tone_mapping(const Image &original)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} image\+::max\+\_\+tone\+\_\+mapping (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image} \&}]{original}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceimage_acad5a9459043f5ce5b565e771b0867f8}{}\label{namespaceimage_acad5a9459043f5ce5b565e771b0867f8}

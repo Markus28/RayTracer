@@ -10,6 +10,7 @@ var searchData=
   ['ambient',['ambient',['../classScene.html#a284ce5b2aeb47c64d6712d9748229c47',1,'Scene']]],
   ['ambient_5frefl',['ambient_refl',['../classMaterial.html#a40002cba7c7049feb2bddaf57ae96ba4',1,'Material']]],
   ['ambient_5freflectivity',['ambient_reflectivity',['../classMaterial.html#a2b80ada55bf639ce99daa45f8c94bfc6',1,'Material']]],
+  ['anti_5falias',['anti_alias',['../namespaceimage.html#ae465266083a6ee29947db193e0881ff2',1,'image']]],
   ['area2',['area2',['../classTriangle.html#a43322fb75910877dd63b17d391e3022b',1,'Triangle']]],
   ['at',['at',['../classlinalg_1_1Matrix3D.html#a1021460c27da3f21690b68a2c7dea870',1,'linalg::Matrix3D::at(unsigned int i, unsigned int j)'],['../classlinalg_1_1Matrix3D.html#a2c5bee46e64a05d4671a8c72bc4f7e03',1,'linalg::Matrix3D::at(unsigned int i, unsigned int j) const ']]]
 ];

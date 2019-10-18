@@ -5,5 +5,6 @@ var searchData=
   ['n3',['n3',['../classTriangle.html#ae91046acca032af6fb931497127f8a7e',1,'Triangle']]],
   ['name',['name',['../structsymcpp_1_1ComplexToken.html#a0a731b7c110006afd8a1a44b400d19b4',1,'symcpp::ComplexToken::name()'],['../classsymcpp_1_1Variable.html#a626cca9e1586e5d60f31446a06c6203f',1,'symcpp::Variable::name()']]],
   ['normal',['normal',['../classIntersectionProperties.html#afb99c699b3116580c68936d033b09081',1,'IntersectionProperties::normal()'],['../classSimplePlane.html#a222f5d12aed966bc2764abc90b622037',1,'SimplePlane::normal()'],['../classTriangle.html#ac6e29ae9d1f7abc16cfb25357c74806f',1,'Triangle::normal()']]],
+  ['normals',['normals',['../classOBJFile.html#a287bef6fc146d20df4585d103b226eec',1,'OBJFile']]],
   ['normals_5fset',['normals_set',['../classTriangle.html#a8c739e7a19f4628c9fa5e0027a32b5a9',1,'Triangle']]]
 ];

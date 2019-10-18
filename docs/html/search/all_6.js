@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['gamma_5fcorrect',['gamma_correct',['../namespaceimage.html#a350994eafb0492e40cb74c116873a7ae',1,'image::gamma_correct(const Image &amp;original, double gamma, double A)'],['../namespaceimage.html#a0d356b98f4bd21ca658d5c83e191cbe2',1,'image::gamma_correct(const Image &amp;original, double gamma)']]],
   ['geo',['geo',['../main_8cpp.html#a80dad71f5da1a6ece62e02afb9c4ae88',1,'main.cpp']]],
   ['get',['get',['../classUVMap.html#a26f2022608cfa0682c4c5f46b476d57a',1,'UVMap']]],
   ['get_5fbounds',['get_bounds',['../classBinaryVolumeHierarchy.html#aaec23515bc9d81ccc9115489aed8808f',1,'BinaryVolumeHierarchy::get_bounds()'],['../classBoundedVolume.html#a281168c4d827c38b46e639f6e4991a9e',1,'BoundedVolume::get_bounds()'],['../classImplicitSurface.html#a30f0b97eb9976f8e40be7b990d6352d6',1,'ImplicitSurface::get_bounds()'],['../classSimpleSphere.html#aa5b6b2ebbe3de4490cdaa0f5c08b961c',1,'SimpleSphere::get_bounds()'],['../classTriangle.html#ac93216ac2308504ab7dd7679e6b84937',1,'Triangle::get_bounds()']]],
@@ -10,7 +11,7 @@ var searchData=
   ['get_5fproperties',['get_properties',['../classIntersection.html#ada64d34f2099bd8436978c7dacf05f32',1,'Intersection']]],
   ['get_5freflectivity',['get_reflectivity',['../classMaterial.html#a29eeea5a383619c64e2014ea44962911',1,'Material']]],
   ['get_5ftransparency',['get_transparency',['../classMaterial.html#a55764b81a00d8908593c9cf7caec655a',1,'Material']]],
-  ['get_5ftriangles',['get_triangles',['../classOBJFile.html#a1cb54aff5da0d8a5e06f2441a9a474c9',1,'OBJFile::get_triangles()'],['../structFaceData.html#a83dfba938fabe06ae3b5f79cdc045617',1,'FaceData::get_triangles()']]],
+  ['get_5ftriangles',['get_triangles',['../classOBJFile.html#a1cb54aff5da0d8a5e06f2441a9a474c9',1,'OBJFile::get_triangles()'],['../structFaceData.html#a641796d91855ab809b4b56e563b53be2',1,'FaceData::get_triangles()']]],
   ['get_5ftype',['get_type',['../structsymcpp_1_1ComplexToken.html#a86c40584c46720a630fa840b5d330f63',1,'symcpp::ComplexToken']]],
   ['getbvh',['getBVH',['../classOBJFile.html#ae3128b473a8b7b837364cc9688cb89dc',1,'OBJFile']]],
   ['getcenter',['getCenter',['../classInterval.html#ad502b7f22eb07d9ebba23cc9af869487',1,'Interval']]],

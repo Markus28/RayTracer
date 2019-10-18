@@ -14,6 +14,7 @@ var searchData=
   ['matrix3d_2eh',['Matrix3D.h',['../Matrix3D_8h.html',1,'']]],
   ['max',['max',['../namespaceutility.html#adb70851ce3cf7edecde8490bd7f5c314',1,'utility']]],
   ['max_5fiter',['max_iter',['../classImplicitSurface.html#ad92c06925b2496b7fe3a1d2659a87075',1,'ImplicitSurface']]],
+  ['max_5ftone_5fmapping',['max_tone_mapping',['../namespaceimage.html#a3646524ebdcbde53e3d2f4bfa47a024a',1,'image::max_tone_mapping(const Image &amp;original, double max)'],['../namespaceimage.html#acad5a9459043f5ce5b565e771b0867f8',1,'image::max_tone_mapping(const Image &amp;original)']]],
   ['maxi',['maxi',['../classInterval.html#ac086c91ab2c6f75ce8b3ff3818b38798',1,'Interval']]],
   ['middle',['middle',['../classRandomLight.html#a13f0aa6e386b4eb09b786a81d2d9e9ff',1,'RandomLight']]],
   ['midpoint',['midPoint',['../classInterval.html#a5b6e9f412603b80fd1ca427f6943d993',1,'Interval']]],

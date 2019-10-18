@@ -5,6 +5,7 @@ var searchData=
   ['material',['Material',['../classMaterial.html#a4e63e7e70f9a2cc55801f798d88f5c14',1,'Material::Material(const Vector3D &amp;spec_refl, const Vector3D &amp;diff_refl, const Vector3D &amp;ambient_refl, const Vector3D &amp;shininess, double transparency, double reflectivity, double eta)'],['../classMaterial.html#a6059ec72855855b11672ff25962e9336',1,'Material::Material()=default']]],
   ['matrix3d',['Matrix3D',['../classlinalg_1_1Matrix3D.html#a868d0ba8d6ad2fcccc39c1633a5a854a',1,'linalg::Matrix3D::Matrix3D()'],['../classlinalg_1_1Matrix3D.html#a3a7ce553d163d01e112c55a1afa712ca',1,'linalg::Matrix3D::Matrix3D(const Vector3D &amp;a, const Vector3D &amp;b, const Vector3D &amp;c)']]],
   ['max',['max',['../namespaceutility.html#adb70851ce3cf7edecde8490bd7f5c314',1,'utility']]],
+  ['max_5ftone_5fmapping',['max_tone_mapping',['../namespaceimage.html#a3646524ebdcbde53e3d2f4bfa47a024a',1,'image::max_tone_mapping(const Image &amp;original, double max)'],['../namespaceimage.html#acad5a9459043f5ce5b565e771b0867f8',1,'image::max_tone_mapping(const Image &amp;original)']]],
   ['midpoint',['midPoint',['../classInterval.html#a5b6e9f412603b80fd1ca427f6943d993',1,'Interval']]],
   ['min',['min',['../namespaceutility.html#a54a16aa114a439cc9b6bbf37853fbedb',1,'utility']]],
   ['mtllib',['MTLLib',['../classMTLLib.html#a9d67275ad7ced3768135bd40bc821616',1,'MTLLib::MTLLib(const char *filename)'],['../classMTLLib.html#a1f6320f63cdc48012b12b993ce74777c',1,'MTLLib::MTLLib()=default']]],

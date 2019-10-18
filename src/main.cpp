@@ -116,7 +116,7 @@ void car()
     objs.push_back(&floor);
     objs.push_back(&bvh);
 
-    PinHoleCamera cam = PinHoleCamera(Vector3D(-6,2.5,0), Vector3D(0.377,0.925,0), Vector3D(0,0,1), 700, 450, 0.8);
+    PinHoleCamera cam = PinHoleCamera(Vector3D(-6,2.5,0), Vector3D(0.377,0.925,0), Vector3D(0,0,1), 1200, 650, 0.8);
     lights.push_back(&light1);
     lights.push_back(&light2);
     Scene my_scene = Scene(objs, lights, &cam, Vector3D(200,200,200), Vector3D(300,300,300));
