@@ -5,7 +5,7 @@
 #include "Utilities.h"
 #include <iostream>
 
-Scene::Scene(const std::vector<RenderObject*>& objects, const std::vector<Light*>& lights, Camera* camera, Vector3D background, Vector3D ambient)
+Scene::Scene(const std::vector<RenderObject*>& objects, const std::vector<Light*>& lights, camera::Camera* camera, Vector3D background, Vector3D ambient)
 {
     assert(!objects.empty());
     this->cam = camera;
@@ -16,14 +16,15 @@ Scene::Scene(const std::vector<RenderObject*>& objects, const std::vector<Light*
 }
 
 void Scene::render(unsigned int recursion_depth) {
-    for(cam->resetRay(); !cam->endRay(); cam->advanceRay())
+    #pragma omp parallel for
+    for(unsigned int i = 0; i<cam->length(); ++i)
     {
-        cam->setRay(traceRay(cam->currentRay(), recursion_depth));
+        cam->set_pixel(i, trace_ray(cam->ray_at(i), recursion_depth));
     }
 }
 
 
-Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
+Vector3D Scene::trace_ray(const Ray &ray, unsigned int recursion_depth) {
     Intersection hit = first_hit(ray);
 
     if(hit.does_intersect())
@@ -37,54 +38,54 @@ Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
             properties = hit.get_object()->intersect_properties(ray);
         }
         Vector3D illumination = ambient.elementWiseMultiplication(properties.material.ambient_reflectivity());
-        Vector3D intersectionPoint = ray.read_base()+ ray.read_direction()* hit.get_distance();
+        Vector3D intersection_point = ray.read_base()+ ray.read_direction()* hit.get_distance();
 
         for(Light* light: lights)
         {
-            Ray shaddow = light->shaddowRay(intersectionPoint);
-            shaddow.offset(properties.normal*utility::EPSILON);
-            Intersection shadowHit = first_hit(shaddow, true);
-            if(!shadowHit.does_intersect() || shadowHit.get_distance() > light->getDistance(intersectionPoint))      //Check shaddow ray
+            Ray shadow = light->shaddowRay(intersection_point);
+            shadow.offset(properties.normal*utility::EPSILON);
+            Intersection shadowHit = first_hit(shadow, true);
+            if(!shadowHit.does_intersect() || shadowHit.get_distance() > light->getDistance(intersection_point))      //Check shadow ray
             {
-                double dd = shaddow.read_direction()*properties.normal;
-                double ds = (shaddow.read_direction()*-1).reflectAround(properties.normal)*(ray.read_direction()*-1);
+                double dd = shadow.read_direction()*properties.normal;
+                double ds = (shadow.read_direction()*-1).reflectAround(properties.normal)*(ray.read_direction()*-1);
                 if(dd>0)
                 {
                     illumination += properties.material.diffuse_reflectivity().elementWiseMultiplication(light->diffuseComponent(
-                            shaddow.read_base()))*dd;
+                            shadow.read_base()))*dd;
                     if(ds>0)
                     {
                         illumination += properties.material.specular_reflectivity().elementWiseMultiplication(light->specularComponent(
-                                shaddow.read_base())).elementWiseMultiplication(properties.material.shininess().elementWisePower(ds));
+                                shadow.read_base())).elementWiseMultiplication(properties.material.shininess().elementWisePower(ds));
                     }
                 }
             }
         }
 
-        Vector3D refractionAndReflection;
+        Vector3D refraction_and_reflection;
 
         if(recursion_depth!=0)
         {
             if(properties.material.is_reflective() && ray.read_direction()*properties.normal<0)
             {
-                Ray reflection = Ray(intersectionPoint, ray.read_direction().reflectAround(properties.normal));
+                Ray reflection = Ray(intersection_point, ray.read_direction().reflectAround(properties.normal));
                 reflection.offset(properties.normal*utility::EPSILON);
-                refractionAndReflection += traceRay(reflection, recursion_depth-1)*
+                refraction_and_reflection += trace_ray(reflection, recursion_depth - 1)*
                                            properties.material.get_reflectivity();
             }
 
             if(properties.material.is_transparent())
             {
-                Ray refraction = Ray(intersectionPoint, ray.read_direction().refractAround(properties.normal,
+                Ray refraction = Ray(intersection_point, ray.read_direction().refractAround(properties.normal,
                                                                                            properties.material.get_index()));
                 refraction.walk(utility::EPSILON);
-                refractionAndReflection += traceRay(refraction, recursion_depth-1)*
+                refraction_and_reflection += trace_ray(refraction, recursion_depth - 1)*
                                            properties.material.get_transparency();
             }
         }
 
 
-        return illumination + refractionAndReflection;
+        return illumination + refraction_and_reflection;
     }
 
     else
@@ -95,25 +96,32 @@ Vector3D Scene::traceRay(const Ray &ray, unsigned int recursion_depth) {
 
 
 Intersection Scene::first_hit(const Ray &ray) {
-    Intersection firstHit = objs[0]->ray_intersect(ray);
+    Intersection first = objs[0]->ray_intersect(ray);
     for(unsigned int i = 1; i<objs.size(); ++i)
     {
-        firstHit = std::min(firstHit, objs[i]->ray_intersect(ray));
+        first = std::min(first, objs[i]->ray_intersect(ray));
     }
-    return firstHit;
+    return first;
 }
 
 
 Intersection Scene::first_hit(const Ray &ray, bool ignore_transparent) {
-    Intersection firstHit;
-    Intersection newHit;
+    if(!ignore_transparent)
+        return first_hit(ray);
+
+    Intersection first;
+    Intersection new_hit;
     for(unsigned int i = 0; i<objs.size(); ++i)
     {
-        newHit = objs[i]->ray_intersect(ray);
-        if(!ignore_transparent || (newHit.does_intersect() && !newHit.get_object()->intersect_properties(
-                ray).material.is_transparent())) {                      //TODO: USE newHit.has_properties
-            firstHit = std::min(firstHit, newHit);
+        new_hit = objs[i]->ray_intersect(ray);
+
+        if(new_hit.does_intersect() && !new_hit.has_properties()) {
+            new_hit.set_properties(new_hit.get_object()->intersect_properties(ray));
+        }
+
+        if((new_hit.does_intersect() && !new_hit.get_properties().material.is_transparent())) {
+            first = std::min(first, new_hit);
         }
     }
-    return firstHit;
+    return first;
 }

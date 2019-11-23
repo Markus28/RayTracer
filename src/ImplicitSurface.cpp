@@ -11,7 +11,7 @@ ImplicitSurface::ImplicitSurface(symcpp::SymbolicGraph f, Material m, BoundingBo
     std::cout<< f << std::endl << dxF <<std::endl <<dyF<<std::endl<<dzF<<std::endl;
 
     max_iter = 70;
-    epsilon = 0.00000000000001;
+    epsilon = 0.00000000001;
 }
 
 BoundingBox ImplicitSurface::get_bounds() const {
@@ -42,11 +42,13 @@ Intersection ImplicitSurface::ray_intersect(const Ray &ray) const {
     unsigned int i = 0;
     double F_value = F.subs(env);
     double deriv;
+    double correction = 100;
 
-    while(i<max_iter && std::abs(F_value)>epsilon){
+    while(i<max_iter && std::abs(correction)>epsilon){
         deriv = dxF.subs(env)* ray.read_direction()[0] + dyF.subs(env)* ray.read_direction()[1] + dzF.subs(env)*
                                                                                               ray.read_direction()[2];
-        guess_l -= F_value/deriv;
+        correction = F_value/deriv;
+        guess_l -= correction;
         guess_v = ray.read_base()+ ray.read_direction()*guess_l;
         env["x"] = guess_v[0];
         env["y"] = guess_v[1];

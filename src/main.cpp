@@ -4,7 +4,7 @@
 #include <unordered_map>
 #include "Utilities.h"
 #include "Scene.h"
-#include "PinHoleCamera.h"
+#include "camera/PinHoleCamera.h"
 #include "DistantPointSource.h"
 #include "SimplePlane.h"
 #include "SimpleSphere.h"
@@ -27,7 +27,7 @@ void geo(){
     std::vector<RenderObject*> objs;
     std::vector<Light*> lights;
 
-    PinHoleCamera cam = PinHoleCamera(Vector3D(0,0,0), Vector3D(0,0,1), Vector3D(0,1,0), 2400, 1800, 0.8);
+    camera::PinHoleCamera cam = camera::PinHoleCamera(Vector3D(0,0,0), Vector3D(0,0,1), Vector3D(0,1,0), 2400, 1800, 0.8);
 
     DistantPointSource light = DistantPointSource(Vector3D(1,1,1), Vector3D(20,20,20), Vector3D(40,40,40));
     lights.push_back(&light);
@@ -62,7 +62,7 @@ void geo(){
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::cout<<std::endl<<"It took "<<std::chrono::duration_cast<std::chrono::seconds>(stop - start).count()<<" seconds."<<std::endl;
-    cam.writeFile("./geo.bmp");
+    cam.write_file("./geo.bmp");
 }
 
 void dragon()
@@ -79,7 +79,7 @@ void dragon()
     BinaryVolumeHierarchy bvh = f.getBVH();
     objs.push_back(&bvh);
 
-    PinHoleCamera cam = PinHoleCamera(Vector3D(0,5,20), Vector3D(0,1,0), Vector3D(1,0,0), 2000, 1400, 0.8);
+    camera::PinHoleCamera cam = camera::PinHoleCamera(Vector3D(0,5,20), Vector3D(0,1,0), Vector3D(1,0,0), 2000, 1400, 0.8);
 
     lights.push_back(&light);
     Scene my_scene = Scene(objs, lights, &cam, Vector3D(200,200,200), Vector3D(0.2,0.2,0.2));
@@ -91,7 +91,7 @@ void dragon()
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::cout<<std::endl<< "It took " << std::chrono::duration_cast<std::chrono::seconds>(stop - start).count()<<" seconds."<<std::endl;
-    cam.writeFile("./dragon.bmp");
+    cam.write_file("./dragon.bmp");
 }
 
 void car()
@@ -116,7 +116,7 @@ void car()
     objs.push_back(&floor);
     objs.push_back(&bvh);
 
-    PinHoleCamera cam = PinHoleCamera(Vector3D(-6,2.5,0), Vector3D(0.377,0.925,0), Vector3D(0,0,1), 1200, 650, 0.8);
+    camera::PinHoleCamera cam = camera::PinHoleCamera(Vector3D(-6,2.5,0), Vector3D(0.377,0.925,0), Vector3D(0,0,1), 1200, 650, 0.8);
     lights.push_back(&light1);
     lights.push_back(&light2);
     Scene my_scene = Scene(objs, lights, &cam, Vector3D(200,200,200), Vector3D(300,300,300));
@@ -130,7 +130,7 @@ void car()
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::cout<<std::endl<< "It took " << std::chrono::duration_cast<std::chrono::seconds>(stop - start).count()<<" seconds."<<std::endl;
-    cam.writeFile("./car.bmp");
+    cam.write_file("./car.bmp");
 }
 
 void implicit(){
@@ -140,8 +140,8 @@ void implicit(){
     Variable z = Variable("z");
 
     SymbolicGraph my_graph = Power((Power(x, 2)+9*Power(y, 2)/4 + Power(z, 2) - 1), 3) - Power(x, 2)*Power(z, 3) - 9*Power(y,2)*Power(z,3)/80;
-    ImplicitSurface surface(my_graph, Material(Vector3D(1,0.2,0.2), Vector3D(4,0.1,0.2), Vector3D(4,0.1,0.2), Vector3D(4,4,4), 0, 0, 1.0), BoundingBox({-1.2, 1.2}, {-0.8,0.8}, {-1.2,1.2}));
-    PinHoleCamera cam = PinHoleCamera(Vector3D(0,-10,0), Vector3D(0,0,1), Vector3D(1,0,0), 1200, 900, 0.8);
+    ImplicitSurface surface(my_graph, Material(Vector3D(1,0.2,0.2), Vector3D(4,0.1,0.2), Vector3D(4,0.1,0.2), Vector3D(4,4,4), 0, 0, 1.0), BoundingBox({-1.2, 1.2}, {-1.5,1.5}, {-1.2,1.2}));
+    camera::PinHoleCamera cam = camera::PinHoleCamera(Vector3D(0,-10,0), Vector3D(0,0,1), Vector3D(1,0,0), 1200, 900, 0.8);
     std::vector<RenderObject*> objs;
     std::vector<Light*> lights;
     objs.push_back(&surface);
@@ -157,7 +157,7 @@ void implicit(){
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::cout<<std::endl<<"It took "<<std::chrono::duration_cast<std::chrono::seconds>(stop - start).count()<<" seconds."<<std::endl;
-    cam.writeFile("./sym.bmp");
+    cam.write_file("./sym.bmp");
 }
 
 

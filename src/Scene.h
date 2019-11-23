@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <cassert>
-#include "Camera.h"
+#include "camera/Camera.h"
 
 class RenderObject;
 class Light;
@@ -16,7 +16,7 @@ class Ray;
  */
 class Scene {
 public:
-    Scene(const std::vector<RenderObject*>& objects, const std::vector<Light*>& lights, Camera* camera, Vector3D background, Vector3D ambient);
+    Scene(const std::vector<RenderObject*>& objects, const std::vector<Light*>& lights, camera::Camera* camera, Vector3D background, Vector3D ambient);
     void render(unsigned int recursion_depth);
 
 private:
@@ -24,11 +24,11 @@ private:
     Intersection first_hit(const Ray &ray);
     std::vector<RenderObject*> objs;
     std::vector<Light*> lights;
-    Camera* cam;
+    camera::Camera* cam;
     Vector3D backgrnd;
     Vector3D ambient;
 
-    Vector3D traceRay(const Ray& ray, unsigned int recursion_depth);
+    Vector3D trace_ray(const Ray &ray, unsigned int recursion_depth);
 };
 
 
