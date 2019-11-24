@@ -25,24 +25,15 @@ bool BoundingBox::is_intersected(const Ray &ray) const {
  */
 Interval BoundingBox::intersection_interval(const Ray &ray) const
 {
-    Interval range = t_range(x, ray.read_base()[0], ray.read_direction()[0]);
-    range = range* t_range(y, ray.read_base()[1], ray.read_direction()[1]);
-    range = range* t_range(z, ray.read_base()[2], ray.read_direction()[2]);
+    Interval range = t_range(x, ray.read_base()[0], ray.read_inverse_direction()[0]);
+    range = range* t_range(y, ray.read_base()[1], ray.read_inverse_direction()[1]);
+    range = range* t_range(z, ray.read_base()[2], ray.read_inverse_direction()[2]);
     return range;
 }
 
-Interval BoundingBox::t_range(const Interval &i, double base, double direction) const {
-    if(i.isEmpty() || (direction==0 && !i.contains(base)))
-    {
-        return {};
-    }
-
-    if(direction==0 && i.contains(base)) {
-        return {-std::numeric_limits<double>::infinity(), std::numeric_limits<double>::infinity()};
-    }
-
-    double a = (i.getMax()-base)/direction;
-    double b = (i.getMin()-base)/direction;
+Interval BoundingBox::t_range(const Interval &i, double base, double direction_inv) const {
+    double a = (i.getMax()-base)*direction_inv;
+    double b = (i.getMin()-base)*direction_inv;
 
     return {std::min(a, b), std::max(a,b)};
 }

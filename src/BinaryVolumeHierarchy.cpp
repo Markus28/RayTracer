@@ -17,16 +17,14 @@ Intersection BinaryVolumeHierarchy::ray_intersect(const Ray &ray) const {
 
     if(left->bv!=nullptr && right->bv!=nullptr)
     {
-        return std::min(left->bv->ray_intersect(ray), right->bv->ray_intersect(ray));
-        /*
-        Interval A = (left->bv->getBounds()).intersectionInterval(ray);
+        Interval A = (left->bv->get_bounds()).intersection_interval(ray);
         Interval B = (right->bv->get_bounds()).intersection_interval(ray);
         double a = A.getMin();
         double b = B.getMin();
 
         if(a<b){
             Intersection first = left->bv->ray_intersect(ray);
-            if(first.getDistance()<b && first.doesIntersect()){
+            if(first.get_distance()<b && first.does_intersect()){
                 return first;
             }
 
@@ -39,7 +37,7 @@ Intersection BinaryVolumeHierarchy::ray_intersect(const Ray &ray) const {
         }
 
         return std::min(first, left->bv->ray_intersect(ray));
-         */
+
     }
 
     /*

@@ -1,6 +1,7 @@
 #include "Ray.h"
 
-Ray::Ray(const Vector3D& pt, const Vector3D& dir) : point(pt), direction(dir){}
+Ray::Ray(const Vector3D& pt, const Vector3D& dir) : point(pt), direction(dir), inverse_direction(1.0/dir[0], 1.0/dir[1], 1.0/dir[2]){
+}
 
 /**
  * @brief Offset the base by direction*d
@@ -20,6 +21,10 @@ void Ray::offset(const Vector3D &v) {
 
 const Vector3D& Ray::read_direction() const {
     return direction;
+}
+
+const Vector3D& Ray::read_inverse_direction() const {
+    return inverse_direction;
 }
 
 const Vector3D& Ray::read_base() const {

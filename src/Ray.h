@@ -12,6 +12,8 @@ public:
 
     const Vector3D& read_base() const;
 
+    const Vector3D& read_inverse_direction() const;
+
     void walk(double d);
 
     void offset(const Vector3D& v);
@@ -21,6 +23,7 @@ public:
 private:
     Vector3D point;
     Vector3D direction;
+    Vector3D inverse_direction;
 
     std::ostream& print(std::ostream& sink) const;
 };
