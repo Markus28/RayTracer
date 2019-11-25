@@ -2,7 +2,7 @@
 #define RAYTRACER_SPHEREMAP_H
 
 #include "UVMap.h"
-#include "Vector3D.h"
+#include "linalg/Vector3D.h"
 #include "Utilities.h"
 #include <cassert>
 #include <cmath>

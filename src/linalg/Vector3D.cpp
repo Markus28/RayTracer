@@ -1,6 +1,6 @@
 #include <cmath>
 #include <cassert>
-#include "Utilities.h"
+#include "../Utilities.h"
 #include "Vector3D.h"
 
 

@@ -2,7 +2,7 @@
 #define RAYTRACER_INTERSECTION_H
 
 
-#include "Vector3D.h"
+#include "linalg/Vector3D.h"
 #include "Material.h"
 #include "IntersectionProperties.h"
 

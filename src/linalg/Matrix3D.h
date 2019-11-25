@@ -2,7 +2,7 @@
 #define RAYTRACER_MATRIX3D_H
 
 
-#include "../Vector3D.h"
+#include "Vector3D.h"
 
 namespace linalg {
 /**

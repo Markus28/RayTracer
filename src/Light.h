@@ -2,7 +2,7 @@
 #define RAYTRACER_LIGHT_H
 
 
-#include "Vector3D.h"
+#include "linalg/Vector3D.h"
 #include "Ray.h"
 
 /**

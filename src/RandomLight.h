@@ -2,7 +2,7 @@
 #define RAYTRACER_RANDOMLIGHT_H
 
 
-#include "Vector3D.h"
+#include "linalg/Vector3D.h"
 #include "Light.h"
 
 class RandomLight: Light {

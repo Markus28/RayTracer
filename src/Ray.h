@@ -1,7 +1,7 @@
 #ifndef RAYTRACER_LINE_H
 #define RAYTRACER_LINE_H
 
-#include "Vector3D.h"
+#include "linalg/Vector3D.h"
 
 
 class Ray {

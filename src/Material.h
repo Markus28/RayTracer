@@ -2,7 +2,7 @@
 #define RAYTRACER_MATERIAL_H
 
 
-#include "Vector3D.h"
+#include "linalg/Vector3D.h"
 
 class MTLLib;
 

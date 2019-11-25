@@ -1,7 +1,7 @@
 #ifndef RAYTRACER_POST_PROCESS_H
 #define RAYTRACER_POST_PROCESS_H
 
-#include "../Vector3D.h"
+#include "../linalg/Vector3D.h"
 #include <vector>
 
 namespace image{
