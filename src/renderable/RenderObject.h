@@ -3,7 +3,7 @@
 
 
 #include <iostream>
-#include "IntersectionProperties.h"
+#include "../IntersectionProperties.h"
 
 class Intersection;
 class Ray;

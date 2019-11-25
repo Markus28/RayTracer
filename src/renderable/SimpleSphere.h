@@ -2,8 +2,8 @@
 #define RAYTRACER_SPHERE_H
 
 
-#include "Vector3D.h"
-#include "Material.h"
+#include "../Vector3D.h"
+#include "../Material.h"
 #include "BoundedVolume.h"
 
 /**

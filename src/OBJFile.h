@@ -3,8 +3,8 @@
 
 #include <vector>
 #include <tuple>
-#include "Triangle.h"
-#include "BinaryVolumeHierarchy.h"
+#include "renderable/Triangle.h"
+#include "renderable/BinaryVolumeHierarchy.h"
 #include "MTLLib.h"
 
 /**

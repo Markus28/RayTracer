@@ -3,8 +3,8 @@
 
 
 #include "RenderObject.h"
-#include "symcpp/SymbolicGraph.h"
-#include "Intersection.h"
+#include "../symcpp/SymbolicGraph.h"
+#include "../Intersection.h"
 #include "BoundingBox.h"
 #include "BoundedVolume.h"
 

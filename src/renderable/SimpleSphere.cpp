@@ -1,9 +1,9 @@
 #include "SimpleSphere.h"
-#include "Utilities.h"
-#include "Intersection.h"
+#include "../Utilities.h"
+#include "../Intersection.h"
 
-#include "IntersectionProperties.h"
-#include "Ray.h"
+#include "../IntersectionProperties.h"
+#include "../Ray.h"
 #include <cassert>
 #include <iostream>
 

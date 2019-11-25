@@ -7,7 +7,7 @@
 #include <vector>
 #include <cassert>
 #include <functional>
-#include "BoundedVolume.h"
+#include "renderable/BoundedVolume.h"
 
 
 namespace utility {

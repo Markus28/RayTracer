@@ -1,8 +1,8 @@
 #ifndef RAYTRACER_BOUNDINGBOX_H
 #define RAYTRACER_BOUNDINGBOX_H
 
-#include "Interval.h"
-#include "Ray.h"
+#include "../Interval.h"
+#include "../Ray.h"
 
 /**
  * @brief A cuboid in 3D space for estimating the position of objects

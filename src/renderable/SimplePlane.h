@@ -2,9 +2,9 @@
 #define RAYTRACER_PLANE_H
 
 
-#include "Vector3D.h"
-#include "Ray.h"
-#include "Material.h"
+#include "../Vector3D.h"
+#include "../Ray.h"
+#include "../Material.h"
 #include "RenderObject.h"
 
 /**

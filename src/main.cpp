@@ -6,10 +6,10 @@
 #include "Scene.h"
 #include "camera/PinHoleCamera.h"
 #include "DistantPointSource.h"
-#include "SimplePlane.h"
-#include "SimpleSphere.h"
-#include "Triangle.h"
-#include "BinaryVolumeHierarchy.h"
+#include "renderable/SimplePlane.h"
+#include "renderable/SimpleSphere.h"
+#include "renderable/Triangle.h"
+#include "renderable/BinaryVolumeHierarchy.h"
 #include "OBJFile.h"
 #include "RandomLight.h"
 #include "PointSource.h"
@@ -19,7 +19,7 @@
 #include "symcpp/Logarithm.h"
 #include "symcpp/Power.h"
 #include "symcpp/Sine.h"
-#include "ImplicitSurface.h"
+#include "renderable/ImplicitSurface.h"
 
 using namespace symcpp;
 

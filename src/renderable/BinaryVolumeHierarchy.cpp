@@ -1,6 +1,6 @@
 #include "BinaryVolumeHierarchy.h"
-#include "Utilities.h"
-#include "Intersection.h"
+#include "../Utilities.h"
+#include "../Intersection.h"
 #include <algorithm>
 #include <cassert>
 #include <stack>

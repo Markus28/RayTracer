@@ -1,7 +1,7 @@
 #include "Scene.h"
 #include "Light.h"
 #include "Intersection.h"
-#include "RenderObject.h"
+#include "renderable/RenderObject.h"
 #include "Utilities.h"
 #include <iostream>
 

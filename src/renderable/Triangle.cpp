@@ -1,6 +1,6 @@
 #include "Triangle.h"
-#include "Utilities.h"
-#include "Intersection.h"
+#include "../Utilities.h"
+#include "../Intersection.h"
 #include <cassert>
 #include <algorithm>
 

@@ -1,7 +1,7 @@
 #include "SimplePlane.h"
-#include "Utilities.h"
-#include "Intersection.h"
-#include "IntersectionProperties.h"
+#include "../Utilities.h"
+#include "../Intersection.h"
+#include "../IntersectionProperties.h"
 
 SimplePlane::SimplePlane(const Vector3D& pt, const Vector3D& norm, const Material& mat) : normal(norm/norm.norm()), material(mat){
     d = normal*pt;
