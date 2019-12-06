@@ -82,4 +82,5 @@ IntersectionProperties ImplicitSurface::intersect_properties(const Ray &ray) con
 
 std::ostream& ImplicitSurface::print(std::ostream &sink) const {
     sink<<"Implicit Surface for Function F(x,y,z)="<<F;
+    return sink;
 }

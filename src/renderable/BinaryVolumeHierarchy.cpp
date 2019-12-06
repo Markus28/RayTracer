@@ -11,6 +11,8 @@ BoundingBox BinaryVolumeHierarchy::get_bounds() const {
 }
 
 Intersection BinaryVolumeHierarchy::ray_intersect(const Ray &ray) const {
+    FixedSizeStack<std::pair<unsigned int, Interval>, 64> to_visit;
+
     Interval current_interval = nodes->my_box.intersection_interval(ray);
 
     if(!current_interval.containsPositive()){
@@ -20,8 +22,6 @@ Intersection BinaryVolumeHierarchy::ray_intersect(const Ray &ray) const {
     unsigned int current_index = 0;
     Intersection current_best;
 
-
-    std::stack<std::pair<unsigned int, Interval>> to_visit;
 
     while(true){
         BVHLinearNode current_node = nodes[current_index];
@@ -205,4 +205,14 @@ IntersectionProperties BinaryVolumeHierarchy::intersect_properties(const Ray &ra
     assert(false);                                      //DO NOT CALL THIS METHOD! NOT EFFICIENT!
     Intersection intersection = ray_intersect(ray);
     return intersection.get_object()->intersect_properties(ray);
+}
+
+unsigned int BinaryVolumeHierarchy::get_deepest_branch() const {
+    return get_deepest_branch(0);
+}
+
+unsigned int BinaryVolumeHierarchy::get_deepest_branch(unsigned int offset) const {
+    if(nodes[offset].contains_leaf)
+        return 0;
+    return 1+std::max(get_deepest_branch(offset+1), get_deepest_branch(offset+nodes[offset].child.second_child_offset));
 }

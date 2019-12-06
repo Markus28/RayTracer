@@ -109,7 +109,7 @@ void car()
 
     std::cout<<"Creating BVH..."<<std::endl;
     BinaryVolumeHierarchy bvh = f.getBVH();
-    bvh.print(std::cout);
+    std::cout<<bvh.get_deepest_branch()<<std::endl;
     std::cout<<"Done..."<<std::endl<<std::endl;
     SimplePlane floor = SimplePlane(Vector3D(0,0,0), Vector3D(0,1,0), Material(Vector3D(0.5,0.5,0.5), Vector3D(0.4,0.4,0.4), Vector3D(0.1,0.1,0.1), Vector3D(1,1,1), 0, 0, 1.0));
 

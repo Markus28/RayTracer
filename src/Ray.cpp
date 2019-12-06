@@ -33,6 +33,7 @@ const Vector3D& Ray::read_base() const {
 
 std::ostream& Ray::print(std::ostream& sink) const{
     sink<< "Base: "<<point<<", Direction: "<<direction<<' ';
+    return sink;
 }
 
 std::ostream& operator<<(std::ostream& sink, const Ray& ray){
