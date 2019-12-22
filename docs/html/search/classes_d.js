@@ -1,6 +1,10 @@
 var searchData=
 [
   ['scene',['Scene',['../classScene.html',1,'']]],
+  ['sdfbox',['SDFBox',['../classSDFBox.html',1,'']]],
+  ['sdfcylinder',['SDFCylinder',['../classSDFCylinder.html',1,'']]],
+  ['sdfobject',['SDFObject',['../classSDFObject.html',1,'']]],
+  ['sdfsphere',['SDFSphere',['../classSDFSphere.html',1,'']]],
   ['simpleplane',['SimplePlane',['../classSimplePlane.html',1,'']]],
   ['simplesphere',['SimpleSphere',['../classSimpleSphere.html',1,'']]],
   ['sine',['Sine',['../classsymcpp_1_1Sine.html',1,'symcpp']]],

@@ -1,7 +1,9 @@
 #include "BoundingBox.h"
 #include <algorithm>
 
-BoundingBox::BoundingBox(Interval x, Interval y, Interval z): x(x), y(y), z(z) {}
+BoundingBox::BoundingBox(Interval x, Interval y, Interval z): x(x), y(y), z(z) {
+    empty = x.isEmpty() || y.isEmpty() || z.isEmpty();
+}
 
 BoundingBox::BoundingBox() {
     x  = {};
@@ -10,6 +12,8 @@ BoundingBox::BoundingBox() {
 }
 
 bool BoundingBox::is_intersected(const Ray &ray) const {
+    if(empty)
+        return false;
     Interval t_range = intersection_interval(ray);
     return t_range.containsPositive();
 }
@@ -25,6 +29,8 @@ bool BoundingBox::is_intersected(const Ray &ray) const {
  */
 Interval BoundingBox::intersection_interval(const Ray &ray) const
 {
+    if(empty)
+        return {};
     Interval range = t_range(x, ray.read_base()[0], ray.read_inverse_direction()[0]);
     range = range* t_range(y, ray.read_base()[1], ray.read_inverse_direction()[1]);
     range = range* t_range(z, ray.read_base()[2], ray.read_inverse_direction()[2]);
@@ -40,6 +46,10 @@ Interval BoundingBox::t_range(const Interval &i, double base, double direction_i
 
 BoundingBox BoundingBox::operator+(const BoundingBox &other) const {
     return {x+other.x, y+other.y, z+other.z};
+}
+
+BoundingBox BoundingBox::intersection_box(const BoundingBox &other) const {
+    return {x*other.x, y*other.y, z*other.z};
 }
 
 Vector3D BoundingBox::get_center() const{

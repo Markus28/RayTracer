@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mtllib',['MTLLib',['../classMaterial.html#aa4d43ed50061aeb4600daf1e3f7706ac',1,'Material']]]
+  ['csgleaf',['CSGLeaf',['../classSDFObject.html#a31075b2d3758d4b9e5804142372a4eb4',1,'SDFObject']]]
 ];

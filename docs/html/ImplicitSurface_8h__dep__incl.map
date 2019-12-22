@@ -1,4 +1,4 @@
-<map id="src/ImplicitSurface.h" name="src/ImplicitSurface.h">
-<area shape="rect" id="node2" href="$ImplicitSurface_8cpp.html" title="src/ImplicitSurface.cpp" alt="" coords="5,80,161,107"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="185,80,283,107"/>
+<map id="src/renderable/ImplicitSurface.h" name="src/renderable/ImplicitSurface.h">
+<area shape="rect" id="node2" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="5,80,103,107"/>
+<area shape="rect" id="node3" href="$ImplicitSurface_8cpp.html" title="src/renderable/ImplicitSurface.cpp" alt="" coords="127,80,347,107"/>
 </map>

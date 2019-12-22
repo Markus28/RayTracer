@@ -112,6 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae18a3d51cd5b0a57bd47a0a1f79e7d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07aaea95760db6dcc39f87308d9470a1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classVector3D.html">Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRay.html#a07aaea95760db6dcc39f87308d9470a1">read_base</a> () const </td></tr>
 <tr class="separator:a07aaea95760db6dcc39f87308d9470a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e28c7802e92e999591aac71c04fa8f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classVector3D.html">Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRay.html#a04e28c7802e92e999591aac71c04fa8f">read_inverse_direction</a> () const </td></tr>
+<tr class="separator:a04e28c7802e92e999591aac71c04fa8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af986618fceed92c3c189f8950deb6d21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRay.html#af986618fceed92c3c189f8950deb6d21">walk</a> (double d)</td></tr>
 <tr class="memdesc:af986618fceed92c3c189f8950deb6d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset the base by direction*d.  <a href="#af986618fceed92c3c189f8950deb6d21">More...</a><br /></td></tr>
 <tr class="separator:af986618fceed92c3c189f8950deb6d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +132,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a35cd5ddd116f79b927e5ce1dfaca64c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8cae110601e8ece9edd45ba500c2d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRay.html#afe8cae110601e8ece9edd45ba500c2d0">direction</a></td></tr>
 <tr class="separator:afe8cae110601e8ece9edd45ba500c2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bfdb8ab63bad3882999e5d2113a927"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRay.html#a58bfdb8ab63bad3882999e5d2113a927">inverse_direction</a></td></tr>
+<tr class="separator:a58bfdb8ab63bad3882999e5d2113a927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -242,6 +246,21 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a04e28c7802e92e999591aac71c04fa8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classVector3D.html">Vector3D</a> &amp; Ray::read_inverse_direction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af986618fceed92c3c189f8950deb6d21"></a>
 <div class="memitem">
 <div class="memproto">
@@ -311,6 +330,26 @@ Friends</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classVector3D.html">Vector3D</a> Ray::direction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a58bfdb8ab63bad3882999e5d2113a927"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector3D.html">Vector3D</a> Ray::inverse_direction</td>
         </tr>
       </table>
   </td>

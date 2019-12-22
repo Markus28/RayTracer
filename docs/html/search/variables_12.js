@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['width',['width',['../classCamera.html#aa18f0bf8b6e8cb661643d980a4484ac0',1,'Camera']]]
+  ['width',['width',['../classcamera_1_1PinHoleCamera.html#a84af11864219ddf7d2e3ddb0a7888d56',1,'camera::PinHoleCamera']]]
 ];

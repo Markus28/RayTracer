@@ -1,0 +1,137 @@
+\hypertarget{classCSGUnion}{}\section{C\+S\+G\+Union Class Reference}
+\label{classCSGUnion}\index{C\+S\+G\+Union@{C\+S\+G\+Union}}
+
+
+A union node in the C\+S\+G-\/\+Tree.  
+
+
+
+
+{\ttfamily \#include $<$C\+S\+G.\+h$>$}
+
+
+
+Inheritance diagram for C\+S\+G\+Union\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classCSGUnion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+S\+G\+Union\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classCSGUnion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSGUnion_a89f33aab1b6e073a2813f97cc3998fc7}{C\+S\+G\+Union} (\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$a, \hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$b)
+\begin{DoxyCompactList}\small\item\em Create a Union-\/\+Node for a C\+S\+G-\/\+Tree. \end{DoxyCompactList}\item 
+double \hyperlink{classCSGUnion_a2a15937802a57a3a78b84961fc0dda9f}{distance\+\_\+bound} (const \hyperlink{classVector3D}{Vector3D} \&pos) const override
+\item 
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classCSGUnion_aaf1d2e77d8f931327fd8c499933142ba}{get\+\_\+bounds} () const override
+\item 
+\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGUnion_a806fa004753847d293e56a93112abe9a}{deep\+\_\+copy} () const override
+\item 
+\hyperlink{classCSGUnion_af16ab807f0e1140de88007a5606f2a91}{$\sim$\+C\+S\+G\+Union} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGUnion_ac2042150362043f8646dc9f13e98df1a}{first}
+\item 
+\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGUnion_abb2099a585c204bdcf3c2d0c8004438e}{second}
+\item 
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classCSGUnion_a40b5e5f99930721873da62db801e0c90}{bounds}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A union node in the C\+S\+G-\/\+Tree. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+S\+G\+Union@{C\+S\+G\+Union}!C\+S\+G\+Union@{C\+S\+G\+Union}}
+\index{C\+S\+G\+Union@{C\+S\+G\+Union}!C\+S\+G\+Union@{C\+S\+G\+Union}}
+\subsubsection[{\texorpdfstring{C\+S\+G\+Union(\+C\+S\+G\+Component $\ast$a, C\+S\+G\+Component $\ast$b)}{CSGUnion(CSGComponent *a, CSGComponent *b)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+Union\+::\+C\+S\+G\+Union (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+S\+G\+Component} $\ast$}]{a, }
+\item[{{\bf C\+S\+G\+Component} $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCSGUnion_a89f33aab1b6e073a2813f97cc3998fc7}{}\label{classCSGUnion_a89f33aab1b6e073a2813f97cc3998fc7}
+
+
+Create a Union-\/\+Node for a C\+S\+G-\/\+Tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first node \\
+\hline
+{\em b} & The second \\
+\hline
+\end{DoxyParams}
+\index{C\+S\+G\+Union@{C\+S\+G\+Union}!````~C\+S\+G\+Union@{$\sim$\+C\+S\+G\+Union}}
+\index{````~C\+S\+G\+Union@{$\sim$\+C\+S\+G\+Union}!C\+S\+G\+Union@{C\+S\+G\+Union}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+S\+G\+Union() override}{~CSGUnion() override}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+Union\+::$\sim$\+C\+S\+G\+Union (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classCSGUnion_af16ab807f0e1140de88007a5606f2a91}{}\label{classCSGUnion_af16ab807f0e1140de88007a5606f2a91}
+
+
+\subsection{Member Function Documentation}
+\index{C\+S\+G\+Union@{C\+S\+G\+Union}!deep\+\_\+copy@{deep\+\_\+copy}}
+\index{deep\+\_\+copy@{deep\+\_\+copy}!C\+S\+G\+Union@{C\+S\+G\+Union}}
+\subsubsection[{\texorpdfstring{deep\+\_\+copy() const override}{deep_copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component} $\ast$ C\+S\+G\+Union\+::deep\+\_\+copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGUnion_a806fa004753847d293e56a93112abe9a}{}\label{classCSGUnion_a806fa004753847d293e56a93112abe9a}
+
+
+Implements \hyperlink{classCSGComponent_a98d3accd23c28259cbf490f4d7acbe83}{C\+S\+G\+Component}.
+
+\index{C\+S\+G\+Union@{C\+S\+G\+Union}!distance\+\_\+bound@{distance\+\_\+bound}}
+\index{distance\+\_\+bound@{distance\+\_\+bound}!C\+S\+G\+Union@{C\+S\+G\+Union}}
+\subsubsection[{\texorpdfstring{distance\+\_\+bound(const Vector3\+D \&pos) const override}{distance_bound(const Vector3D &pos) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double C\+S\+G\+Union\+::distance\+\_\+bound (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pos}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGUnion_a2a15937802a57a3a78b84961fc0dda9f}{}\label{classCSGUnion_a2a15937802a57a3a78b84961fc0dda9f}
+
+
+Implements \hyperlink{classCSGComponent_a41ca7aff9b7c481ea076f81eeb826779}{C\+S\+G\+Component}.
+
+\index{C\+S\+G\+Union@{C\+S\+G\+Union}!get\+\_\+bounds@{get\+\_\+bounds}}
+\index{get\+\_\+bounds@{get\+\_\+bounds}!C\+S\+G\+Union@{C\+S\+G\+Union}}
+\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} C\+S\+G\+Union\+::get\+\_\+bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGUnion_aaf1d2e77d8f931327fd8c499933142ba}{}\label{classCSGUnion_aaf1d2e77d8f931327fd8c499933142ba}
+
+
+Implements \hyperlink{classCSGComponent_a4299365f2bab69272af9de4f2bee7cdb}{C\+S\+G\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\index{C\+S\+G\+Union@{C\+S\+G\+Union}!bounds@{bounds}}
+\index{bounds@{bounds}!C\+S\+G\+Union@{C\+S\+G\+Union}}
+\subsubsection[{\texorpdfstring{bounds}{bounds}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} C\+S\+G\+Union\+::bounds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCSGUnion_a40b5e5f99930721873da62db801e0c90}{}\label{classCSGUnion_a40b5e5f99930721873da62db801e0c90}
+\index{C\+S\+G\+Union@{C\+S\+G\+Union}!first@{first}}
+\index{first@{first}!C\+S\+G\+Union@{C\+S\+G\+Union}}
+\subsubsection[{\texorpdfstring{first}{first}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component}$\ast$ C\+S\+G\+Union\+::first\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCSGUnion_ac2042150362043f8646dc9f13e98df1a}{}\label{classCSGUnion_ac2042150362043f8646dc9f13e98df1a}
+\index{C\+S\+G\+Union@{C\+S\+G\+Union}!second@{second}}
+\index{second@{second}!C\+S\+G\+Union@{C\+S\+G\+Union}}
+\subsubsection[{\texorpdfstring{second}{second}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component}$\ast$ C\+S\+G\+Union\+::second\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCSGUnion_abb2099a585c204bdcf3c2d0c8004438e}{}\label{classCSGUnion_abb2099a585c204bdcf3c2d0c8004438e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/renderable/\hyperlink{CSG_8h}{C\+S\+G.\+h}\item 
+src/renderable/\hyperlink{CSG_8cpp}{C\+S\+G.\+cpp}\end{DoxyCompactItemize}

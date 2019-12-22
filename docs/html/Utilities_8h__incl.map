@@ -1,10 +1,10 @@
 <map id="src/Utilities.h" name="src/Utilities.h">
-<area shape="rect" id="node6" href="$BoundedVolume_8h.html" title="BoundedVolume.h" alt="" coords="361,80,489,107"/>
-<area shape="rect" id="node7" href="$BoundingBox_8h.html" title="BoundingBox.h" alt="" coords="272,229,383,256"/>
-<area shape="rect" id="node12" href="$RenderObject_8h.html" title="RenderObject.h" alt="" coords="431,155,544,181"/>
-<area shape="rect" id="node8" href="$Interval_8h.html" title="Interval.h" alt="" coords="303,379,379,405"/>
-<area shape="rect" id="node10" href="$Ray_8h.html" title="Ray.h" alt="" coords="367,304,424,331"/>
-<area shape="rect" id="node11" href="$Vector3D_8h.html" title="Vector3D.h" alt="" coords="430,379,518,405"/>
-<area shape="rect" id="node13" href="$IntersectionProperties_8h.html" title="IntersectionProperties.h" alt="" coords="407,229,567,256"/>
-<area shape="rect" id="node14" href="$Material_8h.html" title="Material.h" alt="" coords="448,304,527,331"/>
+<area shape="rect" id="node6" href="$BoundedVolume_8h.html" title="renderable/BoundedVolume.h" alt="" coords="361,80,553,107"/>
+<area shape="rect" id="node7" href="$BoundingBox_8h.html" title="BoundingBox.h" alt="" coords="300,229,411,256"/>
+<area shape="rect" id="node12" href="$RenderObject_8h.html" title="RenderObject.h" alt="" coords="464,155,577,181"/>
+<area shape="rect" id="node8" href="$Interval_8h.html" title="../Interval.h" alt="" coords="319,379,407,405"/>
+<area shape="rect" id="node10" href="$Ray_8h.html" title="../Ray.h" alt="" coords="390,304,459,331"/>
+<area shape="rect" id="node11" href="$Vector3D_8h.html" title="linalg/Vector3D.h" alt="" coords="451,379,574,405"/>
+<area shape="rect" id="node13" href="$IntersectionProperties_8h.html" title="../IntersectionProperties.h" alt="" coords="435,229,607,256"/>
+<area shape="rect" id="node14" href="$Material_8h.html" title="Material.h" alt="" coords="484,304,563,331"/>
 </map>

@@ -17,11 +17,14 @@ public:
     bool is_intersected(const Ray &ray) const;
     Interval intersection_interval(const Ray &ray) const;
     Vector3D get_center() const;
+    BoundingBox intersection_box(const BoundingBox& other) const;
     BoundingBox operator+(const BoundingBox& other) const;
     const Interval& operator[](unsigned int index) const;
     friend std::ostream& operator<<(std::ostream& sink, const BoundingBox& b);
 
 private:
+    bool empty;
+
     Interval x;
     Interval y;
     Interval z;

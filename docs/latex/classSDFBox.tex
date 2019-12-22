@@ -1,0 +1,100 @@
+\hypertarget{classSDFBox}{}\section{S\+D\+F\+Box Class Reference}
+\label{classSDFBox}\index{S\+D\+F\+Box@{S\+D\+F\+Box}}
+
+
+{\ttfamily \#include $<$S\+D\+F\+Box.\+h$>$}
+
+
+
+Inheritance diagram for S\+D\+F\+Box\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classSDFBox__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+D\+F\+Box\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDFBox__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSDFBox_a6b77f5c17997acf4155c29f55636a575}{S\+D\+F\+Box} (\hyperlink{classVector3D}{Vector3D} \hyperlink{classSDFBox_ab3c5b09a3c42843c995e28c3ee766c01}{center}, double \hyperlink{classSDFBox_a2e6708728c6bcadde76fdec645759ec7}{depth}, double \hyperlink{classSDFBox_a4e1fe9cab3361dcb2e57e5c639d1d56d}{length}, double \hyperlink{classSDFBox_a4be5004a92e2e6af1391287d46539a90}{height})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classSDFBox_aaeab9858412c2f3ad7e19ec9738e8aca}{distance\+\_\+bound} (const \hyperlink{classVector3D}{Vector3D} \&pos) const override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classSDFBox_a2e6708728c6bcadde76fdec645759ec7}{depth}
+\item 
+double \hyperlink{classSDFBox_a4e1fe9cab3361dcb2e57e5c639d1d56d}{length}
+\item 
+double \hyperlink{classSDFBox_a4be5004a92e2e6af1391287d46539a90}{height}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classSDFBox_ab3c5b09a3c42843c995e28c3ee766c01}{center}
+\item 
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classSDFBox_a3cb36bcbfc2b009bec6d2880ac3e93f0}{bounds}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{S\+D\+F\+Box@{S\+D\+F\+Box}!S\+D\+F\+Box@{S\+D\+F\+Box}}
+\index{S\+D\+F\+Box@{S\+D\+F\+Box}!S\+D\+F\+Box@{S\+D\+F\+Box}}
+\subsubsection[{\texorpdfstring{S\+D\+F\+Box(\+Vector3\+D center, double depth, double length, double height)}{SDFBox(Vector3D center, double depth, double length, double height)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+F\+Box\+::\+S\+D\+F\+Box (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{center, }
+\item[{double}]{depth, }
+\item[{double}]{length, }
+\item[{double}]{height}
+\end{DoxyParamCaption}
+)}\hypertarget{classSDFBox_a6b77f5c17997acf4155c29f55636a575}{}\label{classSDFBox_a6b77f5c17997acf4155c29f55636a575}
+
+
+\subsection{Member Function Documentation}
+\index{S\+D\+F\+Box@{S\+D\+F\+Box}!distance\+\_\+bound@{distance\+\_\+bound}}
+\index{distance\+\_\+bound@{distance\+\_\+bound}!S\+D\+F\+Box@{S\+D\+F\+Box}}
+\subsubsection[{\texorpdfstring{distance\+\_\+bound(const Vector3\+D \&pos) const override}{distance_bound(const Vector3D &pos) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double S\+D\+F\+Box\+::distance\+\_\+bound (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pos}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classSDFBox_aaeab9858412c2f3ad7e19ec9738e8aca}{}\label{classSDFBox_aaeab9858412c2f3ad7e19ec9738e8aca}
+
+
+Implements \hyperlink{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}{S\+D\+F\+Object}.
+
+
+
+\subsection{Member Data Documentation}
+\index{S\+D\+F\+Box@{S\+D\+F\+Box}!bounds@{bounds}}
+\index{bounds@{bounds}!S\+D\+F\+Box@{S\+D\+F\+Box}}
+\subsubsection[{\texorpdfstring{bounds}{bounds}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} S\+D\+F\+Box\+::bounds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFBox_a3cb36bcbfc2b009bec6d2880ac3e93f0}{}\label{classSDFBox_a3cb36bcbfc2b009bec6d2880ac3e93f0}
+\index{S\+D\+F\+Box@{S\+D\+F\+Box}!center@{center}}
+\index{center@{center}!S\+D\+F\+Box@{S\+D\+F\+Box}}
+\subsubsection[{\texorpdfstring{center}{center}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} S\+D\+F\+Box\+::center\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFBox_ab3c5b09a3c42843c995e28c3ee766c01}{}\label{classSDFBox_ab3c5b09a3c42843c995e28c3ee766c01}
+\index{S\+D\+F\+Box@{S\+D\+F\+Box}!depth@{depth}}
+\index{depth@{depth}!S\+D\+F\+Box@{S\+D\+F\+Box}}
+\subsubsection[{\texorpdfstring{depth}{depth}}]{\setlength{\rightskip}{0pt plus 5cm}double S\+D\+F\+Box\+::depth\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFBox_a2e6708728c6bcadde76fdec645759ec7}{}\label{classSDFBox_a2e6708728c6bcadde76fdec645759ec7}
+\index{S\+D\+F\+Box@{S\+D\+F\+Box}!height@{height}}
+\index{height@{height}!S\+D\+F\+Box@{S\+D\+F\+Box}}
+\subsubsection[{\texorpdfstring{height}{height}}]{\setlength{\rightskip}{0pt plus 5cm}double S\+D\+F\+Box\+::height\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFBox_a4be5004a92e2e6af1391287d46539a90}{}\label{classSDFBox_a4be5004a92e2e6af1391287d46539a90}
+\index{S\+D\+F\+Box@{S\+D\+F\+Box}!length@{length}}
+\index{length@{length}!S\+D\+F\+Box@{S\+D\+F\+Box}}
+\subsubsection[{\texorpdfstring{length}{length}}]{\setlength{\rightskip}{0pt plus 5cm}double S\+D\+F\+Box\+::length\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFBox_a4e1fe9cab3361dcb2e57e5c639d1d56d}{}\label{classSDFBox_a4e1fe9cab3361dcb2e57e5c639d1d56d}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/renderable/\hyperlink{SDFBox_8h}{S\+D\+F\+Box.\+h}\item 
+src/renderable/\hyperlink{SDFBox_8cpp}{S\+D\+F\+Box.\+cpp}\end{DoxyCompactItemize}

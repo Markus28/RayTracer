@@ -103,7 +103,7 @@ Collaboration diagram for BoundingBox:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBoundingBox__coll__graph.png" border="0" usemap="#BoundingBox_coll__map" alt="Collaboration graph"/></div>
 <map name="BoundingBox_coll__map" id="BoundingBox_coll__map">
-<area shape="rect" id="node2" href="classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="41,109,107,136"/>
+<area shape="rect" id="node3" href="classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="86,109,151,136"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -120,6 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a23a907bb7dfdcd0bd60a9e1cd59bda35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee02002578e3f3a0d1046f1c6da86d7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#aee02002578e3f3a0d1046f1c6da86d7b">get_center</a> () const </td></tr>
 <tr class="separator:aee02002578e3f3a0d1046f1c6da86d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c481a0410806867b8e7fce7b95eee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBoundingBox.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#ae8c481a0410806867b8e7fce7b95eee2">intersection_box</a> (const <a class="el" href="classBoundingBox.html">BoundingBox</a> &amp;other) const </td></tr>
+<tr class="separator:ae8c481a0410806867b8e7fce7b95eee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ea4f5a93b79953b5f971a7e1cb2e9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBoundingBox.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a58ea4f5a93b79953b5f971a7e1cb2e9c">operator+</a> (const <a class="el" href="classBoundingBox.html">BoundingBox</a> &amp;other) const </td></tr>
 <tr class="separator:a58ea4f5a93b79953b5f971a7e1cb2e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3db32eae066cb2af88dbe9394b58db9f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classInterval.html">Interval</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a3db32eae066cb2af88dbe9394b58db9f">operator[]</a> (unsigned int index) const </td></tr>
@@ -132,6 +134,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a498e443b213cc08f7c0235688dd2ecf8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a498e443b213cc08f7c0235688dd2ecf8">empty</a></td></tr>
+<tr class="separator:a498e443b213cc08f7c0235688dd2ecf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ea5f12ef2300fe61925f6b44faaebe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a93ea5f12ef2300fe61925f6b44faaebe">x</a></td></tr>
 <tr class="separator:a93ea5f12ef2300fe61925f6b44faaebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a593fd6b66d3ed0352d92024685863090"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBox.html#a593fd6b66d3ed0352d92024685863090">y</a></td></tr>
@@ -204,6 +208,22 @@ Friends</h2></td></tr>
           <td class="memname"><a class="el" href="classVector3D.html">Vector3D</a> BoundingBox::get_center </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8c481a0410806867b8e7fce7b95eee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBoundingBox.html">BoundingBox</a> BoundingBox::intersection_box </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBoundingBox.html">BoundingBox</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -361,6 +381,26 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a498e443b213cc08f7c0235688dd2ecf8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BoundingBox::empty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a93ea5f12ef2300fe61925f6b44faaebe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -422,8 +462,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/<a class="el" href="BoundingBox_8h_source.html">BoundingBox.h</a></li>
-<li>src/<a class="el" href="BoundingBox_8cpp.html">BoundingBox.cpp</a></li>
+<li>src/renderable/<a class="el" href="BoundingBox_8h_source.html">BoundingBox.h</a></li>
+<li>src/renderable/<a class="el" href="BoundingBox_8cpp.html">BoundingBox.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

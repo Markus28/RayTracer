@@ -10,7 +10,7 @@ Collaboration diagram for Ray\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=149pt]{classRay__coll__graph}
+\includegraphics[width=186pt]{classRay__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -21,6 +21,8 @@ Collaboration diagram for Ray\+:\nopagebreak
 const \hyperlink{classVector3D}{Vector3D} \& \hyperlink{classRay_ae18a3d51cd5b0a57bd47a0a1f79e7d2d}{read\+\_\+direction} () const 
 \item 
 const \hyperlink{classVector3D}{Vector3D} \& \hyperlink{classRay_a07aaea95760db6dcc39f87308d9470a1}{read\+\_\+base} () const 
+\item 
+const \hyperlink{classVector3D}{Vector3D} \& \hyperlink{classRay_a04e28c7802e92e999591aac71c04fa8f}{read\+\_\+inverse\+\_\+direction} () const 
 \item 
 void \hyperlink{classRay_af986618fceed92c3c189f8950deb6d21}{walk} (double d)
 \begin{DoxyCompactList}\small\item\em Offset the base by direction$\ast$d. \end{DoxyCompactList}\item 
@@ -37,6 +39,8 @@ std\+::ostream \& \hyperlink{classRay_a6b11813671e6296448ff9abafaa82b31}{print} 
 \hyperlink{classVector3D}{Vector3D} \hyperlink{classRay_a35cd5ddd116f79b927e5ce1dfaca64c7}{point}
 \item 
 \hyperlink{classVector3D}{Vector3D} \hyperlink{classRay_afe8cae110601e8ece9edd45ba500c2d0}{direction}
+\item 
+\hyperlink{classVector3D}{Vector3D} \hyperlink{classRay_a58bfdb8ab63bad3882999e5d2113a927}{inverse\+\_\+direction}
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -94,6 +98,13 @@ Offset the base by v.
 {}
 \end{DoxyParamCaption}
 ) const}\hypertarget{classRay_ae18a3d51cd5b0a57bd47a0a1f79e7d2d}{}\label{classRay_ae18a3d51cd5b0a57bd47a0a1f79e7d2d}
+\index{Ray@{Ray}!read\+\_\+inverse\+\_\+direction@{read\+\_\+inverse\+\_\+direction}}
+\index{read\+\_\+inverse\+\_\+direction@{read\+\_\+inverse\+\_\+direction}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{read\+\_\+inverse\+\_\+direction() const }{read_inverse_direction() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3D} \& Ray\+::read\+\_\+inverse\+\_\+direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classRay_a04e28c7802e92e999591aac71c04fa8f}{}\label{classRay_a04e28c7802e92e999591aac71c04fa8f}
 \index{Ray@{Ray}!walk@{walk}}
 \index{walk@{walk}!Ray@{Ray}}
 \subsubsection[{\texorpdfstring{walk(double d)}{walk(double d)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+::walk (
@@ -127,6 +138,9 @@ Offset the base by direction$\ast$d.
 \index{Ray@{Ray}!direction@{direction}}
 \index{direction@{direction}!Ray@{Ray}}
 \subsubsection[{\texorpdfstring{direction}{direction}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Ray\+::direction\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRay_afe8cae110601e8ece9edd45ba500c2d0}{}\label{classRay_afe8cae110601e8ece9edd45ba500c2d0}
+\index{Ray@{Ray}!inverse\+\_\+direction@{inverse\+\_\+direction}}
+\index{inverse\+\_\+direction@{inverse\+\_\+direction}!Ray@{Ray}}
+\subsubsection[{\texorpdfstring{inverse\+\_\+direction}{inverse_direction}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Ray\+::inverse\+\_\+direction\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRay_a58bfdb8ab63bad3882999e5d2113a927}{}\label{classRay_a58bfdb8ab63bad3882999e5d2113a927}
 \index{Ray@{Ray}!point@{point}}
 \index{point@{point}!Ray@{Ray}}
 \subsubsection[{\texorpdfstring{point}{point}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Ray\+::point\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classRay_a35cd5ddd116f79b927e5ce1dfaca64c7}{}\label{classRay_a35cd5ddd116f79b927e5ce1dfaca64c7}

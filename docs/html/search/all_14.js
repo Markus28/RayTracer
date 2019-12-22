@@ -2,7 +2,7 @@ var searchData=
 [
   ['walk',['walk',['../classRay.html#af986618fceed92c3c189f8950deb6d21',1,'Ray']]],
   ['weight',['weight',['../classSpotLight.html#a2cbede9e816bc29375fe06d5c2f972c4',1,'SpotLight']]],
-  ['width',['width',['../classCamera.html#aa18f0bf8b6e8cb661643d980a4484ac0',1,'Camera']]],
-  ['writefile',['writeFile',['../classCamera.html#a0e17a78add185ff298e233acd3a8eca5',1,'Camera']]],
+  ['width',['width',['../classcamera_1_1PinHoleCamera.html#a84af11864219ddf7d2e3ddb0a7888d56',1,'camera::PinHoleCamera']]],
+  ['write_5ffile',['write_file',['../classcamera_1_1Camera.html#a7ea257efc92d5f1d9d560ec11045e583',1,'camera::Camera']]],
   ['writeimage',['writeImage',['../namespaceutility.html#a34be8140338c47d4f6547c1093a0d772',1,'utility']]]
 ];

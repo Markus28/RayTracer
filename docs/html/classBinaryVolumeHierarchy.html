@@ -111,11 +111,12 @@ Collaboration diagram for BinaryVolumeHierarchy:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBinaryVolumeHierarchy__coll__graph.png" border="0" usemap="#BinaryVolumeHierarchy_coll__map" alt="Collaboration graph"/></div>
 <map name="BinaryVolumeHierarchy_coll__map" id="BinaryVolumeHierarchy_coll__map">
-<area shape="rect" id="node2" href="classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="227,109,345,136"/>
-<area shape="rect" id="node4" href="structBVHNode.html" title="BVHNode" alt="" coords="164,228,245,255"/>
-<area shape="rect" id="node3" href="classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="235,5,337,32"/>
-<area shape="rect" id="node7" href="classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="47,109,112,136"/>
-<area shape="rect" id="node6" href="classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="39,228,138,255"/>
+<area shape="rect" id="node2" href="classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="383,109,501,136"/>
+<area shape="rect" id="node5" href="unionBVHLinearNode_1_1LinearSecondChild.html" title="BVHLinearNode::LinearSecond\lChild" alt="" coords="189,228,391,269"/>
+<area shape="rect" id="node3" href="classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="391,5,493,32"/>
+<area shape="rect" id="node4" href="structBVHLinearNode.html" title="BVHLinearNode" alt="" coords="145,332,261,359"/>
+<area shape="rect" id="node7" href="classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="66,235,165,262"/>
+<area shape="rect" id="node9" href="classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="145,109,211,136"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -123,10 +124,6 @@ Collaboration diagram for BinaryVolumeHierarchy:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afb1953933b78a2005884a7a34cb64519"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#afb1953933b78a2005884a7a34cb64519">BinaryVolumeHierarchy</a> (std::vector&lt; <a class="el" href="classBoundedVolume.html">BoundedVolume</a> * &gt;::iterator b, std::vector&lt; <a class="el" href="classBoundedVolume.html">BoundedVolume</a> * &gt;::iterator e)</td></tr>
 <tr class="separator:afb1953933b78a2005884a7a34cb64519"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a45b2c778163d01304beb57b6d19bd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#a4a45b2c778163d01304beb57b6d19bd3">BinaryVolumeHierarchy</a> (const <a class="el" href="classBinaryVolumeHierarchy.html">BinaryVolumeHierarchy</a> &amp;other)</td></tr>
-<tr class="separator:a4a45b2c778163d01304beb57b6d19bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af15afa9493fbc0d3cfffbbc3c2bfbe99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBinaryVolumeHierarchy.html">BinaryVolumeHierarchy</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#af15afa9493fbc0d3cfffbbc3c2bfbe99">operator=</a> (<a class="el" href="classBinaryVolumeHierarchy.html">BinaryVolumeHierarchy</a> other)</td></tr>
-<tr class="separator:af15afa9493fbc0d3cfffbbc3c2bfbe99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae4af0a21170bb122692314b0fbf399a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIntersection.html">Intersection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#aae4af0a21170bb122692314b0fbf399a">ray_intersect</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray) const override</td></tr>
 <tr class="memdesc:aae4af0a21170bb122692314b0fbf399a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to detect intersection of ray and object.  <a href="#aae4af0a21170bb122692314b0fbf399a">More...</a><br /></td></tr>
 <tr class="separator:aae4af0a21170bb122692314b0fbf399a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a91c6b8be167dd13ddbb874d4b9f0cedb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIntersectionProperties.html">IntersectionProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#a91c6b8be167dd13ddbb874d4b9f0cedb">intersect_properties</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray) const override</td></tr>
 <tr class="memdesc:a91c6b8be167dd13ddbb874d4b9f0cedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If ray intersects this object, this method will provide additional Information.  <a href="#a91c6b8be167dd13ddbb874d4b9f0cedb">More...</a><br /></td></tr>
 <tr class="separator:a91c6b8be167dd13ddbb874d4b9f0cedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf4c6f13a9bd3b852cf40f3ee6889c6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#a4cf4c6f13a9bd3b852cf40f3ee6889c6">get_deepest_branch</a> () const </td></tr>
+<tr class="separator:a4cf4c6f13a9bd3b852cf40f3ee6889c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a760800685de78279be3619c4ee4170cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#a760800685de78279be3619c4ee4170cf">~BinaryVolumeHierarchy</a> () override</td></tr>
 <tr class="separator:a760800685de78279be3619c4ee4170cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classRenderObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classRenderObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classRenderObject.html">RenderObject</a></td></tr>
@@ -145,19 +144,19 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:aee9070a784292e5a5f6897a1dde2f9fc"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#aee9070a784292e5a5f6897a1dde2f9fc">get_deepest_branch</a> (unsigned int offset) const </td></tr>
+<tr class="separator:aee9070a784292e5a5f6897a1dde2f9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c190d6301f6fe7ba5b9c77d9517ec4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBVHConstructionNode.html">BVHConstructionNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#aa9c190d6301f6fe7ba5b9c77d9517ec4">build_tree</a> (std::vector&lt; <a class="el" href="classBoundedVolume.html">BoundedVolume</a> * &gt;::iterator b, std::vector&lt; <a class="el" href="classBoundedVolume.html">BoundedVolume</a> * &gt;::iterator e)</td></tr>
+<tr class="separator:aa9c190d6301f6fe7ba5b9c77d9517ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a975a30c71deb503c9f64248b8f14c8cf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#a975a30c71deb503c9f64248b8f14c8cf">flatten_tree</a> (<a class="el" href="structBVHConstructionNode.html">BVHConstructionNode</a> *root, <a class="el" href="structBVHLinearNode.html">BVHLinearNode</a> *<a class="el" href="classBinaryVolumeHierarchy.html#abbadac5cecbdedd8df30cd294ff0ed29">nodes</a>)</td></tr>
+<tr class="separator:a975a30c71deb503c9f64248b8f14c8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab30dec4aa6ef808f53bbdedb98d8af65"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classBoundedVolume.html">BoundedVolume</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#ab30dec4aa6ef808f53bbdedb98d8af65">partition</a> (std::vector&lt; <a class="el" href="classBoundedVolume.html">BoundedVolume</a> * &gt;::iterator b, std::vector&lt; <a class="el" href="classBoundedVolume.html">BoundedVolume</a> * &gt;::iterator e)</td></tr>
 <tr class="separator:ab30dec4aa6ef808f53bbdedb98d8af65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93e3d7fd0b06a83675e36594d3fcaa8b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#a93e3d7fd0b06a83675e36594d3fcaa8b">longestAxis</a> () const </td></tr>
-<tr class="separator:a93e3d7fd0b06a83675e36594d3fcaa8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a76372fd6f7d6a5783d9b8688fc40d5b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBVHNode.html">BVHNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#a76372fd6f7d6a5783d9b8688fc40d5b4">left</a></td></tr>
-<tr class="separator:a76372fd6f7d6a5783d9b8688fc40d5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b950d10a084fedfeaa02727d654b782"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBVHNode.html">BVHNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#a3b950d10a084fedfeaa02727d654b782">right</a></td></tr>
-<tr class="separator:a3b950d10a084fedfeaa02727d654b782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2722a35a0c3c6fee488f186c31869b53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBoundingBox.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#a2722a35a0c3c6fee488f186c31869b53">bounds</a></td></tr>
-<tr class="separator:a2722a35a0c3c6fee488f186c31869b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbadac5cecbdedd8df30cd294ff0ed29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBVHLinearNode.html">BVHLinearNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html#abbadac5cecbdedd8df30cd294ff0ed29">nodes</a> = nullptr</td></tr>
+<tr class="separator:abbadac5cecbdedd8df30cd294ff0ed29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acceleration structure for ensemble of bounded volumes. </p>
@@ -188,22 +187,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4a45b2c778163d01304beb57b6d19bd3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BinaryVolumeHierarchy::BinaryVolumeHierarchy </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classBinaryVolumeHierarchy.html">BinaryVolumeHierarchy</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a760800685de78279be3619c4ee4170cf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -228,6 +211,74 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa9c190d6301f6fe7ba5b9c77d9517ec4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBVHConstructionNode.html">BVHConstructionNode</a> * BinaryVolumeHierarchy::build_tree </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classBoundedVolume.html">BoundedVolume</a> * &gt;::iterator&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classBoundedVolume.html">BoundedVolume</a> * &gt;::iterator&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a975a30c71deb503c9f64248b8f14c8cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int BinaryVolumeHierarchy::flatten_tree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBVHConstructionNode.html">BVHConstructionNode</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBVHLinearNode.html">BVHLinearNode</a> *&#160;</td>
+          <td class="paramname"><em>nodes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aaec23515bc9d81ccc9115489aed8808f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -250,6 +301,45 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classBoundedVolume.html#a281168c4d827c38b46e639f6e4991a9e">BoundedVolume</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4cf4c6f13a9bd3b852cf40f3ee6889c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int BinaryVolumeHierarchy::get_deepest_branch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee9070a784292e5a5f6897a1dde2f9fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int BinaryVolumeHierarchy::get_deepest_branch </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -286,45 +376,6 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classIntersectionProperties.html" title="Class for storing information about the local properties of a RenderObject at a specific point in spa...">IntersectionProperties</a> object containing the surface normal and material information </dd></dl>
 
 <p>Implements <a class="el" href="classRenderObject.html#a792d36570e3264530872187ca1b0baca">RenderObject</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a93e3d7fd0b06a83675e36594d3fcaa8b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int BinaryVolumeHierarchy::longestAxis </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af15afa9493fbc0d3cfffbbc3c2bfbe99"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classBinaryVolumeHierarchy.html">BinaryVolumeHierarchy</a> &amp; BinaryVolumeHierarchy::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classBinaryVolumeHierarchy.html">BinaryVolumeHierarchy</a>&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -424,7 +475,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2722a35a0c3c6fee488f186c31869b53"></a>
+<a class="anchor" id="abbadac5cecbdedd8df30cd294ff0ed29"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -432,47 +483,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classBoundingBox.html">BoundingBox</a> BinaryVolumeHierarchy::bounds</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a76372fd6f7d6a5783d9b8688fc40d5b4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structBVHNode.html">BVHNode</a>* BinaryVolumeHierarchy::left</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3b950d10a084fedfeaa02727d654b782"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structBVHNode.html">BVHNode</a>* BinaryVolumeHierarchy::right</td>
+          <td class="memname"><a class="el" href="structBVHLinearNode.html">BVHLinearNode</a>* BinaryVolumeHierarchy::nodes = nullptr</td>
         </tr>
       </table>
   </td>
@@ -485,8 +496,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/<a class="el" href="BinaryVolumeHierarchy_8h_source.html">BinaryVolumeHierarchy.h</a></li>
-<li>src/<a class="el" href="BinaryVolumeHierarchy_8cpp.html">BinaryVolumeHierarchy.cpp</a></li>
+<li>src/renderable/<a class="el" href="BinaryVolumeHierarchy_8h_source.html">BinaryVolumeHierarchy.h</a></li>
+<li>src/renderable/<a class="el" href="BinaryVolumeHierarchy_8cpp.html">BinaryVolumeHierarchy.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

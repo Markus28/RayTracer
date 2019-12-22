@@ -1,7 +1,8 @@
 <map id="BinaryVolumeHierarchy" name="BinaryVolumeHierarchy">
-<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="227,109,345,136"/>
-<area shape="rect" id="node4" href="$structBVHNode.html" title="BVHNode" alt="" coords="164,228,245,255"/>
-<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="235,5,337,32"/>
-<area shape="rect" id="node7" href="$classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="47,109,112,136"/>
-<area shape="rect" id="node6" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="39,228,138,255"/>
+<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="383,109,501,136"/>
+<area shape="rect" id="node5" href="$unionBVHLinearNode_1_1LinearSecondChild.html" title="BVHLinearNode::LinearSecond\lChild" alt="" coords="189,228,391,269"/>
+<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="391,5,493,32"/>
+<area shape="rect" id="node4" href="$structBVHLinearNode.html" title="BVHLinearNode" alt="" coords="145,332,261,359"/>
+<area shape="rect" id="node7" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="66,235,165,262"/>
+<area shape="rect" id="node9" href="$classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="145,109,211,136"/>
 </map>

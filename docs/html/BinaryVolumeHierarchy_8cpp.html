@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>RayTracer: src/BinaryVolumeHierarchy.cpp File Reference</title>
+<title>RayTracer: src/renderable/BinaryVolumeHierarchy.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_75e9c1d82e61a50cfc5589f7e7519aff.html">renderable</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -90,26 +90,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="BinaryVolumeHierarchy_8h_source.html">BinaryVolumeHierarchy.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Utilities_8h_source.html">Utilities.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Intersection_8h_source.html">Intersection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Utilities_8h_source.html">../Utilities.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Intersection_8h_source.html">../Intersection.h</a>&quot;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;stack&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for BinaryVolumeHierarchy.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="BinaryVolumeHierarchy_8cpp__incl.png" border="0" usemap="#src_2BinaryVolumeHierarchy_8cpp" alt=""/></div>
-<map name="src_2BinaryVolumeHierarchy_8cpp" id="src_2BinaryVolumeHierarchy_8cpp">
-<area shape="rect" id="node2" href="BinaryVolumeHierarchy_8h.html" title="BinaryVolumeHierarchy.h" alt="" coords="204,80,375,107"/>
-<area shape="rect" id="node13" href="Utilities_8h.html" title="Utilities.h" alt="" coords="399,80,476,107"/>
-<area shape="rect" id="node17" href="Intersection_8h.html" title="Intersection.h" alt="" coords="5,229,107,256"/>
-<area shape="rect" id="node3" href="BoundedVolume_8h.html" title="BoundedVolume.h" alt="" coords="175,155,303,181"/>
-<area shape="rect" id="node4" href="BoundingBox_8h.html" title="BoundingBox.h" alt="" coords="317,304,427,331"/>
-<area shape="rect" id="node9" href="RenderObject_8h.html" title="RenderObject.h" alt="" coords="182,229,295,256"/>
-<area shape="rect" id="node5" href="Interval_8h.html" title="Interval.h" alt="" coords="345,453,421,480"/>
-<area shape="rect" id="node7" href="Ray_8h.html" title="Ray.h" alt="" coords="317,379,374,405"/>
-<area shape="rect" id="node8" href="Vector3D_8h.html" title="Vector3D.h" alt="" coords="136,453,224,480"/>
-<area shape="rect" id="node10" href="IntersectionProperties_8h.html" title="IntersectionProperties.h" alt="" coords="81,304,241,331"/>
-<area shape="rect" id="node11" href="Material_8h.html" title="Material.h" alt="" coords="122,379,201,405"/>
+<div class="center"><img src="BinaryVolumeHierarchy_8cpp__incl.png" border="0" usemap="#src_2renderable_2BinaryVolumeHierarchy_8cpp" alt=""/></div>
+<map name="src_2renderable_2BinaryVolumeHierarchy_8cpp" id="src_2renderable_2BinaryVolumeHierarchy_8cpp">
+<area shape="rect" id="node2" href="BinaryVolumeHierarchy_8h.html" title="BinaryVolumeHierarchy.h" alt="" coords="150,95,321,121"/>
+<area shape="rect" id="node14" href="Utilities_8h.html" title="../Utilities.h" alt="" coords="345,95,435,121"/>
+<area shape="rect" id="node17" href="Intersection_8h.html" title="../Intersection.h" alt="" coords="5,244,119,271"/>
+<area shape="rect" id="node3" href="BoundedVolume_8h.html" title="BoundedVolume.h" alt="" coords="289,169,417,196"/>
+<area shape="rect" id="node4" href="BoundingBox_8h.html" title="BoundingBox.h" alt="" coords="348,319,459,345"/>
+<area shape="rect" id="node9" href="RenderObject_8h.html" title="RenderObject.h" alt="" coords="252,244,365,271"/>
+<area shape="rect" id="node5" href="Interval_8h.html" title="../Interval.h" alt="" coords="378,468,466,495"/>
+<area shape="rect" id="node7" href="Ray_8h.html" title="../Ray.h" alt="" coords="347,393,417,420"/>
+<area shape="rect" id="node8" href="Vector3D_8h.html" title="linalg/Vector3D.h" alt="" coords="138,468,261,495"/>
+<area shape="rect" id="node10" href="IntersectionProperties_8h.html" title="../IntersectionProperties.h" alt="" coords="100,319,272,345"/>
+<area shape="rect" id="node11" href="Material_8h.html" title="Material.h" alt="" coords="147,393,225,420"/>
 </map>
 </div>
 </div></div><!-- contents -->

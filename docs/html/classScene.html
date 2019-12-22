@@ -102,15 +102,15 @@ Collaboration diagram for Scene:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene__coll__graph.png" border="0" usemap="#Scene_coll__map" alt="Collaboration graph"/></div>
 <map name="Scene_coll__map" id="Scene_coll__map">
-<area shape="rect" id="node3" href="classCamera.html" title="Camera" alt="" coords="148,139,216,165"/>
-<area shape="rect" id="node7" href="classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="435,139,513,165"/>
+<area shape="rect" id="node2" href="classcamera_1_1Camera.html" title="camera::Camera" alt="" coords="71,124,189,151"/>
+<area shape="rect" id="node7" href="classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="551,124,629,151"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a051f10cca42dcc9c5fe5297ef06583f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a051f10cca42dcc9c5fe5297ef06583f8">Scene</a> (const std::vector&lt; <a class="el" href="classRenderObject.html">RenderObject</a> * &gt; &amp;objects, const std::vector&lt; <a class="el" href="classLight.html">Light</a> * &gt; &amp;<a class="el" href="classScene.html#a4ecc3182a80435e1c4dfbe1b20e559bd">lights</a>, <a class="el" href="classCamera.html">Camera</a> *camera, <a class="el" href="classVector3D.html">Vector3D</a> background, <a class="el" href="classVector3D.html">Vector3D</a> <a class="el" href="classScene.html#a284ce5b2aeb47c64d6712d9748229c47">ambient</a>)</td></tr>
-<tr class="separator:a051f10cca42dcc9c5fe5297ef06583f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05f285f7a7df49c03ce32fb1c43c9ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#aa05f285f7a7df49c03ce32fb1c43c9ae">Scene</a> (const std::vector&lt; <a class="el" href="classRenderObject.html">RenderObject</a> * &gt; &amp;objects, const std::vector&lt; <a class="el" href="classLight.html">Light</a> * &gt; &amp;<a class="el" href="classScene.html#a4ecc3182a80435e1c4dfbe1b20e559bd">lights</a>, <a class="el" href="classcamera_1_1Camera.html">camera::Camera</a> *camera, <a class="el" href="classVector3D.html">Vector3D</a> background, <a class="el" href="classVector3D.html">Vector3D</a> <a class="el" href="classScene.html#a284ce5b2aeb47c64d6712d9748229c47">ambient</a>)</td></tr>
+<tr class="separator:aa05f285f7a7df49c03ce32fb1c43c9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19a594ba70c411fb6fddb1e9d772da52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a19a594ba70c411fb6fddb1e9d772da52">render</a> (unsigned int recursion_depth)</td></tr>
 <tr class="separator:a19a594ba70c411fb6fddb1e9d772da52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -120,8 +120,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a671595e773bd4336c0fa67186aff609d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a726867ff812fd8776fe0b4319538e9e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIntersection.html">Intersection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a726867ff812fd8776fe0b4319538e9e7">first_hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray)</td></tr>
 <tr class="separator:a726867ff812fd8776fe0b4319538e9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d230edebbee2bd667875fbdc76077d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a1d230edebbee2bd667875fbdc76077d5">traceRay</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray, unsigned int recursion_depth)</td></tr>
-<tr class="separator:a1d230edebbee2bd667875fbdc76077d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ccd15bf4c359c1585fe87d85d424d55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a9ccd15bf4c359c1585fe87d85d424d55">trace_ray</a> (const <a class="el" href="classRay.html">Ray</a> &amp;ray, unsigned int recursion_depth)</td></tr>
+<tr class="separator:a9ccd15bf4c359c1585fe87d85d424d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -129,8 +129,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a37361b6054643b62fcb8e6b7c828e5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ecc3182a80435e1c4dfbe1b20e559bd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classLight.html">Light</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a4ecc3182a80435e1c4dfbe1b20e559bd">lights</a></td></tr>
 <tr class="separator:a4ecc3182a80435e1c4dfbe1b20e559bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeac676eac579e2831faae0eedaa8db8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCamera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#aeac676eac579e2831faae0eedaa8db8d">cam</a></td></tr>
-<tr class="separator:aeac676eac579e2831faae0eedaa8db8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5448bc1b1150aa67049914b7800b63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcamera_1_1Camera.html">camera::Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a3e5448bc1b1150aa67049914b7800b63">cam</a></td></tr>
+<tr class="separator:a3e5448bc1b1150aa67049914b7800b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac745fba97d639cebcf0e8fbf59967da2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#ac745fba97d639cebcf0e8fbf59967da2">backgrnd</a></td></tr>
 <tr class="separator:ac745fba97d639cebcf0e8fbf59967da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a284ce5b2aeb47c64d6712d9748229c47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a284ce5b2aeb47c64d6712d9748229c47">ambient</a></td></tr>
@@ -139,7 +139,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Scene-Object is used to compose RenderObjects, Lights, the <a class="el" href="classBackground.html">Background</a> and render them. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a051f10cca42dcc9c5fe5297ef06583f8"></a>
+<a class="anchor" id="aa05f285f7a7df49c03ce32fb1c43c9ae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -158,7 +158,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCamera.html">Camera</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classcamera_1_1Camera.html">camera::Camera</a> *&#160;</td>
           <td class="paramname"><em>camera</em>, </td>
         </tr>
         <tr>
@@ -258,7 +258,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1d230edebbee2bd667875fbdc76077d5"></a>
+<a class="anchor" id="a9ccd15bf4c359c1585fe87d85d424d55"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -266,7 +266,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVector3D.html">Vector3D</a> Scene::traceRay </td>
+          <td class="memname"><a class="el" href="classVector3D.html">Vector3D</a> Scene::trace_ray </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
           <td class="paramname"><em>ray</em>, </td>
@@ -333,7 +333,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeac676eac579e2831faae0eedaa8db8d"></a>
+<a class="anchor" id="a3e5448bc1b1150aa67049914b7800b63"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -341,7 +341,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCamera.html">Camera</a>* Scene::cam</td>
+          <td class="memname"><a class="el" href="classcamera_1_1Camera.html">camera::Camera</a>* Scene::cam</td>
         </tr>
       </table>
   </td>

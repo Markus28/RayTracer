@@ -1,5 +1,5 @@
-<map id="src/BoundingBox.h" name="src/BoundingBox.h">
-<area shape="rect" id="node2" href="$Interval_8h.html" title="Interval.h" alt="" coords="5,155,81,181"/>
-<area shape="rect" id="node4" href="$Ray_8h.html" title="Ray.h" alt="" coords="111,80,168,107"/>
-<area shape="rect" id="node5" href="$Vector3D_8h.html" title="Vector3D.h" alt="" coords="106,155,194,181"/>
+<map id="src/renderable/BoundingBox.h" name="src/renderable/BoundingBox.h">
+<area shape="rect" id="node2" href="$Interval_8h.html" title="../Interval.h" alt="" coords="5,155,93,181"/>
+<area shape="rect" id="node4" href="$Ray_8h.html" title="../Ray.h" alt="" coords="129,80,199,107"/>
+<area shape="rect" id="node5" href="$Vector3D_8h.html" title="linalg/Vector3D.h" alt="" coords="117,155,240,181"/>
 </map>

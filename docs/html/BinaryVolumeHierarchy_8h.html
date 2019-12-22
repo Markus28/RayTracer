@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>RayTracer: src/BinaryVolumeHierarchy.h File Reference</title>
+<title>RayTracer: src/renderable/BinaryVolumeHierarchy.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_75e9c1d82e61a50cfc5589f7e7519aff.html">renderable</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,30 +93,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="BoundedVolume_8h_source.html">BoundedVolume.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for BinaryVolumeHierarchy.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="BinaryVolumeHierarchy_8h__incl.png" border="0" usemap="#src_2BinaryVolumeHierarchy_8h" alt=""/></div>
-<map name="src_2BinaryVolumeHierarchy_8h" id="src_2BinaryVolumeHierarchy_8h">
-<area shape="rect" id="node2" href="BoundedVolume_8h.html" title="BoundedVolume.h" alt="" coords="93,80,221,107"/>
-<area shape="rect" id="node3" href="BoundingBox_8h.html" title="BoundingBox.h" alt="" coords="5,229,116,256"/>
-<area shape="rect" id="node8" href="RenderObject_8h.html" title="RenderObject.h" alt="" coords="164,155,277,181"/>
-<area shape="rect" id="node4" href="Interval_8h.html" title="Interval.h" alt="" coords="36,379,112,405"/>
-<area shape="rect" id="node6" href="Ray_8h.html" title="Ray.h" alt="" coords="100,304,157,331"/>
-<area shape="rect" id="node7" href="Vector3D_8h.html" title="Vector3D.h" alt="" coords="163,379,251,405"/>
-<area shape="rect" id="node9" href="IntersectionProperties_8h.html" title="IntersectionProperties.h" alt="" coords="141,229,301,256"/>
-<area shape="rect" id="node10" href="Material_8h.html" title="Material.h" alt="" coords="181,304,260,331"/>
+<div class="center"><img src="BinaryVolumeHierarchy_8h__incl.png" border="0" usemap="#src_2renderable_2BinaryVolumeHierarchy_8h" alt=""/></div>
+<map name="src_2renderable_2BinaryVolumeHierarchy_8h" id="src_2renderable_2BinaryVolumeHierarchy_8h">
+<area shape="rect" id="node2" href="BoundedVolume_8h.html" title="BoundedVolume.h" alt="" coords="97,95,225,121"/>
+<area shape="rect" id="node3" href="BoundingBox_8h.html" title="BoundingBox.h" alt="" coords="5,244,116,271"/>
+<area shape="rect" id="node8" href="RenderObject_8h.html" title="RenderObject.h" alt="" coords="169,169,283,196"/>
+<area shape="rect" id="node4" href="Interval_8h.html" title="../Interval.h" alt="" coords="25,393,113,420"/>
+<area shape="rect" id="node6" href="Ray_8h.html" title="../Ray.h" alt="" coords="95,319,165,345"/>
+<area shape="rect" id="node7" href="Vector3D_8h.html" title="linalg/Vector3D.h" alt="" coords="157,393,279,420"/>
+<area shape="rect" id="node9" href="IntersectionProperties_8h.html" title="../IntersectionProperties.h" alt="" coords="140,244,312,271"/>
+<area shape="rect" id="node10" href="Material_8h.html" title="Material.h" alt="" coords="189,319,268,345"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="BinaryVolumeHierarchy_8h__dep__incl.png" border="0" usemap="#src_2BinaryVolumeHierarchy_8hdep" alt=""/></div>
-<map name="src_2BinaryVolumeHierarchy_8hdep" id="src_2BinaryVolumeHierarchy_8hdep">
-<area shape="rect" id="node2" href="BinaryVolumeHierarchy_8cpp.html" title="src/BinaryVolumeHierarchy.cpp" alt="" coords="5,80,212,107"/>
-<area shape="rect" id="node3" href="main_8cpp.html" title="src/main.cpp" alt="" coords="201,155,299,181"/>
-<area shape="rect" id="node4" href="OBJFile_8h.html" title="src/OBJFile.h" alt="" coords="288,80,391,107"/>
-<area shape="rect" id="node5" href="OBJFile_8cpp.html" title="src/OBJFile.cpp" alt="" coords="323,155,439,181"/>
+<div class="center"><img src="BinaryVolumeHierarchy_8h__dep__incl.png" border="0" usemap="#src_2renderable_2BinaryVolumeHierarchy_8hdep" alt=""/></div>
+<map name="src_2renderable_2BinaryVolumeHierarchy_8hdep" id="src_2renderable_2BinaryVolumeHierarchy_8hdep">
+<area shape="rect" id="node2" href="main_8cpp.html" title="src/main.cpp" alt="" coords="5,184,103,211"/>
+<area shape="rect" id="node3" href="OBJFile_8h.html" title="src/OBJFile.h" alt="" coords="92,102,195,129"/>
+<area shape="rect" id="node5" href="BinaryVolumeHierarchy_8cpp.html" title="src/renderable/BinaryVolume\lHierarchy.cpp" alt="" coords="219,95,409,136"/>
+<area shape="rect" id="node4" href="OBJFile_8cpp.html" title="src/OBJFile.cpp" alt="" coords="127,184,243,211"/>
 </map>
 </div>
 </div>
@@ -124,10 +125,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBVHConstructionNode.html">BVHConstructionNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionBVHConstructionNode_1_1ConstructionChildren.html">BVHConstructionNode::ConstructionChildren</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBVHLinearNode.html">BVHLinearNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionBVHLinearNode_1_1LinearSecondChild.html">BVHLinearNode::LinearSecondChild</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFixedSizeStack.html">FixedSizeStack&lt; V, N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stack that can contain at most N elements. If more are pushed to the stack, it will crash. No error handling is done. If top is called on an empty stack, it will crash.  <a href="classFixedSizeStack.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryVolumeHierarchy.html">BinaryVolumeHierarchy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acceleration structure for ensemble of bounded volumes.  <a href="classBinaryVolumeHierarchy.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBVHNode.html">BVHNode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

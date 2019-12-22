@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['image',['image',['../namespaceimage.html',1,'']]]
+  ['camera',['camera',['../namespacecamera.html',1,'']]]
 ];

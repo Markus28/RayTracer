@@ -1,0 +1,116 @@
+\hypertarget{classCSGLeaf}{}\section{C\+S\+G\+Leaf Class Reference}
+\label{classCSGLeaf}\index{C\+S\+G\+Leaf@{C\+S\+G\+Leaf}}
+
+
+Essentially a wrapper for Distance\+Estimated\+Object. They are leafs in the C\+S\+G-\/\+Tree.  
+
+
+
+
+{\ttfamily \#include $<$C\+S\+G.\+h$>$}
+
+
+
+Inheritance diagram for C\+S\+G\+Leaf\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classCSGLeaf__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+S\+G\+Leaf\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCSGLeaf__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSGLeaf_ac0843162c744c30a1ea0a97ec41e6c72}{C\+S\+G\+Leaf} (\hyperlink{classSDFObject}{S\+D\+F\+Object} $\ast$a)
+\item 
+double \hyperlink{classCSGLeaf_a78d00f0c35cd87b222da10fb728037eb}{distance\+\_\+bound} (const \hyperlink{classVector3D}{Vector3D} \&pos) const override
+\item 
+\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classCSGLeaf_aba3f65b725aa0a697664b9dda80b4df3}{get\+\_\+bounds} () const override
+\item 
+\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGLeaf_aa5142f7259d9a5d4e38797346bb6e640}{deep\+\_\+copy} () const override
+\item 
+\hyperlink{classCSGLeaf_ae6814ea82f8bdaa79eb0c98f25d6334b}{$\sim$\+C\+S\+G\+Leaf} () override=default
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSDFObject}{S\+D\+F\+Object} $\ast$ \hyperlink{classCSGLeaf_a6bb40cb3c028d643273d5da84f01e4b0}{obj}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Essentially a wrapper for Distance\+Estimated\+Object. They are leafs in the C\+S\+G-\/\+Tree. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+S\+G\+Leaf@{C\+S\+G\+Leaf}!C\+S\+G\+Leaf@{C\+S\+G\+Leaf}}
+\index{C\+S\+G\+Leaf@{C\+S\+G\+Leaf}!C\+S\+G\+Leaf@{C\+S\+G\+Leaf}}
+\subsubsection[{\texorpdfstring{C\+S\+G\+Leaf(\+S\+D\+F\+Object $\ast$a)}{CSGLeaf(SDFObject *a)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+Leaf\+::\+C\+S\+G\+Leaf (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+D\+F\+Object} $\ast$}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classCSGLeaf_ac0843162c744c30a1ea0a97ec41e6c72}{}\label{classCSGLeaf_ac0843162c744c30a1ea0a97ec41e6c72}
+\index{C\+S\+G\+Leaf@{C\+S\+G\+Leaf}!````~C\+S\+G\+Leaf@{$\sim$\+C\+S\+G\+Leaf}}
+\index{````~C\+S\+G\+Leaf@{$\sim$\+C\+S\+G\+Leaf}!C\+S\+G\+Leaf@{C\+S\+G\+Leaf}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+S\+G\+Leaf() override=default}{~CSGLeaf() override=default}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+Leaf\+::$\sim$\+C\+S\+G\+Leaf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}\hypertarget{classCSGLeaf_ae6814ea82f8bdaa79eb0c98f25d6334b}{}\label{classCSGLeaf_ae6814ea82f8bdaa79eb0c98f25d6334b}
+
+
+\subsection{Member Function Documentation}
+\index{C\+S\+G\+Leaf@{C\+S\+G\+Leaf}!deep\+\_\+copy@{deep\+\_\+copy}}
+\index{deep\+\_\+copy@{deep\+\_\+copy}!C\+S\+G\+Leaf@{C\+S\+G\+Leaf}}
+\subsubsection[{\texorpdfstring{deep\+\_\+copy() const override}{deep_copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component} $\ast$ C\+S\+G\+Leaf\+::deep\+\_\+copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGLeaf_aa5142f7259d9a5d4e38797346bb6e640}{}\label{classCSGLeaf_aa5142f7259d9a5d4e38797346bb6e640}
+
+
+Implements \hyperlink{classCSGComponent_a98d3accd23c28259cbf490f4d7acbe83}{C\+S\+G\+Component}.
+
+\index{C\+S\+G\+Leaf@{C\+S\+G\+Leaf}!distance\+\_\+bound@{distance\+\_\+bound}}
+\index{distance\+\_\+bound@{distance\+\_\+bound}!C\+S\+G\+Leaf@{C\+S\+G\+Leaf}}
+\subsubsection[{\texorpdfstring{distance\+\_\+bound(const Vector3\+D \&pos) const override}{distance_bound(const Vector3D &pos) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double C\+S\+G\+Leaf\+::distance\+\_\+bound (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pos}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGLeaf_a78d00f0c35cd87b222da10fb728037eb}{}\label{classCSGLeaf_a78d00f0c35cd87b222da10fb728037eb}
+
+
+Implements \hyperlink{classCSGComponent_a41ca7aff9b7c481ea076f81eeb826779}{C\+S\+G\+Component}.
+
+\index{C\+S\+G\+Leaf@{C\+S\+G\+Leaf}!get\+\_\+bounds@{get\+\_\+bounds}}
+\index{get\+\_\+bounds@{get\+\_\+bounds}!C\+S\+G\+Leaf@{C\+S\+G\+Leaf}}
+\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} C\+S\+G\+Leaf\+::get\+\_\+bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGLeaf_aba3f65b725aa0a697664b9dda80b4df3}{}\label{classCSGLeaf_aba3f65b725aa0a697664b9dda80b4df3}
+
+
+Implements \hyperlink{classCSGComponent_a4299365f2bab69272af9de4f2bee7cdb}{C\+S\+G\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\index{C\+S\+G\+Leaf@{C\+S\+G\+Leaf}!obj@{obj}}
+\index{obj@{obj}!C\+S\+G\+Leaf@{C\+S\+G\+Leaf}}
+\subsubsection[{\texorpdfstring{obj}{obj}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+D\+F\+Object}$\ast$ C\+S\+G\+Leaf\+::obj\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCSGLeaf_a6bb40cb3c028d643273d5da84f01e4b0}{}\label{classCSGLeaf_a6bb40cb3c028d643273d5da84f01e4b0}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/renderable/\hyperlink{CSG_8h}{C\+S\+G.\+h}\item 
+src/renderable/\hyperlink{CSG_8cpp}{C\+S\+G.\+cpp}\end{DoxyCompactItemize}

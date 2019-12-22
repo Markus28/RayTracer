@@ -4,5 +4,6 @@ var searchData=
   ['a_5ftranspose',['A_transpose',['../classlinalg_1_1Transformation.html#ac720d71bf88660e2ae3f3d776c7cfd01',1,'linalg::Transformation']]],
   ['ambient',['ambient',['../classScene.html#a284ce5b2aeb47c64d6712d9748229c47',1,'Scene']]],
   ['ambient_5frefl',['ambient_refl',['../classMaterial.html#a40002cba7c7049feb2bddaf57ae96ba4',1,'Material']]],
-  ['area2',['area2',['../classTriangle.html#a43322fb75910877dd63b17d391e3022b',1,'Triangle']]]
+  ['area2',['area2',['../classTriangle.html#a43322fb75910877dd63b17d391e3022b',1,'Triangle']]],
+  ['axis',['axis',['../classSDFCylinder.html#a0120c881204422391fd52fa5215512ab',1,'SDFCylinder']]]
 ];

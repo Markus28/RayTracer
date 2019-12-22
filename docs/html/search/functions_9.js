@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['length',['length',['../classInterval.html#ad8cc11adfccd0e30ff3d93ad6a8b5a47',1,'Interval']]],
-  ['longestaxis',['longestAxis',['../classBinaryVolumeHierarchy.html#a93e3d7fd0b06a83675e36594d3fcaa8b',1,'BinaryVolumeHierarchy']]]
+  ['length',['length',['../classcamera_1_1Camera.html#a423a89150b51003b1b0c75066165a980',1,'camera::Camera::length()'],['../classInterval.html#ad8cc11adfccd0e30ff3d93ad6a8b5a47',1,'Interval::length()']]]
 ];

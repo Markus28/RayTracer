@@ -1,0 +1,87 @@
+\hypertarget{classCSGComponent}{}\section{C\+S\+G\+Component Class Reference}
+\label{classCSGComponent}\index{C\+S\+G\+Component@{C\+S\+G\+Component}}
+
+
+Interface for nodes in C\+S\+G-\/\+Tree according to composition-\/pattern.  
+
+
+
+
+{\ttfamily \#include $<$C\+S\+G.\+h$>$}
+
+
+
+Inheritance diagram for C\+S\+G\+Component\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCSGComponent__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classCSGComponent_a41ca7aff9b7c481ea076f81eeb826779}{distance\+\_\+bound} (const \hyperlink{classVector3D}{Vector3D} \&pos) const =0
+\item 
+virtual \hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classCSGComponent_a4299365f2bab69272af9de4f2bee7cdb}{get\+\_\+bounds} () const =0
+\item 
+virtual \hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGComponent_a98d3accd23c28259cbf490f4d7acbe83}{deep\+\_\+copy} () const =0
+\item 
+virtual \hyperlink{classCSGComponent_ab46aa06021795ff83ff2fdf991e5e77d}{$\sim$\+C\+S\+G\+Component} ()=default
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for nodes in C\+S\+G-\/\+Tree according to composition-\/pattern. 
+
+Note, that \hyperlink{classCSGComponent}{C\+S\+G\+Component} is not renderable and is not affiliated with \hyperlink{classSDFObject}{S\+D\+F\+Object}. Although its methods have the same names, they have (formally) nothing to do with \hyperlink{classSDFObject}{S\+D\+F\+Object} or \hyperlink{classBoundingBox}{Bounding\+Box} methods. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+S\+G\+Component@{C\+S\+G\+Component}!````~C\+S\+G\+Component@{$\sim$\+C\+S\+G\+Component}}
+\index{````~C\+S\+G\+Component@{$\sim$\+C\+S\+G\+Component}!C\+S\+G\+Component@{C\+S\+G\+Component}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+S\+G\+Component()=default}{~CSGComponent()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+S\+G\+Component\+::$\sim$\+C\+S\+G\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{classCSGComponent_ab46aa06021795ff83ff2fdf991e5e77d}{}\label{classCSGComponent_ab46aa06021795ff83ff2fdf991e5e77d}
+
+
+\subsection{Member Function Documentation}
+\index{C\+S\+G\+Component@{C\+S\+G\+Component}!deep\+\_\+copy@{deep\+\_\+copy}}
+\index{deep\+\_\+copy@{deep\+\_\+copy}!C\+S\+G\+Component@{C\+S\+G\+Component}}
+\subsubsection[{\texorpdfstring{deep\+\_\+copy() const =0}{deep_copy() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf C\+S\+G\+Component}$\ast$ C\+S\+G\+Component\+::deep\+\_\+copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCSGComponent_a98d3accd23c28259cbf490f4d7acbe83}{}\label{classCSGComponent_a98d3accd23c28259cbf490f4d7acbe83}
+
+
+Implemented in \hyperlink{classCSGLeaf_aa5142f7259d9a5d4e38797346bb6e640}{C\+S\+G\+Leaf}, \hyperlink{classCSGDifference_a8ea1d4cd7fc1ff6adca5cc4983eecfcd}{C\+S\+G\+Difference}, \hyperlink{classCSGIntersection_a4721227de85e675484ab206c299c5867}{C\+S\+G\+Intersection}, and \hyperlink{classCSGUnion_a806fa004753847d293e56a93112abe9a}{C\+S\+G\+Union}.
+
+\index{C\+S\+G\+Component@{C\+S\+G\+Component}!distance\+\_\+bound@{distance\+\_\+bound}}
+\index{distance\+\_\+bound@{distance\+\_\+bound}!C\+S\+G\+Component@{C\+S\+G\+Component}}
+\subsubsection[{\texorpdfstring{distance\+\_\+bound(const Vector3\+D \&pos) const =0}{distance_bound(const Vector3D &pos) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\+S\+G\+Component\+::distance\+\_\+bound (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3D} \&}]{pos}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCSGComponent_a41ca7aff9b7c481ea076f81eeb826779}{}\label{classCSGComponent_a41ca7aff9b7c481ea076f81eeb826779}
+
+
+Implemented in \hyperlink{classCSGLeaf_a78d00f0c35cd87b222da10fb728037eb}{C\+S\+G\+Leaf}, \hyperlink{classCSGDifference_a66e0be492572f75b508a77c429be8fd8}{C\+S\+G\+Difference}, \hyperlink{classCSGIntersection_a199cc8192cdaeacae17d5b3c6dfef6a1}{C\+S\+G\+Intersection}, and \hyperlink{classCSGUnion_a2a15937802a57a3a78b84961fc0dda9f}{C\+S\+G\+Union}.
+
+\index{C\+S\+G\+Component@{C\+S\+G\+Component}!get\+\_\+bounds@{get\+\_\+bounds}}
+\index{get\+\_\+bounds@{get\+\_\+bounds}!C\+S\+G\+Component@{C\+S\+G\+Component}}
+\subsubsection[{\texorpdfstring{get\+\_\+bounds() const =0}{get_bounds() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Bounding\+Box} C\+S\+G\+Component\+::get\+\_\+bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCSGComponent_a4299365f2bab69272af9de4f2bee7cdb}{}\label{classCSGComponent_a4299365f2bab69272af9de4f2bee7cdb}
+
+
+Implemented in \hyperlink{classCSGLeaf_aba3f65b725aa0a697664b9dda80b4df3}{C\+S\+G\+Leaf}, \hyperlink{classCSGDifference_aede15cd9fd46e4824e66361eb2f28ec9}{C\+S\+G\+Difference}, \hyperlink{classCSGIntersection_ad1f53a70c93dcdb6f8725a491fa24917}{C\+S\+G\+Intersection}, and \hyperlink{classCSGUnion_aaf1d2e77d8f931327fd8c499933142ba}{C\+S\+G\+Union}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/renderable/\hyperlink{CSG_8h}{C\+S\+G.\+h}\end{DoxyCompactItemize}

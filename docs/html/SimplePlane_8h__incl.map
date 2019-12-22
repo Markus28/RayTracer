@@ -1,7 +1,7 @@
-<map id="src/SimplePlane.h" name="src/SimplePlane.h">
-<area shape="rect" id="node2" href="$Vector3D_8h.html" title="Vector3D.h" alt="" coords="44,304,132,331"/>
-<area shape="rect" id="node4" href="$Ray_8h.html" title="Ray.h" alt="" coords="21,155,78,181"/>
-<area shape="rect" id="node5" href="$Material_8h.html" title="Material.h" alt="" coords="88,229,166,256"/>
-<area shape="rect" id="node6" href="$RenderObject_8h.html" title="RenderObject.h" alt="" coords="177,80,290,107"/>
-<area shape="rect" id="node7" href="$IntersectionProperties_8h.html" title="IntersectionProperties.h" alt="" coords="154,155,314,181"/>
+<map id="src/renderable/SimplePlane.h" name="src/renderable/SimplePlane.h">
+<area shape="rect" id="node2" href="$Vector3D_8h.html" title="../linalg/Vector3D.h" alt="" coords="34,304,169,331"/>
+<area shape="rect" id="node4" href="$Ray_8h.html" title="../Ray.h" alt="" coords="25,155,95,181"/>
+<area shape="rect" id="node5" href="$Material_8h.html" title="../Material.h" alt="" coords="97,229,188,256"/>
+<area shape="rect" id="node6" href="$RenderObject_8h.html" title="RenderObject.h" alt="" coords="199,80,313,107"/>
+<area shape="rect" id="node7" href="$IntersectionProperties_8h.html" title="../IntersectionProperties.h" alt="" coords="170,155,342,181"/>
 </map>

@@ -1,0 +1,6 @@
+<map id="CSGComponent" name="CSGComponent">
+<area shape="rect" id="node2" href="$classCSGDifference.html" title="A difference node in the CSG&#45;Tree. " alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node3" href="$classCSGIntersection.html" title="An intersection node in the CSG&#45;Tree. " alt="" coords="140,80,259,107"/>
+<area shape="rect" id="node4" href="$classCSGLeaf.html" title="Essentially a wrapper for DistanceEstimatedObject. They are leafs in the CSG&#45;Tree. " alt="" coords="283,80,359,107"/>
+<area shape="rect" id="node5" href="$classCSGUnion.html" title="A union node in the CSG&#45;Tree. " alt="" coords="383,80,469,107"/>
+</map>

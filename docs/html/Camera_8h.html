@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>RayTracer: src/Camera.h File Reference</title>
+<title>RayTracer: src/camera/Camera.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,12 +81,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_34519bff5ae72130fe71a8620cbf1fc0.html">camera</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Camera.h File Reference</div>  </div>
@@ -94,27 +95,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &quot;<a class="el" href="Ray_8h_source.html">Ray.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ray_8h_source.html">../Ray.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Camera.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="Camera_8h__incl.png" border="0" usemap="#src_2Camera_8h" alt=""/></div>
-<map name="src_2Camera_8h" id="src_2Camera_8h">
-<area shape="rect" id="node4" href="Ray_8h.html" title="Ray.h" alt="" coords="167,80,225,107"/>
-<area shape="rect" id="node5" href="Vector3D_8h.html" title="Vector3D.h" alt="" coords="152,155,240,181"/>
+<div class="center"><img src="Camera_8h__incl.png" border="0" usemap="#src_2camera_2Camera_8h" alt=""/></div>
+<map name="src_2camera_2Camera_8h" id="src_2camera_2Camera_8h">
+<area shape="rect" id="node4" href="Ray_8h.html" title="../Ray.h" alt="" coords="168,80,237,107"/>
+<area shape="rect" id="node5" href="Vector3D_8h.html" title="linalg/Vector3D.h" alt="" coords="141,155,264,181"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="Camera_8h__dep__incl.png" border="0" usemap="#src_2Camera_8hdep" alt=""/></div>
-<map name="src_2Camera_8hdep" id="src_2Camera_8hdep">
-<area shape="rect" id="node2" href="Camera_8cpp.html" title="src/Camera.cpp" alt="" coords="5,80,120,107"/>
-<area shape="rect" id="node3" href="Scene_8h.html" title="src/Scene.h" alt="" coords="145,80,237,107"/>
-<area shape="rect" id="node6" href="PinHoleCamera_8h.html" title="src/PinHoleCamera.h" alt="" coords="261,80,408,107"/>
-<area shape="rect" id="node4" href="main_8cpp.html" title="src/main.cpp" alt="" coords="205,155,302,181"/>
-<area shape="rect" id="node5" href="Scene_8cpp.html" title="src/Scene.cpp" alt="" coords="73,155,180,181"/>
-<area shape="rect" id="node7" href="PinHoleCamera_8cpp.html" title="src/PinHoleCamera.cpp" alt="" coords="326,155,487,181"/>
+<div class="center"><img src="Camera_8h__dep__incl.png" border="0" usemap="#src_2camera_2Camera_8hdep" alt=""/></div>
+<map name="src_2camera_2Camera_8hdep" id="src_2camera_2Camera_8hdep">
+<area shape="rect" id="node2" href="Camera_8cpp.html" title="src/camera/Camera.cpp" alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node3" href="PinHoleCamera_8h.html" title="src/camera/PinHoleCamera.h" alt="" coords="192,80,387,107"/>
+<area shape="rect" id="node6" href="Scene_8h.html" title="src/Scene.h" alt="" coords="411,80,503,107"/>
+<area shape="rect" id="node4" href="PinHoleCamera_8cpp.html" title="src/camera/PinHoleCamera.cpp" alt="" coords="112,155,320,181"/>
+<area shape="rect" id="node5" href="main_8cpp.html" title="src/main.cpp" alt="" coords="345,155,442,181"/>
+<area shape="rect" id="node7" href="Scene_8cpp.html" title="src/Scene.cpp" alt="" coords="467,155,573,181"/>
 </map>
 </div>
 </div>
@@ -122,27 +123,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCamera.html">Camera</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcamera_1_1Camera.html">camera::Camera</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacecamera"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecamera.html">camera</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a10624870db6b3fba52ad9c5d430308e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Camera_8h.html#a10624870db6b3fba52ad9c5d430308e1">Image</a> = std::vector&lt; std::vector&lt; <a class="el" href="classVector3D.html">Vector3D</a> &gt;&gt;</td></tr>
-<tr class="separator:a10624870db6b3fba52ad9c5d430308e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b7fb3d5582463a057ed122bf739b7d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecamera.html#a67b7fb3d5582463a057ed122bf739b7d">camera::Image</a> = std::vector&lt; std::vector&lt; <a class="el" href="classVector3D.html">Vector3D</a> &gt;&gt;</td></tr>
+<tr class="separator:a67b7fb3d5582463a057ed122bf739b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a10624870db6b3fba52ad9c5d430308e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="Background_8h.html#a10624870db6b3fba52ad9c5d430308e1">Image</a> =  std::vector&lt;std::vector&lt;<a class="el" href="classVector3D.html">Vector3D</a>&gt;&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

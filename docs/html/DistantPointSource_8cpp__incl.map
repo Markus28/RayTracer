@@ -1,6 +1,6 @@
 <map id="src/DistantPointSource.cpp" name="src/DistantPointSource.cpp">
 <area shape="rect" id="node2" href="$DistantPointSource_8h.html" title="DistantPointSource.h" alt="" coords="5,80,152,107"/>
 <area shape="rect" id="node3" href="$Light_8h.html" title="Light.h" alt="" coords="48,155,109,181"/>
-<area shape="rect" id="node4" href="$Vector3D_8h.html" title="Vector3D.h" alt="" coords="35,304,123,331"/>
+<area shape="rect" id="node4" href="$Vector3D_8h.html" title="linalg/Vector3D.h" alt="" coords="17,304,140,331"/>
 <area shape="rect" id="node6" href="$Ray_8h.html" title="Ray.h" alt="" coords="83,229,141,256"/>
 </map>

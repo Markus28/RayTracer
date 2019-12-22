@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['symcpp',['symcpp',['../namespacesymcpp.html',1,'']]]
+  ['linalg',['linalg',['../namespacelinalg.html',1,'']]]
 ];
