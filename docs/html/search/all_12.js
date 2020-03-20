@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['unaryoperator',['UnaryOperator',['../classsymcpp_1_1UnaryOperator.html',1,'symcpp']]],
-  ['unaryoperator',['UnaryOperator',['../classsymcpp_1_1UnaryOperator.html#a23a8172db96675ebf1114f4f3f41b6f1',1,'symcpp::UnaryOperator::UnaryOperator(const Expression &amp;a)'],['../classsymcpp_1_1UnaryOperator.html#ad3aa899567a080eeb41cb850de310178',1,'symcpp::UnaryOperator::UnaryOperator(std::unique_ptr&lt; Expression &gt; &amp;&amp;a)']]],
+  ['unaryoperator',['UnaryOperator',['../classsymcpp_1_1UnaryOperator.html',1,'symcpp::UnaryOperator'],['../classsymcpp_1_1UnaryOperator.html#a23a8172db96675ebf1114f4f3f41b6f1',1,'symcpp::UnaryOperator::UnaryOperator(const Expression &amp;a)'],['../classsymcpp_1_1UnaryOperator.html#ad3aa899567a080eeb41cb850de310178',1,'symcpp::UnaryOperator::UnaryOperator(std::unique_ptr&lt; Expression &gt; &amp;&amp;a)']]],
   ['unaryoperator_2ecpp',['UnaryOperator.cpp',['../UnaryOperator_8cpp.html',1,'']]],
   ['unaryoperator_2eh',['UnaryOperator.h',['../UnaryOperator_8h.html',1,'']]],
   ['unionize',['unionize',['../classCSG.html#a5b18efa47eb13a12633d0f5b5c1df165',1,'CSG::unionize(SDFObject *a)'],['../classCSG.html#aed60985ee9a6fa106a48da72bc14582d',1,'CSG::unionize(const CSG &amp;a)']]],

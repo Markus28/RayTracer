@@ -1,2 +1,4 @@
 <map id="Vector3D" name="Vector3D">
+<area shape="rect" id="node1" title="Vector in 3D space with usual arithmetics." alt="" coords="5,124,83,151"/>
+<area shape="rect" id="node2" title=" " alt="" coords="14,5,74,32"/>
 </map>

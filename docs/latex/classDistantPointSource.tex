@@ -1,12 +1,13 @@
 \hypertarget{classDistantPointSource}{}\section{Distant\+Point\+Source Class Reference}
-\label{classDistantPointSource}\index{Distant\+Point\+Source@{Distant\+Point\+Source}}
+\label{classDistantPointSource}\index{DistantPointSource@{DistantPointSource}}
 
 
 {\ttfamily \#include $<$Distant\+Point\+Source.\+h$>$}
 
 
 
-Inheritance diagram for Distant\+Point\+Source\+:\nopagebreak
+Inheritance diagram for Distant\+Point\+Source\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,109 +16,112 @@ Inheritance diagram for Distant\+Point\+Source\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Distant\+Point\+Source\+:\nopagebreak
+Collaboration diagram for Distant\+Point\+Source\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=202pt]{classDistantPointSource__coll__graph}
+\includegraphics[width=215pt]{classDistantPointSource__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classDistantPointSource_abb36a1b1376c1d895e11ba5a01466a0b}{Distant\+Point\+Source} (\hyperlink{classVector3D}{Vector3D} dir, \hyperlink{classVector3D}{Vector3D} \hyperlink{classDistantPointSource_af6bebc971d66f68f97045712db771411}{specular}, \hyperlink{classVector3D}{Vector3D} \hyperlink{classDistantPointSource_ab9a77355eb9d8fc8596d75c57de4fb5e}{diffuse})
+\mbox{\hyperlink{classDistantPointSource_abb36a1b1376c1d895e11ba5a01466a0b}{Distant\+Point\+Source}} (\mbox{\hyperlink{classVector3D}{Vector3D}} dir, \mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classDistantPointSource_af6bebc971d66f68f97045712db771411}{specular}}, \mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classDistantPointSource_ab9a77355eb9d8fc8596d75c57de4fb5e}{diffuse}})
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classDistantPointSource_ae3682ba2e553f38d6c9e4ee1bed9504f}{diffuse\+Component} (const \hyperlink{classVector3D}{Vector3D} \&point) const override
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classDistantPointSource_ae3682ba2e553f38d6c9e4ee1bed9504f}{diffuse\+Component}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&point) const override
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classDistantPointSource_a14f9c55d090d7d3f7999db70f5174a8c}{specular\+Component} (const \hyperlink{classVector3D}{Vector3D} \&point) const override
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classDistantPointSource_a14f9c55d090d7d3f7999db70f5174a8c}{specular\+Component}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&point) const override
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classDistantPointSource_a740ee32c41e2ef6deec1137c86f5b73a}{get\+Light\+Direction} (const \hyperlink{classVector3D}{Vector3D} \&pt) const override
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classDistantPointSource_a740ee32c41e2ef6deec1137c86f5b73a}{get\+Light\+Direction}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pt) const override
 \item 
-double \hyperlink{classDistantPointSource_a5d08b5655fc7fc09e5c0d2a0f3046e16}{get\+Distance} (\hyperlink{classVector3D}{Vector3D} point) const override
+double \mbox{\hyperlink{classDistantPointSource_a5d08b5655fc7fc09e5c0d2a0f3046e16}{get\+Distance}} (\mbox{\hyperlink{classVector3D}{Vector3D}} point) const override
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classDistantPointSource_a8ed31d9e26d44381c1bd22b5f1b15c6c}{direction}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classDistantPointSource_a8ed31d9e26d44381c1bd22b5f1b15c6c}{direction}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classDistantPointSource_af6bebc971d66f68f97045712db771411}{specular}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classDistantPointSource_af6bebc971d66f68f97045712db771411}{specular}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classDistantPointSource_ab9a77355eb9d8fc8596d75c57de4fb5e}{diffuse}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classDistantPointSource_ab9a77355eb9d8fc8596d75c57de4fb5e}{diffuse}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{Distant\+Point\+Source@{Distant\+Point\+Source}!Distant\+Point\+Source@{Distant\+Point\+Source}}
-\index{Distant\+Point\+Source@{Distant\+Point\+Source}!Distant\+Point\+Source@{Distant\+Point\+Source}}
-\subsubsection[{\texorpdfstring{Distant\+Point\+Source(\+Vector3\+D dir, Vector3\+D specular, Vector3\+D diffuse)}{DistantPointSource(Vector3D dir, Vector3D specular, Vector3D diffuse)}}]{\setlength{\rightskip}{0pt plus 5cm}Distant\+Point\+Source\+::\+Distant\+Point\+Source (
-\begin{DoxyParamCaption}
-\item[{{\bf Vector3D}}]{dir, }
-\item[{{\bf Vector3D}}]{specular, }
-\item[{{\bf Vector3D}}]{diffuse}
-\end{DoxyParamCaption}
-)}\hypertarget{classDistantPointSource_abb36a1b1376c1d895e11ba5a01466a0b}{}\label{classDistantPointSource_abb36a1b1376c1d895e11ba5a01466a0b}
+\mbox{\Hypertarget{classDistantPointSource_abb36a1b1376c1d895e11ba5a01466a0b}\label{classDistantPointSource_abb36a1b1376c1d895e11ba5a01466a0b}} 
+\index{DistantPointSource@{DistantPointSource}!DistantPointSource@{DistantPointSource}}
+\index{DistantPointSource@{DistantPointSource}!DistantPointSource@{DistantPointSource}}
+\subsubsection{\texorpdfstring{DistantPointSource()}{DistantPointSource()}}
+{\footnotesize\ttfamily Distant\+Point\+Source\+::\+Distant\+Point\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{dir,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{specular,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{diffuse }\end{DoxyParamCaption})}
+
 
 
 \subsection{Member Function Documentation}
-\index{Distant\+Point\+Source@{Distant\+Point\+Source}!diffuse\+Component@{diffuse\+Component}}
-\index{diffuse\+Component@{diffuse\+Component}!Distant\+Point\+Source@{Distant\+Point\+Source}}
-\subsubsection[{\texorpdfstring{diffuse\+Component(const Vector3\+D \&point) const override}{diffuseComponent(const Vector3D &point) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Distant\+Point\+Source\+::diffuse\+Component (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{point}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classDistantPointSource_ae3682ba2e553f38d6c9e4ee1bed9504f}{}\label{classDistantPointSource_ae3682ba2e553f38d6c9e4ee1bed9504f}
+\mbox{\Hypertarget{classDistantPointSource_ae3682ba2e553f38d6c9e4ee1bed9504f}\label{classDistantPointSource_ae3682ba2e553f38d6c9e4ee1bed9504f}} 
+\index{DistantPointSource@{DistantPointSource}!diffuseComponent@{diffuseComponent}}
+\index{diffuseComponent@{diffuseComponent}!DistantPointSource@{DistantPointSource}}
+\subsubsection{\texorpdfstring{diffuseComponent()}{diffuseComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Distant\+Point\+Source\+::diffuse\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classLight_af5dc859ada149ca54ec5088e1c33deb4}{Light}.
 
-\index{Distant\+Point\+Source@{Distant\+Point\+Source}!get\+Distance@{get\+Distance}}
-\index{get\+Distance@{get\+Distance}!Distant\+Point\+Source@{Distant\+Point\+Source}}
-\subsubsection[{\texorpdfstring{get\+Distance(\+Vector3\+D point) const override}{getDistance(Vector3D point) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double Distant\+Point\+Source\+::get\+Distance (
-\begin{DoxyParamCaption}
-\item[{{\bf Vector3D}}]{point}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classDistantPointSource_a5d08b5655fc7fc09e5c0d2a0f3046e16}{}\label{classDistantPointSource_a5d08b5655fc7fc09e5c0d2a0f3046e16}
+Implements \mbox{\hyperlink{classLight_af5dc859ada149ca54ec5088e1c33deb4}{Light}}.
 
-
-Implements \hyperlink{classLight_a4a7a5a9d4fc67da122c3ce75f6075093}{Light}.
-
-\index{Distant\+Point\+Source@{Distant\+Point\+Source}!get\+Light\+Direction@{get\+Light\+Direction}}
-\index{get\+Light\+Direction@{get\+Light\+Direction}!Distant\+Point\+Source@{Distant\+Point\+Source}}
-\subsubsection[{\texorpdfstring{get\+Light\+Direction(const Vector3\+D \&pt) const override}{getLightDirection(const Vector3D &pt) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Distant\+Point\+Source\+::get\+Light\+Direction (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pt}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classDistantPointSource_a740ee32c41e2ef6deec1137c86f5b73a}{}\label{classDistantPointSource_a740ee32c41e2ef6deec1137c86f5b73a}
+\mbox{\Hypertarget{classDistantPointSource_a5d08b5655fc7fc09e5c0d2a0f3046e16}\label{classDistantPointSource_a5d08b5655fc7fc09e5c0d2a0f3046e16}} 
+\index{DistantPointSource@{DistantPointSource}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!DistantPointSource@{DistantPointSource}}
+\subsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily double Distant\+Point\+Source\+::get\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classLight_ac075908cf22e9ca9f289c1226d133664}{Light}.
 
-\index{Distant\+Point\+Source@{Distant\+Point\+Source}!specular\+Component@{specular\+Component}}
-\index{specular\+Component@{specular\+Component}!Distant\+Point\+Source@{Distant\+Point\+Source}}
-\subsubsection[{\texorpdfstring{specular\+Component(const Vector3\+D \&point) const override}{specularComponent(const Vector3D &point) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Distant\+Point\+Source\+::specular\+Component (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{point}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classDistantPointSource_a14f9c55d090d7d3f7999db70f5174a8c}{}\label{classDistantPointSource_a14f9c55d090d7d3f7999db70f5174a8c}
+Implements \mbox{\hyperlink{classLight_a4a7a5a9d4fc67da122c3ce75f6075093}{Light}}.
+
+\mbox{\Hypertarget{classDistantPointSource_a740ee32c41e2ef6deec1137c86f5b73a}\label{classDistantPointSource_a740ee32c41e2ef6deec1137c86f5b73a}} 
+\index{DistantPointSource@{DistantPointSource}!getLightDirection@{getLightDirection}}
+\index{getLightDirection@{getLightDirection}!DistantPointSource@{DistantPointSource}}
+\subsubsection{\texorpdfstring{getLightDirection()}{getLightDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Distant\+Point\+Source\+::get\+Light\+Direction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classLight_a2a4cdf8081c2cab02757c2464610a32f}{Light}.
+
+Implements \mbox{\hyperlink{classLight_ac075908cf22e9ca9f289c1226d133664}{Light}}.
+
+\mbox{\Hypertarget{classDistantPointSource_a14f9c55d090d7d3f7999db70f5174a8c}\label{classDistantPointSource_a14f9c55d090d7d3f7999db70f5174a8c}} 
+\index{DistantPointSource@{DistantPointSource}!specularComponent@{specularComponent}}
+\index{specularComponent@{specularComponent}!DistantPointSource@{DistantPointSource}}
+\subsubsection{\texorpdfstring{specularComponent()}{specularComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Distant\+Point\+Source\+::specular\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classLight_a2a4cdf8081c2cab02757c2464610a32f}{Light}}.
 
 
 
 \subsection{Member Data Documentation}
-\index{Distant\+Point\+Source@{Distant\+Point\+Source}!diffuse@{diffuse}}
-\index{diffuse@{diffuse}!Distant\+Point\+Source@{Distant\+Point\+Source}}
-\subsubsection[{\texorpdfstring{diffuse}{diffuse}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Distant\+Point\+Source\+::diffuse\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classDistantPointSource_ab9a77355eb9d8fc8596d75c57de4fb5e}{}\label{classDistantPointSource_ab9a77355eb9d8fc8596d75c57de4fb5e}
-\index{Distant\+Point\+Source@{Distant\+Point\+Source}!direction@{direction}}
-\index{direction@{direction}!Distant\+Point\+Source@{Distant\+Point\+Source}}
-\subsubsection[{\texorpdfstring{direction}{direction}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Distant\+Point\+Source\+::direction\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classDistantPointSource_a8ed31d9e26d44381c1bd22b5f1b15c6c}{}\label{classDistantPointSource_a8ed31d9e26d44381c1bd22b5f1b15c6c}
-\index{Distant\+Point\+Source@{Distant\+Point\+Source}!specular@{specular}}
-\index{specular@{specular}!Distant\+Point\+Source@{Distant\+Point\+Source}}
-\subsubsection[{\texorpdfstring{specular}{specular}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Distant\+Point\+Source\+::specular\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classDistantPointSource_af6bebc971d66f68f97045712db771411}{}\label{classDistantPointSource_af6bebc971d66f68f97045712db771411}
+\mbox{\Hypertarget{classDistantPointSource_ab9a77355eb9d8fc8596d75c57de4fb5e}\label{classDistantPointSource_ab9a77355eb9d8fc8596d75c57de4fb5e}} 
+\index{DistantPointSource@{DistantPointSource}!diffuse@{diffuse}}
+\index{diffuse@{diffuse}!DistantPointSource@{DistantPointSource}}
+\subsubsection{\texorpdfstring{diffuse}{diffuse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Distant\+Point\+Source\+::diffuse\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDistantPointSource_a8ed31d9e26d44381c1bd22b5f1b15c6c}\label{classDistantPointSource_a8ed31d9e26d44381c1bd22b5f1b15c6c}} 
+\index{DistantPointSource@{DistantPointSource}!direction@{direction}}
+\index{direction@{direction}!DistantPointSource@{DistantPointSource}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Distant\+Point\+Source\+::direction\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDistantPointSource_af6bebc971d66f68f97045712db771411}\label{classDistantPointSource_af6bebc971d66f68f97045712db771411}} 
+\index{DistantPointSource@{DistantPointSource}!specular@{specular}}
+\index{specular@{specular}!DistantPointSource@{DistantPointSource}}
+\subsubsection{\texorpdfstring{specular}{specular}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Distant\+Point\+Source\+::specular\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{DistantPointSource_8h}{Distant\+Point\+Source.\+h}\item 
-src/\hyperlink{DistantPointSource_8cpp}{Distant\+Point\+Source.\+cpp}\end{DoxyCompactItemize}
+src/\mbox{\hyperlink{DistantPointSource_8h}{Distant\+Point\+Source.\+h}}\item 
+src/\mbox{\hyperlink{DistantPointSource_8cpp}{Distant\+Point\+Source.\+cpp}}\end{DoxyCompactItemize}

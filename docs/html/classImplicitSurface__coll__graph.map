@@ -1,9 +1,13 @@
 <map id="ImplicitSurface" name="ImplicitSurface">
-<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="5,275,123,301"/>
-<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="13,133,115,159"/>
-<area shape="rect" id="node7" href="$classMaterial.html" title="Typically stores information about material of RenderObjects. " alt="" coords="242,275,310,301"/>
-<area shape="rect" id="node8" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="332,133,409,159"/>
-<area shape="rect" id="node11" href="$classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="434,133,499,159"/>
-<area shape="rect" id="node5" href="$classsymcpp_1_1SymbolicGraph.html" title="User&#45;friendly wrapper for Expression. " alt="" coords="571,275,736,301"/>
-<area shape="rect" id="node9" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="417,275,516,301"/>
+<area shape="rect" id="node1" title="RenderObject for the surface implicitly given by F(x,y,z) = 0." alt="" coords="239,408,348,435"/>
+<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume." alt="" coords="5,275,123,301"/>
+<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects." alt="" coords="13,133,115,159"/>
+<area shape="rect" id="node4" title=" " alt="" coords="241,5,301,32"/>
+<area shape="rect" id="node7" href="$classMaterial.html" title="Typically stores information about material of RenderObjects." alt="" coords="259,275,327,301"/>
+<area shape="rect" id="node8" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics." alt="" coords="332,133,409,159"/>
+<area shape="rect" id="node11" href="$classInterval.html" title="The closed interval [mini, maxi]." alt="" coords="434,133,499,159"/>
+<area shape="rect" id="node5" href="$classsymcpp_1_1SymbolicGraph.html" title="User&#45;friendly wrapper for Expression." alt="" coords="571,275,736,301"/>
+<area shape="rect" id="node6" title=" " alt="" coords="614,125,754,167"/>
+<area shape="rect" id="node9" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects." alt="" coords="417,275,516,301"/>
+<area shape="rect" id="node10" title=" " alt="" coords="493,5,539,32"/>
 </map>

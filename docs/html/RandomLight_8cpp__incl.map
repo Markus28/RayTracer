@@ -1,6 +1,10 @@
 <map id="src/RandomLight.cpp" name="src/RandomLight.cpp">
-<area shape="rect" id="node2" href="$RandomLight_8h.html" title="RandomLight.h" alt="" coords="5,80,116,107"/>
-<area shape="rect" id="node3" href="$Vector3D_8h.html" title="linalg/Vector3D.h" alt="" coords="17,304,139,331"/>
-<area shape="rect" id="node5" href="$Light_8h.html" title="Light.h" alt="" coords="65,155,126,181"/>
-<area shape="rect" id="node6" href="$Ray_8h.html" title="Ray.h" alt="" coords="116,229,173,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="97,5,243,32"/>
+<area shape="rect" id="node2" href="$RandomLight_8h.html" title=" " alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="141,80,199,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="223,80,287,107"/>
+<area shape="rect" id="node3" href="$Vector3D_8h.html" title=" " alt="" coords="17,304,139,331"/>
+<area shape="rect" id="node5" href="$Light_8h.html" title=" " alt="" coords="65,155,126,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="42,379,114,405"/>
+<area shape="rect" id="node6" href="$Ray_8h.html" title=" " alt="" coords="116,229,171,256"/>
 </map>

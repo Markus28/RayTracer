@@ -1,5 +1,5 @@
 \hypertarget{classRenderObject}{}\section{Render\+Object Class Reference}
-\label{classRenderObject}\index{Render\+Object@{Render\+Object}}
+\label{classRenderObject}\index{RenderObject@{RenderObject}}
 
 
 Abstract class for renderable objects.  
@@ -22,39 +22,37 @@ Inheritance diagram for Render\+Object\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classIntersection}{Intersection} \hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{ray\+\_\+intersect} (const \hyperlink{classRay}{Ray} \&ray) const =0
+virtual \mbox{\hyperlink{classIntersection}{Intersection}} \mbox{\hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{ray\+\_\+intersect}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const =0
 \begin{DoxyCompactList}\small\item\em Method to detect intersection of ray and object. \end{DoxyCompactList}\item 
-virtual \hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classRenderObject_a792d36570e3264530872187ca1b0baca}{intersect\+\_\+properties} (const \hyperlink{classRay}{Ray} \&ray) const =0
+virtual \mbox{\hyperlink{classIntersectionProperties}{Intersection\+Properties}} \mbox{\hyperlink{classRenderObject_a792d36570e3264530872187ca1b0baca}{intersect\+\_\+properties}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const =0
 \begin{DoxyCompactList}\small\item\em If ray intersects this object, this method will provide additional Information. \end{DoxyCompactList}\item 
-virtual std\+::ostream \& \hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{print} (std\+::ostream \&sink) const =0
+virtual std\+::ostream \& \mbox{\hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{print}} (std\+::ostream \&sink) const =0
 \item 
-virtual \hyperlink{classRenderObject_ac4b49b10f81b6bd12d9a25f4d929d9d8}{$\sim$\+Render\+Object} ()
+virtual \mbox{\hyperlink{classRenderObject_ac4b49b10f81b6bd12d9a25f4d929d9d8}{$\sim$\+Render\+Object}} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Abstract class for renderable objects. 
 
-Every object that can be rendered by \hyperlink{classScene}{Scene} must implement the virtual methods 
+Every object that can be rendered by \mbox{\hyperlink{classScene}{Scene}} must implement the virtual methods 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{Render\+Object@{Render\+Object}!````~Render\+Object@{$\sim$\+Render\+Object}}
-\index{````~Render\+Object@{$\sim$\+Render\+Object}!Render\+Object@{Render\+Object}}
-\subsubsection[{\texorpdfstring{$\sim$\+Render\+Object()}{~RenderObject()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Render\+Object\+::$\sim$\+Render\+Object (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classRenderObject_ac4b49b10f81b6bd12d9a25f4d929d9d8}{}\label{classRenderObject_ac4b49b10f81b6bd12d9a25f4d929d9d8}
+\mbox{\Hypertarget{classRenderObject_ac4b49b10f81b6bd12d9a25f4d929d9d8}\label{classRenderObject_ac4b49b10f81b6bd12d9a25f4d929d9d8}} 
+\index{RenderObject@{RenderObject}!````~RenderObject@{$\sim$RenderObject}}
+\index{````~RenderObject@{$\sim$RenderObject}!RenderObject@{RenderObject}}
+\subsubsection{\texorpdfstring{$\sim$RenderObject()}{~RenderObject()}}
+{\footnotesize\ttfamily virtual Render\+Object\+::$\sim$\+Render\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
 
 
 \subsection{Member Function Documentation}
-\index{Render\+Object@{Render\+Object}!intersect\+\_\+properties@{intersect\+\_\+properties}}
-\index{intersect\+\_\+properties@{intersect\+\_\+properties}!Render\+Object@{Render\+Object}}
-\subsubsection[{\texorpdfstring{intersect\+\_\+properties(const Ray \&ray) const =0}{intersect_properties(const Ray &ray) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Intersection\+Properties} Render\+Object\+::intersect\+\_\+properties (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classRenderObject_a792d36570e3264530872187ca1b0baca}{}\label{classRenderObject_a792d36570e3264530872187ca1b0baca}
+\mbox{\Hypertarget{classRenderObject_a792d36570e3264530872187ca1b0baca}\label{classRenderObject_a792d36570e3264530872187ca1b0baca}} 
+\index{RenderObject@{RenderObject}!intersect\_properties@{intersect\_properties}}
+\index{intersect\_properties@{intersect\_properties}!RenderObject@{RenderObject}}
+\subsubsection{\texorpdfstring{intersect\_properties()}{intersect\_properties()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classIntersectionProperties}{Intersection\+Properties}} Render\+Object\+::intersect\+\_\+properties (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 
 
 If ray intersects this object, this method will provide additional Information. 
@@ -67,30 +65,28 @@ Note, that even if ray\+Intersect detected an intersection, this method might no
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\hyperlink{classIntersectionProperties}{Intersection\+Properties} object containing the surface normal and material information 
+\mbox{\hyperlink{classIntersectionProperties}{Intersection\+Properties}} object containing the surface normal and material information 
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}{Binary\+Volume\+Hierarchy}, \hyperlink{classTriangle_abbca4150897005e47c87758833479c87}{Triangle}, \hyperlink{classImplicitSurface_a13aa500c7dbcd75e77b43fba741b1ec8}{Implicit\+Surface}, \hyperlink{classSimplePlane_a29180f657d6932226dc91ebe92143608}{Simple\+Plane}, and \hyperlink{classSimpleSphere_a4c71f3e8197f40c18cee7508f2fd3e9c}{Simple\+Sphere}.
+Implemented in \mbox{\hyperlink{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}{Binary\+Volume\+Hierarchy}}, \mbox{\hyperlink{classTriangle_abbca4150897005e47c87758833479c87}{Triangle}}, \mbox{\hyperlink{classImplicitSurface_a13aa500c7dbcd75e77b43fba741b1ec8}{Implicit\+Surface}}, \mbox{\hyperlink{classSimplePlane_a29180f657d6932226dc91ebe92143608}{Simple\+Plane}}, and \mbox{\hyperlink{classSimpleSphere_a4c71f3e8197f40c18cee7508f2fd3e9c}{Simple\+Sphere}}.
 
-\index{Render\+Object@{Render\+Object}!print@{print}}
-\index{print@{print}!Render\+Object@{Render\+Object}}
-\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const =0}{print(std::ostream &sink) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::ostream\& Render\+Object\+::print (
-\begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{sink}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{}\label{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}
+\mbox{\Hypertarget{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}\label{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}} 
+\index{RenderObject@{RenderObject}!print@{print}}
+\index{print@{print}!RenderObject@{RenderObject}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual std\+::ostream\& Render\+Object\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{sink }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
-Implemented in \hyperlink{classBinaryVolumeHierarchy_ad92d27372aef59591ddc239685ca770d}{Binary\+Volume\+Hierarchy}, \hyperlink{classTriangle_af5089786289dbeb3a5f41affb4edb569}{Triangle}, \hyperlink{classImplicitSurface_a2267c88829c97c12ff8f7d250ce94802}{Implicit\+Surface}, \hyperlink{classSimplePlane_afc8014126bb264e11e7b2b470a8a90a1}{Simple\+Plane}, and \hyperlink{classSimpleSphere_a2da3c9e41a8d8e6ec4012343ea0fa793}{Simple\+Sphere}.
 
-\index{Render\+Object@{Render\+Object}!ray\+\_\+intersect@{ray\+\_\+intersect}}
-\index{ray\+\_\+intersect@{ray\+\_\+intersect}!Render\+Object@{Render\+Object}}
-\subsubsection[{\texorpdfstring{ray\+\_\+intersect(const Ray \&ray) const =0}{ray_intersect(const Ray &ray) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Intersection} Render\+Object\+::ray\+\_\+intersect (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{}\label{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}
+Implemented in \mbox{\hyperlink{classBinaryVolumeHierarchy_ad92d27372aef59591ddc239685ca770d}{Binary\+Volume\+Hierarchy}}, \mbox{\hyperlink{classTriangle_af5089786289dbeb3a5f41affb4edb569}{Triangle}}, \mbox{\hyperlink{classImplicitSurface_a2267c88829c97c12ff8f7d250ce94802}{Implicit\+Surface}}, \mbox{\hyperlink{classSimplePlane_afc8014126bb264e11e7b2b470a8a90a1}{Simple\+Plane}}, and \mbox{\hyperlink{classSimpleSphere_a2da3c9e41a8d8e6ec4012343ea0fa793}{Simple\+Sphere}}.
+
+\mbox{\Hypertarget{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}\label{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}} 
+\index{RenderObject@{RenderObject}!ray\_intersect@{ray\_intersect}}
+\index{ray\_intersect@{ray\_intersect}!RenderObject@{RenderObject}}
+\subsubsection{\texorpdfstring{ray\_intersect()}{ray\_intersect()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classIntersection}{Intersection}} Render\+Object\+::ray\+\_\+intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 
 
 Method to detect intersection of ray and object. 
@@ -101,14 +97,14 @@ Method to detect intersection of ray and object.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\hyperlink{classIntersection}{Intersection} object containing distance to intersection and pointer to intersected object 
+\mbox{\hyperlink{classIntersection}{Intersection}} object containing distance to intersection and pointer to intersected object 
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}{Binary\+Volume\+Hierarchy}, \hyperlink{classSDFObject_a3870048585282b8176a05ca46ab8695d}{S\+D\+F\+Object}, \hyperlink{classImplicitSurface_ad9443ffe39f5c3d65e009aa2dbda81f0}{Implicit\+Surface}, \hyperlink{classTriangle_a1ee77d1d4ddeae939e08711b30dbf4f0}{Triangle}, \hyperlink{classSimpleSphere_abb50f169da7cb2acab05c8f9d56cd1e8}{Simple\+Sphere}, and \hyperlink{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}{Simple\+Plane}.
+Implemented in \mbox{\hyperlink{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}{Binary\+Volume\+Hierarchy}}, \mbox{\hyperlink{classSDFObject_a3870048585282b8176a05ca46ab8695d}{S\+D\+F\+Object}}, \mbox{\hyperlink{classImplicitSurface_ad9443ffe39f5c3d65e009aa2dbda81f0}{Implicit\+Surface}}, \mbox{\hyperlink{classTriangle_a1ee77d1d4ddeae939e08711b30dbf4f0}{Triangle}}, \mbox{\hyperlink{classSimpleSphere_abb50f169da7cb2acab05c8f9d56cd1e8}{Simple\+Sphere}}, and \mbox{\hyperlink{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}{Simple\+Plane}}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{RenderObject_8h}{Render\+Object.\+h}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{RenderObject_8h}{Render\+Object.\+h}}\end{DoxyCompactItemize}

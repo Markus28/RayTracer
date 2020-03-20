@@ -1,4 +1,5 @@
 <map id="Triangle" name="Triangle">
-<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="5,80,123,107"/>
-<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="13,5,115,32"/>
+<area shape="rect" id="node1" title="A Triangle implementing BoundedVolume, RenderObject." alt="" coords="30,155,98,181"/>
+<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume." alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects." alt="" coords="13,5,115,32"/>
 </map>

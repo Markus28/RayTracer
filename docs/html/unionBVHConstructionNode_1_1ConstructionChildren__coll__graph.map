@@ -1,4 +1,6 @@
 <map id="BVHConstructionNode::ConstructionChildren" name="BVHConstructionNode::ConstructionChildren">
-<area shape="rect" id="node3" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="223,89,341,115"/>
-<area shape="rect" id="node4" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="231,5,333,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="86,185,241,227"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,199,123"/>
+<area shape="rect" id="node3" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume." alt="" coords="223,89,341,115"/>
+<area shape="rect" id="node4" href="$classRenderObject.html" title="Abstract class for renderable objects." alt="" coords="231,5,333,32"/>
 </map>

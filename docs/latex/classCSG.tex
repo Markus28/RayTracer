@@ -1,5 +1,5 @@
 \hypertarget{classCSG}{}\section{C\+SG Class Reference}
-\label{classCSG}\index{C\+SG@{C\+SG}}
+\label{classCSG}\index{CSG@{CSG}}
 
 
 This renderable object represents a constructive solid geometry.  
@@ -32,159 +32,149 @@ Collaboration diagram for C\+SG\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classCSG_a09bbc9336539ecf40021a9b3ec224afd}{C\+SG} ()
+\mbox{\hyperlink{classCSG_a09bbc9336539ecf40021a9b3ec224afd}{C\+SG}} ()
 \item 
-\hyperlink{classCSG_a9214110752f4bfead01357b5f1f7522e}{C\+SG} (const \hyperlink{classCSG}{C\+SG} \&other)
+\mbox{\hyperlink{classCSG_a9214110752f4bfead01357b5f1f7522e}{C\+SG}} (const \mbox{\hyperlink{classCSG}{C\+SG}} \&other)
 \item 
-\hyperlink{classCSG}{C\+SG} \& \hyperlink{classCSG_a2fed963769aedb056d3f214bfe1413be}{operator=} (const \hyperlink{classCSG}{C\+SG} \&other)
+\mbox{\hyperlink{classCSG}{C\+SG}} \& \mbox{\hyperlink{classCSG_a2fed963769aedb056d3f214bfe1413be}{operator=}} (const \mbox{\hyperlink{classCSG}{C\+SG}} \&other)
 \item 
-\hyperlink{classCSG_a93e83c940758238fc7b188555b5a3787}{C\+SG} (\hyperlink{classSDFObject}{S\+D\+F\+Object} $\ast$object)
+\mbox{\hyperlink{classCSG_a93e83c940758238fc7b188555b5a3787}{C\+SG}} (\mbox{\hyperlink{classSDFObject}{S\+D\+F\+Object}} $\ast$object)
 \item 
-void \hyperlink{classCSG_a5b18efa47eb13a12633d0f5b5c1df165}{unionize} (\hyperlink{classSDFObject}{S\+D\+F\+Object} $\ast$a)
+void \mbox{\hyperlink{classCSG_a5b18efa47eb13a12633d0f5b5c1df165}{unionize}} (\mbox{\hyperlink{classSDFObject}{S\+D\+F\+Object}} $\ast$a)
 \item 
-void \hyperlink{classCSG_ac44266e75a0b36097cca17e267df9873}{intersect} (\hyperlink{classSDFObject}{S\+D\+F\+Object} $\ast$a)
+void \mbox{\hyperlink{classCSG_ac44266e75a0b36097cca17e267df9873}{intersect}} (\mbox{\hyperlink{classSDFObject}{S\+D\+F\+Object}} $\ast$a)
 \item 
-void \hyperlink{classCSG_a2f7550a90e950e8b143e4556b03a2a32}{subtract} (\hyperlink{classSDFObject}{S\+D\+F\+Object} $\ast$a)
+void \mbox{\hyperlink{classCSG_a2f7550a90e950e8b143e4556b03a2a32}{subtract}} (\mbox{\hyperlink{classSDFObject}{S\+D\+F\+Object}} $\ast$a)
 \item 
-void \hyperlink{classCSG_aed60985ee9a6fa106a48da72bc14582d}{unionize} (const \hyperlink{classCSG}{C\+SG} \&a)
+void \mbox{\hyperlink{classCSG_aed60985ee9a6fa106a48da72bc14582d}{unionize}} (const \mbox{\hyperlink{classCSG}{C\+SG}} \&a)
 \item 
-void \hyperlink{classCSG_a1a3764a10ea7681673844ed106681569}{intersect} (const \hyperlink{classCSG}{C\+SG} \&a)
+void \mbox{\hyperlink{classCSG_a1a3764a10ea7681673844ed106681569}{intersect}} (const \mbox{\hyperlink{classCSG}{C\+SG}} \&a)
 \item 
-void \hyperlink{classCSG_a34a2197ec5dca9d43f88cfacbffdda53}{subtract} (const \hyperlink{classCSG}{C\+SG} \&a)
+void \mbox{\hyperlink{classCSG_a34a2197ec5dca9d43f88cfacbffdda53}{subtract}} (const \mbox{\hyperlink{classCSG}{C\+SG}} \&a)
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classCSG_abf2daf252f0b53f094ee5336eafb57ac}{get\+\_\+bounds} () const override
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classCSG_abf2daf252f0b53f094ee5336eafb57ac}{get\+\_\+bounds}} () const override
 \item 
-\hyperlink{classCSG_a37f03d2821dec9ee614ec6407758ba17}{$\sim$\+C\+SG} () override
+\mbox{\hyperlink{classCSG_a37f03d2821dec9ee614ec6407758ba17}{$\sim$\+C\+SG}} () override
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-double \hyperlink{classCSG_a7dc0853ae99ffd54ea99eccdc5fd5acf}{distance\+\_\+bound} (const \hyperlink{classVector3D}{Vector3D} \&pos) const override
+double \mbox{\hyperlink{classCSG_a7dc0853ae99ffd54ea99eccdc5fd5acf}{distance\+\_\+bound}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pos) const override
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSG_ae40dbc8aa97bef8f149c1b9d69e069c5}{root}
+\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$ \mbox{\hyperlink{classCSG_ae40dbc8aa97bef8f149c1b9d69e069c5}{root}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 This renderable object represents a constructive solid geometry. 
 
-A \hyperlink{classCSG}{C\+SG} consists of a set of primitives, S\+D\+F\+Objects, which are composed into one object by taking their union, intersection or difference. The sequence of operations is stored as a tree, \hyperlink{classCSG}{C\+SG} contains a pointer to the root of this tree. Nodes in this tree implement the abstract class \hyperlink{classCSGComponent}{C\+S\+G\+Component}. 
+A \mbox{\hyperlink{classCSG}{C\+SG}} consists of a set of primitives, S\+D\+F\+Objects, which are composed into one object by taking their union, intersection or difference. The sequence of operations is stored as a tree, \mbox{\hyperlink{classCSG}{C\+SG}} contains a pointer to the root of this tree. Nodes in this tree implement the abstract class \mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}}. 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{C\+SG@{C\+SG}!C\+SG@{C\+SG}}
-\index{C\+SG@{C\+SG}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{C\+S\+G()}{CSG()}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+::\+C\+SG (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classCSG_a09bbc9336539ecf40021a9b3ec224afd}{}\label{classCSG_a09bbc9336539ecf40021a9b3ec224afd}
-\index{C\+SG@{C\+SG}!C\+SG@{C\+SG}}
-\index{C\+SG@{C\+SG}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{C\+S\+G(const C\+S\+G \&other)}{CSG(const CSG &other)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+::\+C\+SG (
-\begin{DoxyParamCaption}
-\item[{const {\bf C\+SG} \&}]{other}
-\end{DoxyParamCaption}
-)}\hypertarget{classCSG_a9214110752f4bfead01357b5f1f7522e}{}\label{classCSG_a9214110752f4bfead01357b5f1f7522e}
-\index{C\+SG@{C\+SG}!C\+SG@{C\+SG}}
-\index{C\+SG@{C\+SG}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{C\+S\+G(\+S\+D\+F\+Object $\ast$object)}{CSG(SDFObject *object)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+::\+C\+SG (
-\begin{DoxyParamCaption}
-\item[{{\bf S\+D\+F\+Object} $\ast$}]{object}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classCSG_a93e83c940758238fc7b188555b5a3787}{}\label{classCSG_a93e83c940758238fc7b188555b5a3787}
-\index{C\+SG@{C\+SG}!````~C\+SG@{$\sim$\+C\+SG}}
-\index{````~C\+SG@{$\sim$\+C\+SG}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{$\sim$\+C\+S\+G() override}{~CSG() override}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+::$\sim$\+C\+SG (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classCSG_a37f03d2821dec9ee614ec6407758ba17}{}\label{classCSG_a37f03d2821dec9ee614ec6407758ba17}
+\mbox{\Hypertarget{classCSG_a09bbc9336539ecf40021a9b3ec224afd}\label{classCSG_a09bbc9336539ecf40021a9b3ec224afd}} 
+\index{CSG@{CSG}!CSG@{CSG}}
+\index{CSG@{CSG}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{CSG()}{CSG()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily C\+S\+G\+::\+C\+SG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCSG_a9214110752f4bfead01357b5f1f7522e}\label{classCSG_a9214110752f4bfead01357b5f1f7522e}} 
+\index{CSG@{CSG}!CSG@{CSG}}
+\index{CSG@{CSG}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{CSG()}{CSG()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily C\+S\+G\+::\+C\+SG (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCSG}{C\+SG}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCSG_a93e83c940758238fc7b188555b5a3787}\label{classCSG_a93e83c940758238fc7b188555b5a3787}} 
+\index{CSG@{CSG}!CSG@{CSG}}
+\index{CSG@{CSG}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{CSG()}{CSG()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily C\+S\+G\+::\+C\+SG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSDFObject}{S\+D\+F\+Object}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classCSG_a37f03d2821dec9ee614ec6407758ba17}\label{classCSG_a37f03d2821dec9ee614ec6407758ba17}} 
+\index{CSG@{CSG}!````~CSG@{$\sim$CSG}}
+\index{````~CSG@{$\sim$CSG}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{$\sim$CSG()}{~CSG()}}
+{\footnotesize\ttfamily C\+S\+G\+::$\sim$\+C\+SG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
 
 
 \subsection{Member Function Documentation}
-\index{C\+SG@{C\+SG}!distance\+\_\+bound@{distance\+\_\+bound}}
-\index{distance\+\_\+bound@{distance\+\_\+bound}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{distance\+\_\+bound(const Vector3\+D \&pos) const override}{distance_bound(const Vector3D &pos) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double C\+S\+G\+::distance\+\_\+bound (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pos}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classCSG_a7dc0853ae99ffd54ea99eccdc5fd5acf}{}\label{classCSG_a7dc0853ae99ffd54ea99eccdc5fd5acf}
+\mbox{\Hypertarget{classCSG_a7dc0853ae99ffd54ea99eccdc5fd5acf}\label{classCSG_a7dc0853ae99ffd54ea99eccdc5fd5acf}} 
+\index{CSG@{CSG}!distance\_bound@{distance\_bound}}
+\index{distance\_bound@{distance\_bound}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{distance\_bound()}{distance\_bound()}}
+{\footnotesize\ttfamily double C\+S\+G\+::distance\+\_\+bound (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}{S\+D\+F\+Object}.
 
-\index{C\+SG@{C\+SG}!get\+\_\+bounds@{get\+\_\+bounds}}
-\index{get\+\_\+bounds@{get\+\_\+bounds}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} C\+S\+G\+::get\+\_\+bounds (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSG_abf2daf252f0b53f094ee5336eafb57ac}{}\label{classCSG_abf2daf252f0b53f094ee5336eafb57ac}
+Implements \mbox{\hyperlink{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}{S\+D\+F\+Object}}.
+
+\mbox{\Hypertarget{classCSG_abf2daf252f0b53f094ee5336eafb57ac}\label{classCSG_abf2daf252f0b53f094ee5336eafb57ac}} 
+\index{CSG@{CSG}!get\_bounds@{get\_bounds}}
+\index{get\_bounds@{get\_bounds}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{get\_bounds()}{get\_bounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} C\+S\+G\+::get\+\_\+bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}.
 
-\index{C\+SG@{C\+SG}!intersect@{intersect}}
-\index{intersect@{intersect}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{intersect(\+S\+D\+F\+Object $\ast$a)}{intersect(SDFObject *a)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+S\+G\+::intersect (
-\begin{DoxyParamCaption}
-\item[{{\bf S\+D\+F\+Object} $\ast$}]{a}
-\end{DoxyParamCaption}
-)}\hypertarget{classCSG_ac44266e75a0b36097cca17e267df9873}{}\label{classCSG_ac44266e75a0b36097cca17e267df9873}
-\index{C\+SG@{C\+SG}!intersect@{intersect}}
-\index{intersect@{intersect}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{intersect(const C\+S\+G \&a)}{intersect(const CSG &a)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+S\+G\+::intersect (
-\begin{DoxyParamCaption}
-\item[{const {\bf C\+SG} \&}]{a}
-\end{DoxyParamCaption}
-)}\hypertarget{classCSG_a1a3764a10ea7681673844ed106681569}{}\label{classCSG_a1a3764a10ea7681673844ed106681569}
-\index{C\+SG@{C\+SG}!operator=@{operator=}}
-\index{operator=@{operator=}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{operator=(const C\+S\+G \&other)}{operator=(const CSG &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+SG} \& C\+S\+G\+::operator= (
-\begin{DoxyParamCaption}
-\item[{const {\bf C\+SG} \&}]{other}
-\end{DoxyParamCaption}
-)}\hypertarget{classCSG_a2fed963769aedb056d3f214bfe1413be}{}\label{classCSG_a2fed963769aedb056d3f214bfe1413be}
-\index{C\+SG@{C\+SG}!subtract@{subtract}}
-\index{subtract@{subtract}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{subtract(\+S\+D\+F\+Object $\ast$a)}{subtract(SDFObject *a)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+S\+G\+::subtract (
-\begin{DoxyParamCaption}
-\item[{{\bf S\+D\+F\+Object} $\ast$}]{a}
-\end{DoxyParamCaption}
-)}\hypertarget{classCSG_a2f7550a90e950e8b143e4556b03a2a32}{}\label{classCSG_a2f7550a90e950e8b143e4556b03a2a32}
-\index{C\+SG@{C\+SG}!subtract@{subtract}}
-\index{subtract@{subtract}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{subtract(const C\+S\+G \&a)}{subtract(const CSG &a)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+S\+G\+::subtract (
-\begin{DoxyParamCaption}
-\item[{const {\bf C\+SG} \&}]{a}
-\end{DoxyParamCaption}
-)}\hypertarget{classCSG_a34a2197ec5dca9d43f88cfacbffdda53}{}\label{classCSG_a34a2197ec5dca9d43f88cfacbffdda53}
-\index{C\+SG@{C\+SG}!unionize@{unionize}}
-\index{unionize@{unionize}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{unionize(\+S\+D\+F\+Object $\ast$a)}{unionize(SDFObject *a)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+S\+G\+::unionize (
-\begin{DoxyParamCaption}
-\item[{{\bf S\+D\+F\+Object} $\ast$}]{a}
-\end{DoxyParamCaption}
-)}\hypertarget{classCSG_a5b18efa47eb13a12633d0f5b5c1df165}{}\label{classCSG_a5b18efa47eb13a12633d0f5b5c1df165}
-\index{C\+SG@{C\+SG}!unionize@{unionize}}
-\index{unionize@{unionize}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{unionize(const C\+S\+G \&a)}{unionize(const CSG &a)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+S\+G\+::unionize (
-\begin{DoxyParamCaption}
-\item[{const {\bf C\+SG} \&}]{a}
-\end{DoxyParamCaption}
-)}\hypertarget{classCSG_aed60985ee9a6fa106a48da72bc14582d}{}\label{classCSG_aed60985ee9a6fa106a48da72bc14582d}
+Implements \mbox{\hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}}.
+
+\mbox{\Hypertarget{classCSG_ac44266e75a0b36097cca17e267df9873}\label{classCSG_ac44266e75a0b36097cca17e267df9873}} 
+\index{CSG@{CSG}!intersect@{intersect}}
+\index{intersect@{intersect}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+S\+G\+::intersect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSDFObject}{S\+D\+F\+Object}} $\ast$}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCSG_a1a3764a10ea7681673844ed106681569}\label{classCSG_a1a3764a10ea7681673844ed106681569}} 
+\index{CSG@{CSG}!intersect@{intersect}}
+\index{intersect@{intersect}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+S\+G\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCSG}{C\+SG}} \&}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCSG_a2fed963769aedb056d3f214bfe1413be}\label{classCSG_a2fed963769aedb056d3f214bfe1413be}} 
+\index{CSG@{CSG}!operator=@{operator=}}
+\index{operator=@{operator=}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCSG}{C\+SG}} \& C\+S\+G\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCSG}{C\+SG}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCSG_a2f7550a90e950e8b143e4556b03a2a32}\label{classCSG_a2f7550a90e950e8b143e4556b03a2a32}} 
+\index{CSG@{CSG}!subtract@{subtract}}
+\index{subtract@{subtract}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+S\+G\+::subtract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSDFObject}{S\+D\+F\+Object}} $\ast$}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCSG_a34a2197ec5dca9d43f88cfacbffdda53}\label{classCSG_a34a2197ec5dca9d43f88cfacbffdda53}} 
+\index{CSG@{CSG}!subtract@{subtract}}
+\index{subtract@{subtract}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+S\+G\+::subtract (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCSG}{C\+SG}} \&}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCSG_a5b18efa47eb13a12633d0f5b5c1df165}\label{classCSG_a5b18efa47eb13a12633d0f5b5c1df165}} 
+\index{CSG@{CSG}!unionize@{unionize}}
+\index{unionize@{unionize}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{unionize()}{unionize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+S\+G\+::unionize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSDFObject}{S\+D\+F\+Object}} $\ast$}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCSG_aed60985ee9a6fa106a48da72bc14582d}\label{classCSG_aed60985ee9a6fa106a48da72bc14582d}} 
+\index{CSG@{CSG}!unionize@{unionize}}
+\index{unionize@{unionize}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{unionize()}{unionize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+S\+G\+::unionize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCSG}{C\+SG}} \&}]{a }\end{DoxyParamCaption})}
+
 
 
 \subsection{Member Data Documentation}
-\index{C\+SG@{C\+SG}!root@{root}}
-\index{root@{root}!C\+SG@{C\+SG}}
-\subsubsection[{\texorpdfstring{root}{root}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component}$\ast$ C\+S\+G\+::root\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCSG_ae40dbc8aa97bef8f149c1b9d69e069c5}{}\label{classCSG_ae40dbc8aa97bef8f149c1b9d69e069c5}
+\mbox{\Hypertarget{classCSG_ae40dbc8aa97bef8f149c1b9d69e069c5}\label{classCSG_ae40dbc8aa97bef8f149c1b9d69e069c5}} 
+\index{CSG@{CSG}!root@{root}}
+\index{root@{root}!CSG@{CSG}}
+\subsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}}$\ast$ C\+S\+G\+::root\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{CSG_8h}{C\+S\+G.\+h}\item 
-src/renderable/\hyperlink{CSG_8cpp}{C\+S\+G.\+cpp}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{CSG_8h}{C\+S\+G.\+h}}\item 
+src/renderable/\mbox{\hyperlink{CSG_8cpp}{C\+S\+G.\+cpp}}\end{DoxyCompactItemize}

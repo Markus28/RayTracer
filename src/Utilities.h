@@ -110,7 +110,7 @@ namespace utility {
         double solution2;
     };
 
-    const double EPSILON = 10E-9;
+    const double EPSILON = 1E-5;
 
     bool equals_about(const double &test, const double &truth, const double &epsilon);
 

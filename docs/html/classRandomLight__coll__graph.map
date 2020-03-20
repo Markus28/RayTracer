@@ -1,4 +1,6 @@
 <map id="RandomLight" name="RandomLight">
-<area shape="rect" id="node2" href="$classLight.html" title="Abstract class for lights used in Scene. " alt="" coords="96,244,147,271"/>
-<area shape="rect" id="node3" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="5,124,83,151"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,351,104,377"/>
+<area shape="rect" id="node2" href="$classLight.html" title="Abstract class for lights used in Scene." alt="" coords="112,244,163,271"/>
+<area shape="rect" id="node3" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics." alt="" coords="21,124,99,151"/>
+<area shape="rect" id="node4" title=" " alt="" coords="30,5,90,32"/>
 </map>

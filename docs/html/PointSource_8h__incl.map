@@ -1,5 +1,7 @@
 <map id="src/PointSource.h" name="src/PointSource.h">
-<area shape="rect" id="node2" href="$Light_8h.html" title="Light.h" alt="" coords="38,80,99,107"/>
-<area shape="rect" id="node3" href="$Vector3D_8h.html" title="linalg/Vector3D.h" alt="" coords="7,229,130,256"/>
-<area shape="rect" id="node5" href="$Ray_8h.html" title="Ray.h" alt="" coords="73,155,131,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node2" href="$Light_8h.html" title=" " alt="" coords="38,80,99,107"/>
+<area shape="rect" id="node3" href="$Vector3D_8h.html" title=" " alt="" coords="7,229,130,256"/>
+<area shape="rect" id="node5" href="$Ray_8h.html" title=" " alt="" coords="75,155,129,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="33,304,105,331"/>
 </map>

@@ -1,5 +1,5 @@
 \hypertarget{classBinaryVolumeHierarchy}{}\section{Binary\+Volume\+Hierarchy Class Reference}
-\label{classBinaryVolumeHierarchy}\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
+\label{classBinaryVolumeHierarchy}\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
 
 
 Acceleration structure for ensemble of bounded volumes.  
@@ -11,7 +11,8 @@ Acceleration structure for ensemble of bounded volumes.
 
 
 
-Inheritance diagram for Binary\+Volume\+Hierarchy\+:\nopagebreak
+Inheritance diagram for Binary\+Volume\+Hierarchy\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Inheritance diagram for Binary\+Volume\+Hierarchy\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Binary\+Volume\+Hierarchy\+:\nopagebreak
+Collaboration diagram for Binary\+Volume\+Hierarchy\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,35 +32,35 @@ Collaboration diagram for Binary\+Volume\+Hierarchy\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classBinaryVolumeHierarchy_afb1953933b78a2005884a7a34cb64519}{Binary\+Volume\+Hierarchy} (std\+::vector$<$ \hyperlink{classBoundedVolume}{Bounded\+Volume} $\ast$ $>$\+::iterator b, std\+::vector$<$ \hyperlink{classBoundedVolume}{Bounded\+Volume} $\ast$ $>$\+::iterator e)
+\mbox{\hyperlink{classBinaryVolumeHierarchy_afb1953933b78a2005884a7a34cb64519}{Binary\+Volume\+Hierarchy}} (std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator b, std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator e)
 \item 
-\hyperlink{classIntersection}{Intersection} \hyperlink{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}{ray\+\_\+intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
+\mbox{\hyperlink{classIntersection}{Intersection}} \mbox{\hyperlink{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}{ray\+\_\+intersect}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const override
 \begin{DoxyCompactList}\small\item\em Method to detect intersection of ray and object. \end{DoxyCompactList}\item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classBinaryVolumeHierarchy_aaec23515bc9d81ccc9115489aed8808f}{get\+\_\+bounds} () const override
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classBinaryVolumeHierarchy_aaec23515bc9d81ccc9115489aed8808f}{get\+\_\+bounds}} () const override
 \item 
-std\+::ostream \& \hyperlink{classBinaryVolumeHierarchy_ad92d27372aef59591ddc239685ca770d}{print} (std\+::ostream \&sink) const override
+std\+::ostream \& \mbox{\hyperlink{classBinaryVolumeHierarchy_ad92d27372aef59591ddc239685ca770d}{print}} (std\+::ostream \&sink) const override
 \item 
-\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}{intersect\+\_\+properties} (const \hyperlink{classRay}{Ray} \&ray) const override
+\mbox{\hyperlink{classIntersectionProperties}{Intersection\+Properties}} \mbox{\hyperlink{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}{intersect\+\_\+properties}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const override
 \begin{DoxyCompactList}\small\item\em If ray intersects this object, this method will provide additional Information. \end{DoxyCompactList}\item 
-unsigned int \hyperlink{classBinaryVolumeHierarchy_a4cf4c6f13a9bd3b852cf40f3ee6889c6}{get\+\_\+deepest\+\_\+branch} () const 
+unsigned int \mbox{\hyperlink{classBinaryVolumeHierarchy_a07a44c476538de97a8c6a2377ad7bb91}{get\+\_\+deepest\+\_\+branch}} () const
 \item 
-\hyperlink{classBinaryVolumeHierarchy_a760800685de78279be3619c4ee4170cf}{$\sim$\+Binary\+Volume\+Hierarchy} () override
+\mbox{\hyperlink{classBinaryVolumeHierarchy_a760800685de78279be3619c4ee4170cf}{$\sim$\+Binary\+Volume\+Hierarchy}} () override
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-unsigned int \hyperlink{classBinaryVolumeHierarchy_aee9070a784292e5a5f6897a1dde2f9fc}{get\+\_\+deepest\+\_\+branch} (unsigned int offset) const 
+unsigned int \mbox{\hyperlink{classBinaryVolumeHierarchy_aa2f4b148ce800faf6aaf9ae9b616089d}{get\+\_\+deepest\+\_\+branch}} (unsigned int offset) const
 \item 
-\hyperlink{structBVHConstructionNode}{B\+V\+H\+Construction\+Node} $\ast$ \hyperlink{classBinaryVolumeHierarchy_aa9c190d6301f6fe7ba5b9c77d9517ec4}{build\+\_\+tree} (std\+::vector$<$ \hyperlink{classBoundedVolume}{Bounded\+Volume} $\ast$ $>$\+::iterator b, std\+::vector$<$ \hyperlink{classBoundedVolume}{Bounded\+Volume} $\ast$ $>$\+::iterator e)
+\mbox{\hyperlink{structBVHConstructionNode}{B\+V\+H\+Construction\+Node}} $\ast$ \mbox{\hyperlink{classBinaryVolumeHierarchy_aa9c190d6301f6fe7ba5b9c77d9517ec4}{build\+\_\+tree}} (std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator b, std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator e)
 \item 
-unsigned int \hyperlink{classBinaryVolumeHierarchy_a975a30c71deb503c9f64248b8f14c8cf}{flatten\+\_\+tree} (\hyperlink{structBVHConstructionNode}{B\+V\+H\+Construction\+Node} $\ast$root, \hyperlink{structBVHLinearNode}{B\+V\+H\+Linear\+Node} $\ast$\hyperlink{classBinaryVolumeHierarchy_abbadac5cecbdedd8df30cd294ff0ed29}{nodes})
+unsigned int \mbox{\hyperlink{classBinaryVolumeHierarchy_a975a30c71deb503c9f64248b8f14c8cf}{flatten\+\_\+tree}} (\mbox{\hyperlink{structBVHConstructionNode}{B\+V\+H\+Construction\+Node}} $\ast$root, \mbox{\hyperlink{structBVHLinearNode}{B\+V\+H\+Linear\+Node}} $\ast$\mbox{\hyperlink{classBinaryVolumeHierarchy_abbadac5cecbdedd8df30cd294ff0ed29}{nodes}})
 \item 
-std\+::vector$<$ \hyperlink{classBoundedVolume}{Bounded\+Volume} $\ast$ $>$\+::iterator \hyperlink{classBinaryVolumeHierarchy_ab30dec4aa6ef808f53bbdedb98d8af65}{partition} (std\+::vector$<$ \hyperlink{classBoundedVolume}{Bounded\+Volume} $\ast$ $>$\+::iterator b, std\+::vector$<$ \hyperlink{classBoundedVolume}{Bounded\+Volume} $\ast$ $>$\+::iterator e)
+std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator \mbox{\hyperlink{classBinaryVolumeHierarchy_ab30dec4aa6ef808f53bbdedb98d8af65}{partition}} (std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator b, std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator e)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structBVHLinearNode}{B\+V\+H\+Linear\+Node} $\ast$ \hyperlink{classBinaryVolumeHierarchy_abbadac5cecbdedd8df30cd294ff0ed29}{nodes} = nullptr
+\mbox{\hyperlink{structBVHLinearNode}{B\+V\+H\+Linear\+Node}} $\ast$ \mbox{\hyperlink{classBinaryVolumeHierarchy_abbadac5cecbdedd8df30cd294ff0ed29}{nodes}} = nullptr
 \end{DoxyCompactItemize}
 
 
@@ -66,72 +68,61 @@ std\+::vector$<$ \hyperlink{classBoundedVolume}{Bounded\+Volume} $\ast$ $>$\+::i
 Acceleration structure for ensemble of bounded volumes. 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{Binary\+Volume\+Hierarchy(std\+::vector$<$ Bounded\+Volume $\ast$ $>$\+::iterator b, std\+::vector$<$ Bounded\+Volume $\ast$ $>$\+::iterator e)}{BinaryVolumeHierarchy(std::vector< BoundedVolume * >::iterator b, std::vector< BoundedVolume * >::iterator e)}}]{\setlength{\rightskip}{0pt plus 5cm}Binary\+Volume\+Hierarchy\+::\+Binary\+Volume\+Hierarchy (
-\begin{DoxyParamCaption}
-\item[{std\+::vector$<$ {\bf Bounded\+Volume} $\ast$ $>$\+::iterator}]{b, }
-\item[{std\+::vector$<$ {\bf Bounded\+Volume} $\ast$ $>$\+::iterator}]{e}
-\end{DoxyParamCaption}
-)}\hypertarget{classBinaryVolumeHierarchy_afb1953933b78a2005884a7a34cb64519}{}\label{classBinaryVolumeHierarchy_afb1953933b78a2005884a7a34cb64519}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!````~Binary\+Volume\+Hierarchy@{$\sim$\+Binary\+Volume\+Hierarchy}}
-\index{````~Binary\+Volume\+Hierarchy@{$\sim$\+Binary\+Volume\+Hierarchy}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{$\sim$\+Binary\+Volume\+Hierarchy() override}{~BinaryVolumeHierarchy() override}}]{\setlength{\rightskip}{0pt plus 5cm}Binary\+Volume\+Hierarchy\+::$\sim$\+Binary\+Volume\+Hierarchy (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classBinaryVolumeHierarchy_a760800685de78279be3619c4ee4170cf}{}\label{classBinaryVolumeHierarchy_a760800685de78279be3619c4ee4170cf}
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_afb1953933b78a2005884a7a34cb64519}\label{classBinaryVolumeHierarchy_afb1953933b78a2005884a7a34cb64519}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{BinaryVolumeHierarchy()}{BinaryVolumeHierarchy()}}
+{\footnotesize\ttfamily Binary\+Volume\+Hierarchy\+::\+Binary\+Volume\+Hierarchy (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator}]{b,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_a760800685de78279be3619c4ee4170cf}\label{classBinaryVolumeHierarchy_a760800685de78279be3619c4ee4170cf}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!````~BinaryVolumeHierarchy@{$\sim$BinaryVolumeHierarchy}}
+\index{````~BinaryVolumeHierarchy@{$\sim$BinaryVolumeHierarchy}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{$\sim$BinaryVolumeHierarchy()}{~BinaryVolumeHierarchy()}}
+{\footnotesize\ttfamily Binary\+Volume\+Hierarchy\+::$\sim$\+Binary\+Volume\+Hierarchy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
 
 
 \subsection{Member Function Documentation}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!build\+\_\+tree@{build\+\_\+tree}}
-\index{build\+\_\+tree@{build\+\_\+tree}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{build\+\_\+tree(std\+::vector$<$ Bounded\+Volume $\ast$ $>$\+::iterator b, std\+::vector$<$ Bounded\+Volume $\ast$ $>$\+::iterator e)}{build_tree(std::vector< BoundedVolume * >::iterator b, std::vector< BoundedVolume * >::iterator e)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+V\+H\+Construction\+Node} $\ast$ Binary\+Volume\+Hierarchy\+::build\+\_\+tree (
-\begin{DoxyParamCaption}
-\item[{std\+::vector$<$ {\bf Bounded\+Volume} $\ast$ $>$\+::iterator}]{b, }
-\item[{std\+::vector$<$ {\bf Bounded\+Volume} $\ast$ $>$\+::iterator}]{e}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBinaryVolumeHierarchy_aa9c190d6301f6fe7ba5b9c77d9517ec4}{}\label{classBinaryVolumeHierarchy_aa9c190d6301f6fe7ba5b9c77d9517ec4}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!flatten\+\_\+tree@{flatten\+\_\+tree}}
-\index{flatten\+\_\+tree@{flatten\+\_\+tree}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{flatten\+\_\+tree(\+B\+V\+H\+Construction\+Node $\ast$root, B\+V\+H\+Linear\+Node $\ast$nodes)}{flatten_tree(BVHConstructionNode *root, BVHLinearNode *nodes)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Binary\+Volume\+Hierarchy\+::flatten\+\_\+tree (
-\begin{DoxyParamCaption}
-\item[{{\bf B\+V\+H\+Construction\+Node} $\ast$}]{root, }
-\item[{{\bf B\+V\+H\+Linear\+Node} $\ast$}]{nodes}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBinaryVolumeHierarchy_a975a30c71deb503c9f64248b8f14c8cf}{}\label{classBinaryVolumeHierarchy_a975a30c71deb503c9f64248b8f14c8cf}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!get\+\_\+bounds@{get\+\_\+bounds}}
-\index{get\+\_\+bounds@{get\+\_\+bounds}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Binary\+Volume\+Hierarchy\+::get\+\_\+bounds (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBinaryVolumeHierarchy_aaec23515bc9d81ccc9115489aed8808f}{}\label{classBinaryVolumeHierarchy_aaec23515bc9d81ccc9115489aed8808f}
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_aa9c190d6301f6fe7ba5b9c77d9517ec4}\label{classBinaryVolumeHierarchy_aa9c190d6301f6fe7ba5b9c77d9517ec4}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!build\_tree@{build\_tree}}
+\index{build\_tree@{build\_tree}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{build\_tree()}{build\_tree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBVHConstructionNode}{B\+V\+H\+Construction\+Node}} $\ast$ Binary\+Volume\+Hierarchy\+::build\+\_\+tree (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator}]{b,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_a975a30c71deb503c9f64248b8f14c8cf}\label{classBinaryVolumeHierarchy_a975a30c71deb503c9f64248b8f14c8cf}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!flatten\_tree@{flatten\_tree}}
+\index{flatten\_tree@{flatten\_tree}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{flatten\_tree()}{flatten\_tree()}}
+{\footnotesize\ttfamily unsigned int Binary\+Volume\+Hierarchy\+::flatten\+\_\+tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBVHConstructionNode}{B\+V\+H\+Construction\+Node}} $\ast$}]{root,  }\item[{\mbox{\hyperlink{structBVHLinearNode}{B\+V\+H\+Linear\+Node}} $\ast$}]{nodes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_aaec23515bc9d81ccc9115489aed8808f}\label{classBinaryVolumeHierarchy_aaec23515bc9d81ccc9115489aed8808f}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!get\_bounds@{get\_bounds}}
+\index{get\_bounds@{get\_bounds}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{get\_bounds()}{get\_bounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} Binary\+Volume\+Hierarchy\+::get\+\_\+bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}.
 
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!get\+\_\+deepest\+\_\+branch@{get\+\_\+deepest\+\_\+branch}}
-\index{get\+\_\+deepest\+\_\+branch@{get\+\_\+deepest\+\_\+branch}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{get\+\_\+deepest\+\_\+branch() const }{get_deepest_branch() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Binary\+Volume\+Hierarchy\+::get\+\_\+deepest\+\_\+branch (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}\hypertarget{classBinaryVolumeHierarchy_a4cf4c6f13a9bd3b852cf40f3ee6889c6}{}\label{classBinaryVolumeHierarchy_a4cf4c6f13a9bd3b852cf40f3ee6889c6}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!get\+\_\+deepest\+\_\+branch@{get\+\_\+deepest\+\_\+branch}}
-\index{get\+\_\+deepest\+\_\+branch@{get\+\_\+deepest\+\_\+branch}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{get\+\_\+deepest\+\_\+branch(unsigned int offset) const }{get_deepest_branch(unsigned int offset) const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Binary\+Volume\+Hierarchy\+::get\+\_\+deepest\+\_\+branch (
-\begin{DoxyParamCaption}
-\item[{unsigned int}]{offset}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBinaryVolumeHierarchy_aee9070a784292e5a5f6897a1dde2f9fc}{}\label{classBinaryVolumeHierarchy_aee9070a784292e5a5f6897a1dde2f9fc}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!intersect\+\_\+properties@{intersect\+\_\+properties}}
-\index{intersect\+\_\+properties@{intersect\+\_\+properties}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{intersect\+\_\+properties(const Ray \&ray) const override}{intersect_properties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Binary\+Volume\+Hierarchy\+::intersect\+\_\+properties (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}{}\label{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}
+Implements \mbox{\hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}}.
+
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_a07a44c476538de97a8c6a2377ad7bb91}\label{classBinaryVolumeHierarchy_a07a44c476538de97a8c6a2377ad7bb91}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!get\_deepest\_branch@{get\_deepest\_branch}}
+\index{get\_deepest\_branch@{get\_deepest\_branch}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{get\_deepest\_branch()}{get\_deepest\_branch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned int Binary\+Volume\+Hierarchy\+::get\+\_\+deepest\+\_\+branch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_aa2f4b148ce800faf6aaf9ae9b616089d}\label{classBinaryVolumeHierarchy_aa2f4b148ce800faf6aaf9ae9b616089d}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!get\_deepest\_branch@{get\_deepest\_branch}}
+\index{get\_deepest\_branch@{get\_deepest\_branch}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{get\_deepest\_branch()}{get\_deepest\_branch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily unsigned int Binary\+Volume\+Hierarchy\+::get\+\_\+deepest\+\_\+branch (\begin{DoxyParamCaption}\item[{unsigned int}]{offset }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}\label{classBinaryVolumeHierarchy_a91c6b8be167dd13ddbb874d4b9f0cedb}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!intersect\_properties@{intersect\_properties}}
+\index{intersect\_properties@{intersect\_properties}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{intersect\_properties()}{intersect\_properties()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIntersectionProperties}{Intersection\+Properties}} Binary\+Volume\+Hierarchy\+::intersect\+\_\+properties (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
 
 
 If ray intersects this object, this method will provide additional Information. 
@@ -144,38 +135,34 @@ Note, that even if ray\+Intersect detected an intersection, this method might no
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\hyperlink{classIntersectionProperties}{Intersection\+Properties} object containing the surface normal and material information 
+\mbox{\hyperlink{classIntersectionProperties}{Intersection\+Properties}} object containing the surface normal and material information 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_a792d36570e3264530872187ca1b0baca}{Render\+Object}.
+Implements \mbox{\hyperlink{classRenderObject_a792d36570e3264530872187ca1b0baca}{Render\+Object}}.
 
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!partition@{partition}}
-\index{partition@{partition}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{partition(std\+::vector$<$ Bounded\+Volume $\ast$ $>$\+::iterator b, std\+::vector$<$ Bounded\+Volume $\ast$ $>$\+::iterator e)}{partition(std::vector< BoundedVolume * >::iterator b, std::vector< BoundedVolume * >::iterator e)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Bounded\+Volume} $\ast$ $>$\+::iterator Binary\+Volume\+Hierarchy\+::partition (
-\begin{DoxyParamCaption}
-\item[{std\+::vector$<$ {\bf Bounded\+Volume} $\ast$ $>$\+::iterator}]{b, }
-\item[{std\+::vector$<$ {\bf Bounded\+Volume} $\ast$ $>$\+::iterator}]{e}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBinaryVolumeHierarchy_ab30dec4aa6ef808f53bbdedb98d8af65}{}\label{classBinaryVolumeHierarchy_ab30dec4aa6ef808f53bbdedb98d8af65}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!print@{print}}
-\index{print@{print}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& Binary\+Volume\+Hierarchy\+::print (
-\begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{sink}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBinaryVolumeHierarchy_ad92d27372aef59591ddc239685ca770d}{}\label{classBinaryVolumeHierarchy_ad92d27372aef59591ddc239685ca770d}
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_ab30dec4aa6ef808f53bbdedb98d8af65}\label{classBinaryVolumeHierarchy_ab30dec4aa6ef808f53bbdedb98d8af65}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!partition@{partition}}
+\index{partition@{partition}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator Binary\+Volume\+Hierarchy\+::partition (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator}]{b,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} $\ast$ $>$\+::iterator}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_ad92d27372aef59591ddc239685ca770d}\label{classBinaryVolumeHierarchy_ad92d27372aef59591ddc239685ca770d}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!print@{print}}
+\index{print@{print}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily std\+::ostream \& Binary\+Volume\+Hierarchy\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{sink }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}.
 
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!ray\+\_\+intersect@{ray\+\_\+intersect}}
-\index{ray\+\_\+intersect@{ray\+\_\+intersect}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{ray\+\_\+intersect(const Ray \&ray) const override}{ray_intersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Binary\+Volume\+Hierarchy\+::ray\+\_\+intersect (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}{}\label{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}
+Implements \mbox{\hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}}.
+
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}\label{classBinaryVolumeHierarchy_aae4af0a21170bb122692314b0fbf399a}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!ray\_intersect@{ray\_intersect}}
+\index{ray\_intersect@{ray\_intersect}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{ray\_intersect()}{ray\_intersect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIntersection}{Intersection}} Binary\+Volume\+Hierarchy\+::ray\+\_\+intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
 
 
 Method to detect intersection of ray and object. 
@@ -186,21 +173,24 @@ Method to detect intersection of ray and object.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\hyperlink{classIntersection}{Intersection} object containing distance to intersection and pointer to intersected object 
+\mbox{\hyperlink{classIntersection}{Intersection}} object containing distance to intersection and pointer to intersected object 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{Render\+Object}.
+Implements \mbox{\hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{Render\+Object}}.
 
 
 
 \subsection{Member Data Documentation}
-\index{Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}!nodes@{nodes}}
-\index{nodes@{nodes}!Binary\+Volume\+Hierarchy@{Binary\+Volume\+Hierarchy}}
-\subsubsection[{\texorpdfstring{nodes}{nodes}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+V\+H\+Linear\+Node}$\ast$ Binary\+Volume\+Hierarchy\+::nodes = nullptr\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBinaryVolumeHierarchy_abbadac5cecbdedd8df30cd294ff0ed29}{}\label{classBinaryVolumeHierarchy_abbadac5cecbdedd8df30cd294ff0ed29}
+\mbox{\Hypertarget{classBinaryVolumeHierarchy_abbadac5cecbdedd8df30cd294ff0ed29}\label{classBinaryVolumeHierarchy_abbadac5cecbdedd8df30cd294ff0ed29}} 
+\index{BinaryVolumeHierarchy@{BinaryVolumeHierarchy}!nodes@{nodes}}
+\index{nodes@{nodes}!BinaryVolumeHierarchy@{BinaryVolumeHierarchy}}
+\subsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBVHLinearNode}{B\+V\+H\+Linear\+Node}}$\ast$ Binary\+Volume\+Hierarchy\+::nodes = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{BinaryVolumeHierarchy_8h}{Binary\+Volume\+Hierarchy.\+h}\item 
-src/renderable/\hyperlink{BinaryVolumeHierarchy_8cpp}{Binary\+Volume\+Hierarchy.\+cpp}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{BinaryVolumeHierarchy_8h}{Binary\+Volume\+Hierarchy.\+h}}\item 
+src/renderable/\mbox{\hyperlink{BinaryVolumeHierarchy_8cpp}{Binary\+Volume\+Hierarchy.\+cpp}}\end{DoxyCompactItemize}

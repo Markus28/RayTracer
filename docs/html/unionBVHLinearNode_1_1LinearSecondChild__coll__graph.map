@@ -1,4 +1,6 @@
 <map id="BVHLinearNode::LinearSecondChild" name="BVHLinearNode::LinearSecondChild">
-<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="5,81,123,108"/>
-<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="13,5,115,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="13,171,216,212"/>
+<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume." alt="" coords="5,81,123,108"/>
+<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects." alt="" coords="13,5,115,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="147,81,186,108"/>
 </map>

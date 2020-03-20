@@ -1,3 +1,4 @@
 <map id="SimplePlane" name="SimplePlane">
-<area shape="rect" id="node2" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node1" title="An infinite plane." alt="" coords="9,80,104,107"/>
+<area shape="rect" id="node2" href="$classRenderObject.html" title="Abstract class for renderable objects." alt="" coords="5,5,108,32"/>
 </map>

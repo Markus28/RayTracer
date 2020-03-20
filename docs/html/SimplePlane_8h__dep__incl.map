@@ -1,8 +1,9 @@
 <map id="src/renderable/SimplePlane.h" name="src/renderable/SimplePlane.h">
-<area shape="rect" id="node2" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="5,229,103,256"/>
-<area shape="rect" id="node3" href="$Triangle_8h.html" title="src/renderable/Triangle.h" alt="" coords="71,80,237,107"/>
-<area shape="rect" id="node7" href="$SimplePlane_8cpp.html" title="src/renderable/SimplePlane.cpp" alt="" coords="261,80,468,107"/>
-<area shape="rect" id="node4" href="$OBJFile_8h.html" title="src/OBJFile.h" alt="" coords="113,155,216,181"/>
-<area shape="rect" id="node6" href="$Triangle_8cpp.html" title="src/renderable/Triangle.cpp" alt="" coords="241,155,419,181"/>
-<area shape="rect" id="node5" href="$OBJFile_8cpp.html" title="src/OBJFile.cpp" alt="" coords="127,229,243,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="58,5,250,32"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title=" " alt="" coords="5,229,103,256"/>
+<area shape="rect" id="node3" href="$Triangle_8h.html" title=" " alt="" coords="71,80,237,107"/>
+<area shape="rect" id="node7" href="$SimplePlane_8cpp.html" title=" " alt="" coords="261,80,468,107"/>
+<area shape="rect" id="node4" href="$OBJFile_8h.html" title=" " alt="" coords="113,155,216,181"/>
+<area shape="rect" id="node6" href="$Triangle_8cpp.html" title=" " alt="" coords="241,155,419,181"/>
+<area shape="rect" id="node5" href="$OBJFile_8cpp.html" title=" " alt="" coords="127,229,243,256"/>
 </map>

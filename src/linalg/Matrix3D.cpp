@@ -19,14 +19,23 @@ namespace linalg {
         return (*this);
     }
 
+    Matrix3D &Matrix3D::operator-=(const Matrix3D &B) {
+        a -= B.a;
+        b -= B.b;
+        c -= B.c;
+        return (*this);
+    }
+
     Vector3D operator*(const Matrix3D &A, const Vector3D &v) {
         return A.a * v[0] + A.b * v[1] + A.c * v[2];
     }
 
     Matrix3D &Matrix3D::operator*=(const Matrix3D &B) {
-        a = (*this) * B.a;
-        b = (*this) * B.b;
+        Vector3D a_temp = (*this) * B.a;
+        Vector3D b_temp = (*this) * B.b;
         c = (*this) * B.c;
+        a = a_temp;
+        b = b_temp;
         return *this;
     }
 
@@ -37,6 +46,11 @@ namespace linalg {
 
     Matrix3D operator+(Matrix3D A, const Matrix3D &B) {
         A += B;
+        return A;
+    }
+
+    Matrix3D operator-(Matrix3D A, const Matrix3D &B) {
+        A -= B;
         return A;
     }
 

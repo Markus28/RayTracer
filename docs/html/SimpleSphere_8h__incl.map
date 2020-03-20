@@ -1,10 +1,12 @@
 <map id="src/renderable/SimpleSphere.h" name="src/renderable/SimpleSphere.h">
-<area shape="rect" id="node2" href="$Vector3D_8h.html" title="../linalg/Vector3D.h" alt="" coords="171,379,306,405"/>
-<area shape="rect" id="node4" href="$Material_8h.html" title="../Material.h" alt="" coords="184,304,275,331"/>
-<area shape="rect" id="node5" href="$BoundedVolume_8h.html" title="BoundedVolume.h" alt="" coords="196,80,324,107"/>
-<area shape="rect" id="node6" href="$BoundingBox_8h.html" title="BoundingBox.h" alt="" coords="391,229,502,256"/>
-<area shape="rect" id="node9" href="$RenderObject_8h.html" title="RenderObject.h" alt="" coords="203,155,317,181"/>
-<area shape="rect" id="node7" href="$Interval_8h.html" title="../Interval.h" alt="" coords="421,379,509,405"/>
-<area shape="rect" id="node8" href="$Ray_8h.html" title="../Ray.h" alt="" coords="391,304,460,331"/>
-<area shape="rect" id="node10" href="$IntersectionProperties_8h.html" title="../IntersectionProperties.h" alt="" coords="143,229,315,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,205,32"/>
+<area shape="rect" id="node2" href="$Vector3D_8h.html" title=" " alt="" coords="171,379,306,405"/>
+<area shape="rect" id="node4" href="$Material_8h.html" title=" " alt="" coords="184,304,275,331"/>
+<area shape="rect" id="node5" href="$BoundedVolume_8h.html" title=" " alt="" coords="196,80,324,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="317,453,389,480"/>
+<area shape="rect" id="node6" href="$BoundingBox_8h.html" title=" " alt="" coords="391,229,502,256"/>
+<area shape="rect" id="node9" href="$RenderObject_8h.html" title=" " alt="" coords="203,155,317,181"/>
+<area shape="rect" id="node7" href="$Interval_8h.html" title=" " alt="" coords="420,379,508,405"/>
+<area shape="rect" id="node8" href="$Ray_8h.html" title=" " alt="" coords="391,304,457,331"/>
+<area shape="rect" id="node10" href="$IntersectionProperties_8h.html" title=" " alt="" coords="143,229,315,256"/>
 </map>

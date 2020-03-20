@@ -4,6 +4,7 @@
 
 #include "Matrix3D.h"
 #include "../Ray.h"
+#include "../Intersection.h"
 
 namespace linalg {
 /**
@@ -13,6 +14,8 @@ namespace linalg {
  */
     class Transformation {
     public:
+        Transformation(): A(), A_transpose(), translation(), scale(1) {};
+
         Transformation(Matrix3D A, Vector3D v, double s);
 
         Transformation(Vector3D v, double psi, double theta, double phi, double s);
@@ -24,6 +27,14 @@ namespace linalg {
         Ray transform(const Ray &ray) const;
 
         Ray inverse_transform(const Ray &ray) const;
+
+        Intersection transform(const Intersection& intersection) const;
+
+        Intersection inverse_transform(const Intersection& intersection) const;
+
+        IntersectionProperties transform(const IntersectionProperties& properties) const;
+
+        IntersectionProperties inverse_transform(const IntersectionProperties& properties) const;
 
         Vector3D inverse_transform(const Vector3D &v) const;
 

@@ -1,5 +1,5 @@
 \hypertarget{classCSGIntersection}{}\section{C\+S\+G\+Intersection Class Reference}
-\label{classCSGIntersection}\index{C\+S\+G\+Intersection@{C\+S\+G\+Intersection}}
+\label{classCSGIntersection}\index{CSGIntersection@{CSGIntersection}}
 
 
 An intersection node in the C\+S\+G-\/\+Tree.  
@@ -11,7 +11,8 @@ An intersection node in the C\+S\+G-\/\+Tree.
 
 
 
-Inheritance diagram for C\+S\+G\+Intersection\+:\nopagebreak
+Inheritance diagram for C\+S\+G\+Intersection\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,34 +21,35 @@ Inheritance diagram for C\+S\+G\+Intersection\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for C\+S\+G\+Intersection\+:\nopagebreak
+Collaboration diagram for C\+S\+G\+Intersection\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=307pt]{classCSGIntersection__coll__graph}
+\includegraphics[width=308pt]{classCSGIntersection__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classCSGIntersection_a0d74ea7a39a6fbfe3e6f3f918b01f63d}{C\+S\+G\+Intersection} (\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$a, \hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$b)
+\mbox{\hyperlink{classCSGIntersection_a0d74ea7a39a6fbfe3e6f3f918b01f63d}{C\+S\+G\+Intersection}} (\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$a, \mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$b)
 \begin{DoxyCompactList}\small\item\em C. \end{DoxyCompactList}\item 
-double \hyperlink{classCSGIntersection_a199cc8192cdaeacae17d5b3c6dfef6a1}{distance\+\_\+bound} (const \hyperlink{classVector3D}{Vector3D} \&pos) const override
+double \mbox{\hyperlink{classCSGIntersection_a199cc8192cdaeacae17d5b3c6dfef6a1}{distance\+\_\+bound}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pos) const override
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classCSGIntersection_ad1f53a70c93dcdb6f8725a491fa24917}{get\+\_\+bounds} () const override
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classCSGIntersection_ad1f53a70c93dcdb6f8725a491fa24917}{get\+\_\+bounds}} () const override
 \item 
-\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGIntersection_a4721227de85e675484ab206c299c5867}{deep\+\_\+copy} () const override
+\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$ \mbox{\hyperlink{classCSGIntersection_a4721227de85e675484ab206c299c5867}{deep\+\_\+copy}} () const override
 \item 
-\hyperlink{classCSGIntersection_a0407d092eed23f2e6493e848482e130e}{$\sim$\+C\+S\+G\+Intersection} () override
+\mbox{\hyperlink{classCSGIntersection_a0407d092eed23f2e6493e848482e130e}{$\sim$\+C\+S\+G\+Intersection}} () override
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGIntersection_af9619c91599eb3f81342000284e0f1c6}{first}
+\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$ \mbox{\hyperlink{classCSGIntersection_af9619c91599eb3f81342000284e0f1c6}{first}}
 \item 
-\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGIntersection_a71b90fe1c487c4cc5fce0614f503e29c}{second}
+\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$ \mbox{\hyperlink{classCSGIntersection_a71b90fe1c487c4cc5fce0614f503e29c}{second}}
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classCSGIntersection_a25fb136c5dcda3e15357b6c1abb1c2e2}{bounds}
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classCSGIntersection_a25fb136c5dcda3e15357b6c1abb1c2e2}{bounds}}
 \end{DoxyCompactItemize}
 
 
@@ -55,76 +57,79 @@ double \hyperlink{classCSGIntersection_a199cc8192cdaeacae17d5b3c6dfef6a1}{distan
 An intersection node in the C\+S\+G-\/\+Tree. 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{C\+S\+G\+Intersection@{C\+S\+G\+Intersection}!C\+S\+G\+Intersection@{C\+S\+G\+Intersection}}
-\index{C\+S\+G\+Intersection@{C\+S\+G\+Intersection}!C\+S\+G\+Intersection@{C\+S\+G\+Intersection}}
-\subsubsection[{\texorpdfstring{C\+S\+G\+Intersection(\+C\+S\+G\+Component $\ast$a, C\+S\+G\+Component $\ast$b)}{CSGIntersection(CSGComponent *a, CSGComponent *b)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+Intersection\+::\+C\+S\+G\+Intersection (
-\begin{DoxyParamCaption}
-\item[{{\bf C\+S\+G\+Component} $\ast$}]{a, }
-\item[{{\bf C\+S\+G\+Component} $\ast$}]{b}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCSGIntersection_a0d74ea7a39a6fbfe3e6f3f918b01f63d}{}\label{classCSGIntersection_a0d74ea7a39a6fbfe3e6f3f918b01f63d}
+\mbox{\Hypertarget{classCSGIntersection_a0d74ea7a39a6fbfe3e6f3f918b01f63d}\label{classCSGIntersection_a0d74ea7a39a6fbfe3e6f3f918b01f63d}} 
+\index{CSGIntersection@{CSGIntersection}!CSGIntersection@{CSGIntersection}}
+\index{CSGIntersection@{CSGIntersection}!CSGIntersection@{CSGIntersection}}
+\subsubsection{\texorpdfstring{CSGIntersection()}{CSGIntersection()}}
+{\footnotesize\ttfamily C\+S\+G\+Intersection\+::\+C\+S\+G\+Intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 
 
 C. 
 
-\index{C\+S\+G\+Intersection@{C\+S\+G\+Intersection}!````~C\+S\+G\+Intersection@{$\sim$\+C\+S\+G\+Intersection}}
-\index{````~C\+S\+G\+Intersection@{$\sim$\+C\+S\+G\+Intersection}!C\+S\+G\+Intersection@{C\+S\+G\+Intersection}}
-\subsubsection[{\texorpdfstring{$\sim$\+C\+S\+G\+Intersection() override}{~CSGIntersection() override}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+Intersection\+::$\sim$\+C\+S\+G\+Intersection (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classCSGIntersection_a0407d092eed23f2e6493e848482e130e}{}\label{classCSGIntersection_a0407d092eed23f2e6493e848482e130e}
+\mbox{\Hypertarget{classCSGIntersection_a0407d092eed23f2e6493e848482e130e}\label{classCSGIntersection_a0407d092eed23f2e6493e848482e130e}} 
+\index{CSGIntersection@{CSGIntersection}!````~CSGIntersection@{$\sim$CSGIntersection}}
+\index{````~CSGIntersection@{$\sim$CSGIntersection}!CSGIntersection@{CSGIntersection}}
+\subsubsection{\texorpdfstring{$\sim$CSGIntersection()}{~CSGIntersection()}}
+{\footnotesize\ttfamily C\+S\+G\+Intersection\+::$\sim$\+C\+S\+G\+Intersection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
 
 
 \subsection{Member Function Documentation}
-\index{C\+S\+G\+Intersection@{C\+S\+G\+Intersection}!deep\+\_\+copy@{deep\+\_\+copy}}
-\index{deep\+\_\+copy@{deep\+\_\+copy}!C\+S\+G\+Intersection@{C\+S\+G\+Intersection}}
-\subsubsection[{\texorpdfstring{deep\+\_\+copy() const override}{deep_copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component} $\ast$ C\+S\+G\+Intersection\+::deep\+\_\+copy (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGIntersection_a4721227de85e675484ab206c299c5867}{}\label{classCSGIntersection_a4721227de85e675484ab206c299c5867}
+\mbox{\Hypertarget{classCSGIntersection_a4721227de85e675484ab206c299c5867}\label{classCSGIntersection_a4721227de85e675484ab206c299c5867}} 
+\index{CSGIntersection@{CSGIntersection}!deep\_copy@{deep\_copy}}
+\index{deep\_copy@{deep\_copy}!CSGIntersection@{CSGIntersection}}
+\subsubsection{\texorpdfstring{deep\_copy()}{deep\_copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$ C\+S\+G\+Intersection\+::deep\+\_\+copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classCSGComponent_a98d3accd23c28259cbf490f4d7acbe83}{C\+S\+G\+Component}.
 
-\index{C\+S\+G\+Intersection@{C\+S\+G\+Intersection}!distance\+\_\+bound@{distance\+\_\+bound}}
-\index{distance\+\_\+bound@{distance\+\_\+bound}!C\+S\+G\+Intersection@{C\+S\+G\+Intersection}}
-\subsubsection[{\texorpdfstring{distance\+\_\+bound(const Vector3\+D \&pos) const override}{distance_bound(const Vector3D &pos) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double C\+S\+G\+Intersection\+::distance\+\_\+bound (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pos}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGIntersection_a199cc8192cdaeacae17d5b3c6dfef6a1}{}\label{classCSGIntersection_a199cc8192cdaeacae17d5b3c6dfef6a1}
+Implements \mbox{\hyperlink{classCSGComponent_a98d3accd23c28259cbf490f4d7acbe83}{C\+S\+G\+Component}}.
 
-
-Implements \hyperlink{classCSGComponent_a41ca7aff9b7c481ea076f81eeb826779}{C\+S\+G\+Component}.
-
-\index{C\+S\+G\+Intersection@{C\+S\+G\+Intersection}!get\+\_\+bounds@{get\+\_\+bounds}}
-\index{get\+\_\+bounds@{get\+\_\+bounds}!C\+S\+G\+Intersection@{C\+S\+G\+Intersection}}
-\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} C\+S\+G\+Intersection\+::get\+\_\+bounds (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGIntersection_ad1f53a70c93dcdb6f8725a491fa24917}{}\label{classCSGIntersection_ad1f53a70c93dcdb6f8725a491fa24917}
+\mbox{\Hypertarget{classCSGIntersection_a199cc8192cdaeacae17d5b3c6dfef6a1}\label{classCSGIntersection_a199cc8192cdaeacae17d5b3c6dfef6a1}} 
+\index{CSGIntersection@{CSGIntersection}!distance\_bound@{distance\_bound}}
+\index{distance\_bound@{distance\_bound}!CSGIntersection@{CSGIntersection}}
+\subsubsection{\texorpdfstring{distance\_bound()}{distance\_bound()}}
+{\footnotesize\ttfamily double C\+S\+G\+Intersection\+::distance\+\_\+bound (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classCSGComponent_a4299365f2bab69272af9de4f2bee7cdb}{C\+S\+G\+Component}.
+
+Implements \mbox{\hyperlink{classCSGComponent_a41ca7aff9b7c481ea076f81eeb826779}{C\+S\+G\+Component}}.
+
+\mbox{\Hypertarget{classCSGIntersection_ad1f53a70c93dcdb6f8725a491fa24917}\label{classCSGIntersection_ad1f53a70c93dcdb6f8725a491fa24917}} 
+\index{CSGIntersection@{CSGIntersection}!get\_bounds@{get\_bounds}}
+\index{get\_bounds@{get\_bounds}!CSGIntersection@{CSGIntersection}}
+\subsubsection{\texorpdfstring{get\_bounds()}{get\_bounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} C\+S\+G\+Intersection\+::get\+\_\+bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classCSGComponent_a4299365f2bab69272af9de4f2bee7cdb}{C\+S\+G\+Component}}.
 
 
 
 \subsection{Member Data Documentation}
-\index{C\+S\+G\+Intersection@{C\+S\+G\+Intersection}!bounds@{bounds}}
-\index{bounds@{bounds}!C\+S\+G\+Intersection@{C\+S\+G\+Intersection}}
-\subsubsection[{\texorpdfstring{bounds}{bounds}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} C\+S\+G\+Intersection\+::bounds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCSGIntersection_a25fb136c5dcda3e15357b6c1abb1c2e2}{}\label{classCSGIntersection_a25fb136c5dcda3e15357b6c1abb1c2e2}
-\index{C\+S\+G\+Intersection@{C\+S\+G\+Intersection}!first@{first}}
-\index{first@{first}!C\+S\+G\+Intersection@{C\+S\+G\+Intersection}}
-\subsubsection[{\texorpdfstring{first}{first}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component}$\ast$ C\+S\+G\+Intersection\+::first\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCSGIntersection_af9619c91599eb3f81342000284e0f1c6}{}\label{classCSGIntersection_af9619c91599eb3f81342000284e0f1c6}
-\index{C\+S\+G\+Intersection@{C\+S\+G\+Intersection}!second@{second}}
-\index{second@{second}!C\+S\+G\+Intersection@{C\+S\+G\+Intersection}}
-\subsubsection[{\texorpdfstring{second}{second}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component}$\ast$ C\+S\+G\+Intersection\+::second\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCSGIntersection_a71b90fe1c487c4cc5fce0614f503e29c}{}\label{classCSGIntersection_a71b90fe1c487c4cc5fce0614f503e29c}
+\mbox{\Hypertarget{classCSGIntersection_a25fb136c5dcda3e15357b6c1abb1c2e2}\label{classCSGIntersection_a25fb136c5dcda3e15357b6c1abb1c2e2}} 
+\index{CSGIntersection@{CSGIntersection}!bounds@{bounds}}
+\index{bounds@{bounds}!CSGIntersection@{CSGIntersection}}
+\subsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} C\+S\+G\+Intersection\+::bounds\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCSGIntersection_af9619c91599eb3f81342000284e0f1c6}\label{classCSGIntersection_af9619c91599eb3f81342000284e0f1c6}} 
+\index{CSGIntersection@{CSGIntersection}!first@{first}}
+\index{first@{first}!CSGIntersection@{CSGIntersection}}
+\subsubsection{\texorpdfstring{first}{first}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}}$\ast$ C\+S\+G\+Intersection\+::first\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCSGIntersection_a71b90fe1c487c4cc5fce0614f503e29c}\label{classCSGIntersection_a71b90fe1c487c4cc5fce0614f503e29c}} 
+\index{CSGIntersection@{CSGIntersection}!second@{second}}
+\index{second@{second}!CSGIntersection@{CSGIntersection}}
+\subsubsection{\texorpdfstring{second}{second}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}}$\ast$ C\+S\+G\+Intersection\+::second\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{CSG_8h}{C\+S\+G.\+h}\item 
-src/renderable/\hyperlink{CSG_8cpp}{C\+S\+G.\+cpp}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{CSG_8h}{C\+S\+G.\+h}}\item 
+src/renderable/\mbox{\hyperlink{CSG_8cpp}{C\+S\+G.\+cpp}}\end{DoxyCompactItemize}

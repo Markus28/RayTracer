@@ -1,8 +1,8 @@
-\hypertarget{classlinalg_1_1Transformation}{}\section{linalg\+:\+:Transformation Class Reference}
-\label{classlinalg_1_1Transformation}\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}}
+\hypertarget{classlinalg_1_1Transformation}{}\section{linalg\+::Transformation Class Reference}
+\label{classlinalg_1_1Transformation}\index{linalg::Transformation@{linalg::Transformation}}
 
 
-\hyperlink{classlinalg_1_1Transformation}{Transformation} objects represent angle-\/preserving transformations.  
+\mbox{\hyperlink{classlinalg_1_1Transformation}{Transformation}} objects represent angle-\/preserving transformations.  
 
 
 
@@ -11,7 +11,8 @@
 
 
 
-Collaboration diagram for linalg\+:\+:Transformation\+:\nopagebreak
+Collaboration diagram for linalg\+::Transformation\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,55 +22,52 @@ Collaboration diagram for linalg\+:\+:Transformation\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classlinalg_1_1Transformation_a92fd6d6de1cf518d6316219339e42eff}{Transformation} (\hyperlink{classlinalg_1_1Matrix3D}{Matrix3D} \hyperlink{classlinalg_1_1Transformation_a24a75d79007bc9b5c5f32c042fb4332b}{A}, \hyperlink{classVector3D}{Vector3D} v, double s)
-\begin{DoxyCompactList}\small\item\em Construct \hyperlink{classlinalg_1_1Transformation}{Transformation} from Orthogonal Matrix A, translation and scaling-\/factor. \end{DoxyCompactList}\item 
-\hyperlink{classlinalg_1_1Transformation_ac6339d874eca2be8ae458a10e43f644e}{Transformation} (\hyperlink{classVector3D}{Vector3D} v, double psi, double theta, double phi, double s)
-\begin{DoxyCompactList}\small\item\em Construct the \hyperlink{classlinalg_1_1Transformation}{Transformation} from euler angles, translation and scaling-\/factor. \end{DoxyCompactList}\item 
-void \hyperlink{classlinalg_1_1Transformation_aa6e43ea1e47c3929d4903dce85a5dbd5}{compose\+\_\+back} (const \hyperlink{classlinalg_1_1Transformation}{Transformation} \&b)
+\mbox{\hyperlink{classlinalg_1_1Transformation_a92fd6d6de1cf518d6316219339e42eff}{Transformation}} (\mbox{\hyperlink{classlinalg_1_1Matrix3D}{Matrix3D}} \mbox{\hyperlink{classlinalg_1_1Transformation_a24a75d79007bc9b5c5f32c042fb4332b}{A}}, \mbox{\hyperlink{classVector3D}{Vector3D}} v, double s)
+\begin{DoxyCompactList}\small\item\em Construct \mbox{\hyperlink{classlinalg_1_1Transformation}{Transformation}} from Orthogonal Matrix A, translation and scaling-\/factor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlinalg_1_1Transformation_ac6339d874eca2be8ae458a10e43f644e}{Transformation}} (\mbox{\hyperlink{classVector3D}{Vector3D}} v, double psi, double theta, double phi, double s)
+\begin{DoxyCompactList}\small\item\em Construct the \mbox{\hyperlink{classlinalg_1_1Transformation}{Transformation}} from euler angles, translation and scaling-\/factor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlinalg_1_1Transformation_aa6e43ea1e47c3929d4903dce85a5dbd5}{compose\+\_\+back}} (const \mbox{\hyperlink{classlinalg_1_1Transformation}{Transformation}} \&b)
 \begin{DoxyCompactList}\small\item\em Compose this transformation with b. \end{DoxyCompactList}\item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classlinalg_1_1Transformation_a5b31c95da6547d580236566266c840a6}{transform} (const \hyperlink{classVector3D}{Vector3D} \&v) const 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classlinalg_1_1Transformation_a069ec396b1a3addcb3400797a505b759}{transform}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&v) const
 \begin{DoxyCompactList}\small\item\em Apply this transformation to v in 3D space. \end{DoxyCompactList}\item 
-\hyperlink{classRay}{Ray} \hyperlink{classlinalg_1_1Transformation_a4c2d3618ae14a0e8ebe55ae65b43381c}{transform} (const \hyperlink{classRay}{Ray} \&ray) const 
+\mbox{\hyperlink{classRay}{Ray}} \mbox{\hyperlink{classlinalg_1_1Transformation_a2f0c817ed97307ec777f46a37810421e}{transform}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const
 \item 
-\hyperlink{classRay}{Ray} \hyperlink{classlinalg_1_1Transformation_a831147736700a461eb0e7a388649430d}{inverse\+\_\+transform} (const \hyperlink{classRay}{Ray} \&ray) const 
+\mbox{\hyperlink{classRay}{Ray}} \mbox{\hyperlink{classlinalg_1_1Transformation_a00d24e4118b1a4390ba56950051f2d73}{inverse\+\_\+transform}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classlinalg_1_1Transformation_a5c37fe3a882f9d29ea7382d1fe73843d}{inverse\+\_\+transform} (const \hyperlink{classVector3D}{Vector3D} \&v) const 
-\begin{DoxyCompactList}\small\item\em The inverse to \hyperlink{classlinalg_1_1Transformation_a5b31c95da6547d580236566266c840a6}{Transformation\+::transform}. \end{DoxyCompactList}\item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classlinalg_1_1Transformation_a186fce9fbf82aa998cf1f92d2be5b10c}{rotate} (const \hyperlink{classVector3D}{Vector3D} \&v) const 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classlinalg_1_1Transformation_a96c21a4793a2d3c2801100d0cb15d894}{inverse\+\_\+transform}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&v) const
+\begin{DoxyCompactList}\small\item\em The inverse to \mbox{\hyperlink{classlinalg_1_1Transformation_a069ec396b1a3addcb3400797a505b759}{Transformation\+::transform}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classlinalg_1_1Transformation_ac50039a4713ae9d5b9db7eeb1616d595}{rotate}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&v) const
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classlinalg_1_1Transformation_a01cfc4e7905418f1c1091cebebbb8580}{inverse\+\_\+rotate} (const \hyperlink{classVector3D}{Vector3D} \&v) const 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classlinalg_1_1Transformation_a412bea080940292e3b5789e8397fd444}{inverse\+\_\+rotate}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&v) const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classlinalg_1_1Matrix3D}{Matrix3D} \hyperlink{classlinalg_1_1Transformation_a24a75d79007bc9b5c5f32c042fb4332b}{A}
+\mbox{\hyperlink{classlinalg_1_1Matrix3D}{Matrix3D}} \mbox{\hyperlink{classlinalg_1_1Transformation_a24a75d79007bc9b5c5f32c042fb4332b}{A}}
 \item 
-\hyperlink{classlinalg_1_1Matrix3D}{Matrix3D} \hyperlink{classlinalg_1_1Transformation_ac720d71bf88660e2ae3f3d776c7cfd01}{A\+\_\+transpose}
+\mbox{\hyperlink{classlinalg_1_1Matrix3D}{Matrix3D}} \mbox{\hyperlink{classlinalg_1_1Transformation_ac720d71bf88660e2ae3f3d776c7cfd01}{A\+\_\+transpose}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classlinalg_1_1Transformation_a462cf5d72735591b01bef5186bb1fe98}{translation}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classlinalg_1_1Transformation_a462cf5d72735591b01bef5186bb1fe98}{translation}}
 \item 
-double \hyperlink{classlinalg_1_1Transformation_ac627b1362463a8c98fe3b5e633beb049}{scale}
+double \mbox{\hyperlink{classlinalg_1_1Transformation_ac627b1362463a8c98fe3b5e633beb049}{scale}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\hyperlink{classlinalg_1_1Transformation}{Transformation} objects represent angle-\/preserving transformations. 
+\mbox{\hyperlink{classlinalg_1_1Transformation}{Transformation}} objects represent angle-\/preserving transformations. 
 
 These transformations are modelled as the composition of a translation, a rotation (i.\+e. orthogonal linear transform) and a scaling step. 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!Transformation@{Transformation}}
-\index{Transformation@{Transformation}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{Transformation(\+Matrix3\+D A, Vector3\+D v, double s)}{Transformation(Matrix3D A, Vector3D v, double s)}}]{\setlength{\rightskip}{0pt plus 5cm}linalg\+::\+Transformation\+::\+Transformation (
-\begin{DoxyParamCaption}
-\item[{{\bf Matrix3D}}]{A, }
-\item[{{\bf Vector3D}}]{v, }
-\item[{double}]{s}
-\end{DoxyParamCaption}
-)}\hypertarget{classlinalg_1_1Transformation_a92fd6d6de1cf518d6316219339e42eff}{}\label{classlinalg_1_1Transformation_a92fd6d6de1cf518d6316219339e42eff}
+\mbox{\Hypertarget{classlinalg_1_1Transformation_a92fd6d6de1cf518d6316219339e42eff}\label{classlinalg_1_1Transformation_a92fd6d6de1cf518d6316219339e42eff}} 
+\index{linalg::Transformation@{linalg::Transformation}!Transformation@{Transformation}}
+\index{Transformation@{Transformation}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{Transformation()}{Transformation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily linalg\+::\+Transformation\+::\+Transformation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlinalg_1_1Matrix3D}{Matrix3D}}}]{A,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{v,  }\item[{double}]{s }\end{DoxyParamCaption})}
 
 
-Construct \hyperlink{classlinalg_1_1Transformation}{Transformation} from Orthogonal Matrix A, translation and scaling-\/factor. 
+
+Construct \mbox{\hyperlink{classlinalg_1_1Transformation}{Transformation}} from Orthogonal Matrix A, translation and scaling-\/factor. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -80,20 +78,15 @@ Construct \hyperlink{classlinalg_1_1Transformation}{Transformation} from Orthogo
 {\em s} & Scaling Factor \\
 \hline
 \end{DoxyParams}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!Transformation@{Transformation}}
-\index{Transformation@{Transformation}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{Transformation(\+Vector3\+D v, double psi, double theta, double phi, double s)}{Transformation(Vector3D v, double psi, double theta, double phi, double s)}}]{\setlength{\rightskip}{0pt plus 5cm}linalg\+::\+Transformation\+::\+Transformation (
-\begin{DoxyParamCaption}
-\item[{{\bf Vector3D}}]{v, }
-\item[{double}]{psi, }
-\item[{double}]{theta, }
-\item[{double}]{phi, }
-\item[{double}]{s}
-\end{DoxyParamCaption}
-)}\hypertarget{classlinalg_1_1Transformation_ac6339d874eca2be8ae458a10e43f644e}{}\label{classlinalg_1_1Transformation_ac6339d874eca2be8ae458a10e43f644e}
+\mbox{\Hypertarget{classlinalg_1_1Transformation_ac6339d874eca2be8ae458a10e43f644e}\label{classlinalg_1_1Transformation_ac6339d874eca2be8ae458a10e43f644e}} 
+\index{linalg::Transformation@{linalg::Transformation}!Transformation@{Transformation}}
+\index{Transformation@{Transformation}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{Transformation()}{Transformation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily linalg\+::\+Transformation\+::\+Transformation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{v,  }\item[{double}]{psi,  }\item[{double}]{theta,  }\item[{double}]{phi,  }\item[{double}]{s }\end{DoxyParamCaption})}
 
 
-Construct the \hyperlink{classlinalg_1_1Transformation}{Transformation} from euler angles, translation and scaling-\/factor. 
+
+Construct the \mbox{\hyperlink{classlinalg_1_1Transformation}{Transformation}} from euler angles, translation and scaling-\/factor. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -111,13 +104,12 @@ Construct the \hyperlink{classlinalg_1_1Transformation}{Transformation} from eul
 
 
 \subsection{Member Function Documentation}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!compose\+\_\+back@{compose\+\_\+back}}
-\index{compose\+\_\+back@{compose\+\_\+back}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{compose\+\_\+back(const Transformation \&b)}{compose_back(const Transformation &b)}}]{\setlength{\rightskip}{0pt plus 5cm}void linalg\+::\+Transformation\+::compose\+\_\+back (
-\begin{DoxyParamCaption}
-\item[{const {\bf Transformation} \&}]{b}
-\end{DoxyParamCaption}
-)}\hypertarget{classlinalg_1_1Transformation_aa6e43ea1e47c3929d4903dce85a5dbd5}{}\label{classlinalg_1_1Transformation_aa6e43ea1e47c3929d4903dce85a5dbd5}
+\mbox{\Hypertarget{classlinalg_1_1Transformation_aa6e43ea1e47c3929d4903dce85a5dbd5}\label{classlinalg_1_1Transformation_aa6e43ea1e47c3929d4903dce85a5dbd5}} 
+\index{linalg::Transformation@{linalg::Transformation}!compose\_back@{compose\_back}}
+\index{compose\_back@{compose\_back}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{compose\_back()}{compose\_back()}}
+{\footnotesize\ttfamily void linalg\+::\+Transformation\+::compose\+\_\+back (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlinalg_1_1Transformation}{Transformation}} \&}]{b }\end{DoxyParamCaption})}
+
 
 
 Compose this transformation with b. 
@@ -127,30 +119,27 @@ From now on b will be applied first, the the original transformation.
 {\em b} & Other transformation \\
 \hline
 \end{DoxyParams}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!inverse\+\_\+rotate@{inverse\+\_\+rotate}}
-\index{inverse\+\_\+rotate@{inverse\+\_\+rotate}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{inverse\+\_\+rotate(const Vector3\+D \&v) const }{inverse_rotate(const Vector3D &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} linalg\+::\+Transformation\+::inverse\+\_\+rotate (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{v}
-\end{DoxyParamCaption}
-) const}\hypertarget{classlinalg_1_1Transformation_a01cfc4e7905418f1c1091cebebbb8580}{}\label{classlinalg_1_1Transformation_a01cfc4e7905418f1c1091cebebbb8580}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!inverse\+\_\+transform@{inverse\+\_\+transform}}
-\index{inverse\+\_\+transform@{inverse\+\_\+transform}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{inverse\+\_\+transform(const Ray \&ray) const }{inverse_transform(const Ray &ray) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ray} linalg\+::\+Transformation\+::inverse\+\_\+transform (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const}\hypertarget{classlinalg_1_1Transformation_a831147736700a461eb0e7a388649430d}{}\label{classlinalg_1_1Transformation_a831147736700a461eb0e7a388649430d}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!inverse\+\_\+transform@{inverse\+\_\+transform}}
-\index{inverse\+\_\+transform@{inverse\+\_\+transform}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{inverse\+\_\+transform(const Vector3\+D \&v) const }{inverse_transform(const Vector3D &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} linalg\+::\+Transformation\+::inverse\+\_\+transform (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{v}
-\end{DoxyParamCaption}
-) const}\hypertarget{classlinalg_1_1Transformation_a5c37fe3a882f9d29ea7382d1fe73843d}{}\label{classlinalg_1_1Transformation_a5c37fe3a882f9d29ea7382d1fe73843d}
+\mbox{\Hypertarget{classlinalg_1_1Transformation_a412bea080940292e3b5789e8397fd444}\label{classlinalg_1_1Transformation_a412bea080940292e3b5789e8397fd444}} 
+\index{linalg::Transformation@{linalg::Transformation}!inverse\_rotate@{inverse\_rotate}}
+\index{inverse\_rotate@{inverse\_rotate}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{inverse\_rotate()}{inverse\_rotate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} linalg\+::\+Transformation\+::inverse\+\_\+rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{v }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classlinalg_1_1Transformation_a00d24e4118b1a4390ba56950051f2d73}\label{classlinalg_1_1Transformation_a00d24e4118b1a4390ba56950051f2d73}} 
+\index{linalg::Transformation@{linalg::Transformation}!inverse\_transform@{inverse\_transform}}
+\index{inverse\_transform@{inverse\_transform}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{inverse\_transform()}{inverse\_transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRay}{Ray}} linalg\+::\+Transformation\+::inverse\+\_\+transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classlinalg_1_1Transformation_a96c21a4793a2d3c2801100d0cb15d894}\label{classlinalg_1_1Transformation_a96c21a4793a2d3c2801100d0cb15d894}} 
+\index{linalg::Transformation@{linalg::Transformation}!inverse\_transform@{inverse\_transform}}
+\index{inverse\_transform@{inverse\_transform}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{inverse\_transform()}{inverse\_transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} linalg\+::\+Transformation\+::inverse\+\_\+transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{v }\end{DoxyParamCaption}) const}
 
 
-The inverse to \hyperlink{classlinalg_1_1Transformation_a5b31c95da6547d580236566266c840a6}{Transformation\+::transform}. 
+
+The inverse to \mbox{\hyperlink{classlinalg_1_1Transformation_a069ec396b1a3addcb3400797a505b759}{Transformation\+::transform}}. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -160,20 +149,18 @@ The inverse to \hyperlink{classlinalg_1_1Transformation_a5b31c95da6547d580236566
 \begin{DoxyReturn}{Returns}
 The transformed vector 
 \end{DoxyReturn}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!rotate@{rotate}}
-\index{rotate@{rotate}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{rotate(const Vector3\+D \&v) const }{rotate(const Vector3D &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} linalg\+::\+Transformation\+::rotate (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{v}
-\end{DoxyParamCaption}
-) const}\hypertarget{classlinalg_1_1Transformation_a186fce9fbf82aa998cf1f92d2be5b10c}{}\label{classlinalg_1_1Transformation_a186fce9fbf82aa998cf1f92d2be5b10c}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!transform@{transform}}
-\index{transform@{transform}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{transform(const Vector3\+D \&v) const }{transform(const Vector3D &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} linalg\+::\+Transformation\+::transform (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{v}
-\end{DoxyParamCaption}
-) const}\hypertarget{classlinalg_1_1Transformation_a5b31c95da6547d580236566266c840a6}{}\label{classlinalg_1_1Transformation_a5b31c95da6547d580236566266c840a6}
+\mbox{\Hypertarget{classlinalg_1_1Transformation_ac50039a4713ae9d5b9db7eeb1616d595}\label{classlinalg_1_1Transformation_ac50039a4713ae9d5b9db7eeb1616d595}} 
+\index{linalg::Transformation@{linalg::Transformation}!rotate@{rotate}}
+\index{rotate@{rotate}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} linalg\+::\+Transformation\+::rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{v }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classlinalg_1_1Transformation_a069ec396b1a3addcb3400797a505b759}\label{classlinalg_1_1Transformation_a069ec396b1a3addcb3400797a505b759}} 
+\index{linalg::Transformation@{linalg::Transformation}!transform@{transform}}
+\index{transform@{transform}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{transform()}{transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} linalg\+::\+Transformation\+::transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{v }\end{DoxyParamCaption}) const}
+
 
 
 Apply this transformation to v in 3D space. 
@@ -186,31 +173,42 @@ Apply this transformation to v in 3D space.
 \begin{DoxyReturn}{Returns}
 The transformed vector 
 \end{DoxyReturn}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!transform@{transform}}
-\index{transform@{transform}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{transform(const Ray \&ray) const }{transform(const Ray &ray) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ray} linalg\+::\+Transformation\+::transform (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const}\hypertarget{classlinalg_1_1Transformation_a4c2d3618ae14a0e8ebe55ae65b43381c}{}\label{classlinalg_1_1Transformation_a4c2d3618ae14a0e8ebe55ae65b43381c}
+\mbox{\Hypertarget{classlinalg_1_1Transformation_a2f0c817ed97307ec777f46a37810421e}\label{classlinalg_1_1Transformation_a2f0c817ed97307ec777f46a37810421e}} 
+\index{linalg::Transformation@{linalg::Transformation}!transform@{transform}}
+\index{transform@{transform}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{transform()}{transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRay}{Ray}} linalg\+::\+Transformation\+::transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const}
+
 
 
 \subsection{Member Data Documentation}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!A@{A}}
-\index{A@{A}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{A}{A}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix3D} linalg\+::\+Transformation\+::A\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classlinalg_1_1Transformation_a24a75d79007bc9b5c5f32c042fb4332b}{}\label{classlinalg_1_1Transformation_a24a75d79007bc9b5c5f32c042fb4332b}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!A\+\_\+transpose@{A\+\_\+transpose}}
-\index{A\+\_\+transpose@{A\+\_\+transpose}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{A\+\_\+transpose}{A_transpose}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix3D} linalg\+::\+Transformation\+::\+A\+\_\+transpose\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classlinalg_1_1Transformation_ac720d71bf88660e2ae3f3d776c7cfd01}{}\label{classlinalg_1_1Transformation_ac720d71bf88660e2ae3f3d776c7cfd01}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!scale@{scale}}
-\index{scale@{scale}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{scale}{scale}}]{\setlength{\rightskip}{0pt plus 5cm}double linalg\+::\+Transformation\+::scale\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classlinalg_1_1Transformation_ac627b1362463a8c98fe3b5e633beb049}{}\label{classlinalg_1_1Transformation_ac627b1362463a8c98fe3b5e633beb049}
-\index{linalg\+::\+Transformation@{linalg\+::\+Transformation}!translation@{translation}}
-\index{translation@{translation}!linalg\+::\+Transformation@{linalg\+::\+Transformation}}
-\subsubsection[{\texorpdfstring{translation}{translation}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} linalg\+::\+Transformation\+::translation\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classlinalg_1_1Transformation_a462cf5d72735591b01bef5186bb1fe98}{}\label{classlinalg_1_1Transformation_a462cf5d72735591b01bef5186bb1fe98}
+\mbox{\Hypertarget{classlinalg_1_1Transformation_a24a75d79007bc9b5c5f32c042fb4332b}\label{classlinalg_1_1Transformation_a24a75d79007bc9b5c5f32c042fb4332b}} 
+\index{linalg::Transformation@{linalg::Transformation}!A@{A}}
+\index{A@{A}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlinalg_1_1Matrix3D}{Matrix3D}} linalg\+::\+Transformation\+::A\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlinalg_1_1Transformation_ac720d71bf88660e2ae3f3d776c7cfd01}\label{classlinalg_1_1Transformation_ac720d71bf88660e2ae3f3d776c7cfd01}} 
+\index{linalg::Transformation@{linalg::Transformation}!A\_transpose@{A\_transpose}}
+\index{A\_transpose@{A\_transpose}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{A\_transpose}{A\_transpose}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlinalg_1_1Matrix3D}{Matrix3D}} linalg\+::\+Transformation\+::\+A\+\_\+transpose\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlinalg_1_1Transformation_ac627b1362463a8c98fe3b5e633beb049}\label{classlinalg_1_1Transformation_ac627b1362463a8c98fe3b5e633beb049}} 
+\index{linalg::Transformation@{linalg::Transformation}!scale@{scale}}
+\index{scale@{scale}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily double linalg\+::\+Transformation\+::scale\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlinalg_1_1Transformation_a462cf5d72735591b01bef5186bb1fe98}\label{classlinalg_1_1Transformation_a462cf5d72735591b01bef5186bb1fe98}} 
+\index{linalg::Transformation@{linalg::Transformation}!translation@{translation}}
+\index{translation@{translation}!linalg::Transformation@{linalg::Transformation}}
+\subsubsection{\texorpdfstring{translation}{translation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} linalg\+::\+Transformation\+::translation\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/linalg/\hyperlink{Transformation_8h}{Transformation.\+h}\item 
-src/linalg/\hyperlink{Transformation_8cpp}{Transformation.\+cpp}\end{DoxyCompactItemize}
+src/linalg/\mbox{\hyperlink{Transformation_8h}{Transformation.\+h}}\item 
+src/linalg/\mbox{\hyperlink{Transformation_8cpp}{Transformation.\+cpp}}\end{DoxyCompactItemize}

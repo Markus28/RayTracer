@@ -1,12 +1,13 @@
 \hypertarget{classSpotLight}{}\section{Spot\+Light Class Reference}
-\label{classSpotLight}\index{Spot\+Light@{Spot\+Light}}
+\label{classSpotLight}\index{SpotLight@{SpotLight}}
 
 
 {\ttfamily \#include $<$Spot\+Light.\+h$>$}
 
 
 
-Inheritance diagram for Spot\+Light\+:\nopagebreak
+Inheritance diagram for Spot\+Light\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,133 +16,139 @@ Inheritance diagram for Spot\+Light\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Spot\+Light\+:\nopagebreak
+Collaboration diagram for Spot\+Light\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=220pt]{classSpotLight__coll__graph}
+\includegraphics[width=226pt]{classSpotLight__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classSpotLight_a2c1e4da1b0f152f7a46e9a1eff42a008}{Spot\+Light} (\hyperlink{classVector3D}{Vector3D} pt, \hyperlink{classVector3D}{Vector3D} \hyperlink{classSpotLight_a536a59851dfaafa45f15c120295a1d24}{direction}, double \hyperlink{classSpotLight_a0fe5ae38bd4778e16fc2c1587c554a69}{focus}, \hyperlink{classVector3D}{Vector3D} spec, \hyperlink{classVector3D}{Vector3D} diff)
+\mbox{\hyperlink{classSpotLight_a2c1e4da1b0f152f7a46e9a1eff42a008}{Spot\+Light}} (\mbox{\hyperlink{classVector3D}{Vector3D}} pt, \mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSpotLight_a536a59851dfaafa45f15c120295a1d24}{direction}}, double \mbox{\hyperlink{classSpotLight_a0fe5ae38bd4778e16fc2c1587c554a69}{focus}}, \mbox{\hyperlink{classVector3D}{Vector3D}} spec, \mbox{\hyperlink{classVector3D}{Vector3D}} diff)
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSpotLight_a6a1cc6970bbb3308b5214f85641331cd}{specular\+Component} (const \hyperlink{classVector3D}{Vector3D} \&pt) const override
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSpotLight_a6a1cc6970bbb3308b5214f85641331cd}{specular\+Component}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pt) const override
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSpotLight_a0810e4bd136caddea0c65b819f2bd400}{diffuse\+Component} (const \hyperlink{classVector3D}{Vector3D} \&pt) const override
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSpotLight_a0810e4bd136caddea0c65b819f2bd400}{diffuse\+Component}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pt) const override
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSpotLight_a051e210b637edf37bf2b8d49149a13a4}{get\+Light\+Direction} (const \hyperlink{classVector3D}{Vector3D} \&pt) const override
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSpotLight_a051e210b637edf37bf2b8d49149a13a4}{get\+Light\+Direction}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pt) const override
 \item 
-double \hyperlink{classSpotLight_a117f7918773e193f67714765c5370418}{get\+Distance} (\hyperlink{classVector3D}{Vector3D} point) const override
+double \mbox{\hyperlink{classSpotLight_a117f7918773e193f67714765c5370418}{get\+Distance}} (\mbox{\hyperlink{classVector3D}{Vector3D}} point) const override
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-double \hyperlink{classSpotLight_a2cbede9e816bc29375fe06d5c2f972c4}{weight} (double vector\+\_\+cos) const 
+double \mbox{\hyperlink{classSpotLight_a7f32b04fa57511eb51d4fd820c023aff}{weight}} (double vector\+\_\+cos) const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSpotLight_aca124556510f5fd4d44660174f077cd7}{position}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSpotLight_aca124556510f5fd4d44660174f077cd7}{position}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSpotLight_a536a59851dfaafa45f15c120295a1d24}{direction}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSpotLight_a536a59851dfaafa45f15c120295a1d24}{direction}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSpotLight_a21623e0e4a294ddb7068ee618dfab1d6}{specular}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSpotLight_a21623e0e4a294ddb7068ee618dfab1d6}{specular}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSpotLight_aad9742cfa7d1c049ad051bc87a996e04}{diffuse}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSpotLight_aad9742cfa7d1c049ad051bc87a996e04}{diffuse}}
 \item 
-double \hyperlink{classSpotLight_a0fe5ae38bd4778e16fc2c1587c554a69}{focus}
+double \mbox{\hyperlink{classSpotLight_a0fe5ae38bd4778e16fc2c1587c554a69}{focus}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{Spot\+Light@{Spot\+Light}!Spot\+Light@{Spot\+Light}}
-\index{Spot\+Light@{Spot\+Light}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{Spot\+Light(\+Vector3\+D pt, Vector3\+D direction, double focus, Vector3\+D spec, Vector3\+D diff)}{SpotLight(Vector3D pt, Vector3D direction, double focus, Vector3D spec, Vector3D diff)}}]{\setlength{\rightskip}{0pt plus 5cm}Spot\+Light\+::\+Spot\+Light (
-\begin{DoxyParamCaption}
-\item[{{\bf Vector3D}}]{pt, }
-\item[{{\bf Vector3D}}]{direction, }
-\item[{double}]{focus, }
-\item[{{\bf Vector3D}}]{spec, }
-\item[{{\bf Vector3D}}]{diff}
-\end{DoxyParamCaption}
-)}\hypertarget{classSpotLight_a2c1e4da1b0f152f7a46e9a1eff42a008}{}\label{classSpotLight_a2c1e4da1b0f152f7a46e9a1eff42a008}
+\mbox{\Hypertarget{classSpotLight_a2c1e4da1b0f152f7a46e9a1eff42a008}\label{classSpotLight_a2c1e4da1b0f152f7a46e9a1eff42a008}} 
+\index{SpotLight@{SpotLight}!SpotLight@{SpotLight}}
+\index{SpotLight@{SpotLight}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{SpotLight()}{SpotLight()}}
+{\footnotesize\ttfamily Spot\+Light\+::\+Spot\+Light (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{pt,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{direction,  }\item[{double}]{focus,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{spec,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{diff }\end{DoxyParamCaption})}
+
 
 
 \subsection{Member Function Documentation}
-\index{Spot\+Light@{Spot\+Light}!diffuse\+Component@{diffuse\+Component}}
-\index{diffuse\+Component@{diffuse\+Component}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{diffuse\+Component(const Vector3\+D \&pt) const override}{diffuseComponent(const Vector3D &pt) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Spot\+Light\+::diffuse\+Component (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pt}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSpotLight_a0810e4bd136caddea0c65b819f2bd400}{}\label{classSpotLight_a0810e4bd136caddea0c65b819f2bd400}
+\mbox{\Hypertarget{classSpotLight_a0810e4bd136caddea0c65b819f2bd400}\label{classSpotLight_a0810e4bd136caddea0c65b819f2bd400}} 
+\index{SpotLight@{SpotLight}!diffuseComponent@{diffuseComponent}}
+\index{diffuseComponent@{diffuseComponent}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{diffuseComponent()}{diffuseComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Spot\+Light\+::diffuse\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classLight_af5dc859ada149ca54ec5088e1c33deb4}{Light}.
 
-\index{Spot\+Light@{Spot\+Light}!get\+Distance@{get\+Distance}}
-\index{get\+Distance@{get\+Distance}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{get\+Distance(\+Vector3\+D point) const override}{getDistance(Vector3D point) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double Spot\+Light\+::get\+Distance (
-\begin{DoxyParamCaption}
-\item[{{\bf Vector3D}}]{point}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSpotLight_a117f7918773e193f67714765c5370418}{}\label{classSpotLight_a117f7918773e193f67714765c5370418}
+Implements \mbox{\hyperlink{classLight_af5dc859ada149ca54ec5088e1c33deb4}{Light}}.
 
-
-Implements \hyperlink{classLight_a4a7a5a9d4fc67da122c3ce75f6075093}{Light}.
-
-\index{Spot\+Light@{Spot\+Light}!get\+Light\+Direction@{get\+Light\+Direction}}
-\index{get\+Light\+Direction@{get\+Light\+Direction}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{get\+Light\+Direction(const Vector3\+D \&pt) const override}{getLightDirection(const Vector3D &pt) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Spot\+Light\+::get\+Light\+Direction (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pt}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSpotLight_a051e210b637edf37bf2b8d49149a13a4}{}\label{classSpotLight_a051e210b637edf37bf2b8d49149a13a4}
+\mbox{\Hypertarget{classSpotLight_a117f7918773e193f67714765c5370418}\label{classSpotLight_a117f7918773e193f67714765c5370418}} 
+\index{SpotLight@{SpotLight}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily double Spot\+Light\+::get\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classLight_ac075908cf22e9ca9f289c1226d133664}{Light}.
 
-\index{Spot\+Light@{Spot\+Light}!specular\+Component@{specular\+Component}}
-\index{specular\+Component@{specular\+Component}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{specular\+Component(const Vector3\+D \&pt) const override}{specularComponent(const Vector3D &pt) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Spot\+Light\+::specular\+Component (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pt}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSpotLight_a6a1cc6970bbb3308b5214f85641331cd}{}\label{classSpotLight_a6a1cc6970bbb3308b5214f85641331cd}
+Implements \mbox{\hyperlink{classLight_a4a7a5a9d4fc67da122c3ce75f6075093}{Light}}.
+
+\mbox{\Hypertarget{classSpotLight_a051e210b637edf37bf2b8d49149a13a4}\label{classSpotLight_a051e210b637edf37bf2b8d49149a13a4}} 
+\index{SpotLight@{SpotLight}!getLightDirection@{getLightDirection}}
+\index{getLightDirection@{getLightDirection}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{getLightDirection()}{getLightDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Spot\+Light\+::get\+Light\+Direction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classLight_a2a4cdf8081c2cab02757c2464610a32f}{Light}.
 
-\index{Spot\+Light@{Spot\+Light}!weight@{weight}}
-\index{weight@{weight}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{weight(double vector\+\_\+cos) const }{weight(double vector_cos) const }}]{\setlength{\rightskip}{0pt plus 5cm}double Spot\+Light\+::weight (
-\begin{DoxyParamCaption}
-\item[{double}]{vector\+\_\+cos}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSpotLight_a2cbede9e816bc29375fe06d5c2f972c4}{}\label{classSpotLight_a2cbede9e816bc29375fe06d5c2f972c4}
+Implements \mbox{\hyperlink{classLight_ac075908cf22e9ca9f289c1226d133664}{Light}}.
+
+\mbox{\Hypertarget{classSpotLight_a6a1cc6970bbb3308b5214f85641331cd}\label{classSpotLight_a6a1cc6970bbb3308b5214f85641331cd}} 
+\index{SpotLight@{SpotLight}!specularComponent@{specularComponent}}
+\index{specularComponent@{specularComponent}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{specularComponent()}{specularComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Spot\+Light\+::specular\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classLight_a2a4cdf8081c2cab02757c2464610a32f}{Light}}.
+
+\mbox{\Hypertarget{classSpotLight_a7f32b04fa57511eb51d4fd820c023aff}\label{classSpotLight_a7f32b04fa57511eb51d4fd820c023aff}} 
+\index{SpotLight@{SpotLight}!weight@{weight}}
+\index{weight@{weight}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{weight()}{weight()}}
+{\footnotesize\ttfamily double Spot\+Light\+::weight (\begin{DoxyParamCaption}\item[{double}]{vector\+\_\+cos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 \subsection{Member Data Documentation}
-\index{Spot\+Light@{Spot\+Light}!diffuse@{diffuse}}
-\index{diffuse@{diffuse}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{diffuse}{diffuse}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Spot\+Light\+::diffuse\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSpotLight_aad9742cfa7d1c049ad051bc87a996e04}{}\label{classSpotLight_aad9742cfa7d1c049ad051bc87a996e04}
-\index{Spot\+Light@{Spot\+Light}!direction@{direction}}
-\index{direction@{direction}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{direction}{direction}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Spot\+Light\+::direction\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSpotLight_a536a59851dfaafa45f15c120295a1d24}{}\label{classSpotLight_a536a59851dfaafa45f15c120295a1d24}
-\index{Spot\+Light@{Spot\+Light}!focus@{focus}}
-\index{focus@{focus}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{focus}{focus}}]{\setlength{\rightskip}{0pt plus 5cm}double Spot\+Light\+::focus\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSpotLight_a0fe5ae38bd4778e16fc2c1587c554a69}{}\label{classSpotLight_a0fe5ae38bd4778e16fc2c1587c554a69}
-\index{Spot\+Light@{Spot\+Light}!position@{position}}
-\index{position@{position}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{position}{position}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Spot\+Light\+::position\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSpotLight_aca124556510f5fd4d44660174f077cd7}{}\label{classSpotLight_aca124556510f5fd4d44660174f077cd7}
-\index{Spot\+Light@{Spot\+Light}!specular@{specular}}
-\index{specular@{specular}!Spot\+Light@{Spot\+Light}}
-\subsubsection[{\texorpdfstring{specular}{specular}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Spot\+Light\+::specular\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSpotLight_a21623e0e4a294ddb7068ee618dfab1d6}{}\label{classSpotLight_a21623e0e4a294ddb7068ee618dfab1d6}
+\mbox{\Hypertarget{classSpotLight_aad9742cfa7d1c049ad051bc87a996e04}\label{classSpotLight_aad9742cfa7d1c049ad051bc87a996e04}} 
+\index{SpotLight@{SpotLight}!diffuse@{diffuse}}
+\index{diffuse@{diffuse}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{diffuse}{diffuse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Spot\+Light\+::diffuse\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpotLight_a536a59851dfaafa45f15c120295a1d24}\label{classSpotLight_a536a59851dfaafa45f15c120295a1d24}} 
+\index{SpotLight@{SpotLight}!direction@{direction}}
+\index{direction@{direction}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Spot\+Light\+::direction\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpotLight_a0fe5ae38bd4778e16fc2c1587c554a69}\label{classSpotLight_a0fe5ae38bd4778e16fc2c1587c554a69}} 
+\index{SpotLight@{SpotLight}!focus@{focus}}
+\index{focus@{focus}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{focus}{focus}}
+{\footnotesize\ttfamily double Spot\+Light\+::focus\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpotLight_aca124556510f5fd4d44660174f077cd7}\label{classSpotLight_aca124556510f5fd4d44660174f077cd7}} 
+\index{SpotLight@{SpotLight}!position@{position}}
+\index{position@{position}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Spot\+Light\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpotLight_a21623e0e4a294ddb7068ee618dfab1d6}\label{classSpotLight_a21623e0e4a294ddb7068ee618dfab1d6}} 
+\index{SpotLight@{SpotLight}!specular@{specular}}
+\index{specular@{specular}!SpotLight@{SpotLight}}
+\subsubsection{\texorpdfstring{specular}{specular}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Spot\+Light\+::specular\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{SpotLight_8h}{Spot\+Light.\+h}\item 
-src/\hyperlink{SpotLight_8cpp}{Spot\+Light.\+cpp}\end{DoxyCompactItemize}
+src/\mbox{\hyperlink{SpotLight_8h}{Spot\+Light.\+h}}\item 
+src/\mbox{\hyperlink{SpotLight_8cpp}{Spot\+Light.\+cpp}}\end{DoxyCompactItemize}

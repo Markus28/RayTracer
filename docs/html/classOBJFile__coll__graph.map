@@ -1,3 +1,7 @@
 <map id="OBJFile" name="OBJFile">
-<area shape="rect" id="node2" href="$classMTLLib.html" title="Class for loading wavefront .mtl files. " alt="" coords="43,109,109,136"/>
+<area shape="rect" id="node1" title="Class for loading wavefront .obj files." alt="" coords="167,213,236,240"/>
+<area shape="rect" id="node2" href="$classMTLLib.html" title="Class for loading wavefront .mtl files." alt="" coords="43,109,109,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,147,47"/>
+<area shape="rect" id="node4" title=" " alt="" coords="133,109,270,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="295,109,423,136"/>
 </map>

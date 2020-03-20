@@ -2,7 +2,7 @@
 \label{classScene}\index{Scene@{Scene}}
 
 
-The Scene-\/\+Object is used to compose Render\+Objects, Lights, the \hyperlink{classBackground}{Background} and render them.  
+The Scene-\/\+Object is used to compose Render\+Objects, Lights, the \mbox{\hyperlink{classBackground}{Background}} and render them.  
 
 
 
@@ -11,7 +11,8 @@ The Scene-\/\+Object is used to compose Render\+Objects, Lights, the \hyperlink{
 
 
 
-Collaboration diagram for Scene\+:\nopagebreak
+Collaboration diagram for Scene\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,103 +22,107 @@ Collaboration diagram for Scene\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classScene_aa05f285f7a7df49c03ce32fb1c43c9ae}{Scene} (const std\+::vector$<$ \hyperlink{classRenderObject}{Render\+Object} $\ast$ $>$ \&objects, const std\+::vector$<$ \hyperlink{classLight}{Light} $\ast$ $>$ \&\hyperlink{classScene_a4ecc3182a80435e1c4dfbe1b20e559bd}{lights}, \hyperlink{classcamera_1_1Camera}{camera\+::\+Camera} $\ast$camera, \hyperlink{classVector3D}{Vector3D} background, \hyperlink{classVector3D}{Vector3D} \hyperlink{classScene_a284ce5b2aeb47c64d6712d9748229c47}{ambient})
+\mbox{\hyperlink{classScene_aa05f285f7a7df49c03ce32fb1c43c9ae}{Scene}} (const std\+::vector$<$ \mbox{\hyperlink{classRenderObject}{Render\+Object}} $\ast$ $>$ \&objects, const std\+::vector$<$ \mbox{\hyperlink{classLight}{Light}} $\ast$ $>$ \&\mbox{\hyperlink{classScene_a4ecc3182a80435e1c4dfbe1b20e559bd}{lights}}, \mbox{\hyperlink{classcamera_1_1Camera}{camera\+::\+Camera}} $\ast$camera, \mbox{\hyperlink{classVector3D}{Vector3D}} background, \mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classScene_a284ce5b2aeb47c64d6712d9748229c47}{ambient}})
 \item 
-void \hyperlink{classScene_a19a594ba70c411fb6fddb1e9d772da52}{render} (unsigned int recursion\+\_\+depth)
+void \mbox{\hyperlink{classScene_a19a594ba70c411fb6fddb1e9d772da52}{render}} (unsigned int recursion\+\_\+depth)
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classIntersection}{Intersection} \hyperlink{classScene_a671595e773bd4336c0fa67186aff609d}{first\+\_\+hit} (const \hyperlink{classRay}{Ray} \&ray, bool ignore\+\_\+transparent)
+\mbox{\hyperlink{classIntersection}{Intersection}} \mbox{\hyperlink{classScene_a671595e773bd4336c0fa67186aff609d}{first\+\_\+hit}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray, bool ignore\+\_\+transparent)
 \item 
-\hyperlink{classIntersection}{Intersection} \hyperlink{classScene_a726867ff812fd8776fe0b4319538e9e7}{first\+\_\+hit} (const \hyperlink{classRay}{Ray} \&ray)
+\mbox{\hyperlink{classIntersection}{Intersection}} \mbox{\hyperlink{classScene_a726867ff812fd8776fe0b4319538e9e7}{first\+\_\+hit}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray)
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classScene_a9ccd15bf4c359c1585fe87d85d424d55}{trace\+\_\+ray} (const \hyperlink{classRay}{Ray} \&ray, unsigned int recursion\+\_\+depth)
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classScene_a9ccd15bf4c359c1585fe87d85d424d55}{trace\+\_\+ray}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray, unsigned int recursion\+\_\+depth)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::vector$<$ \hyperlink{classRenderObject}{Render\+Object} $\ast$ $>$ \hyperlink{classScene_a37361b6054643b62fcb8e6b7c828e5dd}{objs}
+std\+::vector$<$ \mbox{\hyperlink{classRenderObject}{Render\+Object}} $\ast$ $>$ \mbox{\hyperlink{classScene_a37361b6054643b62fcb8e6b7c828e5dd}{objs}}
 \item 
-std\+::vector$<$ \hyperlink{classLight}{Light} $\ast$ $>$ \hyperlink{classScene_a4ecc3182a80435e1c4dfbe1b20e559bd}{lights}
+std\+::vector$<$ \mbox{\hyperlink{classLight}{Light}} $\ast$ $>$ \mbox{\hyperlink{classScene_a4ecc3182a80435e1c4dfbe1b20e559bd}{lights}}
 \item 
-\hyperlink{classcamera_1_1Camera}{camera\+::\+Camera} $\ast$ \hyperlink{classScene_a3e5448bc1b1150aa67049914b7800b63}{cam}
+\mbox{\hyperlink{classcamera_1_1Camera}{camera\+::\+Camera}} $\ast$ \mbox{\hyperlink{classScene_a3e5448bc1b1150aa67049914b7800b63}{cam}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classScene_ac745fba97d639cebcf0e8fbf59967da2}{backgrnd}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classScene_ac745fba97d639cebcf0e8fbf59967da2}{backgrnd}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classScene_a284ce5b2aeb47c64d6712d9748229c47}{ambient}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classScene_a284ce5b2aeb47c64d6712d9748229c47}{ambient}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-The Scene-\/\+Object is used to compose Render\+Objects, Lights, the \hyperlink{classBackground}{Background} and render them. 
+The Scene-\/\+Object is used to compose Render\+Objects, Lights, the \mbox{\hyperlink{classBackground}{Background}} and render them. 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScene_aa05f285f7a7df49c03ce32fb1c43c9ae}\label{classScene_aa05f285f7a7df49c03ce32fb1c43c9ae}} 
 \index{Scene@{Scene}!Scene@{Scene}}
 \index{Scene@{Scene}!Scene@{Scene}}
-\subsubsection[{\texorpdfstring{Scene(const std\+::vector$<$ Render\+Object $\ast$ $>$ \&objects, const std\+::vector$<$ Light $\ast$ $>$ \&lights, camera\+::\+Camera $\ast$camera, Vector3\+D background, Vector3\+D ambient)}{Scene(const std::vector< RenderObject * > &objects, const std::vector< Light * > &lights, camera::Camera *camera, Vector3D background, Vector3D ambient)}}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+::\+Scene (
-\begin{DoxyParamCaption}
-\item[{const std\+::vector$<$ {\bf Render\+Object} $\ast$ $>$ \&}]{objects, }
-\item[{const std\+::vector$<$ {\bf Light} $\ast$ $>$ \&}]{lights, }
-\item[{{\bf camera\+::\+Camera} $\ast$}]{camera, }
-\item[{{\bf Vector3D}}]{background, }
-\item[{{\bf Vector3D}}]{ambient}
-\end{DoxyParamCaption}
-)}\hypertarget{classScene_aa05f285f7a7df49c03ce32fb1c43c9ae}{}\label{classScene_aa05f285f7a7df49c03ce32fb1c43c9ae}
+\subsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classRenderObject}{Render\+Object}} $\ast$ $>$ \&}]{objects,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classLight}{Light}} $\ast$ $>$ \&}]{lights,  }\item[{\mbox{\hyperlink{classcamera_1_1Camera}{camera\+::\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{background,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{ambient }\end{DoxyParamCaption})}
+
 
 
 \subsection{Member Function Documentation}
-\index{Scene@{Scene}!first\+\_\+hit@{first\+\_\+hit}}
-\index{first\+\_\+hit@{first\+\_\+hit}!Scene@{Scene}}
-\subsubsection[{\texorpdfstring{first\+\_\+hit(const Ray \&ray, bool ignore\+\_\+transparent)}{first_hit(const Ray &ray, bool ignore_transparent)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Scene\+::first\+\_\+hit (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray, }
-\item[{bool}]{ignore\+\_\+transparent}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScene_a671595e773bd4336c0fa67186aff609d}{}\label{classScene_a671595e773bd4336c0fa67186aff609d}
-\index{Scene@{Scene}!first\+\_\+hit@{first\+\_\+hit}}
-\index{first\+\_\+hit@{first\+\_\+hit}!Scene@{Scene}}
-\subsubsection[{\texorpdfstring{first\+\_\+hit(const Ray \&ray)}{first_hit(const Ray &ray)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Scene\+::first\+\_\+hit (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScene_a726867ff812fd8776fe0b4319538e9e7}{}\label{classScene_a726867ff812fd8776fe0b4319538e9e7}
+\mbox{\Hypertarget{classScene_a671595e773bd4336c0fa67186aff609d}\label{classScene_a671595e773bd4336c0fa67186aff609d}} 
+\index{Scene@{Scene}!first\_hit@{first\_hit}}
+\index{first\_hit@{first\_hit}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{first\_hit()}{first\_hit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIntersection}{Intersection}} Scene\+::first\+\_\+hit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray,  }\item[{bool}]{ignore\+\_\+transparent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classScene_a726867ff812fd8776fe0b4319538e9e7}\label{classScene_a726867ff812fd8776fe0b4319538e9e7}} 
+\index{Scene@{Scene}!first\_hit@{first\_hit}}
+\index{first\_hit@{first\_hit}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{first\_hit()}{first\_hit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIntersection}{Intersection}} Scene\+::first\+\_\+hit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classScene_a19a594ba70c411fb6fddb1e9d772da52}\label{classScene_a19a594ba70c411fb6fddb1e9d772da52}} 
 \index{Scene@{Scene}!render@{render}}
 \index{render@{render}!Scene@{Scene}}
-\subsubsection[{\texorpdfstring{render(unsigned int recursion\+\_\+depth)}{render(unsigned int recursion_depth)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::render (
-\begin{DoxyParamCaption}
-\item[{unsigned int}]{recursion\+\_\+depth}
-\end{DoxyParamCaption}
-)}\hypertarget{classScene_a19a594ba70c411fb6fddb1e9d772da52}{}\label{classScene_a19a594ba70c411fb6fddb1e9d772da52}
-\index{Scene@{Scene}!trace\+\_\+ray@{trace\+\_\+ray}}
-\index{trace\+\_\+ray@{trace\+\_\+ray}!Scene@{Scene}}
-\subsubsection[{\texorpdfstring{trace\+\_\+ray(const Ray \&ray, unsigned int recursion\+\_\+depth)}{trace_ray(const Ray &ray, unsigned int recursion_depth)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Scene\+::trace\+\_\+ray (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray, }
-\item[{unsigned int}]{recursion\+\_\+depth}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScene_a9ccd15bf4c359c1585fe87d85d424d55}{}\label{classScene_a9ccd15bf4c359c1585fe87d85d424d55}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Scene\+::render (\begin{DoxyParamCaption}\item[{unsigned int}]{recursion\+\_\+depth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classScene_a9ccd15bf4c359c1585fe87d85d424d55}\label{classScene_a9ccd15bf4c359c1585fe87d85d424d55}} 
+\index{Scene@{Scene}!trace\_ray@{trace\_ray}}
+\index{trace\_ray@{trace\_ray}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{trace\_ray()}{trace\_ray()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Scene\+::trace\+\_\+ray (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray,  }\item[{unsigned int}]{recursion\+\_\+depth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 \subsection{Member Data Documentation}
+\mbox{\Hypertarget{classScene_a284ce5b2aeb47c64d6712d9748229c47}\label{classScene_a284ce5b2aeb47c64d6712d9748229c47}} 
 \index{Scene@{Scene}!ambient@{ambient}}
 \index{ambient@{ambient}!Scene@{Scene}}
-\subsubsection[{\texorpdfstring{ambient}{ambient}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Scene\+::ambient\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScene_a284ce5b2aeb47c64d6712d9748229c47}{}\label{classScene_a284ce5b2aeb47c64d6712d9748229c47}
+\subsubsection{\texorpdfstring{ambient}{ambient}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Scene\+::ambient\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classScene_ac745fba97d639cebcf0e8fbf59967da2}\label{classScene_ac745fba97d639cebcf0e8fbf59967da2}} 
 \index{Scene@{Scene}!backgrnd@{backgrnd}}
 \index{backgrnd@{backgrnd}!Scene@{Scene}}
-\subsubsection[{\texorpdfstring{backgrnd}{backgrnd}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Scene\+::backgrnd\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScene_ac745fba97d639cebcf0e8fbf59967da2}{}\label{classScene_ac745fba97d639cebcf0e8fbf59967da2}
+\subsubsection{\texorpdfstring{backgrnd}{backgrnd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Scene\+::backgrnd\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classScene_a3e5448bc1b1150aa67049914b7800b63}\label{classScene_a3e5448bc1b1150aa67049914b7800b63}} 
 \index{Scene@{Scene}!cam@{cam}}
 \index{cam@{cam}!Scene@{Scene}}
-\subsubsection[{\texorpdfstring{cam}{cam}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf camera\+::\+Camera}$\ast$ Scene\+::cam\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScene_a3e5448bc1b1150aa67049914b7800b63}{}\label{classScene_a3e5448bc1b1150aa67049914b7800b63}
+\subsubsection{\texorpdfstring{cam}{cam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcamera_1_1Camera}{camera\+::\+Camera}}$\ast$ Scene\+::cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classScene_a4ecc3182a80435e1c4dfbe1b20e559bd}\label{classScene_a4ecc3182a80435e1c4dfbe1b20e559bd}} 
 \index{Scene@{Scene}!lights@{lights}}
 \index{lights@{lights}!Scene@{Scene}}
-\subsubsection[{\texorpdfstring{lights}{lights}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Light}$\ast$$>$ Scene\+::lights\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScene_a4ecc3182a80435e1c4dfbe1b20e559bd}{}\label{classScene_a4ecc3182a80435e1c4dfbe1b20e559bd}
+\subsubsection{\texorpdfstring{lights}{lights}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classLight}{Light}}$\ast$$>$ Scene\+::lights\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classScene_a37361b6054643b62fcb8e6b7c828e5dd}\label{classScene_a37361b6054643b62fcb8e6b7c828e5dd}} 
 \index{Scene@{Scene}!objs@{objs}}
 \index{objs@{objs}!Scene@{Scene}}
-\subsubsection[{\texorpdfstring{objs}{objs}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Render\+Object}$\ast$$>$ Scene\+::objs\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScene_a37361b6054643b62fcb8e6b7c828e5dd}{}\label{classScene_a37361b6054643b62fcb8e6b7c828e5dd}
+\subsubsection{\texorpdfstring{objs}{objs}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classRenderObject}{Render\+Object}}$\ast$$>$ Scene\+::objs\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{Scene_8h}{Scene.\+h}\item 
-src/\hyperlink{Scene_8cpp}{Scene.\+cpp}\end{DoxyCompactItemize}
+src/\mbox{\hyperlink{Scene_8h}{Scene.\+h}}\item 
+src/\mbox{\hyperlink{Scene_8cpp}{Scene.\+cpp}}\end{DoxyCompactItemize}

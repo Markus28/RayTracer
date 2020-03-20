@@ -1,27 +1,70 @@
 #include <iostream>
 #include <vector>
 #include <chrono>
-#include <unordered_map>
 #include "Utilities.h"
 #include "Scene.h"
 #include "camera/PinHoleCamera.h"
 #include "DistantPointSource.h"
 #include "renderable/SimplePlane.h"
 #include "renderable/SimpleSphere.h"
-#include "renderable/Triangle.h"
 #include "renderable/BinaryVolumeHierarchy.h"
 #include "OBJFile.h"
-#include "RandomLight.h"
 #include "PointSource.h"
-#include "MTLLib.h"
 #include "symcpp/SymbolicGraph.h"
-#include "symcpp/Exponential.h"
-#include "symcpp/Logarithm.h"
 #include "symcpp/Power.h"
-#include "symcpp/Sine.h"
 #include "renderable/ImplicitSurface.h"
+#include "renderable/SDFSphere.h"
+#include "renderable/CSG.h"
+#include "renderable/SDFCylinder.h"
+#include "renderable/SDFBox.h"
+#include "linalg/Matrix3D.h"
 
 using namespace symcpp;
+
+
+void sdf(){
+    std::vector<RenderObject*> objs;
+    std::vector<Light*> lights;
+
+    Material blue(Material(Vector3D(0.1,0.3,3), Vector3D(0.1,0.1,3), Vector3D(0.1,0.3,3), Vector3D(1,1,1), 0, 0, 1.0) );
+    Material green(Material(Vector3D(0.1,3,0.3), Vector3D(0.1,3,0.1), Vector3D(0.1,3,0.3), Vector3D(1,1,1), 0, 0, 1.0) );
+    Material red(Material(Vector3D(3,0.1,0.3), Vector3D(3,0.1,0.1), Vector3D(3,0.1,0.3), Vector3D(1,1,1), 0, 0, 1.0) );
+
+
+    SDFCylinder x({0,0,0}, {1,0,0}, 2, 0.35, red);
+    SDFCylinder y({0,0,0}, {0,1,0}, 2, 0.35, red);
+    SDFCylinder z({0,0,0}, {0,0,1}, 2, 0.35, red);
+
+    SDFBox b({0,0,0}, 1,1,1, green);
+    SDFSphere s({0,0,0}, 0.65, blue);
+
+    CSG cross;
+    cross.unionize(&x);
+    cross.unionize(&y);
+    cross.unionize(&z);
+
+    CSG o;
+    o.unionize(&b);
+    o.intersect(&s);
+    o.subtract(cross);
+
+    objs.push_back(&o);
+
+    camera::PinHoleCamera cam = camera::PinHoleCamera(Vector3D(2.25,2.25,2.5), Vector3D(-1,-1,2), Vector3D(-1,1,0), 2400, 1800, 0.8);
+
+    DistantPointSource light = DistantPointSource(Vector3D(1,1,1), Vector3D(20,20,20), Vector3D(40,40,40));
+    lights.push_back(&light);
+    Scene my_scene = Scene(objs, lights, &cam, Vector3D(200,200,200), Vector3D(0.2,0.2,0.2));
+
+    auto start = std::chrono::high_resolution_clock::now();
+
+    my_scene.render(4);
+
+    auto stop = std::chrono::high_resolution_clock::now();
+
+    std::cout<<std::endl<<"It took "<<std::chrono::duration_cast<std::chrono::seconds>(stop - start).count()<<" seconds."<<std::endl;
+    cam.write_file("./sdf.bmp");
+}
 
 void geo(){
     std::vector<RenderObject*> objs;
@@ -109,12 +152,14 @@ void car()
 
     std::cout<<"Creating BVH..."<<std::endl;
     BinaryVolumeHierarchy bvh = f.getBVH();
-    std::cout<<bvh.get_deepest_branch()<<std::endl;
+    std::cout<< "Deepest BVH branch: " << bvh.get_deepest_branch()<<std::endl;
     std::cout<<"Done..."<<std::endl<<std::endl;
     SimplePlane floor = SimplePlane(Vector3D(0,0,0), Vector3D(0,1,0), Material(Vector3D(0.5,0.5,0.5), Vector3D(0.4,0.4,0.4), Vector3D(0.1,0.1,0.1), Vector3D(1,1,1), 0, 0, 1.0));
+    SimpleSphere sphere = SimpleSphere(Vector3D(-2,0.3,0.3), 0.3,  Material(Vector3D(1.5,0.1,0.2), Vector3D(0.5,0.1,0.1), Vector3D(0.3,0.1,0.1), Vector3D(3,2,2), 0, 0.2, 1.0));
 
     objs.push_back(&floor);
     objs.push_back(&bvh);
+    //objs.push_back(&sphere);
 
     camera::PinHoleCamera cam = camera::PinHoleCamera(Vector3D(-6,2.5,0), Vector3D(0.377,0.925,0), Vector3D(0,0,1), 1200, 650, 0.8);
     lights.push_back(&light1);
@@ -163,10 +208,10 @@ void implicit(){
 
 int main() {
     car();
-    //implicit();
-    //dragon();
-    //geo();
-    //cornell();
+    implicit();
+    dragon();
+    geo();
+    sdf();
     return 0;
 
 }

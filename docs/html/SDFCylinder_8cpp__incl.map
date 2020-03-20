@@ -1,12 +1,15 @@
 <map id="src/renderable/SDFCylinder.cpp" name="src/renderable/SDFCylinder.cpp">
-<area shape="rect" id="node2" href="$SDFCylinder_8h.html" title="SDFCylinder.h" alt="" coords="107,80,215,107"/>
-<area shape="rect" id="node3" href="$SDFObject_8h.html" title="SDFObject.h" alt="" coords="111,155,210,181"/>
-<area shape="rect" id="node4" href="$BoundedVolume_8h.html" title="BoundedVolume.h" alt="" coords="97,229,225,256"/>
-<area shape="rect" id="node5" href="$BoundingBox_8h.html" title="BoundingBox.h" alt="" coords="5,379,116,405"/>
-<area shape="rect" id="node10" href="$RenderObject_8h.html" title="RenderObject.h" alt="" coords="169,304,283,331"/>
-<area shape="rect" id="node6" href="$Interval_8h.html" title="../Interval.h" alt="" coords="25,528,113,555"/>
-<area shape="rect" id="node8" href="$Ray_8h.html" title="../Ray.h" alt="" coords="95,453,165,480"/>
-<area shape="rect" id="node9" href="$Vector3D_8h.html" title="linalg/Vector3D.h" alt="" coords="157,528,279,555"/>
-<area shape="rect" id="node11" href="$IntersectionProperties_8h.html" title="../IntersectionProperties.h" alt="" coords="140,379,312,405"/>
-<area shape="rect" id="node12" href="$Material_8h.html" title="Material.h" alt="" coords="189,453,268,480"/>
+<area shape="rect" id="node1" title=" " alt="" coords="93,5,300,32"/>
+<area shape="rect" id="node2" href="$SDFCylinder_8h.html" title=" " alt="" coords="90,80,197,107"/>
+<area shape="rect" id="node13" title=" " alt="" coords="221,80,279,107"/>
+<area shape="rect" id="node3" href="$SDFObject_8h.html" title=" " alt="" coords="94,155,193,181"/>
+<area shape="rect" id="node4" href="$BoundedVolume_8h.html" title=" " alt="" coords="79,229,207,256"/>
+<area shape="rect" id="node5" href="$BoundingBox_8h.html" title=" " alt="" coords="5,379,116,405"/>
+<area shape="rect" id="node10" href="$RenderObject_8h.html" title=" " alt="" coords="169,304,283,331"/>
+<area shape="rect" id="node6" href="$Interval_8h.html" title=" " alt="" coords="26,528,114,555"/>
+<area shape="rect" id="node8" href="$Ray_8h.html" title=" " alt="" coords="97,453,163,480"/>
+<area shape="rect" id="node7" title=" " alt="" coords="173,603,245,629"/>
+<area shape="rect" id="node9" href="$Vector3D_8h.html" title=" " alt="" coords="147,528,270,555"/>
+<area shape="rect" id="node11" href="$IntersectionProperties_8h.html" title=" " alt="" coords="140,379,312,405"/>
+<area shape="rect" id="node12" href="$Material_8h.html" title=" " alt="" coords="188,453,267,480"/>
 </map>

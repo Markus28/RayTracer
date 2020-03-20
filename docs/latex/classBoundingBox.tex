@@ -1,5 +1,5 @@
 \hypertarget{classBoundingBox}{}\section{Bounding\+Box Class Reference}
-\label{classBoundingBox}\index{Bounding\+Box@{Bounding\+Box}}
+\label{classBoundingBox}\index{BoundingBox@{BoundingBox}}
 
 
 A cuboid in 3D space for estimating the position of objects.  
@@ -11,104 +11,98 @@ A cuboid in 3D space for estimating the position of objects.
 
 
 
-Collaboration diagram for Bounding\+Box\+:\nopagebreak
+Collaboration diagram for Bounding\+Box\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=201pt]{classBoundingBox__coll__graph}
+\includegraphics[width=211pt]{classBoundingBox__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classBoundingBox_a4120184a9340ea9a0c43285c9d0f18bf}{Bounding\+Box} (\hyperlink{classInterval}{Interval} \hyperlink{classBoundingBox_a93ea5f12ef2300fe61925f6b44faaebe}{x}, \hyperlink{classInterval}{Interval} \hyperlink{classBoundingBox_a593fd6b66d3ed0352d92024685863090}{y}, \hyperlink{classInterval}{Interval} \hyperlink{classBoundingBox_a9a6005ebe3550447aad804123fa68fea}{z})
+\mbox{\hyperlink{classBoundingBox_a4120184a9340ea9a0c43285c9d0f18bf}{Bounding\+Box}} (\mbox{\hyperlink{classInterval}{Interval}} \mbox{\hyperlink{classBoundingBox_a93ea5f12ef2300fe61925f6b44faaebe}{x}}, \mbox{\hyperlink{classInterval}{Interval}} \mbox{\hyperlink{classBoundingBox_a593fd6b66d3ed0352d92024685863090}{y}}, \mbox{\hyperlink{classInterval}{Interval}} \mbox{\hyperlink{classBoundingBox_a9a6005ebe3550447aad804123fa68fea}{z}})
 \item 
-\hyperlink{classBoundingBox_a6e401c4da5839950f1f30c8b8c4d1208}{Bounding\+Box} ()
+\mbox{\hyperlink{classBoundingBox_a6e401c4da5839950f1f30c8b8c4d1208}{Bounding\+Box}} ()
 \item 
-bool \hyperlink{classBoundingBox_a8f8eca09001b89f0c80566731fb3ef99}{is\+\_\+intersected} (const \hyperlink{classRay}{Ray} \&ray) const 
+bool \mbox{\hyperlink{classBoundingBox_aefbe16b0abb24dd2efc8ca5a0bfd41ca}{is\+\_\+intersected}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const
 \item 
-\hyperlink{classInterval}{Interval} \hyperlink{classBoundingBox_a23a907bb7dfdcd0bd60a9e1cd59bda35}{intersection\+\_\+interval} (const \hyperlink{classRay}{Ray} \&ray) const 
+\mbox{\hyperlink{classInterval}{Interval}} \mbox{\hyperlink{classBoundingBox_a10b6d0c6aa3a44a22584425a240d21ad}{intersection\+\_\+interval}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const
 \begin{DoxyCompactList}\small\item\em Returns which part of ray lies inside the box. \end{DoxyCompactList}\item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classBoundingBox_aee02002578e3f3a0d1046f1c6da86d7b}{get\+\_\+center} () const 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classBoundingBox_afc3618e024bd7c1e822ddee127c0eabd}{get\+\_\+center}} () const
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classBoundingBox_ae8c481a0410806867b8e7fce7b95eee2}{intersection\+\_\+box} (const \hyperlink{classBoundingBox}{Bounding\+Box} \&other) const 
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classBoundingBox_ab235900033f5b916bc0729278f20d776}{intersection\+\_\+box}} (const \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \&other) const
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classBoundingBox_a58ea4f5a93b79953b5f971a7e1cb2e9c}{operator+} (const \hyperlink{classBoundingBox}{Bounding\+Box} \&other) const 
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classBoundingBox_ac5d589d5d2075f7b65b8b2fdf0f11411}{operator+}} (const \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \&other) const
 \item 
-const \hyperlink{classInterval}{Interval} \& \hyperlink{classBoundingBox_a3db32eae066cb2af88dbe9394b58db9f}{operator\mbox{[}$\,$\mbox{]}} (unsigned int index) const 
+const \mbox{\hyperlink{classInterval}{Interval}} \& \mbox{\hyperlink{classBoundingBox_a75b856c3d4fb4b1ffd3132af52d3d3fd}{operator\mbox{[}$\,$\mbox{]}}} (unsigned int index) const
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classInterval}{Interval} \hyperlink{classBoundingBox_a708734f01854529bbdb0c3b2a33461d5}{t\+\_\+range} (const \hyperlink{classInterval}{Interval} \&i, double base, double direction) const 
+\mbox{\hyperlink{classInterval}{Interval}} \mbox{\hyperlink{classBoundingBox_aa4e823e93add25a2110090d41df96150}{t\+\_\+range}} (const \mbox{\hyperlink{classInterval}{Interval}} \&i, double base, double direction) const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{classBoundingBox_a498e443b213cc08f7c0235688dd2ecf8}{empty}
+bool \mbox{\hyperlink{classBoundingBox_a498e443b213cc08f7c0235688dd2ecf8}{empty}}
 \item 
-\hyperlink{classInterval}{Interval} \hyperlink{classBoundingBox_a93ea5f12ef2300fe61925f6b44faaebe}{x}
+\mbox{\hyperlink{classInterval}{Interval}} \mbox{\hyperlink{classBoundingBox_a93ea5f12ef2300fe61925f6b44faaebe}{x}}
 \item 
-\hyperlink{classInterval}{Interval} \hyperlink{classBoundingBox_a593fd6b66d3ed0352d92024685863090}{y}
+\mbox{\hyperlink{classInterval}{Interval}} \mbox{\hyperlink{classBoundingBox_a593fd6b66d3ed0352d92024685863090}{y}}
 \item 
-\hyperlink{classInterval}{Interval} \hyperlink{classBoundingBox_a9a6005ebe3550447aad804123fa68fea}{z}
+\mbox{\hyperlink{classInterval}{Interval}} \mbox{\hyperlink{classBoundingBox_a9a6005ebe3550447aad804123fa68fea}{z}}
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-std\+::ostream \& \hyperlink{classBoundingBox_aa56e1d8e3d8c419be6c96f823f83648d}{operator$<$$<$} (std\+::ostream \&sink, const \hyperlink{classBoundingBox}{Bounding\+Box} \&b)
+std\+::ostream \& \mbox{\hyperlink{classBoundingBox_aa56e1d8e3d8c419be6c96f823f83648d}{operator$<$$<$}} (std\+::ostream \&sink, const \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \&b)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 A cuboid in 3D space for estimating the position of objects. 
 
-\hyperlink{classBoundedVolume}{Bounded\+Volume} objects have to be contained in a bounding box. \begin{DoxyNote}{Note}
+\mbox{\hyperlink{classBoundedVolume}{Bounded\+Volume}} objects have to be contained in a bounding box. \begin{DoxyNote}{Note}
 Note, that a bounding box cannot be rendered 
 \end{DoxyNote}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{Bounding\+Box@{Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
-\index{Bounding\+Box@{Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{Bounding\+Box(\+Interval x, Interval y, Interval z)}{BoundingBox(Interval x, Interval y, Interval z)}}]{\setlength{\rightskip}{0pt plus 5cm}Bounding\+Box\+::\+Bounding\+Box (
-\begin{DoxyParamCaption}
-\item[{{\bf Interval}}]{x, }
-\item[{{\bf Interval}}]{y, }
-\item[{{\bf Interval}}]{z}
-\end{DoxyParamCaption}
-)}\hypertarget{classBoundingBox_a4120184a9340ea9a0c43285c9d0f18bf}{}\label{classBoundingBox_a4120184a9340ea9a0c43285c9d0f18bf}
-\index{Bounding\+Box@{Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
-\index{Bounding\+Box@{Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{Bounding\+Box()}{BoundingBox()}}]{\setlength{\rightskip}{0pt plus 5cm}Bounding\+Box\+::\+Bounding\+Box (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classBoundingBox_a6e401c4da5839950f1f30c8b8c4d1208}{}\label{classBoundingBox_a6e401c4da5839950f1f30c8b8c4d1208}
+\mbox{\Hypertarget{classBoundingBox_a4120184a9340ea9a0c43285c9d0f18bf}\label{classBoundingBox_a4120184a9340ea9a0c43285c9d0f18bf}} 
+\index{BoundingBox@{BoundingBox}!BoundingBox@{BoundingBox}}
+\index{BoundingBox@{BoundingBox}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{BoundingBox()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classInterval}{Interval}}}]{x,  }\item[{\mbox{\hyperlink{classInterval}{Interval}}}]{y,  }\item[{\mbox{\hyperlink{classInterval}{Interval}}}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBoundingBox_a6e401c4da5839950f1f30c8b8c4d1208}\label{classBoundingBox_a6e401c4da5839950f1f30c8b8c4d1208}} 
+\index{BoundingBox@{BoundingBox}!BoundingBox@{BoundingBox}}
+\index{BoundingBox@{BoundingBox}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{BoundingBox()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 \subsection{Member Function Documentation}
-\index{Bounding\+Box@{Bounding\+Box}!get\+\_\+center@{get\+\_\+center}}
-\index{get\+\_\+center@{get\+\_\+center}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{get\+\_\+center() const }{get_center() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Bounding\+Box\+::get\+\_\+center (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}\hypertarget{classBoundingBox_aee02002578e3f3a0d1046f1c6da86d7b}{}\label{classBoundingBox_aee02002578e3f3a0d1046f1c6da86d7b}
-\index{Bounding\+Box@{Bounding\+Box}!intersection\+\_\+box@{intersection\+\_\+box}}
-\index{intersection\+\_\+box@{intersection\+\_\+box}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{intersection\+\_\+box(const Bounding\+Box \&other) const }{intersection_box(const BoundingBox &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Bounding\+Box\+::intersection\+\_\+box (
-\begin{DoxyParamCaption}
-\item[{const {\bf Bounding\+Box} \&}]{other}
-\end{DoxyParamCaption}
-) const}\hypertarget{classBoundingBox_ae8c481a0410806867b8e7fce7b95eee2}{}\label{classBoundingBox_ae8c481a0410806867b8e7fce7b95eee2}
-\index{Bounding\+Box@{Bounding\+Box}!intersection\+\_\+interval@{intersection\+\_\+interval}}
-\index{intersection\+\_\+interval@{intersection\+\_\+interval}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{intersection\+\_\+interval(const Ray \&ray) const }{intersection_interval(const Ray &ray) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interval} Bounding\+Box\+::intersection\+\_\+interval (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const}\hypertarget{classBoundingBox_a23a907bb7dfdcd0bd60a9e1cd59bda35}{}\label{classBoundingBox_a23a907bb7dfdcd0bd60a9e1cd59bda35}
+\mbox{\Hypertarget{classBoundingBox_afc3618e024bd7c1e822ddee127c0eabd}\label{classBoundingBox_afc3618e024bd7c1e822ddee127c0eabd}} 
+\index{BoundingBox@{BoundingBox}!get\_center@{get\_center}}
+\index{get\_center@{get\_center}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{get\_center()}{get\_center()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Bounding\+Box\+::get\+\_\+center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classBoundingBox_ab235900033f5b916bc0729278f20d776}\label{classBoundingBox_ab235900033f5b916bc0729278f20d776}} 
+\index{BoundingBox@{BoundingBox}!intersection\_box@{intersection\_box}}
+\index{intersection\_box@{intersection\_box}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{intersection\_box()}{intersection\_box()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} Bounding\+Box\+::intersection\+\_\+box (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classBoundingBox_a10b6d0c6aa3a44a22584425a240d21ad}\label{classBoundingBox_a10b6d0c6aa3a44a22584425a240d21ad}} 
+\index{BoundingBox@{BoundingBox}!intersection\_interval@{intersection\_interval}}
+\index{intersection\_interval@{intersection\_interval}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{intersection\_interval()}{intersection\_interval()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInterval}{Interval}} Bounding\+Box\+::intersection\+\_\+interval (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const}
+
 
 
 Returns which part of ray lies inside the box. 
@@ -121,67 +115,71 @@ If the ray is given as gamma(t)=b+t$\ast$v where b is the base vector and v is t
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-The interval of arguments t for which ray.\+read\+Base()+ray.read\+Direction()$\ast$t is inside the box. 
+The interval of arguments t for which ray.\+read\+Base()+ray.\+read\+Direction()$\ast$t is inside the box. 
 \end{DoxyReturn}
-\index{Bounding\+Box@{Bounding\+Box}!is\+\_\+intersected@{is\+\_\+intersected}}
-\index{is\+\_\+intersected@{is\+\_\+intersected}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{is\+\_\+intersected(const Ray \&ray) const }{is_intersected(const Ray &ray) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Bounding\+Box\+::is\+\_\+intersected (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const}\hypertarget{classBoundingBox_a8f8eca09001b89f0c80566731fb3ef99}{}\label{classBoundingBox_a8f8eca09001b89f0c80566731fb3ef99}
-\index{Bounding\+Box@{Bounding\+Box}!operator+@{operator+}}
-\index{operator+@{operator+}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{operator+(const Bounding\+Box \&other) const }{operator+(const BoundingBox &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} Bounding\+Box\+::operator+ (
-\begin{DoxyParamCaption}
-\item[{const {\bf Bounding\+Box} \&}]{other}
-\end{DoxyParamCaption}
-) const}\hypertarget{classBoundingBox_a58ea4f5a93b79953b5f971a7e1cb2e9c}{}\label{classBoundingBox_a58ea4f5a93b79953b5f971a7e1cb2e9c}
-\index{Bounding\+Box@{Bounding\+Box}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
-\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{operator[](unsigned int index) const }{operator[](unsigned int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Interval} \& Bounding\+Box\+::operator\mbox{[}$\,$\mbox{]} (
-\begin{DoxyParamCaption}
-\item[{unsigned int}]{index}
-\end{DoxyParamCaption}
-) const}\hypertarget{classBoundingBox_a3db32eae066cb2af88dbe9394b58db9f}{}\label{classBoundingBox_a3db32eae066cb2af88dbe9394b58db9f}
-\index{Bounding\+Box@{Bounding\+Box}!t\+\_\+range@{t\+\_\+range}}
-\index{t\+\_\+range@{t\+\_\+range}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{t\+\_\+range(const Interval \&i, double base, double direction) const }{t_range(const Interval &i, double base, double direction) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interval} Bounding\+Box\+::t\+\_\+range (
-\begin{DoxyParamCaption}
-\item[{const {\bf Interval} \&}]{i, }
-\item[{double}]{base, }
-\item[{double}]{direction}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBoundingBox_a708734f01854529bbdb0c3b2a33461d5}{}\label{classBoundingBox_a708734f01854529bbdb0c3b2a33461d5}
+\mbox{\Hypertarget{classBoundingBox_aefbe16b0abb24dd2efc8ca5a0bfd41ca}\label{classBoundingBox_aefbe16b0abb24dd2efc8ca5a0bfd41ca}} 
+\index{BoundingBox@{BoundingBox}!is\_intersected@{is\_intersected}}
+\index{is\_intersected@{is\_intersected}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{is\_intersected()}{is\_intersected()}}
+{\footnotesize\ttfamily bool Bounding\+Box\+::is\+\_\+intersected (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classBoundingBox_ac5d589d5d2075f7b65b8b2fdf0f11411}\label{classBoundingBox_ac5d589d5d2075f7b65b8b2fdf0f11411}} 
+\index{BoundingBox@{BoundingBox}!operator+@{operator+}}
+\index{operator+@{operator+}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} Bounding\+Box\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classBoundingBox_a75b856c3d4fb4b1ffd3132af52d3d3fd}\label{classBoundingBox_a75b856c3d4fb4b1ffd3132af52d3d3fd}} 
+\index{BoundingBox@{BoundingBox}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInterval}{Interval}} \& Bounding\+Box\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classBoundingBox_aa4e823e93add25a2110090d41df96150}\label{classBoundingBox_aa4e823e93add25a2110090d41df96150}} 
+\index{BoundingBox@{BoundingBox}!t\_range@{t\_range}}
+\index{t\_range@{t\_range}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{t\_range()}{t\_range()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInterval}{Interval}} Bounding\+Box\+::t\+\_\+range (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classInterval}{Interval}} \&}]{i,  }\item[{double}]{base,  }\item[{double}]{direction }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 \subsection{Friends And Related Function Documentation}
-\index{Bounding\+Box@{Bounding\+Box}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
-\begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{sink, }
-\item[{const {\bf Bounding\+Box} \&}]{b}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classBoundingBox_aa56e1d8e3d8c419be6c96f823f83648d}{}\label{classBoundingBox_aa56e1d8e3d8c419be6c96f823f83648d}
+\mbox{\Hypertarget{classBoundingBox_aa56e1d8e3d8c419be6c96f823f83648d}\label{classBoundingBox_aa56e1d8e3d8c419be6c96f823f83648d}} 
+\index{BoundingBox@{BoundingBox}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{sink,  }\item[{const \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
 
 
 \subsection{Member Data Documentation}
-\index{Bounding\+Box@{Bounding\+Box}!empty@{empty}}
-\index{empty@{empty}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{empty}{empty}}]{\setlength{\rightskip}{0pt plus 5cm}bool Bounding\+Box\+::empty\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBoundingBox_a498e443b213cc08f7c0235688dd2ecf8}{}\label{classBoundingBox_a498e443b213cc08f7c0235688dd2ecf8}
-\index{Bounding\+Box@{Bounding\+Box}!x@{x}}
-\index{x@{x}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interval} Bounding\+Box\+::x\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBoundingBox_a93ea5f12ef2300fe61925f6b44faaebe}{}\label{classBoundingBox_a93ea5f12ef2300fe61925f6b44faaebe}
-\index{Bounding\+Box@{Bounding\+Box}!y@{y}}
-\index{y@{y}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interval} Bounding\+Box\+::y\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBoundingBox_a593fd6b66d3ed0352d92024685863090}{}\label{classBoundingBox_a593fd6b66d3ed0352d92024685863090}
-\index{Bounding\+Box@{Bounding\+Box}!z@{z}}
-\index{z@{z}!Bounding\+Box@{Bounding\+Box}}
-\subsubsection[{\texorpdfstring{z}{z}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interval} Bounding\+Box\+::z\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBoundingBox_a9a6005ebe3550447aad804123fa68fea}{}\label{classBoundingBox_a9a6005ebe3550447aad804123fa68fea}
+\mbox{\Hypertarget{classBoundingBox_a498e443b213cc08f7c0235688dd2ecf8}\label{classBoundingBox_a498e443b213cc08f7c0235688dd2ecf8}} 
+\index{BoundingBox@{BoundingBox}!empty@{empty}}
+\index{empty@{empty}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{empty}{empty}}
+{\footnotesize\ttfamily bool Bounding\+Box\+::empty\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBoundingBox_a93ea5f12ef2300fe61925f6b44faaebe}\label{classBoundingBox_a93ea5f12ef2300fe61925f6b44faaebe}} 
+\index{BoundingBox@{BoundingBox}!x@{x}}
+\index{x@{x}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInterval}{Interval}} Bounding\+Box\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBoundingBox_a593fd6b66d3ed0352d92024685863090}\label{classBoundingBox_a593fd6b66d3ed0352d92024685863090}} 
+\index{BoundingBox@{BoundingBox}!y@{y}}
+\index{y@{y}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInterval}{Interval}} Bounding\+Box\+::y\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBoundingBox_a9a6005ebe3550447aad804123fa68fea}\label{classBoundingBox_a9a6005ebe3550447aad804123fa68fea}} 
+\index{BoundingBox@{BoundingBox}!z@{z}}
+\index{z@{z}!BoundingBox@{BoundingBox}}
+\subsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInterval}{Interval}} Bounding\+Box\+::z\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{BoundingBox_8h}{Bounding\+Box.\+h}\item 
-src/renderable/\hyperlink{BoundingBox_8cpp}{Bounding\+Box.\+cpp}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{BoundingBox_8h}{Bounding\+Box.\+h}}\item 
+src/renderable/\mbox{\hyperlink{BoundingBox_8cpp}{Bounding\+Box.\+cpp}}\end{DoxyCompactItemize}

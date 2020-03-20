@@ -1,5 +1,6 @@
 <map id="SDFSphere" name="SDFSphere">
-<area shape="rect" id="node2" href="$classSDFObject.html" title="Interface for an object that can be Sphere&#45;Marched. " alt="" coords="21,155,107,181"/>
-<area shape="rect" id="node3" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="5,80,123,107"/>
-<area shape="rect" id="node4" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="13,5,115,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="19,229,109,256"/>
+<area shape="rect" id="node2" href="$classSDFObject.html" title="Interface for an object that can be Sphere&#45;Marched." alt="" coords="21,155,107,181"/>
+<area shape="rect" id="node3" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume." alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node4" href="$classRenderObject.html" title="Abstract class for renderable objects." alt="" coords="13,5,115,32"/>
 </map>

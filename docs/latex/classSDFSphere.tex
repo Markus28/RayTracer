@@ -1,5 +1,5 @@
 \hypertarget{classSDFSphere}{}\section{S\+D\+F\+Sphere Class Reference}
-\label{classSDFSphere}\index{S\+D\+F\+Sphere@{S\+D\+F\+Sphere}}
+\label{classSDFSphere}\index{SDFSphere@{SDFSphere}}
 
 
 {\ttfamily \#include $<$S\+D\+F\+Sphere.\+h$>$}
@@ -27,75 +27,80 @@ Collaboration diagram for S\+D\+F\+Sphere\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classSDFSphere_a578a9184a4902e2c8e32599a59b4ba95}{S\+D\+F\+Sphere} (const \hyperlink{classVector3D}{Vector3D} \&\hyperlink{classSDFSphere_ae84a69978c77f2220b7a5dde3694477a}{center}, double \hyperlink{classSDFSphere_a907d3a0d7b563b73e5ebc0f3e04d948e}{r})
+\mbox{\hyperlink{classSDFSphere_a578a9184a4902e2c8e32599a59b4ba95}{S\+D\+F\+Sphere}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&\mbox{\hyperlink{classSDFSphere_ae84a69978c77f2220b7a5dde3694477a}{center}}, double \mbox{\hyperlink{classSDFSphere_a907d3a0d7b563b73e5ebc0f3e04d948e}{r}})
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classSDFSphere_a9a0e4c9feb32bcd2ce78a3027d3ce2ad}{get\+\_\+bounds} () const override
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classSDFSphere_a9a0e4c9feb32bcd2ce78a3027d3ce2ad}{get\+\_\+bounds}} () const override
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-double \hyperlink{classSDFSphere_aba1d5f7d9f16ee7fd40c5dae5df467d1}{distance\+\_\+bound} (const \hyperlink{classVector3D}{Vector3D} \&pos) const override
+double \mbox{\hyperlink{classSDFSphere_aba1d5f7d9f16ee7fd40c5dae5df467d1}{distance\+\_\+bound}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pos) const override
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSDFSphere_ae84a69978c77f2220b7a5dde3694477a}{center}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSDFSphere_ae84a69978c77f2220b7a5dde3694477a}{center}}
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classSDFSphere_a7df90cc239506488f1bb76cd5f78cdb3}{bounds}
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classSDFSphere_a7df90cc239506488f1bb76cd5f78cdb3}{bounds}}
 \item 
-double \hyperlink{classSDFSphere_a907d3a0d7b563b73e5ebc0f3e04d948e}{r}
+double \mbox{\hyperlink{classSDFSphere_a907d3a0d7b563b73e5ebc0f3e04d948e}{r}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{S\+D\+F\+Sphere@{S\+D\+F\+Sphere}!S\+D\+F\+Sphere@{S\+D\+F\+Sphere}}
-\index{S\+D\+F\+Sphere@{S\+D\+F\+Sphere}!S\+D\+F\+Sphere@{S\+D\+F\+Sphere}}
-\subsubsection[{\texorpdfstring{S\+D\+F\+Sphere(const Vector3\+D \&center, double r)}{SDFSphere(const Vector3D &center, double r)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+F\+Sphere\+::\+S\+D\+F\+Sphere (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{center, }
-\item[{double}]{r}
-\end{DoxyParamCaption}
-)}\hypertarget{classSDFSphere_a578a9184a4902e2c8e32599a59b4ba95}{}\label{classSDFSphere_a578a9184a4902e2c8e32599a59b4ba95}
+\mbox{\Hypertarget{classSDFSphere_a578a9184a4902e2c8e32599a59b4ba95}\label{classSDFSphere_a578a9184a4902e2c8e32599a59b4ba95}} 
+\index{SDFSphere@{SDFSphere}!SDFSphere@{SDFSphere}}
+\index{SDFSphere@{SDFSphere}!SDFSphere@{SDFSphere}}
+\subsubsection{\texorpdfstring{SDFSphere()}{SDFSphere()}}
+{\footnotesize\ttfamily S\+D\+F\+Sphere\+::\+S\+D\+F\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{center,  }\item[{double}]{r }\end{DoxyParamCaption})}
+
 
 
 \subsection{Member Function Documentation}
-\index{S\+D\+F\+Sphere@{S\+D\+F\+Sphere}!distance\+\_\+bound@{distance\+\_\+bound}}
-\index{distance\+\_\+bound@{distance\+\_\+bound}!S\+D\+F\+Sphere@{S\+D\+F\+Sphere}}
-\subsubsection[{\texorpdfstring{distance\+\_\+bound(const Vector3\+D \&pos) const override}{distance_bound(const Vector3D &pos) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double S\+D\+F\+Sphere\+::distance\+\_\+bound (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pos}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classSDFSphere_aba1d5f7d9f16ee7fd40c5dae5df467d1}{}\label{classSDFSphere_aba1d5f7d9f16ee7fd40c5dae5df467d1}
+\mbox{\Hypertarget{classSDFSphere_aba1d5f7d9f16ee7fd40c5dae5df467d1}\label{classSDFSphere_aba1d5f7d9f16ee7fd40c5dae5df467d1}} 
+\index{SDFSphere@{SDFSphere}!distance\_bound@{distance\_bound}}
+\index{distance\_bound@{distance\_bound}!SDFSphere@{SDFSphere}}
+\subsubsection{\texorpdfstring{distance\_bound()}{distance\_bound()}}
+{\footnotesize\ttfamily double S\+D\+F\+Sphere\+::distance\+\_\+bound (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}{S\+D\+F\+Object}.
 
-\index{S\+D\+F\+Sphere@{S\+D\+F\+Sphere}!get\+\_\+bounds@{get\+\_\+bounds}}
-\index{get\+\_\+bounds@{get\+\_\+bounds}!S\+D\+F\+Sphere@{S\+D\+F\+Sphere}}
-\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} S\+D\+F\+Sphere\+::get\+\_\+bounds (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSDFSphere_a9a0e4c9feb32bcd2ce78a3027d3ce2ad}{}\label{classSDFSphere_a9a0e4c9feb32bcd2ce78a3027d3ce2ad}
+Implements \mbox{\hyperlink{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}{S\+D\+F\+Object}}.
+
+\mbox{\Hypertarget{classSDFSphere_a9a0e4c9feb32bcd2ce78a3027d3ce2ad}\label{classSDFSphere_a9a0e4c9feb32bcd2ce78a3027d3ce2ad}} 
+\index{SDFSphere@{SDFSphere}!get\_bounds@{get\_bounds}}
+\index{get\_bounds@{get\_bounds}!SDFSphere@{SDFSphere}}
+\subsubsection{\texorpdfstring{get\_bounds()}{get\_bounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} S\+D\+F\+Sphere\+::get\+\_\+bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}.
+
+Implements \mbox{\hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}}.
 
 
 
 \subsection{Member Data Documentation}
-\index{S\+D\+F\+Sphere@{S\+D\+F\+Sphere}!bounds@{bounds}}
-\index{bounds@{bounds}!S\+D\+F\+Sphere@{S\+D\+F\+Sphere}}
-\subsubsection[{\texorpdfstring{bounds}{bounds}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} S\+D\+F\+Sphere\+::bounds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFSphere_a7df90cc239506488f1bb76cd5f78cdb3}{}\label{classSDFSphere_a7df90cc239506488f1bb76cd5f78cdb3}
-\index{S\+D\+F\+Sphere@{S\+D\+F\+Sphere}!center@{center}}
-\index{center@{center}!S\+D\+F\+Sphere@{S\+D\+F\+Sphere}}
-\subsubsection[{\texorpdfstring{center}{center}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} S\+D\+F\+Sphere\+::center\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFSphere_ae84a69978c77f2220b7a5dde3694477a}{}\label{classSDFSphere_ae84a69978c77f2220b7a5dde3694477a}
-\index{S\+D\+F\+Sphere@{S\+D\+F\+Sphere}!r@{r}}
-\index{r@{r}!S\+D\+F\+Sphere@{S\+D\+F\+Sphere}}
-\subsubsection[{\texorpdfstring{r}{r}}]{\setlength{\rightskip}{0pt plus 5cm}double S\+D\+F\+Sphere\+::r\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFSphere_a907d3a0d7b563b73e5ebc0f3e04d948e}{}\label{classSDFSphere_a907d3a0d7b563b73e5ebc0f3e04d948e}
+\mbox{\Hypertarget{classSDFSphere_a7df90cc239506488f1bb76cd5f78cdb3}\label{classSDFSphere_a7df90cc239506488f1bb76cd5f78cdb3}} 
+\index{SDFSphere@{SDFSphere}!bounds@{bounds}}
+\index{bounds@{bounds}!SDFSphere@{SDFSphere}}
+\subsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} S\+D\+F\+Sphere\+::bounds\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSDFSphere_ae84a69978c77f2220b7a5dde3694477a}\label{classSDFSphere_ae84a69978c77f2220b7a5dde3694477a}} 
+\index{SDFSphere@{SDFSphere}!center@{center}}
+\index{center@{center}!SDFSphere@{SDFSphere}}
+\subsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} S\+D\+F\+Sphere\+::center\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSDFSphere_a907d3a0d7b563b73e5ebc0f3e04d948e}\label{classSDFSphere_a907d3a0d7b563b73e5ebc0f3e04d948e}} 
+\index{SDFSphere@{SDFSphere}!r@{r}}
+\index{r@{r}!SDFSphere@{SDFSphere}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily double S\+D\+F\+Sphere\+::r\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{SDFSphere_8h}{S\+D\+F\+Sphere.\+h}\item 
-src/renderable/\hyperlink{SDFSphere_8cpp}{S\+D\+F\+Sphere.\+cpp}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{SDFSphere_8h}{S\+D\+F\+Sphere.\+h}}\item 
+src/renderable/\mbox{\hyperlink{SDFSphere_8cpp}{S\+D\+F\+Sphere.\+cpp}}\end{DoxyCompactItemize}

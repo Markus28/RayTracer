@@ -1,5 +1,5 @@
 \hypertarget{classSimplePlane}{}\section{Simple\+Plane Class Reference}
-\label{classSimplePlane}\index{Simple\+Plane@{Simple\+Plane}}
+\label{classSimplePlane}\index{SimplePlane@{SimplePlane}}
 
 
 An infinite plane.  
@@ -11,7 +11,8 @@ An infinite plane.
 
 
 
-Inheritance diagram for Simple\+Plane\+:\nopagebreak
+Inheritance diagram for Simple\+Plane\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Inheritance diagram for Simple\+Plane\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Simple\+Plane\+:\nopagebreak
+Collaboration diagram for Simple\+Plane\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,26 +32,26 @@ Collaboration diagram for Simple\+Plane\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classSimplePlane_a4536573a977f9d4c30334f9c4aab6a1d}{Simple\+Plane} (const \hyperlink{classVector3D}{Vector3D} \&pt, const \hyperlink{classVector3D}{Vector3D} \&norm, const \hyperlink{classMaterial}{Material} \&mat)
+\mbox{\hyperlink{classSimplePlane_a4536573a977f9d4c30334f9c4aab6a1d}{Simple\+Plane}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pt, const \mbox{\hyperlink{classVector3D}{Vector3D}} \&norm, const \mbox{\hyperlink{classMaterial}{Material}} \&mat)
 \item 
-\hyperlink{classIntersection}{Intersection} \hyperlink{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}{ray\+\_\+intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
+\mbox{\hyperlink{classIntersection}{Intersection}} \mbox{\hyperlink{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}{ray\+\_\+intersect}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const override
 \begin{DoxyCompactList}\small\item\em Method to detect intersection of ray and object. \end{DoxyCompactList}\item 
-\hyperlink{classIntersectionProperties}{Intersection\+Properties} \hyperlink{classSimplePlane_a29180f657d6932226dc91ebe92143608}{intersect\+\_\+properties} (const \hyperlink{classRay}{Ray} \&ray) const override
+\mbox{\hyperlink{classIntersectionProperties}{Intersection\+Properties}} \mbox{\hyperlink{classSimplePlane_a29180f657d6932226dc91ebe92143608}{intersect\+\_\+properties}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const override
 \begin{DoxyCompactList}\small\item\em If ray intersects this object, this method will provide additional Information. \end{DoxyCompactList}\item 
-std\+::ostream \& \hyperlink{classSimplePlane_afc8014126bb264e11e7b2b470a8a90a1}{print} (std\+::ostream \&sink) const override
+std\+::ostream \& \mbox{\hyperlink{classSimplePlane_afc8014126bb264e11e7b2b470a8a90a1}{print}} (std\+::ostream \&sink) const override
 \item 
-virtual bool \hyperlink{classSimplePlane_a74bbd8b10263fe1df821d8479f1ab5ef}{on\+Plane} (const \hyperlink{classVector3D}{Vector3D} \&point, const double \&epsilon) const 
+virtual bool \mbox{\hyperlink{classSimplePlane_af7bd46c5bb092902a42696d2962f94d3}{on\+Plane}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&point, const double \&epsilon) const
 \begin{DoxyCompactList}\small\item\em Given a point pt, this method checks whether it is reasonable to say that it lies in plane. \end{DoxyCompactList}\item 
-\hyperlink{classSimplePlane_abc63c5079688f3d1826a7f2ed5f9db3f}{$\sim$\+Simple\+Plane} () override=default
+\mbox{\hyperlink{classSimplePlane_abc63c5079688f3d1826a7f2ed5f9db3f}{$\sim$\+Simple\+Plane}} () override=default
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-double \hyperlink{classSimplePlane_a84850a97b34a8616c7ffdd51c30a5dc9}{d}
+double \mbox{\hyperlink{classSimplePlane_a84850a97b34a8616c7ffdd51c30a5dc9}{d}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSimplePlane_a222f5d12aed966bc2764abc90b622037}{normal}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSimplePlane_a222f5d12aed966bc2764abc90b622037}{normal}}
 \item 
-\hyperlink{classMaterial}{Material} \hyperlink{classSimplePlane_a04307eae806daa2cd2f1c471224b44cf}{material}
+\mbox{\hyperlink{classMaterial}{Material}} \mbox{\hyperlink{classSimplePlane_a04307eae806daa2cd2f1c471224b44cf}{material}}
 \end{DoxyCompactItemize}
 
 
@@ -57,32 +59,27 @@ double \hyperlink{classSimplePlane_a84850a97b34a8616c7ffdd51c30a5dc9}{d}
 An infinite plane. 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{Simple\+Plane@{Simple\+Plane}!Simple\+Plane@{Simple\+Plane}}
-\index{Simple\+Plane@{Simple\+Plane}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{Simple\+Plane(const Vector3\+D \&pt, const Vector3\+D \&norm, const Material \&mat)}{SimplePlane(const Vector3D &pt, const Vector3D &norm, const Material &mat)}}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Plane\+::\+Simple\+Plane (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pt, }
-\item[{const {\bf Vector3D} \&}]{norm, }
-\item[{const {\bf Material} \&}]{mat}
-\end{DoxyParamCaption}
-)}\hypertarget{classSimplePlane_a4536573a977f9d4c30334f9c4aab6a1d}{}\label{classSimplePlane_a4536573a977f9d4c30334f9c4aab6a1d}
-\index{Simple\+Plane@{Simple\+Plane}!````~Simple\+Plane@{$\sim$\+Simple\+Plane}}
-\index{````~Simple\+Plane@{$\sim$\+Simple\+Plane}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{$\sim$\+Simple\+Plane() override=default}{~SimplePlane() override=default}}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Plane\+::$\sim$\+Simple\+Plane (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}\hypertarget{classSimplePlane_abc63c5079688f3d1826a7f2ed5f9db3f}{}\label{classSimplePlane_abc63c5079688f3d1826a7f2ed5f9db3f}
+\mbox{\Hypertarget{classSimplePlane_a4536573a977f9d4c30334f9c4aab6a1d}\label{classSimplePlane_a4536573a977f9d4c30334f9c4aab6a1d}} 
+\index{SimplePlane@{SimplePlane}!SimplePlane@{SimplePlane}}
+\index{SimplePlane@{SimplePlane}!SimplePlane@{SimplePlane}}
+\subsubsection{\texorpdfstring{SimplePlane()}{SimplePlane()}}
+{\footnotesize\ttfamily Simple\+Plane\+::\+Simple\+Plane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pt,  }\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{norm,  }\item[{const \mbox{\hyperlink{classMaterial}{Material}} \&}]{mat }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimplePlane_abc63c5079688f3d1826a7f2ed5f9db3f}\label{classSimplePlane_abc63c5079688f3d1826a7f2ed5f9db3f}} 
+\index{SimplePlane@{SimplePlane}!````~SimplePlane@{$\sim$SimplePlane}}
+\index{````~SimplePlane@{$\sim$SimplePlane}!SimplePlane@{SimplePlane}}
+\subsubsection{\texorpdfstring{$\sim$SimplePlane()}{~SimplePlane()}}
+{\footnotesize\ttfamily Simple\+Plane\+::$\sim$\+Simple\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
 
 
 \subsection{Member Function Documentation}
-\index{Simple\+Plane@{Simple\+Plane}!intersect\+\_\+properties@{intersect\+\_\+properties}}
-\index{intersect\+\_\+properties@{intersect\+\_\+properties}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{intersect\+\_\+properties(const Ray \&ray) const override}{intersect_properties(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection\+Properties} Simple\+Plane\+::intersect\+\_\+properties (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimplePlane_a29180f657d6932226dc91ebe92143608}{}\label{classSimplePlane_a29180f657d6932226dc91ebe92143608}
+\mbox{\Hypertarget{classSimplePlane_a29180f657d6932226dc91ebe92143608}\label{classSimplePlane_a29180f657d6932226dc91ebe92143608}} 
+\index{SimplePlane@{SimplePlane}!intersect\_properties@{intersect\_properties}}
+\index{intersect\_properties@{intersect\_properties}!SimplePlane@{SimplePlane}}
+\subsubsection{\texorpdfstring{intersect\_properties()}{intersect\_properties()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIntersectionProperties}{Intersection\+Properties}} Simple\+Plane\+::intersect\+\_\+properties (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
 
 
 If ray intersects this object, this method will provide additional Information. 
@@ -95,20 +92,18 @@ Note, that even if ray\+Intersect detected an intersection, this method might no
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\hyperlink{classIntersectionProperties}{Intersection\+Properties} object containing the surface normal and material information 
+\mbox{\hyperlink{classIntersectionProperties}{Intersection\+Properties}} object containing the surface normal and material information 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_a792d36570e3264530872187ca1b0baca}{Render\+Object}.
+Implements \mbox{\hyperlink{classRenderObject_a792d36570e3264530872187ca1b0baca}{Render\+Object}}.
 
-\index{Simple\+Plane@{Simple\+Plane}!on\+Plane@{on\+Plane}}
-\index{on\+Plane@{on\+Plane}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{on\+Plane(const Vector3\+D \&point, const double \&epsilon) const }{onPlane(const Vector3D &point, const double &epsilon) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\+Plane\+::on\+Plane (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pt, }
-\item[{const double \&}]{epsilon}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classSimplePlane_a74bbd8b10263fe1df821d8479f1ab5ef}{}\label{classSimplePlane_a74bbd8b10263fe1df821d8479f1ab5ef}
+\mbox{\Hypertarget{classSimplePlane_af7bd46c5bb092902a42696d2962f94d3}\label{classSimplePlane_af7bd46c5bb092902a42696d2962f94d3}} 
+\index{SimplePlane@{SimplePlane}!onPlane@{onPlane}}
+\index{onPlane@{onPlane}!SimplePlane@{SimplePlane}}
+\subsubsection{\texorpdfstring{onPlane()}{onPlane()}}
+{\footnotesize\ttfamily bool Simple\+Plane\+::on\+Plane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pt,  }\item[{const double \&}]{epsilon }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
 
 
 Given a point pt, this method checks whether it is reasonable to say that it lies in plane. 
@@ -126,24 +121,22 @@ The epsilon is only really meaningful if the plane is in hesse normal form (norm
 \begin{DoxyReturn}{Returns}
 Returns true iff pt is reasonably (epsilon) close to the plane 
 \end{DoxyReturn}
-\index{Simple\+Plane@{Simple\+Plane}!print@{print}}
-\index{print@{print}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& Simple\+Plane\+::print (
-\begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{sink}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimplePlane_afc8014126bb264e11e7b2b470a8a90a1}{}\label{classSimplePlane_afc8014126bb264e11e7b2b470a8a90a1}
+\mbox{\Hypertarget{classSimplePlane_afc8014126bb264e11e7b2b470a8a90a1}\label{classSimplePlane_afc8014126bb264e11e7b2b470a8a90a1}} 
+\index{SimplePlane@{SimplePlane}!print@{print}}
+\index{print@{print}!SimplePlane@{SimplePlane}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily std\+::ostream \& Simple\+Plane\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{sink }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}.
 
-\index{Simple\+Plane@{Simple\+Plane}!ray\+\_\+intersect@{ray\+\_\+intersect}}
-\index{ray\+\_\+intersect@{ray\+\_\+intersect}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{ray\+\_\+intersect(const Ray \&ray) const override}{ray_intersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} Simple\+Plane\+::ray\+\_\+intersect (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}{}\label{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}
+Implements \mbox{\hyperlink{classRenderObject_a7a7f1168a7d96ca95235b170ff7fb11b}{Render\+Object}}.
+
+\mbox{\Hypertarget{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}\label{classSimplePlane_adffd7f102bed30d44cd527cb34a3a312}} 
+\index{SimplePlane@{SimplePlane}!ray\_intersect@{ray\_intersect}}
+\index{ray\_intersect@{ray\_intersect}!SimplePlane@{SimplePlane}}
+\subsubsection{\texorpdfstring{ray\_intersect()}{ray\_intersect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIntersection}{Intersection}} Simple\+Plane\+::ray\+\_\+intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
 
 
 Method to detect intersection of ray and object. 
@@ -154,27 +147,36 @@ Method to detect intersection of ray and object.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\hyperlink{classIntersection}{Intersection} object containing distance to intersection and pointer to intersected object 
+\mbox{\hyperlink{classIntersection}{Intersection}} object containing distance to intersection and pointer to intersected object 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{Render\+Object}.
+Implements \mbox{\hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{Render\+Object}}.
 
 
 
 \subsection{Member Data Documentation}
-\index{Simple\+Plane@{Simple\+Plane}!d@{d}}
-\index{d@{d}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{d}{d}}]{\setlength{\rightskip}{0pt plus 5cm}double Simple\+Plane\+::d\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSimplePlane_a84850a97b34a8616c7ffdd51c30a5dc9}{}\label{classSimplePlane_a84850a97b34a8616c7ffdd51c30a5dc9}
-\index{Simple\+Plane@{Simple\+Plane}!material@{material}}
-\index{material@{material}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{material}{material}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material} Simple\+Plane\+::material\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSimplePlane_a04307eae806daa2cd2f1c471224b44cf}{}\label{classSimplePlane_a04307eae806daa2cd2f1c471224b44cf}
-\index{Simple\+Plane@{Simple\+Plane}!normal@{normal}}
-\index{normal@{normal}!Simple\+Plane@{Simple\+Plane}}
-\subsubsection[{\texorpdfstring{normal}{normal}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Simple\+Plane\+::normal\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSimplePlane_a222f5d12aed966bc2764abc90b622037}{}\label{classSimplePlane_a222f5d12aed966bc2764abc90b622037}
+\mbox{\Hypertarget{classSimplePlane_a84850a97b34a8616c7ffdd51c30a5dc9}\label{classSimplePlane_a84850a97b34a8616c7ffdd51c30a5dc9}} 
+\index{SimplePlane@{SimplePlane}!d@{d}}
+\index{d@{d}!SimplePlane@{SimplePlane}}
+\subsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily double Simple\+Plane\+::d\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSimplePlane_a04307eae806daa2cd2f1c471224b44cf}\label{classSimplePlane_a04307eae806daa2cd2f1c471224b44cf}} 
+\index{SimplePlane@{SimplePlane}!material@{material}}
+\index{material@{material}!SimplePlane@{SimplePlane}}
+\subsubsection{\texorpdfstring{material}{material}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMaterial}{Material}} Simple\+Plane\+::material\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSimplePlane_a222f5d12aed966bc2764abc90b622037}\label{classSimplePlane_a222f5d12aed966bc2764abc90b622037}} 
+\index{SimplePlane@{SimplePlane}!normal@{normal}}
+\index{normal@{normal}!SimplePlane@{SimplePlane}}
+\subsubsection{\texorpdfstring{normal}{normal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Simple\+Plane\+::normal\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{SimplePlane_8h}{Simple\+Plane.\+h}\item 
-src/renderable/\hyperlink{SimplePlane_8cpp}{Simple\+Plane.\+cpp}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{SimplePlane_8h}{Simple\+Plane.\+h}}\item 
+src/renderable/\mbox{\hyperlink{SimplePlane_8cpp}{Simple\+Plane.\+cpp}}\end{DoxyCompactItemize}

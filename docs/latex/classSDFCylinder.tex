@@ -1,5 +1,5 @@
 \hypertarget{classSDFCylinder}{}\section{S\+D\+F\+Cylinder Class Reference}
-\label{classSDFCylinder}\index{S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}}
+\label{classSDFCylinder}\index{SDFCylinder@{SDFCylinder}}
 
 
 {\ttfamily \#include $<$S\+D\+F\+Cylinder.\+h$>$}
@@ -27,66 +27,96 @@ Collaboration diagram for S\+D\+F\+Cylinder\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classSDFCylinder_a45fafcbf4f71ed9b45d7ab09579c734c}{get\+\_\+bounds} () const override
+\mbox{\hyperlink{classSDFCylinder_a696d9dfb42e436d07c7777c45c1c973e}{S\+D\+F\+Cylinder}} (\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSDFCylinder_a9191a358a55f4b1dd9257e0664c531ff}{center}}, \mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSDFCylinder_a0120c881204422391fd52fa5215512ab}{axis}}, double \mbox{\hyperlink{classSDFCylinder_aae02d54259ddf572cd2b87c427dc1b08}{length}}, double \mbox{\hyperlink{classSDFCylinder_a63b1f14e28187305347485d3083f4c9b}{radius}})
+\item 
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classSDFCylinder_a45fafcbf4f71ed9b45d7ab09579c734c}{get\+\_\+bounds}} () const override
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-double \hyperlink{classSDFCylinder_a20732b488b83720390197e50ead3883a}{distance\+\_\+bound} (const \hyperlink{classVector3D}{Vector3D} \&pos) const override
+double \mbox{\hyperlink{classSDFCylinder_a20732b488b83720390197e50ead3883a}{distance\+\_\+bound}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pos) const override
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classSDFCylinder_a4a25bf70750daa3248c900e7f1bb8b5f}{bounds}
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classSDFCylinder_a4a25bf70750daa3248c900e7f1bb8b5f}{bounds}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSDFCylinder_ae0ea9ff844cc30adf006fdc8315c9d17}{point}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSDFCylinder_a9191a358a55f4b1dd9257e0664c531ff}{center}}
 \item 
-\hyperlink{classVector3D}{Vector3D} \hyperlink{classSDFCylinder_a0120c881204422391fd52fa5215512ab}{axis}
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSDFCylinder_a0120c881204422391fd52fa5215512ab}{axis}}
 \item 
-double \hyperlink{classSDFCylinder_aae02d54259ddf572cd2b87c427dc1b08}{length}
+double \mbox{\hyperlink{classSDFCylinder_aae02d54259ddf572cd2b87c427dc1b08}{length}}
+\item 
+double \mbox{\hyperlink{classSDFCylinder_a63b1f14e28187305347485d3083f4c9b}{radius}}
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSDFCylinder_a696d9dfb42e436d07c7777c45c1c973e}\label{classSDFCylinder_a696d9dfb42e436d07c7777c45c1c973e}} 
+\index{SDFCylinder@{SDFCylinder}!SDFCylinder@{SDFCylinder}}
+\index{SDFCylinder@{SDFCylinder}!SDFCylinder@{SDFCylinder}}
+\subsubsection{\texorpdfstring{SDFCylinder()}{SDFCylinder()}}
+{\footnotesize\ttfamily S\+D\+F\+Cylinder\+::\+S\+D\+F\+Cylinder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{center,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{axis,  }\item[{double}]{length,  }\item[{double}]{radius }\end{DoxyParamCaption})}
+
+
+
 \subsection{Member Function Documentation}
-\index{S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}!distance\+\_\+bound@{distance\+\_\+bound}}
-\index{distance\+\_\+bound@{distance\+\_\+bound}!S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}}
-\subsubsection[{\texorpdfstring{distance\+\_\+bound(const Vector3\+D \&pos) const override}{distance_bound(const Vector3D &pos) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double S\+D\+F\+Cylinder\+::distance\+\_\+bound (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pos}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classSDFCylinder_a20732b488b83720390197e50ead3883a}{}\label{classSDFCylinder_a20732b488b83720390197e50ead3883a}
+\mbox{\Hypertarget{classSDFCylinder_a20732b488b83720390197e50ead3883a}\label{classSDFCylinder_a20732b488b83720390197e50ead3883a}} 
+\index{SDFCylinder@{SDFCylinder}!distance\_bound@{distance\_bound}}
+\index{distance\_bound@{distance\_bound}!SDFCylinder@{SDFCylinder}}
+\subsubsection{\texorpdfstring{distance\_bound()}{distance\_bound()}}
+{\footnotesize\ttfamily double S\+D\+F\+Cylinder\+::distance\+\_\+bound (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}{S\+D\+F\+Object}.
 
-\index{S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}!get\+\_\+bounds@{get\+\_\+bounds}}
-\index{get\+\_\+bounds@{get\+\_\+bounds}!S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}}
-\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} S\+D\+F\+Cylinder\+::get\+\_\+bounds (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSDFCylinder_a45fafcbf4f71ed9b45d7ab09579c734c}{}\label{classSDFCylinder_a45fafcbf4f71ed9b45d7ab09579c734c}
+Implements \mbox{\hyperlink{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}{S\+D\+F\+Object}}.
+
+\mbox{\Hypertarget{classSDFCylinder_a45fafcbf4f71ed9b45d7ab09579c734c}\label{classSDFCylinder_a45fafcbf4f71ed9b45d7ab09579c734c}} 
+\index{SDFCylinder@{SDFCylinder}!get\_bounds@{get\_bounds}}
+\index{get\_bounds@{get\_bounds}!SDFCylinder@{SDFCylinder}}
+\subsubsection{\texorpdfstring{get\_bounds()}{get\_bounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} S\+D\+F\+Cylinder\+::get\+\_\+bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}.
+
+Implements \mbox{\hyperlink{classBoundedVolume_a281168c4d827c38b46e639f6e4991a9e}{Bounded\+Volume}}.
 
 
 
 \subsection{Member Data Documentation}
-\index{S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}!axis@{axis}}
-\index{axis@{axis}!S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}}
-\subsubsection[{\texorpdfstring{axis}{axis}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} S\+D\+F\+Cylinder\+::axis\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFCylinder_a0120c881204422391fd52fa5215512ab}{}\label{classSDFCylinder_a0120c881204422391fd52fa5215512ab}
-\index{S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}!bounds@{bounds}}
-\index{bounds@{bounds}!S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}}
-\subsubsection[{\texorpdfstring{bounds}{bounds}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} S\+D\+F\+Cylinder\+::bounds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFCylinder_a4a25bf70750daa3248c900e7f1bb8b5f}{}\label{classSDFCylinder_a4a25bf70750daa3248c900e7f1bb8b5f}
-\index{S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}!length@{length}}
-\index{length@{length}!S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}}
-\subsubsection[{\texorpdfstring{length}{length}}]{\setlength{\rightskip}{0pt plus 5cm}double S\+D\+F\+Cylinder\+::length\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFCylinder_aae02d54259ddf572cd2b87c427dc1b08}{}\label{classSDFCylinder_aae02d54259ddf572cd2b87c427dc1b08}
-\index{S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}!point@{point}}
-\index{point@{point}!S\+D\+F\+Cylinder@{S\+D\+F\+Cylinder}}
-\subsubsection[{\texorpdfstring{point}{point}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} S\+D\+F\+Cylinder\+::point\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFCylinder_ae0ea9ff844cc30adf006fdc8315c9d17}{}\label{classSDFCylinder_ae0ea9ff844cc30adf006fdc8315c9d17}
+\mbox{\Hypertarget{classSDFCylinder_a0120c881204422391fd52fa5215512ab}\label{classSDFCylinder_a0120c881204422391fd52fa5215512ab}} 
+\index{SDFCylinder@{SDFCylinder}!axis@{axis}}
+\index{axis@{axis}!SDFCylinder@{SDFCylinder}}
+\subsubsection{\texorpdfstring{axis}{axis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} S\+D\+F\+Cylinder\+::axis\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSDFCylinder_a4a25bf70750daa3248c900e7f1bb8b5f}\label{classSDFCylinder_a4a25bf70750daa3248c900e7f1bb8b5f}} 
+\index{SDFCylinder@{SDFCylinder}!bounds@{bounds}}
+\index{bounds@{bounds}!SDFCylinder@{SDFCylinder}}
+\subsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} S\+D\+F\+Cylinder\+::bounds\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSDFCylinder_a9191a358a55f4b1dd9257e0664c531ff}\label{classSDFCylinder_a9191a358a55f4b1dd9257e0664c531ff}} 
+\index{SDFCylinder@{SDFCylinder}!center@{center}}
+\index{center@{center}!SDFCylinder@{SDFCylinder}}
+\subsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} S\+D\+F\+Cylinder\+::center\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSDFCylinder_aae02d54259ddf572cd2b87c427dc1b08}\label{classSDFCylinder_aae02d54259ddf572cd2b87c427dc1b08}} 
+\index{SDFCylinder@{SDFCylinder}!length@{length}}
+\index{length@{length}!SDFCylinder@{SDFCylinder}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily double S\+D\+F\+Cylinder\+::length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSDFCylinder_a63b1f14e28187305347485d3083f4c9b}\label{classSDFCylinder_a63b1f14e28187305347485d3083f4c9b}} 
+\index{SDFCylinder@{SDFCylinder}!radius@{radius}}
+\index{radius@{radius}!SDFCylinder@{SDFCylinder}}
+\subsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily double S\+D\+F\+Cylinder\+::radius\hspace{0.3cm}{\ttfamily [private]}}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{SDFCylinder_8h}{S\+D\+F\+Cylinder.\+h}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{SDFCylinder_8h}{S\+D\+F\+Cylinder.\+h}}\item 
+src/renderable/\mbox{\hyperlink{SDFCylinder_8cpp}{S\+D\+F\+Cylinder.\+cpp}}\end{DoxyCompactItemize}

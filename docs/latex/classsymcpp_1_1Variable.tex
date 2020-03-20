@@ -1,12 +1,13 @@
-\hypertarget{classsymcpp_1_1Variable}{}\section{symcpp\+:\+:Variable Class Reference}
-\label{classsymcpp_1_1Variable}\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}}
+\hypertarget{classsymcpp_1_1Variable}{}\section{symcpp\+::Variable Class Reference}
+\label{classsymcpp_1_1Variable}\index{symcpp::Variable@{symcpp::Variable}}
 
 
 {\ttfamily \#include $<$Variable.\+h$>$}
 
 
 
-Inheritance diagram for symcpp\+:\+:Variable\+:\nopagebreak
+Inheritance diagram for symcpp\+::Variable\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,7 +16,8 @@ Inheritance diagram for symcpp\+:\+:Variable\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for symcpp\+:\+:Variable\+:\nopagebreak
+Collaboration diagram for symcpp\+::Variable\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -25,142 +27,136 @@ Collaboration diagram for symcpp\+:\+:Variable\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsymcpp_1_1Variable_abe52e6589e8189c46011530bed23f5cc}{Variable} (std\+::string \hyperlink{classsymcpp_1_1Variable_a626cca9e1586e5d60f31446a06c6203f}{name})
+\mbox{\hyperlink{classsymcpp_1_1Variable_abe52e6589e8189c46011530bed23f5cc}{Variable}} (std\+::string \mbox{\hyperlink{classsymcpp_1_1Variable_a626cca9e1586e5d60f31446a06c6203f}{name}})
 \item 
-std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Variable_a5a434805a53a7c46e3659a8efdc7ba80}{copy} () const override
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classsymcpp_1_1Expression}{Expression}} $>$ \mbox{\hyperlink{classsymcpp_1_1Variable_a5a434805a53a7c46e3659a8efdc7ba80}{copy}} () const override
 \item 
-std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Variable_ae17a02824954066f4e8b1ed6ba799ff0}{diff} (std\+::string v) const override
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classsymcpp_1_1Expression}{Expression}} $>$ \mbox{\hyperlink{classsymcpp_1_1Variable_ae17a02824954066f4e8b1ed6ba799ff0}{diff}} (std\+::string v) const override
 \item 
-std\+::unique\+\_\+ptr$<$ \hyperlink{classsymcpp_1_1Expression}{Expression} $>$ \hyperlink{classsymcpp_1_1Variable_afd613d28c73d738fc0cf90b70e1820bb}{simplify} () override
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classsymcpp_1_1Expression}{Expression}} $>$ \mbox{\hyperlink{classsymcpp_1_1Variable_afd613d28c73d738fc0cf90b70e1820bb}{simplify}} () override
 \item 
-double \hyperlink{classsymcpp_1_1Variable_a1dfbef67a237aa2533d8dc88c378d08b}{subs} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override
+double \mbox{\hyperlink{classsymcpp_1_1Variable_a1dfbef67a237aa2533d8dc88c378d08b}{subs}} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override
 \item 
-unsigned int \hyperlink{classsymcpp_1_1Variable_a4b998019a17f29482772f1f945398ff3}{precedence} () const override
+unsigned int \mbox{\hyperlink{classsymcpp_1_1Variable_a4b998019a17f29482772f1f945398ff3}{precedence}} () const override
 \item 
-bool \hyperlink{classsymcpp_1_1Variable_a1ccd5094922661828039f16b77974fe0}{is\+\_\+constant} () const override
+bool \mbox{\hyperlink{classsymcpp_1_1Variable_a1ccd5094922661828039f16b77974fe0}{is\+\_\+constant}} () const override
 \item 
-double \hyperlink{classsymcpp_1_1Variable_a822c9e3e85da6e89949a9f2df7244f5c}{const\+\_\+eval} () const override
+double \mbox{\hyperlink{classsymcpp_1_1Variable_a822c9e3e85da6e89949a9f2df7244f5c}{const\+\_\+eval}} () const override
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-std\+::ostream \& \hyperlink{classsymcpp_1_1Variable_a10ce030c1648fae51534712155ffcab1}{print} (std\+::ostream \&sink) const override
+std\+::ostream \& \mbox{\hyperlink{classsymcpp_1_1Variable_a10ce030c1648fae51534712155ffcab1}{print}} (std\+::ostream \&sink) const override
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \hyperlink{classsymcpp_1_1Variable_a626cca9e1586e5d60f31446a06c6203f}{name}
+std\+::string \mbox{\hyperlink{classsymcpp_1_1Variable_a626cca9e1586e5d60f31446a06c6203f}{name}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}!Variable@{Variable}}
-\index{Variable@{Variable}!symcpp\+::\+Variable@{symcpp\+::\+Variable}}
-\subsubsection[{\texorpdfstring{Variable(std\+::string name)}{Variable(std::string name)}}]{\setlength{\rightskip}{0pt plus 5cm}symcpp\+::\+Variable\+::\+Variable (
-\begin{DoxyParamCaption}
-\item[{std\+::string}]{name}
-\end{DoxyParamCaption}
-)}\hypertarget{classsymcpp_1_1Variable_abe52e6589e8189c46011530bed23f5cc}{}\label{classsymcpp_1_1Variable_abe52e6589e8189c46011530bed23f5cc}
+\mbox{\Hypertarget{classsymcpp_1_1Variable_abe52e6589e8189c46011530bed23f5cc}\label{classsymcpp_1_1Variable_abe52e6589e8189c46011530bed23f5cc}} 
+\index{symcpp::Variable@{symcpp::Variable}!Variable@{Variable}}
+\index{Variable@{Variable}!symcpp::Variable@{symcpp::Variable}}
+\subsubsection{\texorpdfstring{Variable()}{Variable()}}
+{\footnotesize\ttfamily symcpp\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
 
 
 \subsection{Member Function Documentation}
-\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}!const\+\_\+eval@{const\+\_\+eval}}
-\index{const\+\_\+eval@{const\+\_\+eval}!symcpp\+::\+Variable@{symcpp\+::\+Variable}}
-\subsubsection[{\texorpdfstring{const\+\_\+eval() const override}{const_eval() const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Variable\+::const\+\_\+eval (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Variable_a822c9e3e85da6e89949a9f2df7244f5c}{}\label{classsymcpp_1_1Variable_a822c9e3e85da6e89949a9f2df7244f5c}
+\mbox{\Hypertarget{classsymcpp_1_1Variable_a822c9e3e85da6e89949a9f2df7244f5c}\label{classsymcpp_1_1Variable_a822c9e3e85da6e89949a9f2df7244f5c}} 
+\index{symcpp::Variable@{symcpp::Variable}!const\_eval@{const\_eval}}
+\index{const\_eval@{const\_eval}!symcpp::Variable@{symcpp::Variable}}
+\subsubsection{\texorpdfstring{const\_eval()}{const\_eval()}}
+{\footnotesize\ttfamily double symcpp\+::\+Variable\+::const\+\_\+eval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classsymcpp_1_1Expression_a81c8069347f586cb5632338d97c278ad}{symcpp\+::\+Expression}.
 
-\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}!copy@{copy}}
-\index{copy@{copy}!symcpp\+::\+Variable@{symcpp\+::\+Variable}}
-\subsubsection[{\texorpdfstring{copy() const override}{copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Variable\+::copy (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Variable_a5a434805a53a7c46e3659a8efdc7ba80}{}\label{classsymcpp_1_1Variable_a5a434805a53a7c46e3659a8efdc7ba80}
+Implements \mbox{\hyperlink{classsymcpp_1_1Expression_a81c8069347f586cb5632338d97c278ad}{symcpp\+::\+Expression}}.
 
-
-Implements \hyperlink{classsymcpp_1_1Expression_a2e7de5a295ccf0efdc9b34cea7ba3d0b}{symcpp\+::\+Expression}.
-
-\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}!diff@{diff}}
-\index{diff@{diff}!symcpp\+::\+Variable@{symcpp\+::\+Variable}}
-\subsubsection[{\texorpdfstring{diff(std\+::string v) const override}{diff(std::string v) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Variable\+::diff (
-\begin{DoxyParamCaption}
-\item[{std\+::string}]{v}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Variable_ae17a02824954066f4e8b1ed6ba799ff0}{}\label{classsymcpp_1_1Variable_ae17a02824954066f4e8b1ed6ba799ff0}
+\mbox{\Hypertarget{classsymcpp_1_1Variable_a5a434805a53a7c46e3659a8efdc7ba80}\label{classsymcpp_1_1Variable_a5a434805a53a7c46e3659a8efdc7ba80}} 
+\index{symcpp::Variable@{symcpp::Variable}!copy@{copy}}
+\index{copy@{copy}!symcpp::Variable@{symcpp::Variable}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classsymcpp_1_1Expression}{Expression}} $>$ symcpp\+::\+Variable\+::copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classsymcpp_1_1Expression_a032fe8da79d5e231ca2d21a201c8f32d}{symcpp\+::\+Expression}.
 
-\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}!is\+\_\+constant@{is\+\_\+constant}}
-\index{is\+\_\+constant@{is\+\_\+constant}!symcpp\+::\+Variable@{symcpp\+::\+Variable}}
-\subsubsection[{\texorpdfstring{is\+\_\+constant() const override}{is_constant() const override}}]{\setlength{\rightskip}{0pt plus 5cm}bool symcpp\+::\+Variable\+::is\+\_\+constant (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Variable_a1ccd5094922661828039f16b77974fe0}{}\label{classsymcpp_1_1Variable_a1ccd5094922661828039f16b77974fe0}
+Implements \mbox{\hyperlink{classsymcpp_1_1Expression_a2e7de5a295ccf0efdc9b34cea7ba3d0b}{symcpp\+::\+Expression}}.
 
-
-Implements \hyperlink{classsymcpp_1_1Expression_a30db7917c8948e22330cbe8259caeae2}{symcpp\+::\+Expression}.
-
-\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}!precedence@{precedence}}
-\index{precedence@{precedence}!symcpp\+::\+Variable@{symcpp\+::\+Variable}}
-\subsubsection[{\texorpdfstring{precedence() const override}{precedence() const override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int symcpp\+::\+Variable\+::precedence (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Variable_a4b998019a17f29482772f1f945398ff3}{}\label{classsymcpp_1_1Variable_a4b998019a17f29482772f1f945398ff3}
+\mbox{\Hypertarget{classsymcpp_1_1Variable_ae17a02824954066f4e8b1ed6ba799ff0}\label{classsymcpp_1_1Variable_ae17a02824954066f4e8b1ed6ba799ff0}} 
+\index{symcpp::Variable@{symcpp::Variable}!diff@{diff}}
+\index{diff@{diff}!symcpp::Variable@{symcpp::Variable}}
+\subsubsection{\texorpdfstring{diff()}{diff()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classsymcpp_1_1Expression}{Expression}} $>$ symcpp\+::\+Variable\+::diff (\begin{DoxyParamCaption}\item[{std\+::string}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classsymcpp_1_1Expression_a181c162d5740faac392ffdca26bfca0c}{symcpp\+::\+Expression}.
 
-\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}!print@{print}}
-\index{print@{print}!symcpp\+::\+Variable@{symcpp\+::\+Variable}}
-\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const override}{print(std::ostream &sink) const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& symcpp\+::\+Variable\+::print (
-\begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{sink}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Variable_a10ce030c1648fae51534712155ffcab1}{}\label{classsymcpp_1_1Variable_a10ce030c1648fae51534712155ffcab1}
+Implements \mbox{\hyperlink{classsymcpp_1_1Expression_a032fe8da79d5e231ca2d21a201c8f32d}{symcpp\+::\+Expression}}.
 
-
-Implements \hyperlink{classsymcpp_1_1Expression_af37e13032a40f2da4d2866eaa8658049}{symcpp\+::\+Expression}.
-
-\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}!simplify@{simplify}}
-\index{simplify@{simplify}!symcpp\+::\+Variable@{symcpp\+::\+Variable}}
-\subsubsection[{\texorpdfstring{simplify() override}{simplify() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Expression} $>$ symcpp\+::\+Variable\+::simplify (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Variable_afd613d28c73d738fc0cf90b70e1820bb}{}\label{classsymcpp_1_1Variable_afd613d28c73d738fc0cf90b70e1820bb}
+\mbox{\Hypertarget{classsymcpp_1_1Variable_a1ccd5094922661828039f16b77974fe0}\label{classsymcpp_1_1Variable_a1ccd5094922661828039f16b77974fe0}} 
+\index{symcpp::Variable@{symcpp::Variable}!is\_constant@{is\_constant}}
+\index{is\_constant@{is\_constant}!symcpp::Variable@{symcpp::Variable}}
+\subsubsection{\texorpdfstring{is\_constant()}{is\_constant()}}
+{\footnotesize\ttfamily bool symcpp\+::\+Variable\+::is\+\_\+constant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classsymcpp_1_1Expression_ab1fa6e55eea0682250d013f28db26cd2}{symcpp\+::\+Expression}.
 
-\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}!subs@{subs}}
-\index{subs@{subs}!symcpp\+::\+Variable@{symcpp\+::\+Variable}}
-\subsubsection[{\texorpdfstring{subs(const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&env) const override}{subs(const std::unordered_map< std::string, double > &env) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double symcpp\+::\+Variable\+::subs (
-\begin{DoxyParamCaption}
-\item[{const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&}]{env}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsymcpp_1_1Variable_a1dfbef67a237aa2533d8dc88c378d08b}{}\label{classsymcpp_1_1Variable_a1dfbef67a237aa2533d8dc88c378d08b}
+Implements \mbox{\hyperlink{classsymcpp_1_1Expression_a30db7917c8948e22330cbe8259caeae2}{symcpp\+::\+Expression}}.
+
+\mbox{\Hypertarget{classsymcpp_1_1Variable_a4b998019a17f29482772f1f945398ff3}\label{classsymcpp_1_1Variable_a4b998019a17f29482772f1f945398ff3}} 
+\index{symcpp::Variable@{symcpp::Variable}!precedence@{precedence}}
+\index{precedence@{precedence}!symcpp::Variable@{symcpp::Variable}}
+\subsubsection{\texorpdfstring{precedence()}{precedence()}}
+{\footnotesize\ttfamily unsigned int symcpp\+::\+Variable\+::precedence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classsymcpp_1_1Expression_aaef29b0afa2d6c21fe35f47a1be76134}{symcpp\+::\+Expression}.
+
+Implements \mbox{\hyperlink{classsymcpp_1_1Expression_a181c162d5740faac392ffdca26bfca0c}{symcpp\+::\+Expression}}.
+
+\mbox{\Hypertarget{classsymcpp_1_1Variable_a10ce030c1648fae51534712155ffcab1}\label{classsymcpp_1_1Variable_a10ce030c1648fae51534712155ffcab1}} 
+\index{symcpp::Variable@{symcpp::Variable}!print@{print}}
+\index{print@{print}!symcpp::Variable@{symcpp::Variable}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily std\+::ostream \& symcpp\+::\+Variable\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{sink }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classsymcpp_1_1Expression_af37e13032a40f2da4d2866eaa8658049}{symcpp\+::\+Expression}}.
+
+\mbox{\Hypertarget{classsymcpp_1_1Variable_afd613d28c73d738fc0cf90b70e1820bb}\label{classsymcpp_1_1Variable_afd613d28c73d738fc0cf90b70e1820bb}} 
+\index{symcpp::Variable@{symcpp::Variable}!simplify@{simplify}}
+\index{simplify@{simplify}!symcpp::Variable@{symcpp::Variable}}
+\subsubsection{\texorpdfstring{simplify()}{simplify()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classsymcpp_1_1Expression}{Expression}} $>$ symcpp\+::\+Variable\+::simplify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classsymcpp_1_1Expression_ab1fa6e55eea0682250d013f28db26cd2}{symcpp\+::\+Expression}}.
+
+\mbox{\Hypertarget{classsymcpp_1_1Variable_a1dfbef67a237aa2533d8dc88c378d08b}\label{classsymcpp_1_1Variable_a1dfbef67a237aa2533d8dc88c378d08b}} 
+\index{symcpp::Variable@{symcpp::Variable}!subs@{subs}}
+\index{subs@{subs}!symcpp::Variable@{symcpp::Variable}}
+\subsubsection{\texorpdfstring{subs()}{subs()}}
+{\footnotesize\ttfamily double symcpp\+::\+Variable\+::subs (\begin{DoxyParamCaption}\item[{const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&}]{env }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classsymcpp_1_1Expression_aaef29b0afa2d6c21fe35f47a1be76134}{symcpp\+::\+Expression}}.
 
 
 
 \subsection{Member Data Documentation}
-\index{symcpp\+::\+Variable@{symcpp\+::\+Variable}!name@{name}}
-\index{name@{name}!symcpp\+::\+Variable@{symcpp\+::\+Variable}}
-\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string symcpp\+::\+Variable\+::name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsymcpp_1_1Variable_a626cca9e1586e5d60f31446a06c6203f}{}\label{classsymcpp_1_1Variable_a626cca9e1586e5d60f31446a06c6203f}
+\mbox{\Hypertarget{classsymcpp_1_1Variable_a626cca9e1586e5d60f31446a06c6203f}\label{classsymcpp_1_1Variable_a626cca9e1586e5d60f31446a06c6203f}} 
+\index{symcpp::Variable@{symcpp::Variable}!name@{name}}
+\index{name@{name}!symcpp::Variable@{symcpp::Variable}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string symcpp\+::\+Variable\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/symcpp/\hyperlink{Variable_8h}{Variable.\+h}\item 
-src/symcpp/\hyperlink{Variable_8cpp}{Variable.\+cpp}\end{DoxyCompactItemize}
+src/symcpp/\mbox{\hyperlink{Variable_8h}{Variable.\+h}}\item 
+src/symcpp/\mbox{\hyperlink{Variable_8cpp}{Variable.\+cpp}}\end{DoxyCompactItemize}

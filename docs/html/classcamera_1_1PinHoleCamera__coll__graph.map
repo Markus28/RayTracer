@@ -1,4 +1,8 @@
 <map id="camera::PinHoleCamera" name="camera::PinHoleCamera">
-<area shape="rect" id="node2" href="$classcamera_1_1Camera.html" title="camera::Camera" alt="" coords="25,125,144,152"/>
-<area shape="rect" id="node5" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="253,125,330,152"/>
+<area shape="rect" id="node1" title="Implementation of Camera class." alt="" coords="110,260,275,287"/>
+<area shape="rect" id="node2" href="$classcamera_1_1Camera.html" title=" " alt="" coords="25,125,144,152"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="171,5,209,32"/>
+<area shape="rect" id="node5" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics." alt="" coords="253,125,330,152"/>
+<area shape="rect" id="node6" title=" " alt="" coords="261,5,321,32"/>
 </map>

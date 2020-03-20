@@ -1,5 +1,5 @@
 \hypertarget{classSDFObject}{}\section{S\+D\+F\+Object Class Reference}
-\label{classSDFObject}\index{S\+D\+F\+Object@{S\+D\+F\+Object}}
+\label{classSDFObject}\index{SDFObject@{SDFObject}}
 
 
 Interface for an object that can be Sphere-\/\+Marched.  
@@ -21,7 +21,8 @@ Inheritance diagram for S\+D\+F\+Object\+:
 \end{figure}
 
 
-Collaboration diagram for S\+D\+F\+Object\+:\nopagebreak
+Collaboration diagram for S\+D\+F\+Object\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -31,34 +32,34 @@ Collaboration diagram for S\+D\+F\+Object\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classSDFObject_a9aeb5037eb692e6502ae2c523ed87b29}{S\+D\+F\+Object} ()
+\mbox{\hyperlink{classSDFObject_a9aeb5037eb692e6502ae2c523ed87b29}{S\+D\+F\+Object}} ()
 \item 
-\hyperlink{classSDFObject_a56fffe33b0be8b81e2a38df61d09ccfd}{S\+D\+F\+Object} (bool \hyperlink{classSDFObject_af366e048b8af77961de4a1c5a45dc110}{is\+\_\+monotonic})
+\mbox{\hyperlink{classSDFObject_a56fffe33b0be8b81e2a38df61d09ccfd}{S\+D\+F\+Object}} (bool \mbox{\hyperlink{classSDFObject_af366e048b8af77961de4a1c5a45dc110}{is\+\_\+monotonic}})
 \item 
-\hyperlink{classSDFObject_a908bc77db501ad2b4e04dcecc389cfee}{S\+D\+F\+Object} (bool \hyperlink{classSDFObject_af366e048b8af77961de4a1c5a45dc110}{is\+\_\+monotonic}, unsigned int \hyperlink{classSDFObject_aff2946d73110ace629e66f9eac2c13aa}{max\+\_\+iter}, double \hyperlink{classSDFObject_a5bcc7f77148687f9545f0ade0db6c7f0}{epsilon})
+\mbox{\hyperlink{classSDFObject_a908bc77db501ad2b4e04dcecc389cfee}{S\+D\+F\+Object}} (bool \mbox{\hyperlink{classSDFObject_af366e048b8af77961de4a1c5a45dc110}{is\+\_\+monotonic}}, unsigned int \mbox{\hyperlink{classSDFObject_aff2946d73110ace629e66f9eac2c13aa}{max\+\_\+iter}}, double \mbox{\hyperlink{classSDFObject_a5bcc7f77148687f9545f0ade0db6c7f0}{epsilon}})
 \item 
-\hyperlink{classIntersection}{Intersection} \hyperlink{classSDFObject_a3870048585282b8176a05ca46ab8695d}{ray\+\_\+intersect} (const \hyperlink{classRay}{Ray} \&ray) const override
+\mbox{\hyperlink{classIntersection}{Intersection}} \mbox{\hyperlink{classSDFObject_a3870048585282b8176a05ca46ab8695d}{ray\+\_\+intersect}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) const override
 \begin{DoxyCompactList}\small\item\em Method to detect intersection of ray and object. \end{DoxyCompactList}\item 
-virtual \hyperlink{classSDFObject_a3ceca3fd0d007ecb4b39993d30afa623}{$\sim$\+S\+D\+F\+Object} ()=default
+virtual \mbox{\hyperlink{classSDFObject_a3ceca3fd0d007ecb4b39993d30afa623}{$\sim$\+S\+D\+F\+Object}} ()=default
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual double \hyperlink{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}{distance\+\_\+bound} (const \hyperlink{classVector3D}{Vector3D} \&pos) const =0
+virtual double \mbox{\hyperlink{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}{distance\+\_\+bound}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pos) const =0
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-unsigned int \hyperlink{classSDFObject_aff2946d73110ace629e66f9eac2c13aa}{max\+\_\+iter}
+unsigned int \mbox{\hyperlink{classSDFObject_aff2946d73110ace629e66f9eac2c13aa}{max\+\_\+iter}}
 \item 
-bool \hyperlink{classSDFObject_af366e048b8af77961de4a1c5a45dc110}{is\+\_\+monotonic}
+bool \mbox{\hyperlink{classSDFObject_af366e048b8af77961de4a1c5a45dc110}{is\+\_\+monotonic}}
 \item 
-double \hyperlink{classSDFObject_a5bcc7f77148687f9545f0ade0db6c7f0}{epsilon}
+double \mbox{\hyperlink{classSDFObject_a5bcc7f77148687f9545f0ade0db6c7f0}{epsilon}}
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classSDFObject_a31075b2d3758d4b9e5804142372a4eb4}{C\+S\+G\+Leaf}
+class \mbox{\hyperlink{classSDFObject_a31075b2d3758d4b9e5804142372a4eb4}{C\+S\+G\+Leaf}}
 \end{DoxyCompactItemize}
 
 
@@ -68,57 +69,49 @@ Interface for an object that can be Sphere-\/\+Marched.
 Objects which implement this interface must provide the distance\+\_\+bound function, which returns a lower bound on the distance from the object. Using this information the sphere-\/marching algorithm is used to compute an intersection with the object. 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\subsubsection[{\texorpdfstring{S\+D\+F\+Object()}{SDFObject()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+F\+Object\+::\+S\+D\+F\+Object (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classSDFObject_a9aeb5037eb692e6502ae2c523ed87b29}{}\label{classSDFObject_a9aeb5037eb692e6502ae2c523ed87b29}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\subsubsection[{\texorpdfstring{S\+D\+F\+Object(bool is\+\_\+monotonic)}{SDFObject(bool is_monotonic)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+F\+Object\+::\+S\+D\+F\+Object (
-\begin{DoxyParamCaption}
-\item[{bool}]{is\+\_\+monotonic}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classSDFObject_a56fffe33b0be8b81e2a38df61d09ccfd}{}\label{classSDFObject_a56fffe33b0be8b81e2a38df61d09ccfd}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\subsubsection[{\texorpdfstring{S\+D\+F\+Object(bool is\+\_\+monotonic, unsigned int max\+\_\+iter, double epsilon)}{SDFObject(bool is_monotonic, unsigned int max_iter, double epsilon)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+F\+Object\+::\+S\+D\+F\+Object (
-\begin{DoxyParamCaption}
-\item[{bool}]{is\+\_\+monotonic, }
-\item[{unsigned int}]{max\+\_\+iter, }
-\item[{double}]{epsilon}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSDFObject_a908bc77db501ad2b4e04dcecc389cfee}{}\label{classSDFObject_a908bc77db501ad2b4e04dcecc389cfee}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!````~S\+D\+F\+Object@{$\sim$\+S\+D\+F\+Object}}
-\index{````~S\+D\+F\+Object@{$\sim$\+S\+D\+F\+Object}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\subsubsection[{\texorpdfstring{$\sim$\+S\+D\+F\+Object()=default}{~SDFObject()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual S\+D\+F\+Object\+::$\sim$\+S\+D\+F\+Object (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{classSDFObject_a3ceca3fd0d007ecb4b39993d30afa623}{}\label{classSDFObject_a3ceca3fd0d007ecb4b39993d30afa623}
+\mbox{\Hypertarget{classSDFObject_a9aeb5037eb692e6502ae2c523ed87b29}\label{classSDFObject_a9aeb5037eb692e6502ae2c523ed87b29}} 
+\index{SDFObject@{SDFObject}!SDFObject@{SDFObject}}
+\index{SDFObject@{SDFObject}!SDFObject@{SDFObject}}
+\subsubsection{\texorpdfstring{SDFObject()}{SDFObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily S\+D\+F\+Object\+::\+S\+D\+F\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classSDFObject_a56fffe33b0be8b81e2a38df61d09ccfd}\label{classSDFObject_a56fffe33b0be8b81e2a38df61d09ccfd}} 
+\index{SDFObject@{SDFObject}!SDFObject@{SDFObject}}
+\index{SDFObject@{SDFObject}!SDFObject@{SDFObject}}
+\subsubsection{\texorpdfstring{SDFObject()}{SDFObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily S\+D\+F\+Object\+::\+S\+D\+F\+Object (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+monotonic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classSDFObject_a908bc77db501ad2b4e04dcecc389cfee}\label{classSDFObject_a908bc77db501ad2b4e04dcecc389cfee}} 
+\index{SDFObject@{SDFObject}!SDFObject@{SDFObject}}
+\index{SDFObject@{SDFObject}!SDFObject@{SDFObject}}
+\subsubsection{\texorpdfstring{SDFObject()}{SDFObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily S\+D\+F\+Object\+::\+S\+D\+F\+Object (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+monotonic,  }\item[{unsigned int}]{max\+\_\+iter,  }\item[{double}]{epsilon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSDFObject_a3ceca3fd0d007ecb4b39993d30afa623}\label{classSDFObject_a3ceca3fd0d007ecb4b39993d30afa623}} 
+\index{SDFObject@{SDFObject}!````~SDFObject@{$\sim$SDFObject}}
+\index{````~SDFObject@{$\sim$SDFObject}!SDFObject@{SDFObject}}
+\subsubsection{\texorpdfstring{$\sim$SDFObject()}{~SDFObject()}}
+{\footnotesize\ttfamily virtual S\+D\+F\+Object\+::$\sim$\+S\+D\+F\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
 
 
 \subsection{Member Function Documentation}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!distance\+\_\+bound@{distance\+\_\+bound}}
-\index{distance\+\_\+bound@{distance\+\_\+bound}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\subsubsection[{\texorpdfstring{distance\+\_\+bound(const Vector3\+D \&pos) const =0}{distance_bound(const Vector3D &pos) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double S\+D\+F\+Object\+::distance\+\_\+bound (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pos}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}\hypertarget{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}{}\label{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}
+\mbox{\Hypertarget{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}\label{classSDFObject_ac34f5232b6ea395178d33e3b084d5a93}} 
+\index{SDFObject@{SDFObject}!distance\_bound@{distance\_bound}}
+\index{distance\_bound@{distance\_bound}!SDFObject@{SDFObject}}
+\subsubsection{\texorpdfstring{distance\_bound()}{distance\_bound()}}
+{\footnotesize\ttfamily virtual double S\+D\+F\+Object\+::distance\+\_\+bound (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
 
 
-Implemented in \hyperlink{classCSG_a7dc0853ae99ffd54ea99eccdc5fd5acf}{C\+SG}, \hyperlink{classSDFSphere_aba1d5f7d9f16ee7fd40c5dae5df467d1}{S\+D\+F\+Sphere}, \hyperlink{classSDFBox_aaeab9858412c2f3ad7e19ec9738e8aca}{S\+D\+F\+Box}, and \hyperlink{classSDFCylinder_a20732b488b83720390197e50ead3883a}{S\+D\+F\+Cylinder}.
 
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!ray\+\_\+intersect@{ray\+\_\+intersect}}
-\index{ray\+\_\+intersect@{ray\+\_\+intersect}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\subsubsection[{\texorpdfstring{ray\+\_\+intersect(const Ray \&ray) const override}{ray_intersect(const Ray &ray) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Intersection} S\+D\+F\+Object\+::ray\+\_\+intersect (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ray} \&}]{ray}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSDFObject_a3870048585282b8176a05ca46ab8695d}{}\label{classSDFObject_a3870048585282b8176a05ca46ab8695d}
+Implemented in \mbox{\hyperlink{classCSG_a7dc0853ae99ffd54ea99eccdc5fd5acf}{C\+SG}}, \mbox{\hyperlink{classSDFSphere_aba1d5f7d9f16ee7fd40c5dae5df467d1}{S\+D\+F\+Sphere}}, \mbox{\hyperlink{classSDFCylinder_a20732b488b83720390197e50ead3883a}{S\+D\+F\+Cylinder}}, and \mbox{\hyperlink{classSDFBox_aaeab9858412c2f3ad7e19ec9738e8aca}{S\+D\+F\+Box}}.
+
+\mbox{\Hypertarget{classSDFObject_a3870048585282b8176a05ca46ab8695d}\label{classSDFObject_a3870048585282b8176a05ca46ab8695d}} 
+\index{SDFObject@{SDFObject}!ray\_intersect@{ray\_intersect}}
+\index{ray\_intersect@{ray\_intersect}!SDFObject@{SDFObject}}
+\subsubsection{\texorpdfstring{ray\_intersect()}{ray\_intersect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIntersection}{Intersection}} S\+D\+F\+Object\+::ray\+\_\+intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
 
 
 Method to detect intersection of ray and object. 
@@ -129,33 +122,45 @@ Method to detect intersection of ray and object.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\hyperlink{classIntersection}{Intersection} object containing distance to intersection and pointer to intersected object 
+\mbox{\hyperlink{classIntersection}{Intersection}} object containing distance to intersection and pointer to intersected object 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{Render\+Object}.
+Implements \mbox{\hyperlink{classRenderObject_aa844ad2c5ef0c2b79faef2ed0af553bb}{Render\+Object}}.
 
 
 
 \subsection{Friends And Related Function Documentation}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!C\+S\+G\+Leaf@{C\+S\+G\+Leaf}}
-\index{C\+S\+G\+Leaf@{C\+S\+G\+Leaf}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\subsubsection[{\texorpdfstring{C\+S\+G\+Leaf}{CSGLeaf}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf C\+S\+G\+Leaf}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classSDFObject_a31075b2d3758d4b9e5804142372a4eb4}{}\label{classSDFObject_a31075b2d3758d4b9e5804142372a4eb4}
+\mbox{\Hypertarget{classSDFObject_a31075b2d3758d4b9e5804142372a4eb4}\label{classSDFObject_a31075b2d3758d4b9e5804142372a4eb4}} 
+\index{SDFObject@{SDFObject}!CSGLeaf@{CSGLeaf}}
+\index{CSGLeaf@{CSGLeaf}!SDFObject@{SDFObject}}
+\subsubsection{\texorpdfstring{CSGLeaf}{CSGLeaf}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCSGLeaf}{C\+S\+G\+Leaf}}\hspace{0.3cm}{\ttfamily [friend]}}
+
 
 
 \subsection{Member Data Documentation}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!epsilon@{epsilon}}
-\index{epsilon@{epsilon}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\subsubsection[{\texorpdfstring{epsilon}{epsilon}}]{\setlength{\rightskip}{0pt plus 5cm}double S\+D\+F\+Object\+::epsilon\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFObject_a5bcc7f77148687f9545f0ade0db6c7f0}{}\label{classSDFObject_a5bcc7f77148687f9545f0ade0db6c7f0}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!is\+\_\+monotonic@{is\+\_\+monotonic}}
-\index{is\+\_\+monotonic@{is\+\_\+monotonic}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\subsubsection[{\texorpdfstring{is\+\_\+monotonic}{is_monotonic}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+D\+F\+Object\+::is\+\_\+monotonic\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFObject_af366e048b8af77961de4a1c5a45dc110}{}\label{classSDFObject_af366e048b8af77961de4a1c5a45dc110}
-\index{S\+D\+F\+Object@{S\+D\+F\+Object}!max\+\_\+iter@{max\+\_\+iter}}
-\index{max\+\_\+iter@{max\+\_\+iter}!S\+D\+F\+Object@{S\+D\+F\+Object}}
-\subsubsection[{\texorpdfstring{max\+\_\+iter}{max_iter}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int S\+D\+F\+Object\+::max\+\_\+iter\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSDFObject_aff2946d73110ace629e66f9eac2c13aa}{}\label{classSDFObject_aff2946d73110ace629e66f9eac2c13aa}
+\mbox{\Hypertarget{classSDFObject_a5bcc7f77148687f9545f0ade0db6c7f0}\label{classSDFObject_a5bcc7f77148687f9545f0ade0db6c7f0}} 
+\index{SDFObject@{SDFObject}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!SDFObject@{SDFObject}}
+\subsubsection{\texorpdfstring{epsilon}{epsilon}}
+{\footnotesize\ttfamily double S\+D\+F\+Object\+::epsilon\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSDFObject_af366e048b8af77961de4a1c5a45dc110}\label{classSDFObject_af366e048b8af77961de4a1c5a45dc110}} 
+\index{SDFObject@{SDFObject}!is\_monotonic@{is\_monotonic}}
+\index{is\_monotonic@{is\_monotonic}!SDFObject@{SDFObject}}
+\subsubsection{\texorpdfstring{is\_monotonic}{is\_monotonic}}
+{\footnotesize\ttfamily bool S\+D\+F\+Object\+::is\+\_\+monotonic\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSDFObject_aff2946d73110ace629e66f9eac2c13aa}\label{classSDFObject_aff2946d73110ace629e66f9eac2c13aa}} 
+\index{SDFObject@{SDFObject}!max\_iter@{max\_iter}}
+\index{max\_iter@{max\_iter}!SDFObject@{SDFObject}}
+\subsubsection{\texorpdfstring{max\_iter}{max\_iter}}
+{\footnotesize\ttfamily unsigned int S\+D\+F\+Object\+::max\+\_\+iter\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{SDFObject_8h}{S\+D\+F\+Object.\+h}\item 
-src/renderable/\hyperlink{SDFObject_8cpp}{S\+D\+F\+Object.\+cpp}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{SDFObject_8h}{S\+D\+F\+Object.\+h}}\item 
+src/renderable/\mbox{\hyperlink{SDFObject_8cpp}{S\+D\+F\+Object.\+cpp}}\end{DoxyCompactItemize}

@@ -1,8 +1,9 @@
 <map id="src/symcpp/Variable.h" name="src/symcpp/Variable.h">
-<area shape="rect" id="node2" href="$SymbolicGraph_8h.html" title="src/symcpp/SymbolicGraph.h" alt="" coords="98,80,293,107"/>
-<area shape="rect" id="node7" href="$Variable_8cpp.html" title="src/symcpp/Variable.cpp" alt="" coords="317,80,484,107"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="5,229,103,256"/>
-<area shape="rect" id="node4" href="$ImplicitSurface_8h.html" title="src/renderable/ImplicitSurface.h" alt="" coords="92,155,299,181"/>
-<area shape="rect" id="node6" href="$SymbolicGraph_8cpp.html" title="src/symcpp/SymbolicGraph.cpp" alt="" coords="323,155,531,181"/>
-<area shape="rect" id="node5" href="$ImplicitSurface_8cpp.html" title="src/renderable/ImplicitSurface.cpp" alt="" coords="127,229,347,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="221,5,372,32"/>
+<area shape="rect" id="node2" href="$SymbolicGraph_8h.html" title=" " alt="" coords="98,80,293,107"/>
+<area shape="rect" id="node7" href="$Variable_8cpp.html" title=" " alt="" coords="317,80,482,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title=" " alt="" coords="5,229,103,256"/>
+<area shape="rect" id="node4" href="$ImplicitSurface_8h.html" title=" " alt="" coords="92,155,299,181"/>
+<area shape="rect" id="node6" href="$SymbolicGraph_8cpp.html" title=" " alt="" coords="323,155,531,181"/>
+<area shape="rect" id="node5" href="$ImplicitSurface_8cpp.html" title=" " alt="" coords="127,229,347,256"/>
 </map>

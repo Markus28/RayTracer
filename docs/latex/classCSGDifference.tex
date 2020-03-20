@@ -1,5 +1,5 @@
 \hypertarget{classCSGDifference}{}\section{C\+S\+G\+Difference Class Reference}
-\label{classCSGDifference}\index{C\+S\+G\+Difference@{C\+S\+G\+Difference}}
+\label{classCSGDifference}\index{CSGDifference@{CSGDifference}}
 
 
 A difference node in the C\+S\+G-\/\+Tree.  
@@ -11,7 +11,8 @@ A difference node in the C\+S\+G-\/\+Tree.
 
 
 
-Inheritance diagram for C\+S\+G\+Difference\+:\nopagebreak
+Inheritance diagram for C\+S\+G\+Difference\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Inheritance diagram for C\+S\+G\+Difference\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for C\+S\+G\+Difference\+:\nopagebreak
+Collaboration diagram for C\+S\+G\+Difference\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,22 +32,22 @@ Collaboration diagram for C\+S\+G\+Difference\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classCSGDifference_ac8012afd2f29b2546ce9b302c491fa42}{C\+S\+G\+Difference} (\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$a, \hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$b)
+\mbox{\hyperlink{classCSGDifference_ac8012afd2f29b2546ce9b302c491fa42}{C\+S\+G\+Difference}} (\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$a, \mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$b)
 \item 
-double \hyperlink{classCSGDifference_a66e0be492572f75b508a77c429be8fd8}{distance\+\_\+bound} (const \hyperlink{classVector3D}{Vector3D} \&pos) const override
+double \mbox{\hyperlink{classCSGDifference_a66e0be492572f75b508a77c429be8fd8}{distance\+\_\+bound}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&pos) const override
 \item 
-\hyperlink{classBoundingBox}{Bounding\+Box} \hyperlink{classCSGDifference_aede15cd9fd46e4824e66361eb2f28ec9}{get\+\_\+bounds} () const override
-\begin{DoxyCompactList}\small\item\em Returns a \hyperlink{classBoundingBox}{Bounding\+Box} for the Difference It will simply return the \hyperlink{classBoundingBox}{Bounding\+Box} of a, this is usually a good fit. \end{DoxyCompactList}\item 
-\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGDifference_a8ea1d4cd7fc1ff6adca5cc4983eecfcd}{deep\+\_\+copy} () const override
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} \mbox{\hyperlink{classCSGDifference_aede15cd9fd46e4824e66361eb2f28ec9}{get\+\_\+bounds}} () const override
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} for the Difference It will simply return the \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} of a, this is usually a good fit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$ \mbox{\hyperlink{classCSGDifference_a8ea1d4cd7fc1ff6adca5cc4983eecfcd}{deep\+\_\+copy}} () const override
 \item 
-\hyperlink{classCSGDifference_a1f1c435a8b85ee53ee5003548e465b75}{$\sim$\+C\+S\+G\+Difference} () override
+\mbox{\hyperlink{classCSGDifference_a1f1c435a8b85ee53ee5003548e465b75}{$\sim$\+C\+S\+G\+Difference}} () override
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGDifference_a689a622e9b4c43d72575cbbdd2ad847b}{first}
+\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$ \mbox{\hyperlink{classCSGDifference_a689a622e9b4c43d72575cbbdd2ad847b}{first}}
 \item 
-\hyperlink{classCSGComponent}{C\+S\+G\+Component} $\ast$ \hyperlink{classCSGDifference_ae9b4b0b0839d066ce30006d99536cd99}{second}
+\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$ \mbox{\hyperlink{classCSGDifference_ae9b4b0b0839d066ce30006d99536cd99}{second}}
 \end{DoxyCompactItemize}
 
 
@@ -53,76 +55,76 @@ double \hyperlink{classCSGDifference_a66e0be492572f75b508a77c429be8fd8}{distance
 A difference node in the C\+S\+G-\/\+Tree. 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{C\+S\+G\+Difference@{C\+S\+G\+Difference}!C\+S\+G\+Difference@{C\+S\+G\+Difference}}
-\index{C\+S\+G\+Difference@{C\+S\+G\+Difference}!C\+S\+G\+Difference@{C\+S\+G\+Difference}}
-\subsubsection[{\texorpdfstring{C\+S\+G\+Difference(\+C\+S\+G\+Component $\ast$a, C\+S\+G\+Component $\ast$b)}{CSGDifference(CSGComponent *a, CSGComponent *b)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+Difference\+::\+C\+S\+G\+Difference (
-\begin{DoxyParamCaption}
-\item[{{\bf C\+S\+G\+Component} $\ast$}]{a, }
-\item[{{\bf C\+S\+G\+Component} $\ast$}]{b}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCSGDifference_ac8012afd2f29b2546ce9b302c491fa42}{}\label{classCSGDifference_ac8012afd2f29b2546ce9b302c491fa42}
-\index{C\+S\+G\+Difference@{C\+S\+G\+Difference}!````~C\+S\+G\+Difference@{$\sim$\+C\+S\+G\+Difference}}
-\index{````~C\+S\+G\+Difference@{$\sim$\+C\+S\+G\+Difference}!C\+S\+G\+Difference@{C\+S\+G\+Difference}}
-\subsubsection[{\texorpdfstring{$\sim$\+C\+S\+G\+Difference() override}{~CSGDifference() override}}]{\setlength{\rightskip}{0pt plus 5cm}C\+S\+G\+Difference\+::$\sim$\+C\+S\+G\+Difference (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classCSGDifference_a1f1c435a8b85ee53ee5003548e465b75}{}\label{classCSGDifference_a1f1c435a8b85ee53ee5003548e465b75}
+\mbox{\Hypertarget{classCSGDifference_ac8012afd2f29b2546ce9b302c491fa42}\label{classCSGDifference_ac8012afd2f29b2546ce9b302c491fa42}} 
+\index{CSGDifference@{CSGDifference}!CSGDifference@{CSGDifference}}
+\index{CSGDifference@{CSGDifference}!CSGDifference@{CSGDifference}}
+\subsubsection{\texorpdfstring{CSGDifference()}{CSGDifference()}}
+{\footnotesize\ttfamily C\+S\+G\+Difference\+::\+C\+S\+G\+Difference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCSGDifference_a1f1c435a8b85ee53ee5003548e465b75}\label{classCSGDifference_a1f1c435a8b85ee53ee5003548e465b75}} 
+\index{CSGDifference@{CSGDifference}!````~CSGDifference@{$\sim$CSGDifference}}
+\index{````~CSGDifference@{$\sim$CSGDifference}!CSGDifference@{CSGDifference}}
+\subsubsection{\texorpdfstring{$\sim$CSGDifference()}{~CSGDifference()}}
+{\footnotesize\ttfamily C\+S\+G\+Difference\+::$\sim$\+C\+S\+G\+Difference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
 
 
 \subsection{Member Function Documentation}
-\index{C\+S\+G\+Difference@{C\+S\+G\+Difference}!deep\+\_\+copy@{deep\+\_\+copy}}
-\index{deep\+\_\+copy@{deep\+\_\+copy}!C\+S\+G\+Difference@{C\+S\+G\+Difference}}
-\subsubsection[{\texorpdfstring{deep\+\_\+copy() const override}{deep_copy() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component} $\ast$ C\+S\+G\+Difference\+::deep\+\_\+copy (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGDifference_a8ea1d4cd7fc1ff6adca5cc4983eecfcd}{}\label{classCSGDifference_a8ea1d4cd7fc1ff6adca5cc4983eecfcd}
+\mbox{\Hypertarget{classCSGDifference_a8ea1d4cd7fc1ff6adca5cc4983eecfcd}\label{classCSGDifference_a8ea1d4cd7fc1ff6adca5cc4983eecfcd}} 
+\index{CSGDifference@{CSGDifference}!deep\_copy@{deep\_copy}}
+\index{deep\_copy@{deep\_copy}!CSGDifference@{CSGDifference}}
+\subsubsection{\texorpdfstring{deep\_copy()}{deep\_copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}} $\ast$ C\+S\+G\+Difference\+::deep\+\_\+copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Implements \hyperlink{classCSGComponent_a98d3accd23c28259cbf490f4d7acbe83}{C\+S\+G\+Component}.
 
-\index{C\+S\+G\+Difference@{C\+S\+G\+Difference}!distance\+\_\+bound@{distance\+\_\+bound}}
-\index{distance\+\_\+bound@{distance\+\_\+bound}!C\+S\+G\+Difference@{C\+S\+G\+Difference}}
-\subsubsection[{\texorpdfstring{distance\+\_\+bound(const Vector3\+D \&pos) const override}{distance_bound(const Vector3D &pos) const override}}]{\setlength{\rightskip}{0pt plus 5cm}double C\+S\+G\+Difference\+::distance\+\_\+bound (
-\begin{DoxyParamCaption}
-\item[{const {\bf Vector3D} \&}]{pos}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGDifference_a66e0be492572f75b508a77c429be8fd8}{}\label{classCSGDifference_a66e0be492572f75b508a77c429be8fd8}
+Implements \mbox{\hyperlink{classCSGComponent_a98d3accd23c28259cbf490f4d7acbe83}{C\+S\+G\+Component}}.
 
-
-Implements \hyperlink{classCSGComponent_a41ca7aff9b7c481ea076f81eeb826779}{C\+S\+G\+Component}.
-
-\index{C\+S\+G\+Difference@{C\+S\+G\+Difference}!get\+\_\+bounds@{get\+\_\+bounds}}
-\index{get\+\_\+bounds@{get\+\_\+bounds}!C\+S\+G\+Difference@{C\+S\+G\+Difference}}
-\subsubsection[{\texorpdfstring{get\+\_\+bounds() const override}{get_bounds() const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\+Box} C\+S\+G\+Difference\+::get\+\_\+bounds (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCSGDifference_aede15cd9fd46e4824e66361eb2f28ec9}{}\label{classCSGDifference_aede15cd9fd46e4824e66361eb2f28ec9}
+\mbox{\Hypertarget{classCSGDifference_a66e0be492572f75b508a77c429be8fd8}\label{classCSGDifference_a66e0be492572f75b508a77c429be8fd8}} 
+\index{CSGDifference@{CSGDifference}!distance\_bound@{distance\_bound}}
+\index{distance\_bound@{distance\_bound}!CSGDifference@{CSGDifference}}
+\subsubsection{\texorpdfstring{distance\_bound()}{distance\_bound()}}
+{\footnotesize\ttfamily double C\+S\+G\+Difference\+::distance\+\_\+bound (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
-Returns a \hyperlink{classBoundingBox}{Bounding\+Box} for the Difference It will simply return the \hyperlink{classBoundingBox}{Bounding\+Box} of a, this is usually a good fit. 
+
+Implements \mbox{\hyperlink{classCSGComponent_a41ca7aff9b7c481ea076f81eeb826779}{C\+S\+G\+Component}}.
+
+\mbox{\Hypertarget{classCSGDifference_aede15cd9fd46e4824e66361eb2f28ec9}\label{classCSGDifference_aede15cd9fd46e4824e66361eb2f28ec9}} 
+\index{CSGDifference@{CSGDifference}!get\_bounds@{get\_bounds}}
+\index{get\_bounds@{get\_bounds}!CSGDifference@{CSGDifference}}
+\subsubsection{\texorpdfstring{get\_bounds()}{get\_bounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} C\+S\+G\+Difference\+::get\+\_\+bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns a \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} for the Difference It will simply return the \mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} of a, this is usually a good fit. 
 
 \begin{DoxyReturn}{Returns}
-\hyperlink{classBoundingBox}{Bounding\+Box} of left node 
+\mbox{\hyperlink{classBoundingBox}{Bounding\+Box}} of left node 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classCSGComponent_a4299365f2bab69272af9de4f2bee7cdb}{C\+S\+G\+Component}.
+Implements \mbox{\hyperlink{classCSGComponent_a4299365f2bab69272af9de4f2bee7cdb}{C\+S\+G\+Component}}.
 
 
 
 \subsection{Member Data Documentation}
-\index{C\+S\+G\+Difference@{C\+S\+G\+Difference}!first@{first}}
-\index{first@{first}!C\+S\+G\+Difference@{C\+S\+G\+Difference}}
-\subsubsection[{\texorpdfstring{first}{first}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component}$\ast$ C\+S\+G\+Difference\+::first\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCSGDifference_a689a622e9b4c43d72575cbbdd2ad847b}{}\label{classCSGDifference_a689a622e9b4c43d72575cbbdd2ad847b}
-\index{C\+S\+G\+Difference@{C\+S\+G\+Difference}!second@{second}}
-\index{second@{second}!C\+S\+G\+Difference@{C\+S\+G\+Difference}}
-\subsubsection[{\texorpdfstring{second}{second}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+S\+G\+Component}$\ast$ C\+S\+G\+Difference\+::second\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCSGDifference_ae9b4b0b0839d066ce30006d99536cd99}{}\label{classCSGDifference_ae9b4b0b0839d066ce30006d99536cd99}
+\mbox{\Hypertarget{classCSGDifference_a689a622e9b4c43d72575cbbdd2ad847b}\label{classCSGDifference_a689a622e9b4c43d72575cbbdd2ad847b}} 
+\index{CSGDifference@{CSGDifference}!first@{first}}
+\index{first@{first}!CSGDifference@{CSGDifference}}
+\subsubsection{\texorpdfstring{first}{first}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}}$\ast$ C\+S\+G\+Difference\+::first\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCSGDifference_ae9b4b0b0839d066ce30006d99536cd99}\label{classCSGDifference_ae9b4b0b0839d066ce30006d99536cd99}} 
+\index{CSGDifference@{CSGDifference}!second@{second}}
+\index{second@{second}!CSGDifference@{CSGDifference}}
+\subsubsection{\texorpdfstring{second}{second}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCSGComponent}{C\+S\+G\+Component}}$\ast$ C\+S\+G\+Difference\+::second\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{CSG_8h}{C\+S\+G.\+h}\item 
-src/renderable/\hyperlink{CSG_8cpp}{C\+S\+G.\+cpp}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{CSG_8h}{C\+S\+G.\+h}}\item 
+src/renderable/\mbox{\hyperlink{CSG_8cpp}{C\+S\+G.\+cpp}}\end{DoxyCompactItemize}

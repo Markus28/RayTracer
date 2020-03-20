@@ -1,8 +1,9 @@
 <map id="SDFObject" name="SDFObject">
-<area shape="rect" id="node4" href="$classCSG.html" title="This renderable object represents a constructive solid geometry. " alt="" coords="5,229,56,256"/>
-<area shape="rect" id="node5" href="$classSDFBox.html" title="SDFBox" alt="" coords="80,229,152,256"/>
-<area shape="rect" id="node6" href="$classSDFCylinder.html" title="SDFCylinder" alt="" coords="177,229,274,256"/>
-<area shape="rect" id="node7" href="$classSDFSphere.html" title="SDFSphere" alt="" coords="299,229,389,256"/>
-<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="112,80,229,107"/>
-<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="119,5,222,32"/>
+<area shape="rect" id="node1" title="Interface for an object that can be Sphere&#45;Marched." alt="" coords="127,155,214,181"/>
+<area shape="rect" id="node4" href="$classCSG.html" title="This renderable object represents a constructive solid geometry." alt="" coords="5,229,56,256"/>
+<area shape="rect" id="node5" href="$classSDFBox.html" title=" " alt="" coords="80,229,152,256"/>
+<area shape="rect" id="node6" href="$classSDFCylinder.html" title=" " alt="" coords="177,229,274,256"/>
+<area shape="rect" id="node7" href="$classSDFSphere.html" title=" " alt="" coords="299,229,389,256"/>
+<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume." alt="" coords="112,80,229,107"/>
+<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects." alt="" coords="119,5,222,32"/>
 </map>

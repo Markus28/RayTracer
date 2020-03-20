@@ -1,2 +1,5 @@
 <map id="FixedSizeStack&lt; V, N &gt;" name="FixedSizeStack&lt; V, N &gt;">
+<area shape="rect" id="node1" title="A stack that can contain at most N elements. If more are pushed to the stack, it will crash...." alt="" coords="5,95,168,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="37,5,75,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="99,5,138,32"/>
 </map>

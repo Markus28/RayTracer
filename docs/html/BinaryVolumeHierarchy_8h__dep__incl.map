@@ -1,6 +1,7 @@
 <map id="src/renderable/BinaryVolumeHierarchy.h" name="src/renderable/BinaryVolumeHierarchy.h">
-<area shape="rect" id="node2" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="5,184,103,211"/>
-<area shape="rect" id="node3" href="$OBJFile_8h.html" title="src/OBJFile.h" alt="" coords="92,102,195,129"/>
-<area shape="rect" id="node5" href="$BinaryVolumeHierarchy_8cpp.html" title="src/renderable/BinaryVolume\lHierarchy.cpp" alt="" coords="219,95,409,136"/>
-<area shape="rect" id="node4" href="$OBJFile_8cpp.html" title="src/OBJFile.cpp" alt="" coords="127,184,243,211"/>
+<area shape="rect" id="node1" title=" " alt="" coords="49,5,238,47"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title=" " alt="" coords="5,184,103,211"/>
+<area shape="rect" id="node3" href="$OBJFile_8h.html" title=" " alt="" coords="92,102,195,129"/>
+<area shape="rect" id="node5" href="$BinaryVolumeHierarchy_8cpp.html" title=" " alt="" coords="219,95,409,136"/>
+<area shape="rect" id="node4" href="$OBJFile_8cpp.html" title=" " alt="" coords="127,184,243,211"/>
 </map>

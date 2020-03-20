@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['norm',['norm',['../classVector3D.html#ae07836fc4e7a4d9de5729caa3d8acc2c',1,'Vector3D']]]
+  ['norm',['norm',['../classVector3D.html#a176d25c8beea995c9cbf9fb4ad57b87a',1,'Vector3D']]]
 ];

@@ -1,12 +1,13 @@
-\hypertarget{classcamera_1_1Camera}{}\section{camera\+:\+:Camera Class Reference}
-\label{classcamera_1_1Camera}\index{camera\+::\+Camera@{camera\+::\+Camera}}
+\hypertarget{classcamera_1_1Camera}{}\section{camera\+::Camera Class Reference}
+\label{classcamera_1_1Camera}\index{camera::Camera@{camera::Camera}}
 
 
 {\ttfamily \#include $<$Camera.\+h$>$}
 
 
 
-Inheritance diagram for camera\+:\+:Camera\+:\nopagebreak
+Inheritance diagram for camera\+::Camera\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,7 +16,8 @@ Inheritance diagram for camera\+:\+:Camera\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for camera\+:\+:Camera\+:\nopagebreak
+Collaboration diagram for camera\+::Camera\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -25,97 +27,96 @@ Collaboration diagram for camera\+:\+:Camera\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classcamera_1_1Camera_aa6152a7c756850336a977d21a4462c6f}{set\+\_\+pixel} (unsigned int i, const \hyperlink{classVector3D}{Vector3D} \&c)
+void \mbox{\hyperlink{classcamera_1_1Camera_aa6152a7c756850336a977d21a4462c6f}{set\+\_\+pixel}} (unsigned int i, const \mbox{\hyperlink{classVector3D}{Vector3D}} \&c)
 \item 
-virtual \hyperlink{classRay}{Ray} \hyperlink{classcamera_1_1Camera_adf751a32f3b3b9ea5df48affafc39732}{ray\+\_\+at} (unsigned int i) const =0
+virtual \mbox{\hyperlink{classRay}{Ray}} \mbox{\hyperlink{classcamera_1_1Camera_adf751a32f3b3b9ea5df48affafc39732}{ray\+\_\+at}} (unsigned int i) const =0
 \item 
-void \hyperlink{classcamera_1_1Camera_a7ea257efc92d5f1d9d560ec11045e583}{write\+\_\+file} (std\+::string file\+\_\+name) const 
+void \mbox{\hyperlink{classcamera_1_1Camera_ab437e0cd4a3f5206002d870ecc2bd8e0}{write\+\_\+file}} (std\+::string file\+\_\+name) const
 \item 
-unsigned int \hyperlink{classcamera_1_1Camera_a423a89150b51003b1b0c75066165a980}{length} () const 
+unsigned int \mbox{\hyperlink{classcamera_1_1Camera_a26d65b2bb9b5337cf586e8fb33c41127}{length}} () const
 \item 
-virtual \hyperlink{classcamera_1_1Camera_ae53a2162b5909211552ec49de1f5a746}{$\sim$\+Camera} ()=default
+virtual \mbox{\hyperlink{classcamera_1_1Camera_ae53a2162b5909211552ec49de1f5a746}{$\sim$\+Camera}} ()=default
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{namespacecamera_a67b7fb3d5582463a057ed122bf739b7d}{Image} \hyperlink{classcamera_1_1Camera_a56d942e3c4b51263bd7af3351da15d9f}{post\+\_\+process} () const =0
+virtual \mbox{\hyperlink{namespacecamera_a7ac4fbfbf1f82c10ad94680fb8113483}{Image}} \mbox{\hyperlink{classcamera_1_1Camera_a56d942e3c4b51263bd7af3351da15d9f}{post\+\_\+process}} () const =0
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::vector$<$ \hyperlink{classVector3D}{Vector3D} $>$ \hyperlink{classcamera_1_1Camera_a53f3fe9b838bc48e9ec21973dc8b516c}{pixels}
+std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \mbox{\hyperlink{classcamera_1_1Camera_a53f3fe9b838bc48e9ec21973dc8b516c}{pixels}}
 \item 
-unsigned int \hyperlink{classcamera_1_1Camera_ac05b929c8b4f40d74ee682c4aad4c53d}{size}
+unsigned int \mbox{\hyperlink{classcamera_1_1Camera_ac05b929c8b4f40d74ee682c4aad4c53d}{size}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{camera\+::\+Camera@{camera\+::\+Camera}!````~Camera@{$\sim$\+Camera}}
-\index{````~Camera@{$\sim$\+Camera}!camera\+::\+Camera@{camera\+::\+Camera}}
-\subsubsection[{\texorpdfstring{$\sim$\+Camera()=default}{~Camera()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual camera\+::\+Camera\+::$\sim$\+Camera (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{classcamera_1_1Camera_ae53a2162b5909211552ec49de1f5a746}{}\label{classcamera_1_1Camera_ae53a2162b5909211552ec49de1f5a746}
+\mbox{\Hypertarget{classcamera_1_1Camera_ae53a2162b5909211552ec49de1f5a746}\label{classcamera_1_1Camera_ae53a2162b5909211552ec49de1f5a746}} 
+\index{camera::Camera@{camera::Camera}!````~Camera@{$\sim$Camera}}
+\index{````~Camera@{$\sim$Camera}!camera::Camera@{camera::Camera}}
+\subsubsection{\texorpdfstring{$\sim$Camera()}{~Camera()}}
+{\footnotesize\ttfamily virtual camera\+::\+Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
 
 
 \subsection{Member Function Documentation}
-\index{camera\+::\+Camera@{camera\+::\+Camera}!length@{length}}
-\index{length@{length}!camera\+::\+Camera@{camera\+::\+Camera}}
-\subsubsection[{\texorpdfstring{length() const }{length() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int camera\+::\+Camera\+::length (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}\hypertarget{classcamera_1_1Camera_a423a89150b51003b1b0c75066165a980}{}\label{classcamera_1_1Camera_a423a89150b51003b1b0c75066165a980}
-\index{camera\+::\+Camera@{camera\+::\+Camera}!post\+\_\+process@{post\+\_\+process}}
-\index{post\+\_\+process@{post\+\_\+process}!camera\+::\+Camera@{camera\+::\+Camera}}
-\subsubsection[{\texorpdfstring{post\+\_\+process() const =0}{post_process() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Image} camera\+::\+Camera\+::post\+\_\+process (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classcamera_1_1Camera_a56d942e3c4b51263bd7af3351da15d9f}{}\label{classcamera_1_1Camera_a56d942e3c4b51263bd7af3351da15d9f}
+\mbox{\Hypertarget{classcamera_1_1Camera_a26d65b2bb9b5337cf586e8fb33c41127}\label{classcamera_1_1Camera_a26d65b2bb9b5337cf586e8fb33c41127}} 
+\index{camera::Camera@{camera::Camera}!length@{length}}
+\index{length@{length}!camera::Camera@{camera::Camera}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily unsigned int camera\+::\+Camera\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcamera_1_1Camera_a56d942e3c4b51263bd7af3351da15d9f}\label{classcamera_1_1Camera_a56d942e3c4b51263bd7af3351da15d9f}} 
+\index{camera::Camera@{camera::Camera}!post\_process@{post\_process}}
+\index{post\_process@{post\_process}!camera::Camera@{camera::Camera}}
+\subsubsection{\texorpdfstring{post\_process()}{post\_process()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespacecamera_a7ac4fbfbf1f82c10ad94680fb8113483}{Image}} camera\+::\+Camera\+::post\+\_\+process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
 
-Implemented in \hyperlink{classcamera_1_1PinHoleCamera_a1ed550429343036f2dd14a0aacbe2c27}{camera\+::\+Pin\+Hole\+Camera}.
 
-\index{camera\+::\+Camera@{camera\+::\+Camera}!ray\+\_\+at@{ray\+\_\+at}}
-\index{ray\+\_\+at@{ray\+\_\+at}!camera\+::\+Camera@{camera\+::\+Camera}}
-\subsubsection[{\texorpdfstring{ray\+\_\+at(unsigned int i) const =0}{ray_at(unsigned int i) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ray} camera\+::\+Camera\+::ray\+\_\+at (
-\begin{DoxyParamCaption}
-\item[{unsigned int}]{i}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classcamera_1_1Camera_adf751a32f3b3b9ea5df48affafc39732}{}\label{classcamera_1_1Camera_adf751a32f3b3b9ea5df48affafc39732}
+Implemented in \mbox{\hyperlink{classcamera_1_1PinHoleCamera_a1ed550429343036f2dd14a0aacbe2c27}{camera\+::\+Pin\+Hole\+Camera}}.
+
+\mbox{\Hypertarget{classcamera_1_1Camera_adf751a32f3b3b9ea5df48affafc39732}\label{classcamera_1_1Camera_adf751a32f3b3b9ea5df48affafc39732}} 
+\index{camera::Camera@{camera::Camera}!ray\_at@{ray\_at}}
+\index{ray\_at@{ray\_at}!camera::Camera@{camera::Camera}}
+\subsubsection{\texorpdfstring{ray\_at()}{ray\_at()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classRay}{Ray}} camera\+::\+Camera\+::ray\+\_\+at (\begin{DoxyParamCaption}\item[{unsigned int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
-Implemented in \hyperlink{classcamera_1_1PinHoleCamera_ab2457caa55561521cab10490e67ba8c8}{camera\+::\+Pin\+Hole\+Camera}.
 
-\index{camera\+::\+Camera@{camera\+::\+Camera}!set\+\_\+pixel@{set\+\_\+pixel}}
-\index{set\+\_\+pixel@{set\+\_\+pixel}!camera\+::\+Camera@{camera\+::\+Camera}}
-\subsubsection[{\texorpdfstring{set\+\_\+pixel(unsigned int i, const Vector3\+D \&c)}{set_pixel(unsigned int i, const Vector3D &c)}}]{\setlength{\rightskip}{0pt plus 5cm}void camera\+::\+Camera\+::set\+\_\+pixel (
-\begin{DoxyParamCaption}
-\item[{unsigned int}]{i, }
-\item[{const {\bf Vector3D} \&}]{c}
-\end{DoxyParamCaption}
-)}\hypertarget{classcamera_1_1Camera_aa6152a7c756850336a977d21a4462c6f}{}\label{classcamera_1_1Camera_aa6152a7c756850336a977d21a4462c6f}
-\index{camera\+::\+Camera@{camera\+::\+Camera}!write\+\_\+file@{write\+\_\+file}}
-\index{write\+\_\+file@{write\+\_\+file}!camera\+::\+Camera@{camera\+::\+Camera}}
-\subsubsection[{\texorpdfstring{write\+\_\+file(std\+::string file\+\_\+name) const }{write_file(std::string file_name) const }}]{\setlength{\rightskip}{0pt plus 5cm}void camera\+::\+Camera\+::write\+\_\+file (
-\begin{DoxyParamCaption}
-\item[{std\+::string}]{file\+\_\+name}
-\end{DoxyParamCaption}
-) const}\hypertarget{classcamera_1_1Camera_a7ea257efc92d5f1d9d560ec11045e583}{}\label{classcamera_1_1Camera_a7ea257efc92d5f1d9d560ec11045e583}
+Implemented in \mbox{\hyperlink{classcamera_1_1PinHoleCamera_ab2457caa55561521cab10490e67ba8c8}{camera\+::\+Pin\+Hole\+Camera}}.
+
+\mbox{\Hypertarget{classcamera_1_1Camera_aa6152a7c756850336a977d21a4462c6f}\label{classcamera_1_1Camera_aa6152a7c756850336a977d21a4462c6f}} 
+\index{camera::Camera@{camera::Camera}!set\_pixel@{set\_pixel}}
+\index{set\_pixel@{set\_pixel}!camera::Camera@{camera::Camera}}
+\subsubsection{\texorpdfstring{set\_pixel()}{set\_pixel()}}
+{\footnotesize\ttfamily void camera\+::\+Camera\+::set\+\_\+pixel (\begin{DoxyParamCaption}\item[{unsigned int}]{i,  }\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcamera_1_1Camera_ab437e0cd4a3f5206002d870ecc2bd8e0}\label{classcamera_1_1Camera_ab437e0cd4a3f5206002d870ecc2bd8e0}} 
+\index{camera::Camera@{camera::Camera}!write\_file@{write\_file}}
+\index{write\_file@{write\_file}!camera::Camera@{camera::Camera}}
+\subsubsection{\texorpdfstring{write\_file()}{write\_file()}}
+{\footnotesize\ttfamily void camera\+::\+Camera\+::write\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+name }\end{DoxyParamCaption}) const}
+
 
 
 \subsection{Member Data Documentation}
-\index{camera\+::\+Camera@{camera\+::\+Camera}!pixels@{pixels}}
-\index{pixels@{pixels}!camera\+::\+Camera@{camera\+::\+Camera}}
-\subsubsection[{\texorpdfstring{pixels}{pixels}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Vector3D}$>$ camera\+::\+Camera\+::pixels\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcamera_1_1Camera_a53f3fe9b838bc48e9ec21973dc8b516c}{}\label{classcamera_1_1Camera_a53f3fe9b838bc48e9ec21973dc8b516c}
-\index{camera\+::\+Camera@{camera\+::\+Camera}!size@{size}}
-\index{size@{size}!camera\+::\+Camera@{camera\+::\+Camera}}
-\subsubsection[{\texorpdfstring{size}{size}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int camera\+::\+Camera\+::size\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcamera_1_1Camera_ac05b929c8b4f40d74ee682c4aad4c53d}{}\label{classcamera_1_1Camera_ac05b929c8b4f40d74ee682c4aad4c53d}
+\mbox{\Hypertarget{classcamera_1_1Camera_a53f3fe9b838bc48e9ec21973dc8b516c}\label{classcamera_1_1Camera_a53f3fe9b838bc48e9ec21973dc8b516c}} 
+\index{camera::Camera@{camera::Camera}!pixels@{pixels}}
+\index{pixels@{pixels}!camera::Camera@{camera::Camera}}
+\subsubsection{\texorpdfstring{pixels}{pixels}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classVector3D}{Vector3D}}$>$ camera\+::\+Camera\+::pixels\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcamera_1_1Camera_ac05b929c8b4f40d74ee682c4aad4c53d}\label{classcamera_1_1Camera_ac05b929c8b4f40d74ee682c4aad4c53d}} 
+\index{camera::Camera@{camera::Camera}!size@{size}}
+\index{size@{size}!camera::Camera@{camera::Camera}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily unsigned int camera\+::\+Camera\+::size\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/camera/\hyperlink{Camera_8h}{Camera.\+h}\item 
-src/camera/\hyperlink{Camera_8cpp}{Camera.\+cpp}\end{DoxyCompactItemize}
+src/camera/\mbox{\hyperlink{Camera_8h}{Camera.\+h}}\item 
+src/camera/\mbox{\hyperlink{Camera_8cpp}{Camera.\+cpp}}\end{DoxyCompactItemize}

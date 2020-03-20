@@ -1,3 +1,4 @@
 <map id="DistantPointSource" name="DistantPointSource">
-<area shape="rect" id="node2" href="$classLight.html" title="Abstract class for lights used in Scene. " alt="" coords="47,5,98,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node2" href="$classLight.html" title="Abstract class for lights used in Scene." alt="" coords="47,5,98,32"/>
 </map>

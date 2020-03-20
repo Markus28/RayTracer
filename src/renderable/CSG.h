@@ -13,6 +13,7 @@
 class CSGComponent{
 public:
     virtual double distance_bound(const Vector3D& pos) const = 0;
+    virtual IntersectionProperties properties_at(const Vector3D& pos) const = 0;
     virtual BoundingBox get_bounds() const = 0;
     virtual CSGComponent* deep_copy() const = 0;
     virtual ~CSGComponent() = default;
@@ -31,6 +32,7 @@ public:
     CSGUnion(CSGComponent* a, CSGComponent *b): first(a), second(b) {bounds = a->get_bounds()+b->get_bounds();};
 
     double distance_bound(const Vector3D& pos) const override;
+    IntersectionProperties properties_at(const Vector3D& pos) const override;
     BoundingBox get_bounds() const override;
     CSGComponent* deep_copy() const override;
 
@@ -54,6 +56,7 @@ public:
 
 
     double distance_bound(const Vector3D& pos) const override;
+    IntersectionProperties properties_at(const Vector3D& pos) const override;
     BoundingBox get_bounds() const override;
     CSGComponent* deep_copy() const override;
 
@@ -73,6 +76,7 @@ public:
     CSGDifference(CSGComponent* a, CSGComponent *b): first(a), second(b) {};
 
     double distance_bound(const Vector3D& pos) const override;
+    IntersectionProperties properties_at(const Vector3D& pos) const override;
     /**
      * @brief Returns a BoundingBox for the Difference
      * It will simply return the BoundingBox of a, this is usually a good fit.
@@ -96,6 +100,7 @@ public:
     explicit CSGLeaf(SDFObject* a): obj(a) {};
 
     double distance_bound(const Vector3D& pos) const override {return obj->distance_bound(pos);};
+    IntersectionProperties properties_at(const Vector3D& pos) const override {return obj->properties_at(pos);};
     BoundingBox get_bounds() const override;
     CSGComponent* deep_copy() const override;
 
@@ -112,7 +117,7 @@ private:
  * intersection or difference. The sequence of operations is stored as a tree, CSG contains a pointer to the root of this
  * tree. Nodes in this tree implement the abstract class CSGComponent.
  */
-class CSG: SDFObject {
+class CSG: public SDFObject {
 public:
     CSG();
     CSG(const CSG& other);
@@ -133,6 +138,7 @@ public:
 
 private:
     double distance_bound(const Vector3D& pos) const override;
+    IntersectionProperties properties_at(const Vector3D& pos) const override {return root->properties_at(pos);};
 
     CSGComponent* root;     ///Root of the CSG-Tree
 };

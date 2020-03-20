@@ -22,13 +22,37 @@ double CSGUnion::distance_bound(const Vector3D &pos) const {
     return std::min(first->distance_bound(pos), second->distance_bound(pos));
 }
 
+IntersectionProperties CSGUnion::properties_at(const Vector3D &pos) const {
+    if(first->distance_bound(pos)<second->distance_bound(pos))
+        return first->properties_at(pos);
+
+    return second->properties_at(pos);
+}
+
 double CSGIntersection::distance_bound(const Vector3D &pos) const {
     return std::max(first->distance_bound(pos), second->distance_bound(pos));
+}
+
+IntersectionProperties CSGIntersection::properties_at(const Vector3D &pos) const {
+    if(first->distance_bound(pos)>second->distance_bound(pos))
+        return first->properties_at(pos);
+
+    return second->properties_at(pos);
 }
 
 double CSGDifference::distance_bound(const Vector3D &pos) const {
     return std::max(first->distance_bound(pos), -second->distance_bound(pos));
 }
+
+IntersectionProperties CSGDifference::properties_at(const Vector3D &pos) const {
+    if(first->distance_bound(pos)>-second->distance_bound(pos))
+        return first->properties_at(pos);
+
+    IntersectionProperties properties = second->properties_at(pos);
+    properties.normal = properties.normal*-1;
+    return properties;
+}
+
 
 
 BoundingBox CSGUnion::get_bounds() const {
@@ -49,7 +73,7 @@ BoundingBox CSGLeaf::get_bounds() const {
 
 
 
-CSG::CSG(): SDFObject({}){
+CSG::CSG(): SDFObject(){
     root = nullptr;
 }
 
@@ -61,8 +85,11 @@ CSG::CSG(const CSG& other) {
 }
 
 CSG& CSG::operator=(const CSG& other){
+    delete root;
+
     if(other.root!=nullptr)
         root = other.root->deep_copy();
+
     else
         root = nullptr;
 
@@ -138,7 +165,7 @@ void CSG::subtract(const CSG& a) {
     if(a.root==nullptr)
         return;
 
-    root = new CSGDifference(a.root->deep_copy(), root);
+    root = new CSGDifference(root, a.root->deep_copy());    //TODO: Should be other way around?
 }
 
 

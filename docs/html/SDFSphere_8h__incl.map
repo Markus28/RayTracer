@@ -1,11 +1,13 @@
 <map id="src/renderable/SDFSphere.h" name="src/renderable/SDFSphere.h">
-<area shape="rect" id="node2" href="$SDFObject_8h.html" title="SDFObject.h" alt="" coords="224,80,323,107"/>
-<area shape="rect" id="node8" href="$Vector3D_8h.html" title="linalg/Vector3D.h" alt="" coords="205,453,328,480"/>
-<area shape="rect" id="node3" href="$BoundedVolume_8h.html" title="BoundedVolume.h" alt="" coords="160,155,288,181"/>
-<area shape="rect" id="node4" href="$BoundingBox_8h.html" title="BoundingBox.h" alt="" coords="13,304,123,331"/>
-<area shape="rect" id="node9" href="$RenderObject_8h.html" title="RenderObject.h" alt="" coords="167,229,281,256"/>
-<area shape="rect" id="node5" href="$Interval_8h.html" title="../Interval.h" alt="" coords="5,453,93,480"/>
-<area shape="rect" id="node7" href="$Ray_8h.html" title="../Ray.h" alt="" coords="55,379,124,405"/>
-<area shape="rect" id="node10" href="$IntersectionProperties_8h.html" title="../IntersectionProperties.h" alt="" coords="199,304,371,331"/>
-<area shape="rect" id="node11" href="$Material_8h.html" title="Material.h" alt="" coords="239,379,318,405"/>
+<area shape="rect" id="node1" title=" " alt="" coords="221,5,408,32"/>
+<area shape="rect" id="node2" href="$SDFObject_8h.html" title=" " alt="" coords="223,80,321,107"/>
+<area shape="rect" id="node8" href="$Vector3D_8h.html" title=" " alt="" coords="209,453,332,480"/>
+<area shape="rect" id="node3" href="$BoundedVolume_8h.html" title=" " alt="" coords="159,155,287,181"/>
+<area shape="rect" id="node4" href="$BoundingBox_8h.html" title=" " alt="" coords="11,304,122,331"/>
+<area shape="rect" id="node9" href="$RenderObject_8h.html" title=" " alt="" coords="166,229,279,256"/>
+<area shape="rect" id="node5" href="$Interval_8h.html" title=" " alt="" coords="5,453,93,480"/>
+<area shape="rect" id="node7" href="$Ray_8h.html" title=" " alt="" coords="56,379,123,405"/>
+<area shape="rect" id="node6" title=" " alt="" coords="124,528,196,555"/>
+<area shape="rect" id="node10" href="$IntersectionProperties_8h.html" title=" " alt="" coords="198,304,370,331"/>
+<area shape="rect" id="node11" href="$Material_8h.html" title=" " alt="" coords="238,379,317,405"/>
 </map>

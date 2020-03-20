@@ -13,22 +13,20 @@
  */
 class SDFObject: public BoundedVolume {
 public:
-    explicit SDFObject(): max_iter(75), is_monotonic(false), epsilon(10e-4){};
-    explicit SDFObject(bool is_monotonic): max_iter(75), is_monotonic(is_monotonic), epsilon(10e-4) {};
-    SDFObject(bool is_monotonic, unsigned int max_iter, double epsilon): max_iter(max_iter),
-    is_monotonic(is_monotonic), epsilon(epsilon) {};
-
+    explicit SDFObject(): max_iter(250), epsilon(1e-9){};
+    SDFObject(unsigned int max_iter, double epsilon): max_iter(max_iter), epsilon(epsilon) {};
     Intersection ray_intersect(const Ray &ray) const override;
-
+    IntersectionProperties intersect_properties(const Ray& ray) const override;
+    std::ostream& print(std::ostream& sink) const override;
     virtual ~SDFObject() = default;
 
 private:
     virtual double distance_bound(const Vector3D& pos) const = 0;
+    virtual IntersectionProperties properties_at(const Vector3D& pos) const = 0;
 
     friend class CSGLeaf;
 
     unsigned int max_iter;
-    bool is_monotonic;
     double epsilon;
 };
 

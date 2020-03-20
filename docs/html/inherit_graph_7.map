@@ -1,7 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classCSGComponent.html" title="Interface for nodes in CSG&#45;Tree according to composition&#45;pattern. " alt="" coords="5,81,124,108"/>
-<area shape="rect" id="node2" href="$classCSGDifference.html" title="A difference node in the CSG&#45;Tree. " alt="" coords="176,5,287,32"/>
-<area shape="rect" id="node3" href="$classCSGIntersection.html" title="An intersection node in the CSG&#45;Tree. " alt="" coords="172,56,291,83"/>
-<area shape="rect" id="node4" href="$classCSGLeaf.html" title="Essentially a wrapper for DistanceEstimatedObject. They are leafs in the CSG&#45;Tree. " alt="" coords="193,107,269,133"/>
-<area shape="rect" id="node5" href="$classCSGUnion.html" title="A union node in the CSG&#45;Tree. " alt="" coords="189,157,274,184"/>
+<area shape="rect" id="node1" href="$classCSGComponent.html" title="Interface for nodes in CSG&#45;Tree according to composition&#45;pattern." alt="" coords="5,81,124,108"/>
+<area shape="rect" id="node2" href="$classCSGDifference.html" title="A difference node in the CSG&#45;Tree." alt="" coords="176,5,287,32"/>
+<area shape="rect" id="node3" href="$classCSGIntersection.html" title="An intersection node in the CSG&#45;Tree." alt="" coords="172,56,291,83"/>
+<area shape="rect" id="node4" href="$classCSGLeaf.html" title="Essentially a wrapper for DistanceEstimatedObject. They are leafs in the CSG&#45;Tree." alt="" coords="193,107,269,133"/>
+<area shape="rect" id="node5" href="$classCSGUnion.html" title="A union node in the CSG&#45;Tree." alt="" coords="189,157,274,184"/>
 </map>

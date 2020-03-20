@@ -1,8 +1,12 @@
 <map id="SDFBox" name="SDFBox">
-<area shape="rect" id="node2" href="$classSDFObject.html" title="Interface for an object that can be Sphere&#45;Marched. " alt="" coords="142,200,229,227"/>
-<area shape="rect" id="node3" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="256,81,374,108"/>
-<area shape="rect" id="node4" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="264,5,366,32"/>
-<area shape="rect" id="node9" href="$classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="350,200,416,227"/>
-<area shape="rect" id="node10" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="66,259,143,286"/>
-<area shape="rect" id="node8" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="334,319,432,345"/>
+<area shape="rect" id="node1" title=" " alt="" coords="107,408,179,435"/>
+<area shape="rect" id="node2" href="$classSDFObject.html" title="Interface for an object that can be Sphere&#45;Marched." alt="" coords="143,200,230,227"/>
+<area shape="rect" id="node3" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume." alt="" coords="257,81,375,108"/>
+<area shape="rect" id="node4" href="$classRenderObject.html" title="Abstract class for renderable objects." alt="" coords="265,5,367,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="47,81,107,108"/>
+<area shape="rect" id="node9" href="$classInterval.html" title="The closed interval [mini, maxi]." alt="" coords="350,200,415,227"/>
+<area shape="rect" id="node10" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics." alt="" coords="65,259,143,286"/>
+<area shape="rect" id="node6" title=" " alt="" coords="458,81,505,108"/>
+<area shape="rect" id="node8" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects." alt="" coords="333,319,432,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="141,81,233,108"/>
 </map>

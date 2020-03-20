@@ -1,4 +1,5 @@
 #include <cmath>
+#include <cassert>
 #include "Transformation.h"
 
 namespace linalg {
@@ -10,6 +11,7 @@ namespace linalg {
  */
     Transformation::Transformation(Matrix3D A, Vector3D v, double s) : A(A), translation(v), scale(s) {
         A_transpose = A.transpose();
+        assert(std::abs((A*A_transpose-Matrix3D()).at(1,1))<0.0001);
     }
 
 /**
@@ -31,16 +33,21 @@ namespace linalg {
 
         R2.at(0, 0) = cos(theta);
         R2.at(2, 2) = cos(theta);
-        R2.at(0, 2) = -sin(theta);
-        R2.at(2, 0) = sin(theta);
+        R2.at(0, 2) = sin(theta);
+        R2.at(2, 0) = -sin(theta);
 
         R3.at(1, 1) = cos(phi);
         R3.at(2, 2) = cos(phi);
         R3.at(1, 2) = -sin(phi);
         R3.at(2, 1) = sin(phi);
 
+        assert(std::abs(R3.at(1,2)+R3.at(2,1))<0.0001);
+        assert(std::abs((R3*R3.transpose()-Matrix3D()).at(1,2))<0.00001);
+
         A = R1 * R2 * R3;
         A_transpose = A.transpose();
+
+        assert(std::abs((A*A_transpose-Matrix3D()).at(1,2))<0.00001);
     }
 
 
@@ -75,11 +82,33 @@ namespace linalg {
     }
 
     Ray Transformation::transform(const Ray &ray) const {
-        return {transform(ray.read_base()), A * ray.read_base()};
+        return {transform(ray.read_base()), rotate(ray.read_base())};
     }
 
     Ray Transformation::inverse_transform(const Ray &ray) const {
-        return {inverse_transform(ray.read_base()), A_transpose * ray.read_direction()};
+        return {inverse_transform(ray.read_base()), inverse_rotate(ray.read_direction())};
+    }
+
+    Intersection Transformation::transform(const Intersection &intersection) const {
+        if(intersection.has_properties())
+            return {intersection.get_object(), intersection.get_distance()*scale, transform(intersection.get_properties())};
+
+        return {intersection.get_object(), intersection.get_distance()*scale};
+    }
+
+    Intersection Transformation::inverse_transform(const Intersection &intersection) const {
+        if(intersection.has_properties())
+            return {intersection.get_object(), intersection.get_distance()/scale, inverse_transform(intersection.get_properties())};
+
+        return {intersection.get_object(), intersection.get_distance()/scale};
+    }
+
+    IntersectionProperties Transformation::transform(const IntersectionProperties &properties) const {
+        return {rotate(properties.normal), properties.material};
+    }
+
+    IntersectionProperties Transformation::inverse_transform(const IntersectionProperties &properties) const {
+        return {inverse_rotate(properties.normal), properties.material};
     }
 
     Vector3D Transformation::rotate(const Vector3D &v) const {

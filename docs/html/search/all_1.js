@@ -5,7 +5,7 @@ var searchData=
   ['background',['Background',['../classBackground.html',1,'Background'],['../classBackground.html#a153fe3ce08c90c24e7d08862952a6244',1,'Background::Background(Vector3D c)'],['../classBackground.html#a46cb4a8649d0d0535c916eea458c25de',1,'Background::Background(const SphereMap&lt; Vector3D &gt; &amp;im)']]],
   ['background_2ecpp',['Background.cpp',['../Background_8cpp.html',1,'']]],
   ['background_2eh',['Background.h',['../Background_8h.html',1,'']]],
-  ['barycentric_5fcoordinates',['barycentric_coordinates',['../classTriangle.html#ad7a7c1c87e17c792fed50059f40ff65d',1,'Triangle']]],
+  ['barycentric_5fcoordinates',['barycentric_coordinates',['../classTriangle.html#ab1f861b8e31d8560cf80c58e4dbf560f',1,'Triangle']]],
   ['binaryvolumehierarchy',['BinaryVolumeHierarchy',['../classBinaryVolumeHierarchy.html',1,'BinaryVolumeHierarchy'],['../classBinaryVolumeHierarchy.html#afb1953933b78a2005884a7a34cb64519',1,'BinaryVolumeHierarchy::BinaryVolumeHierarchy()']]],
   ['binaryvolumehierarchy_2ecpp',['BinaryVolumeHierarchy.cpp',['../BinaryVolumeHierarchy_8cpp.html',1,'']]],
   ['binaryvolumehierarchy_2eh',['BinaryVolumeHierarchy.h',['../BinaryVolumeHierarchy_8h.html',1,'']]],

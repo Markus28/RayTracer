@@ -1,5 +1,8 @@
 <map id="CSGIntersection" name="CSGIntersection">
-<area shape="rect" id="node2" href="$classCSGComponent.html" title="Interface for nodes in CSG&#45;Tree according to composition&#45;pattern. " alt="" coords="5,228,124,255"/>
-<area shape="rect" id="node3" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="149,228,247,255"/>
-<area shape="rect" id="node5" href="$classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="228,109,293,136"/>
+<area shape="rect" id="node1" title="An intersection node in the CSG&#45;Tree." alt="" coords="49,332,168,359"/>
+<area shape="rect" id="node2" href="$classCSGComponent.html" title="Interface for nodes in CSG&#45;Tree according to composition&#45;pattern." alt="" coords="5,228,124,255"/>
+<area shape="rect" id="node3" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects." alt="" coords="149,228,247,255"/>
+<area shape="rect" id="node4" title=" " alt="" coords="160,5,207,32"/>
+<area shape="rect" id="node5" href="$classInterval.html" title="The closed interval [mini, maxi]." alt="" coords="229,109,295,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="249,5,309,32"/>
 </map>

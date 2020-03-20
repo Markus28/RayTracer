@@ -1,3 +1,4 @@
 <map id="CSGLeaf" name="CSGLeaf">
-<area shape="rect" id="node2" href="$classCSGComponent.html" title="Interface for nodes in CSG&#45;Tree according to composition&#45;pattern. " alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node1" title="Essentially a wrapper for DistanceEstimatedObject. They are leafs in the CSG&#45;Tree." alt="" coords="27,80,103,107"/>
+<area shape="rect" id="node2" href="$classCSGComponent.html" title="Interface for nodes in CSG&#45;Tree according to composition&#45;pattern." alt="" coords="5,5,124,32"/>
 </map>

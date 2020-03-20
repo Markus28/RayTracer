@@ -1,4 +1,6 @@
 <map id="PointSource" name="PointSource">
-<area shape="rect" id="node2" href="$classLight.html" title="Abstract class for lights used in Scene. " alt="" coords="96,222,147,249"/>
-<area shape="rect" id="node3" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="5,124,83,151"/>
+<area shape="rect" id="node1" title="A very simple light source consisting of only one point in 3D Space." alt="" coords="5,307,99,333"/>
+<area shape="rect" id="node2" href="$classLight.html" title="Abstract class for lights used in Scene." alt="" coords="109,222,160,249"/>
+<area shape="rect" id="node3" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics." alt="" coords="19,124,96,151"/>
+<area shape="rect" id="node4" title=" " alt="" coords="27,5,87,32"/>
 </map>

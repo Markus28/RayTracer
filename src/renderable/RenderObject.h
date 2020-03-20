@@ -5,6 +5,8 @@
 #include <iostream>
 #include "../IntersectionProperties.h"
 
+
+class ViewObject;
 class Intersection;
 class Ray;
 
@@ -35,7 +37,7 @@ public:
      */
     virtual IntersectionProperties intersect_properties(const Ray &ray) const = 0;
     virtual std::ostream& print(std::ostream& sink) const = 0;
-    virtual ~RenderObject(){};
+    virtual ~RenderObject() {};
 };
 
 

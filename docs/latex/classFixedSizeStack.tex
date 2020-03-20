@@ -1,5 +1,5 @@
 \hypertarget{classFixedSizeStack}{}\section{Fixed\+Size\+Stack$<$ V, N $>$ Class Template Reference}
-\label{classFixedSizeStack}\index{Fixed\+Size\+Stack$<$ V, N $>$@{Fixed\+Size\+Stack$<$ V, N $>$}}
+\label{classFixedSizeStack}\index{FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}}
 
 
 A stack that can contain at most N elements. If more are pushed to the stack, it will crash. No error handling is done. If top is called on an empty stack, it will crash.  
@@ -11,39 +11,40 @@ A stack that can contain at most N elements. If more are pushed to the stack, it
 
 
 
-Collaboration diagram for Fixed\+Size\+Stack$<$ V, N $>$\+:\nopagebreak
+Collaboration diagram for Fixed\+Size\+Stack$<$ V, N $>$\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=217pt]{classFixedSizeStack__coll__graph}
+\includegraphics[width=216pt]{classFixedSizeStack__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classFixedSizeStack_ab8090e6bfc34b69664fde6f7a9663071}{Fixed\+Size\+Stack} ()
+\mbox{\hyperlink{classFixedSizeStack_ab8090e6bfc34b69664fde6f7a9663071}{Fixed\+Size\+Stack}} ()
 \item 
-void \hyperlink{classFixedSizeStack_a544e3fb119f4b93093db0f52b62bffb1}{pop} ()
+void \mbox{\hyperlink{classFixedSizeStack_a544e3fb119f4b93093db0f52b62bffb1}{pop}} ()
 \item 
-V \hyperlink{classFixedSizeStack_a155565554dcbfade8363d3d6035613c5}{top} ()
+V \mbox{\hyperlink{classFixedSizeStack_a155565554dcbfade8363d3d6035613c5}{top}} ()
 \item 
-bool \hyperlink{classFixedSizeStack_a9ec83cd2dc98e4a5145000da652bf112}{empty} () const 
+bool \mbox{\hyperlink{classFixedSizeStack_a6271318779d6b69768a28a5675fa9136}{empty}} () const
 \item 
-void \hyperlink{classFixedSizeStack_abaa79c280f2ff9adb3ae919a0a8607fb}{push} (const V \&to\+\_\+push)
+void \mbox{\hyperlink{classFixedSizeStack_abaa79c280f2ff9adb3ae919a0a8607fb}{push}} (const V \&to\+\_\+push)
 \item 
-void \hyperlink{classFixedSizeStack_a62d9af2dd2c3d9e852a297483f4c4c50}{flush} ()
+void \mbox{\hyperlink{classFixedSizeStack_a62d9af2dd2c3d9e852a297483f4c4c50}{flush}} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{classFixedSizeStack_a87e0a013c62888f127f57309e32ed70e}{stack\+\_\+pointer}
+int \mbox{\hyperlink{classFixedSizeStack_a87e0a013c62888f127f57309e32ed70e}{stack\+\_\+pointer}}
 \item 
-V \hyperlink{classFixedSizeStack_a25c7e307ab4079edafe72446c411aa74}{data} \mbox{[}N\mbox{]}
+V \mbox{\hyperlink{classFixedSizeStack_a25c7e307ab4079edafe72446c411aa74}{data}} \mbox{[}N\mbox{]}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$class V, unsigned int N$>$\\*
+\subsubsection*{template$<$class V, unsigned int N$>$\newline
 class Fixed\+Size\+Stack$<$ V, N $>$}
 
 A stack that can contain at most N elements. If more are pushed to the stack, it will crash. No error handling is done. If top is called on an empty stack, it will crash. 
@@ -58,62 +59,70 @@ A stack that can contain at most N elements. If more are pushed to the stack, it
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{Fixed\+Size\+Stack@{Fixed\+Size\+Stack}!Fixed\+Size\+Stack@{Fixed\+Size\+Stack}}
-\index{Fixed\+Size\+Stack@{Fixed\+Size\+Stack}!Fixed\+Size\+Stack@{Fixed\+Size\+Stack}}
-\subsubsection[{\texorpdfstring{Fixed\+Size\+Stack()}{FixedSizeStack()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V , unsigned int N$>$ {\bf Fixed\+Size\+Stack}$<$ V, N $>$\+::{\bf Fixed\+Size\+Stack} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classFixedSizeStack_ab8090e6bfc34b69664fde6f7a9663071}{}\label{classFixedSizeStack_ab8090e6bfc34b69664fde6f7a9663071}
+\mbox{\Hypertarget{classFixedSizeStack_ab8090e6bfc34b69664fde6f7a9663071}\label{classFixedSizeStack_ab8090e6bfc34b69664fde6f7a9663071}} 
+\index{FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}!FixedSizeStack@{FixedSizeStack}}
+\index{FixedSizeStack@{FixedSizeStack}!FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}}
+\subsubsection{\texorpdfstring{FixedSizeStack()}{FixedSizeStack()}}
+{\footnotesize\ttfamily template$<$class V , unsigned int N$>$ \\
+\mbox{\hyperlink{classFixedSizeStack}{Fixed\+Size\+Stack}}$<$ V, N $>$\+::\mbox{\hyperlink{classFixedSizeStack}{Fixed\+Size\+Stack}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 
 
 \subsection{Member Function Documentation}
-\index{Fixed\+Size\+Stack@{Fixed\+Size\+Stack}!empty@{empty}}
-\index{empty@{empty}!Fixed\+Size\+Stack@{Fixed\+Size\+Stack}}
-\subsubsection[{\texorpdfstring{empty() const }{empty() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V , unsigned int N$>$ bool {\bf Fixed\+Size\+Stack}$<$ V, N $>$\+::empty (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classFixedSizeStack_a9ec83cd2dc98e4a5145000da652bf112}{}\label{classFixedSizeStack_a9ec83cd2dc98e4a5145000da652bf112}
-\index{Fixed\+Size\+Stack@{Fixed\+Size\+Stack}!flush@{flush}}
-\index{flush@{flush}!Fixed\+Size\+Stack@{Fixed\+Size\+Stack}}
-\subsubsection[{\texorpdfstring{flush()}{flush()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V , unsigned int N$>$ void {\bf Fixed\+Size\+Stack}$<$ V, N $>$\+::flush (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classFixedSizeStack_a62d9af2dd2c3d9e852a297483f4c4c50}{}\label{classFixedSizeStack_a62d9af2dd2c3d9e852a297483f4c4c50}
-\index{Fixed\+Size\+Stack@{Fixed\+Size\+Stack}!pop@{pop}}
-\index{pop@{pop}!Fixed\+Size\+Stack@{Fixed\+Size\+Stack}}
-\subsubsection[{\texorpdfstring{pop()}{pop()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V , unsigned int N$>$ void {\bf Fixed\+Size\+Stack}$<$ V, N $>$\+::pop (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classFixedSizeStack_a544e3fb119f4b93093db0f52b62bffb1}{}\label{classFixedSizeStack_a544e3fb119f4b93093db0f52b62bffb1}
-\index{Fixed\+Size\+Stack@{Fixed\+Size\+Stack}!push@{push}}
-\index{push@{push}!Fixed\+Size\+Stack@{Fixed\+Size\+Stack}}
-\subsubsection[{\texorpdfstring{push(const V \&to\+\_\+push)}{push(const V &to_push)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V , unsigned int N$>$ void {\bf Fixed\+Size\+Stack}$<$ V, N $>$\+::push (
-\begin{DoxyParamCaption}
-\item[{const V \&}]{to\+\_\+push}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classFixedSizeStack_abaa79c280f2ff9adb3ae919a0a8607fb}{}\label{classFixedSizeStack_abaa79c280f2ff9adb3ae919a0a8607fb}
-\index{Fixed\+Size\+Stack@{Fixed\+Size\+Stack}!top@{top}}
-\index{top@{top}!Fixed\+Size\+Stack@{Fixed\+Size\+Stack}}
-\subsubsection[{\texorpdfstring{top()}{top()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V , unsigned int N$>$ V {\bf Fixed\+Size\+Stack}$<$ V, N $>$\+::top (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classFixedSizeStack_a155565554dcbfade8363d3d6035613c5}{}\label{classFixedSizeStack_a155565554dcbfade8363d3d6035613c5}
+\mbox{\Hypertarget{classFixedSizeStack_a6271318779d6b69768a28a5675fa9136}\label{classFixedSizeStack_a6271318779d6b69768a28a5675fa9136}} 
+\index{FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}!empty@{empty}}
+\index{empty@{empty}!FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class V , unsigned int N$>$ \\
+bool \mbox{\hyperlink{classFixedSizeStack}{Fixed\+Size\+Stack}}$<$ V, N $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFixedSizeStack_a62d9af2dd2c3d9e852a297483f4c4c50}\label{classFixedSizeStack_a62d9af2dd2c3d9e852a297483f4c4c50}} 
+\index{FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}!flush@{flush}}
+\index{flush@{flush}!FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily template$<$class V , unsigned int N$>$ \\
+void \mbox{\hyperlink{classFixedSizeStack}{Fixed\+Size\+Stack}}$<$ V, N $>$\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFixedSizeStack_a544e3fb119f4b93093db0f52b62bffb1}\label{classFixedSizeStack_a544e3fb119f4b93093db0f52b62bffb1}} 
+\index{FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}!pop@{pop}}
+\index{pop@{pop}!FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$class V , unsigned int N$>$ \\
+void \mbox{\hyperlink{classFixedSizeStack}{Fixed\+Size\+Stack}}$<$ V, N $>$\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFixedSizeStack_abaa79c280f2ff9adb3ae919a0a8607fb}\label{classFixedSizeStack_abaa79c280f2ff9adb3ae919a0a8607fb}} 
+\index{FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}!push@{push}}
+\index{push@{push}!FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily template$<$class V , unsigned int N$>$ \\
+void \mbox{\hyperlink{classFixedSizeStack}{Fixed\+Size\+Stack}}$<$ V, N $>$\+::push (\begin{DoxyParamCaption}\item[{const V \&}]{to\+\_\+push }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFixedSizeStack_a155565554dcbfade8363d3d6035613c5}\label{classFixedSizeStack_a155565554dcbfade8363d3d6035613c5}} 
+\index{FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}!top@{top}}
+\index{top@{top}!FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}}
+\subsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily template$<$class V , unsigned int N$>$ \\
+V \mbox{\hyperlink{classFixedSizeStack}{Fixed\+Size\+Stack}}$<$ V, N $>$\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 
 
 \subsection{Member Data Documentation}
-\index{Fixed\+Size\+Stack@{Fixed\+Size\+Stack}!data@{data}}
-\index{data@{data}!Fixed\+Size\+Stack@{Fixed\+Size\+Stack}}
-\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V , unsigned int N$>$ V {\bf Fixed\+Size\+Stack}$<$ V, N $>$\+::data\mbox{[}N\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classFixedSizeStack_a25c7e307ab4079edafe72446c411aa74}{}\label{classFixedSizeStack_a25c7e307ab4079edafe72446c411aa74}
-\index{Fixed\+Size\+Stack@{Fixed\+Size\+Stack}!stack\+\_\+pointer@{stack\+\_\+pointer}}
-\index{stack\+\_\+pointer@{stack\+\_\+pointer}!Fixed\+Size\+Stack@{Fixed\+Size\+Stack}}
-\subsubsection[{\texorpdfstring{stack\+\_\+pointer}{stack_pointer}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V , unsigned int N$>$ int {\bf Fixed\+Size\+Stack}$<$ V, N $>$\+::stack\+\_\+pointer\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classFixedSizeStack_a87e0a013c62888f127f57309e32ed70e}{}\label{classFixedSizeStack_a87e0a013c62888f127f57309e32ed70e}
+\mbox{\Hypertarget{classFixedSizeStack_a25c7e307ab4079edafe72446c411aa74}\label{classFixedSizeStack_a25c7e307ab4079edafe72446c411aa74}} 
+\index{FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}!data@{data}}
+\index{data@{data}!FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily template$<$class V , unsigned int N$>$ \\
+V \mbox{\hyperlink{classFixedSizeStack}{Fixed\+Size\+Stack}}$<$ V, N $>$\+::data\mbox{[}N\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classFixedSizeStack_a87e0a013c62888f127f57309e32ed70e}\label{classFixedSizeStack_a87e0a013c62888f127f57309e32ed70e}} 
+\index{FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}!stack\_pointer@{stack\_pointer}}
+\index{stack\_pointer@{stack\_pointer}!FixedSizeStack$<$ V, N $>$@{FixedSizeStack$<$ V, N $>$}}
+\subsubsection{\texorpdfstring{stack\_pointer}{stack\_pointer}}
+{\footnotesize\ttfamily template$<$class V , unsigned int N$>$ \\
+int \mbox{\hyperlink{classFixedSizeStack}{Fixed\+Size\+Stack}}$<$ V, N $>$\+::stack\+\_\+pointer\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/renderable/\hyperlink{BinaryVolumeHierarchy_8h}{Binary\+Volume\+Hierarchy.\+h}\end{DoxyCompactItemize}
+src/renderable/\mbox{\hyperlink{BinaryVolumeHierarchy_8h}{Binary\+Volume\+Hierarchy.\+h}}\end{DoxyCompactItemize}

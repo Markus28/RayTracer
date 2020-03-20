@@ -1,8 +1,11 @@
 <map id="Triangle" name="Triangle">
-<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="5,313,123,339"/>
-<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="13,133,115,159"/>
-<area shape="rect" id="node5" href="$classMaterial.html" title="Typically stores information about material of RenderObjects. " alt="" coords="234,313,302,339"/>
-<area shape="rect" id="node6" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="325,133,403,159"/>
-<area shape="rect" id="node9" href="$classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="427,133,493,159"/>
-<area shape="rect" id="node7" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="424,313,523,339"/>
+<area shape="rect" id="node1" title="A Triangle implementing BoundedVolume, RenderObject." alt="" coords="291,440,359,467"/>
+<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume." alt="" coords="5,313,123,339"/>
+<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects." alt="" coords="13,133,115,159"/>
+<area shape="rect" id="node4" title=" " alt="" coords="227,5,287,32"/>
+<area shape="rect" id="node5" href="$classMaterial.html" title="Typically stores information about material of RenderObjects." alt="" coords="235,313,303,339"/>
+<area shape="rect" id="node6" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics." alt="" coords="325,133,403,159"/>
+<area shape="rect" id="node9" href="$classInterval.html" title="The closed interval [mini, maxi]." alt="" coords="427,133,493,159"/>
+<area shape="rect" id="node7" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects." alt="" coords="425,313,524,339"/>
+<area shape="rect" id="node8" title=" " alt="" coords="518,5,565,32"/>
 </map>

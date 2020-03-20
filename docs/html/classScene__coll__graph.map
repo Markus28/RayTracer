@@ -1,4 +1,10 @@
 <map id="Scene" name="Scene">
-<area shape="rect" id="node2" href="$classcamera_1_1Camera.html" title="camera::Camera" alt="" coords="71,124,189,151"/>
-<area shape="rect" id="node7" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="551,124,629,151"/>
+<area shape="rect" id="node1" title="The Scene&#45;Object is used to compose RenderObjects, Lights, the Background and render them." alt="" coords="327,228,386,255"/>
+<area shape="rect" id="node2" href="$classcamera_1_1Camera.html" title=" " alt="" coords="71,124,189,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="167,5,205,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="213,124,332,151"/>
+<area shape="rect" id="node6" title=" " alt="" coords="357,124,527,151"/>
+<area shape="rect" id="node7" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics." alt="" coords="551,124,629,151"/>
+<area shape="rect" id="node8" title=" " alt="" coords="560,5,620,32"/>
 </map>

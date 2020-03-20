@@ -1,2 +1,5 @@
 <map id="Interval" name="Interval">
+<area shape="rect" id="node1" title="The closed interval [mini, maxi]." alt="" coords="41,109,107,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,65,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="89,5,136,32"/>
 </map>

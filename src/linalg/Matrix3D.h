@@ -24,11 +24,15 @@ namespace linalg {
 
         Matrix3D &operator+=(const Matrix3D &B);
 
+        Matrix3D &operator-=(const Matrix3D &B);
+
         friend Vector3D operator*(const Matrix3D &A, const Vector3D &v);
 
         friend Matrix3D operator*(Matrix3D A, const Matrix3D &B);
 
         friend Matrix3D operator+(Matrix3D A, const Matrix3D &B);
+
+        friend Matrix3D operator-(Matrix3D A, const Matrix3D &B);
 
     private:
         /// The columns of the Matrix [a, b, c]

@@ -1,8 +1,11 @@
 <map id="SimpleSphere" name="SimpleSphere">
-<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume. " alt="" coords="5,275,123,301"/>
-<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects. " alt="" coords="13,133,115,159"/>
-<area shape="rect" id="node5" href="$classMaterial.html" title="Typically stores information about material of RenderObjects. " alt="" coords="214,275,282,301"/>
-<area shape="rect" id="node6" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="325,133,403,159"/>
-<area shape="rect" id="node9" href="$classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="427,133,493,159"/>
-<area shape="rect" id="node7" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects. " alt="" coords="423,275,521,301"/>
+<area shape="rect" id="node1" title="A simple, uniformly textured sphere, implements RenderObject." alt="" coords="197,364,299,391"/>
+<area shape="rect" id="node2" href="$classBoundedVolume.html" title="Abstract class implemented by objects that can be contained in a volume." alt="" coords="5,275,123,301"/>
+<area shape="rect" id="node3" href="$classRenderObject.html" title="Abstract class for renderable objects." alt="" coords="13,133,115,159"/>
+<area shape="rect" id="node4" title=" " alt="" coords="234,5,294,32"/>
+<area shape="rect" id="node5" href="$classMaterial.html" title="Typically stores information about material of RenderObjects." alt="" coords="214,275,282,301"/>
+<area shape="rect" id="node6" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics." alt="" coords="325,133,403,159"/>
+<area shape="rect" id="node9" href="$classInterval.html" title="The closed interval [mini, maxi]." alt="" coords="427,133,493,159"/>
+<area shape="rect" id="node7" href="$classBoundingBox.html" title="A cuboid in 3D space for estimating the position of objects." alt="" coords="423,275,521,301"/>
+<area shape="rect" id="node8" title=" " alt="" coords="482,5,529,32"/>
 </map>

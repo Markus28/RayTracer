@@ -1,3 +1,6 @@
 <map id="BoundingBox" name="BoundingBox">
-<area shape="rect" id="node3" href="$classInterval.html" title="The closed interval [mini, maxi]. " alt="" coords="86,109,151,136"/>
+<area shape="rect" id="node1" title="A cuboid in 3D space for estimating the position of objects." alt="" coords="5,228,104,255"/>
+<area shape="rect" id="node2" title=" " alt="" coords="30,5,77,32"/>
+<area shape="rect" id="node3" href="$classInterval.html" title="The closed interval [mini, maxi]." alt="" coords="99,109,165,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="119,5,179,32"/>
 </map>

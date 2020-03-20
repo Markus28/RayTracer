@@ -1,5 +1,5 @@
 \hypertarget{classMTLLib}{}\section{M\+T\+L\+Lib Class Reference}
-\label{classMTLLib}\index{M\+T\+L\+Lib@{M\+T\+L\+Lib}}
+\label{classMTLLib}\index{MTLLib@{MTLLib}}
 
 
 Class for loading wavefront .mtl files.  
@@ -11,7 +11,8 @@ Class for loading wavefront .mtl files.
 
 
 
-Collaboration diagram for M\+T\+L\+Lib\+:\nopagebreak
+Collaboration diagram for M\+T\+L\+Lib\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,25 +22,25 @@ Collaboration diagram for M\+T\+L\+Lib\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classMTLLib_a9d67275ad7ced3768135bd40bc821616}{M\+T\+L\+Lib} (const char $\ast$filename)
+\mbox{\hyperlink{classMTLLib_a9d67275ad7ced3768135bd40bc821616}{M\+T\+L\+Lib}} (const char $\ast$filename)
 \item 
-\hyperlink{classMTLLib_a1f6320f63cdc48012b12b993ce74777c}{M\+T\+L\+Lib} ()=default
+\mbox{\hyperlink{classMTLLib_a1f6320f63cdc48012b12b993ce74777c}{M\+T\+L\+Lib}} ()=default
 \item 
-bool \hyperlink{classMTLLib_a7c7743ed1a557874d470f8bc7946801f}{contains} (std\+::string key) const 
+bool \mbox{\hyperlink{classMTLLib_a11ea8731bc57aae94ad40af443821cb4}{contains}} (std\+::string key) const
 \item 
-\hyperlink{classMaterial}{Material} \& \hyperlink{classMTLLib_a47584cec05a84d6b173c655515788b76}{operator\mbox{[}$\,$\mbox{]}} (std\+::string key)
+\mbox{\hyperlink{classMaterial}{Material}} \& \mbox{\hyperlink{classMTLLib_a47584cec05a84d6b173c655515788b76}{operator\mbox{[}$\,$\mbox{]}}} (std\+::string key)
 \item 
-std\+::ostream \& \hyperlink{classMTLLib_a9c5381e22b3572af42e7b23335ea8074}{print} (std\+::ostream \&sink) const 
+std\+::ostream \& \mbox{\hyperlink{classMTLLib_a058c3501417711e8e3e3f30f99a930b5}{print}} (std\+::ostream \&sink) const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{classMaterial}{Material} $>$ \hyperlink{classMTLLib_aff9c5fb2df226fe6c383ed8faaf9e49d}{materials}
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classMaterial}{Material}} $>$ \mbox{\hyperlink{classMTLLib_aff9c5fb2df226fe6c383ed8faaf9e49d}{materials}}
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-std\+::ostream \& \hyperlink{classMTLLib_a8827df67313eff58b309533133a8f437}{operator$<$$<$} (std\+::ostream \&sink, const \hyperlink{classMTLLib}{M\+T\+L\+Lib} \&lib)
+std\+::ostream \& \mbox{\hyperlink{classMTLLib_a8827df67313eff58b309533133a8f437}{operator$<$$<$}} (std\+::ostream \&sink, const \mbox{\hyperlink{classMTLLib}{M\+T\+L\+Lib}} \&lib)
 \end{DoxyCompactItemize}
 
 
@@ -47,64 +48,60 @@ std\+::ostream \& \hyperlink{classMTLLib_a8827df67313eff58b309533133a8f437}{oper
 Class for loading wavefront .mtl files. 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{M\+T\+L\+Lib@{M\+T\+L\+Lib}!M\+T\+L\+Lib@{M\+T\+L\+Lib}}
-\index{M\+T\+L\+Lib@{M\+T\+L\+Lib}!M\+T\+L\+Lib@{M\+T\+L\+Lib}}
-\subsubsection[{\texorpdfstring{M\+T\+L\+Lib(const char $\ast$filename)}{MTLLib(const char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+T\+L\+Lib\+::\+M\+T\+L\+Lib (
-\begin{DoxyParamCaption}
-\item[{const char $\ast$}]{filename}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classMTLLib_a9d67275ad7ced3768135bd40bc821616}{}\label{classMTLLib_a9d67275ad7ced3768135bd40bc821616}
-\index{M\+T\+L\+Lib@{M\+T\+L\+Lib}!M\+T\+L\+Lib@{M\+T\+L\+Lib}}
-\index{M\+T\+L\+Lib@{M\+T\+L\+Lib}!M\+T\+L\+Lib@{M\+T\+L\+Lib}}
-\subsubsection[{\texorpdfstring{M\+T\+L\+Lib()=default}{MTLLib()=default}}]{\setlength{\rightskip}{0pt plus 5cm}M\+T\+L\+Lib\+::\+M\+T\+L\+Lib (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classMTLLib_a1f6320f63cdc48012b12b993ce74777c}{}\label{classMTLLib_a1f6320f63cdc48012b12b993ce74777c}
+\mbox{\Hypertarget{classMTLLib_a9d67275ad7ced3768135bd40bc821616}\label{classMTLLib_a9d67275ad7ced3768135bd40bc821616}} 
+\index{MTLLib@{MTLLib}!MTLLib@{MTLLib}}
+\index{MTLLib@{MTLLib}!MTLLib@{MTLLib}}
+\subsubsection{\texorpdfstring{MTLLib()}{MTLLib()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily M\+T\+L\+Lib\+::\+M\+T\+L\+Lib (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classMTLLib_a1f6320f63cdc48012b12b993ce74777c}\label{classMTLLib_a1f6320f63cdc48012b12b993ce74777c}} 
+\index{MTLLib@{MTLLib}!MTLLib@{MTLLib}}
+\index{MTLLib@{MTLLib}!MTLLib@{MTLLib}}
+\subsubsection{\texorpdfstring{MTLLib()}{MTLLib()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily M\+T\+L\+Lib\+::\+M\+T\+L\+Lib (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
 
 
 \subsection{Member Function Documentation}
-\index{M\+T\+L\+Lib@{M\+T\+L\+Lib}!contains@{contains}}
-\index{contains@{contains}!M\+T\+L\+Lib@{M\+T\+L\+Lib}}
-\subsubsection[{\texorpdfstring{contains(std\+::string key) const }{contains(std::string key) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+T\+L\+Lib\+::contains (
-\begin{DoxyParamCaption}
-\item[{std\+::string}]{key}
-\end{DoxyParamCaption}
-) const}\hypertarget{classMTLLib_a7c7743ed1a557874d470f8bc7946801f}{}\label{classMTLLib_a7c7743ed1a557874d470f8bc7946801f}
-\index{M\+T\+L\+Lib@{M\+T\+L\+Lib}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
-\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!M\+T\+L\+Lib@{M\+T\+L\+Lib}}
-\subsubsection[{\texorpdfstring{operator[](std\+::string key)}{operator[](std::string key)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material} \& M\+T\+L\+Lib\+::operator\mbox{[}$\,$\mbox{]} (
-\begin{DoxyParamCaption}
-\item[{std\+::string}]{key}
-\end{DoxyParamCaption}
-)}\hypertarget{classMTLLib_a47584cec05a84d6b173c655515788b76}{}\label{classMTLLib_a47584cec05a84d6b173c655515788b76}
-\index{M\+T\+L\+Lib@{M\+T\+L\+Lib}!print@{print}}
-\index{print@{print}!M\+T\+L\+Lib@{M\+T\+L\+Lib}}
-\subsubsection[{\texorpdfstring{print(std\+::ostream \&sink) const }{print(std::ostream &sink) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& M\+T\+L\+Lib\+::print (
-\begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{sink}
-\end{DoxyParamCaption}
-) const}\hypertarget{classMTLLib_a9c5381e22b3572af42e7b23335ea8074}{}\label{classMTLLib_a9c5381e22b3572af42e7b23335ea8074}
+\mbox{\Hypertarget{classMTLLib_a11ea8731bc57aae94ad40af443821cb4}\label{classMTLLib_a11ea8731bc57aae94ad40af443821cb4}} 
+\index{MTLLib@{MTLLib}!contains@{contains}}
+\index{contains@{contains}!MTLLib@{MTLLib}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool M\+T\+L\+Lib\+::contains (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMTLLib_a47584cec05a84d6b173c655515788b76}\label{classMTLLib_a47584cec05a84d6b173c655515788b76}} 
+\index{MTLLib@{MTLLib}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!MTLLib@{MTLLib}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMaterial}{Material}} \& M\+T\+L\+Lib\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMTLLib_a058c3501417711e8e3e3f30f99a930b5}\label{classMTLLib_a058c3501417711e8e3e3f30f99a930b5}} 
+\index{MTLLib@{MTLLib}!print@{print}}
+\index{print@{print}!MTLLib@{MTLLib}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily std\+::ostream \& M\+T\+L\+Lib\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{sink }\end{DoxyParamCaption}) const}
+
 
 
 \subsection{Friends And Related Function Documentation}
-\index{M\+T\+L\+Lib@{M\+T\+L\+Lib}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!M\+T\+L\+Lib@{M\+T\+L\+Lib}}
-\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
-\begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{sink, }
-\item[{const {\bf M\+T\+L\+Lib} \&}]{lib}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classMTLLib_a8827df67313eff58b309533133a8f437}{}\label{classMTLLib_a8827df67313eff58b309533133a8f437}
+\mbox{\Hypertarget{classMTLLib_a8827df67313eff58b309533133a8f437}\label{classMTLLib_a8827df67313eff58b309533133a8f437}} 
+\index{MTLLib@{MTLLib}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!MTLLib@{MTLLib}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{sink,  }\item[{const \mbox{\hyperlink{classMTLLib}{M\+T\+L\+Lib}} \&}]{lib }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
 
 
 \subsection{Member Data Documentation}
-\index{M\+T\+L\+Lib@{M\+T\+L\+Lib}!materials@{materials}}
-\index{materials@{materials}!M\+T\+L\+Lib@{M\+T\+L\+Lib}}
-\subsubsection[{\texorpdfstring{materials}{materials}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$std\+::string, {\bf Material}$>$ M\+T\+L\+Lib\+::materials\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMTLLib_aff9c5fb2df226fe6c383ed8faaf9e49d}{}\label{classMTLLib_aff9c5fb2df226fe6c383ed8faaf9e49d}
+\mbox{\Hypertarget{classMTLLib_aff9c5fb2df226fe6c383ed8faaf9e49d}\label{classMTLLib_aff9c5fb2df226fe6c383ed8faaf9e49d}} 
+\index{MTLLib@{MTLLib}!materials@{materials}}
+\index{materials@{materials}!MTLLib@{MTLLib}}
+\subsubsection{\texorpdfstring{materials}{materials}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{classMaterial}{Material}}$>$ M\+T\+L\+Lib\+::materials\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{MTLLib_8h}{M\+T\+L\+Lib.\+h}\item 
-src/\hyperlink{MTLLib_8cpp}{M\+T\+L\+Lib.\+cpp}\end{DoxyCompactItemize}
+src/\mbox{\hyperlink{MTLLib_8h}{M\+T\+L\+Lib.\+h}}\item 
+src/\mbox{\hyperlink{MTLLib_8cpp}{M\+T\+L\+Lib.\+cpp}}\end{DoxyCompactItemize}

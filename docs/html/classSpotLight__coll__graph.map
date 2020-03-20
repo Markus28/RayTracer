@@ -1,4 +1,6 @@
 <map id="SpotLight" name="SpotLight">
-<area shape="rect" id="node2" href="$classLight.html" title="Abstract class for lights used in Scene. " alt="" coords="141,229,191,256"/>
-<area shape="rect" id="node3" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics. " alt="" coords="43,124,121,151"/>
+<area shape="rect" id="node1" title=" " alt="" coords="37,321,114,348"/>
+<area shape="rect" id="node2" href="$classLight.html" title="Abstract class for lights used in Scene." alt="" coords="149,229,199,256"/>
+<area shape="rect" id="node3" href="$classVector3D.html" title="Vector in 3D space with usual arithmetics." alt="" coords="51,124,129,151"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,65,32"/>
 </map>
