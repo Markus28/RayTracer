@@ -1,13 +1,14 @@
 
 # C++ Ray Tracer  
-A simple CPU Raytracer. Built from scratch.   
+A simple CPU Raytracer using OpenMP, built from scratch. 
+It supports meshes given as OBJ and MTL files, implicit shapes and CSGs given as signed distance functions.
   
 ## Renders  
 ### OBJ-Files using Binary-Volume-Hierarchies:  
 <img src=https://imgur.com/ZGqhSwN.png width="100%">  
 <img src=https://i.imgur.com/RzrSGbV.png width="100%">  
 
-### Signed distance functions:  
+### CSG:  
 <img src=https://i.imgur.com/747riNa.png width="100%">  
 
 ### Implicit shapes (WIP):

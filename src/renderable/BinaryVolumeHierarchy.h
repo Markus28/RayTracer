@@ -79,7 +79,7 @@ private:
 /**
  * @brief Acceleration structure for ensemble of bounded volumes
  */
-class BinaryVolumeHierarchy: public BoundedVolume {
+class BinaryVolumeHierarchy: public BoundedVolume { //TODO: Copy Constructor? Assignment?
 public:
     BinaryVolumeHierarchy(std::vector<BoundedVolume*>::iterator b, std::vector<BoundedVolume*>::iterator e);
     Intersection ray_intersect(const Ray &ray) const override;
