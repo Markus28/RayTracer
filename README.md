@@ -5,15 +5,10 @@ It supports meshes given as OBJ and MTL files, implicit shapes and CSGs given as
 
 ##Installation
 OpenMP is required.
-Installation still requires some legwork:
+
 ```console
 git clone https://github.com/Markus28/RayTracer
-cd RayTracer/RayTracer
-mkdir lib
-cd lib
-cmake ../src
-make
-cd ../..
+cd RayTracer
 python setup.py install
 ```
 

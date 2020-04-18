@@ -8,4 +8,4 @@ RayTracer/lib/libRayTracer.so
 lib/libRayTracer.so
 RayTracer/__pycache__
 __pycache__
-src
+./src
