@@ -3,7 +3,7 @@
 A simple CPU Raytracer using OpenMP, built from scratch. 
 It supports meshes given as OBJ and MTL files, implicit shapes and CSGs given as signed distance functions.
 
-##Installation
+## Installation
 OpenMP is required.
 
 ```console
