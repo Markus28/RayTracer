@@ -1,7 +1,8 @@
+import os
 from ctypes import cdll, c_void_p
 from .utilities import create_vector, destroy_vector
 
-lib = cdll.LoadLibrary('RayTracer/lib/libRayTracer.so')
+lib = cdll.LoadLibrary(os.path.join(os.path.dirname(__file__), 'lib/libRayTracer.so'))
 
 lib.new_distant_light.argtypes = [c_void_p, c_void_p, c_void_p]
 lib.new_distant_light.restype = c_void_p

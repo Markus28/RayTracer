@@ -2,7 +2,21 @@
 # C++ Ray Tracer  
 A simple CPU Raytracer using OpenMP, built from scratch. 
 It supports meshes given as OBJ and MTL files, implicit shapes and CSGs given as signed distance functions.
-  
+
+##Installation
+OpenMP is required.
+Installation still requires some legwork:
+```console
+git clone https://github.com/Markus28/RayTracer
+cd RayTracer/RayTracer
+mkdir lib
+cd lib
+cmake ../src
+make
+cd ../..
+python setup.py install
+```
+
 ## Renders  
 ### OBJ-Files using Binary-Volume-Hierarchies:  
 <img src=https://imgur.com/ZGqhSwN.png width="100%">  

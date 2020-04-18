@@ -1,9 +1,11 @@
 .idea/
 cmake-build-debug/
 Coding
-src/cmake-build-debug/
-src/cmake-build-release/
-src/CMakeLists.txt
+RayTracer/src/cmake-build-debug/
+RayTracer/src/cmake-build-release/
 Doxyfile
+RayTracer/lib/libRayTracer.so
 lib/libRayTracer.so
+RayTracer/__pycache__
 __pycache__
+src

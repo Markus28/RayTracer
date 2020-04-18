@@ -1,8 +1,8 @@
+import os
 from ctypes import cdll, c_void_p, c_int
 from .utilities import create_vector, destroy_vector
 
-lib = cdll.LoadLibrary('RayTracer/lib/libRayTracer.so')
-
+lib = cdll.LoadLibrary(os.path.join(os.path.dirname(__file__), 'lib/libRayTracer.so'))
 
 lib.new_ro_vector.argtypes = []
 lib.new_ro_vector.restype = c_void_p
