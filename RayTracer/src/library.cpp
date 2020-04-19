@@ -3,7 +3,7 @@
 #include "Scene.h"
 #include "renderable/BinaryVolumeHierarchy.h"
 #include "OBJFile.h"
-#include "DistantPointSource.h"
+#include "light/DistantPointSource.h"
 
 extern "C" {
     Vector3D* new_vector(double x, double y, double z){

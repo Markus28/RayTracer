@@ -1,10 +1,10 @@
 
-# C++ Ray Tracer  
-A simple CPU Raytracer using OpenMP, built from scratch. 
+# Ray Tracer for Python
+A simple CPU Raytracer written (mostly) in C++; Built from scratch. 
 It supports meshes given as OBJ and MTL files, implicit shapes and CSGs given as signed distance functions.
 
 ## Installation
-OpenMP is required.
+Tested on Linux only. OpenMP and CMake are required.
 
 ```console
 git clone https://github.com/Markus28/RayTracer

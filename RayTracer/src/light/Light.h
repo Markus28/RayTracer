@@ -2,8 +2,8 @@
 #define RAYTRACER_LIGHT_H
 
 
-#include "linalg/Vector3D.h"
-#include "Ray.h"
+#include "../linalg/Vector3D.h"
+#include "../Ray.h"
 
 /**
  * @brief Abstract class for lights used in Scene

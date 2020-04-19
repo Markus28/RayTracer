@@ -1,5 +1,5 @@
 #include "Scene.h"
-#include "Light.h"
+#include "light/Light.h"
 #include "Intersection.h"
 #include "renderable/RenderObject.h"
 #include "Utilities.h"
