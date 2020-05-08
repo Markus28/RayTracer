@@ -4,6 +4,10 @@
 #include "renderable/BinaryVolumeHierarchy.h"
 #include "OBJFile.h"
 #include "light/DistantPointSource.h"
+#include "renderable/SDFSphere.h"
+#include "renderable/SDFBox.h"
+#include "renderable/CSG.h"
+#include "renderable/SDFCylinder.h"
 
 extern "C" {
     Vector3D* new_vector(double x, double y, double z){
@@ -128,5 +132,65 @@ extern "C" {
 
     void delete_distant_light(DistantPointSource* l){
         delete l;
+    }
+}
+
+
+extern "C" {
+    CSG* new_csg_object(){
+        return new CSG();
+    }
+
+    void delete_csg_object(CSG* c){
+        delete c;
+    }
+
+    SDFSphere* new_sdf_sphere(Vector3D* center, double r, Material* material){
+        return new SDFSphere(*center, r, *material);
+    }
+
+    void delete_sdf_sphere(SDFSphere* s){
+        delete s;
+    }
+
+    SDFCylinder* new_sdf_cylinder(Vector3D* center, Vector3D* axis, double length, double radius, Material* mat){
+        return new SDFCylinder(*center, *axis, length, radius, *mat);
+    }
+
+    void delete_sdf_cylinder(SDFCylinder* c){
+        delete c;
+    }
+
+    SDFBox* new_sdf_box(Vector3D* center, double depth, double height, double length, Material* mat)
+    {
+        return new SDFBox(*center, depth, height, length, *mat);
+    }
+
+    void delete_sdf_box(SDFBox* b){
+        delete b;
+    }
+
+    void sdf_intersect(CSG* c, SDFObject* o){
+        c->intersect(o);
+    }
+
+    void sdf_unionize(CSG* c, SDFObject* o){
+        c->unionize(o);
+    }
+
+    void sdf_subtract(CSG* c, CSG* o){
+        c->subtract(*o);
+    }
+
+    void csg_intersect(CSG* c, const CSG* o){
+        c->intersect(*o);
+    }
+
+    void csg_unionize(CSG* c, const CSG* o){
+        c->unionize(*o);
+    }
+
+    void csg_subtract(CSG* c, const CSG* o){
+        c->subtract(*o);
     }
 }

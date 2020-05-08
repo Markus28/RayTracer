@@ -1,8 +1,8 @@
 #ifndef RAYTRACER_EXPRESSION_H
 #define RAYTRACER_EXPRESSION_H
 
-
-#include <bits/unique_ptr.h>
+#include <string>
+#include <memory>
 #include <unordered_map>
 
 namespace symcpp {
